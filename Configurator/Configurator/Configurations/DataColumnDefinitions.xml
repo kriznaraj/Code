@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<DataColumnDefinitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <DataColumnDefinition ColumnName="PlayerID" DisplayMember="PlayerID" Width="auto" ColumnDataType="Number" Alignment="right" HeaderName="Player ID" SearchType="Contains" AccessPolicyCode="" />
+  <DataColumnDefinition ColumnName="FirstName" DisplayMember="FirstName" Width="auto" ColumnDataType="Text" Alignment="right" HeaderName="First Name" SearchType="Contains" AccessPolicyCode="" />
+  <DataColumnDefinition ColumnName="LastName" DisplayMember="LastName" Width="auto" ColumnDataType="Text" Alignment="right" HeaderName="Last Name" SearchType="Contains" AccessPolicyCode="" />
+  <DataColumnDefinition ColumnName="PlayerName" DisplayMember="PlayerName" Width="auto" ColumnDataType="Text" Alignment="right" HeaderName="Player Name" SearchType="Contains" AccessPolicyCode="" />
+  <DataColumnDefinition ColumnName="AccountNumber" DisplayMember="AccountNumber" Width="auto" ColumnDataType="Number" Alignment="right" HeaderName="Account Number" SearchType="Contains" AccessPolicyCode="" />
+  <DataColumnDefinition ColumnName="PhoneNumber" DisplayMember="PhoneNumber" Width="auto" ColumnDataType="Text" Alignment="right" HeaderName="Phone Number" SearchType="Contains" AccessPolicyCode="" />
+  <DataColumnDefinition ColumnName="City" DisplayMember="City" Width="auto" ColumnDataType="Text" Alignment="right" HeaderName="City" SearchType="Contains" AccessPolicyCode="" />
+  <DataColumnDefinition ColumnName="DOB" DisplayMember="DOB" Width="auto" ColumnDataType="Date" Alignment="right" HeaderName="Date of birth" SearchType="Contains" AccessPolicyCode="" />
+  <DataColumnDefinition ColumnName="SSN" DisplayMember="SSN" Width="auto" ColumnDataType="Text" Alignment="right" HeaderName="SSN" SearchType="Contains" AccessPolicyCode="" />
+</DataColumnDefinitions>

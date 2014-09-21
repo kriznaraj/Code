@@ -1,0 +1,1070 @@
+<?xml version="1.0"?>
+<ModelProperties xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Property Key="UserName" AccessPolicyCode="UN_ACCESS_POLICY">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="CommonModel_UserName_Required" />
+    <LengthValidator DoValidate="true" Type="Length" MessageKey="Common_Exceed_Length" MinLength="1" MaxLength="30" />
+  </Property>
+  <Property Key="Password" AccessPolicyCode="PWD_ACCESS_POLICY">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="CommonModel_Password_Required" />
+  </Property>
+
+  <Property Key="OldPassword" AccessPolicyCode="PWD_ACCESS_POLICY">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="CommonModel_OldPassword_Required" />
+  </Property>
+  <Property Key="NewPassword" AccessPolicyCode="PWD_ACCESS_POLICY">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="CommonModel_NewPassword_Required" />
+  </Property>
+  <Property Key="ConfirmPassword" AccessPolicyCode="PWD_ACCESS_POLICY">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="CommonModel_ConfirmPassword_Required" />
+  </Property>
+  <Property Key="PrintEmployeeCardModelEmployeeName" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="PrintEmployeeCardModel_EmployeeName_Required" />
+  </Property>
+  <Property Key="PrintEmployeeCardModelNumberOfCopies" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="PrintEmployeeCardModel_NumberOfCopies_Required" />
+    <RegExValidator DoValidate="true" Type="RegExp" MessageKey="5009236">
+      <RegExpression>[1-9]$</RegExpression>
+    </RegExValidator>
+  </Property>
+
+  <Property Key="SiteID" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="LoginInputView_SiteID_Required" />
+  </Property>
+  <Property Key="RoleId" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="LoginInputView_RoleId_Required" />
+  </Property>
+
+  <!--Reprint-->
+
+  <Property Key="SlipType" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="ReprintDTO_SlipType_Required" />
+  </Property>
+
+  <Property Key="Reason" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="ReprintDTO_Reason_Required" />
+  </Property>
+
+  <Property Key="SequenceNumber" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="ReprintDTO_SequenceNumber_Required" />
+    <LengthValidator DoValidate="true" Type="Length" MessageKey="Sequence_Length_Exceeded" MinLength="1" MaxLength="18" />
+    <RangeValidator DoValidate="true" Type="Range" MessageKey="Sequence_Length_Exceeded" MinValue="1" MaxValue="999999999999999999" />
+  </Property>
+  <!--End of Reprint configs-->
+
+	<!-- Dispute -->
+  <Property Key="SlipAssetNumber" AccessPolicyCode="UN_ACCESS_POLICY">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="JackpotModel_SlotNumber_Required" />
+    <RangeValidator DoValidate="true" Type="Range" MessageKey="JackpotModel_SlotNumber_Exceeded_Range" MinValue="1" MaxValue="99999" />
+    <LengthValidator DoValidate="true" Type="Length" MessageKey="JackpotModel_SlotNumber_Exceeded_Length" MinLength="1" MaxLength="5" />
+    <SiteConfig SiteConfigType="Visible" ConfigKey="PROMPT.SLIP.SLOT"></SiteConfig>
+  </Property>
+  <Property Key="SlipAssetLocation" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="JackpotModel_Location_Required" />
+    <LengthValidator DoValidate="true" Type="Length" MessageKey="JackpotModel_Location_Exceeded_Length" MinLength="1" MaxLength="10" />
+    <CustomValidator DoValidate="true" Type="Custom" MessageKey="JackpotModel_Location_Is_Invalid" ValidationType="AlphaNumeric">
+      <Expression>^[a-zA-Z0-9]*$</Expression>
+    </CustomValidator>
+    <SiteConfig SiteConfigType="Visible" ConfigKey="PROMPT.SLIP.STAND"></SiteConfig>
+  </Property>
+  
+	<Property Key="Amount" AccessPolicyCode="">
+		<RequiredValidator DoValidate="true" Type="Required" MessageKey="DisputeModel_Amount_Required" />
+		<LengthValidator DoValidate="true" Type="Length" MessageKey="DisputeModel_Amount_Exceeded_Length" MinLength="1" MaxLength="17" />
+		<RangeValidator DoValidate="true" Type="Range" MessageKey="DisputeModel_Amount_Exceeded_Range" MinValue="0.01" MaxValue="99999999999999.00" />
+	</Property>
+    <Property Key="DisputePlayerCardNumber" AccessPolicyCode="">
+        <LengthValidator DoValidate="true" Type="Length" MessageKey="JackpotModel_PlayerCard_Exceeded_Length" MinLength="1" MaxLength="64" />
+        <CustomValidator DoValidate="true" Type="Custom" MessageKey="JackpotModel_PlayerCard_Is_Invalid" ValidationType="AlphaNumeric">
+        <Expression>^[a-zA-Z0-9]*$</Expression>
+        </CustomValidator>
+      <SiteConfig SiteConfigType="Mandatory" ConfigKey="IS.PLAYER.CARD.MANDATORY.ON.DISPUTE.SLIPS"></SiteConfig>
+    </Property>
+    <Property Key="DisputePlayerName" AccessPolicyCode="">
+        <LengthValidator DoValidate="true" Type="Length" MessageKey="JackpotModel_PlayerName_Exceeded_Length" MinLength="1" MaxLength="37" />
+        <CustomValidator DoValidate="true" Type="Custom" MessageKey="JackpotModel_PlayerName_Is_Invalid" ValidationType="AlphaNumeric">
+        <Expression>^[a-zA-Z0-9_ ]*$</Expression>
+        </CustomValidator>
+      <SiteConfig SiteConfigType="Mandatory" ConfigKey="IS.PLAYER.NAME.MANDATORY.ON.DISPUTE.SLIPS"></SiteConfig>
+    </Property>
+  <Property Key="DisputeCashierWindowNumber" AccessPolicyCode="">
+    <LengthValidator DoValidate="true" Type="Length" MessageKey="JackpotModel_WindowNumber_Exceeded_Length" MinLength="1" MaxLength="3" />
+    <RangeValidator DoValidate="true" Type="Range" MessageKey="JackpotModel_WindowNumber_Exceeded_Range" MinValue="1" MaxValue="999" />
+    <SiteConfig SiteConfigType="Visible" ConfigKey="ALLOW.WINDOW.ON.BEEF.SLIPS"></SiteConfig>
+  </Property>
+
+  <Property Key="SlipFirstAuthorizer" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="JackpotModel_FirstAuthorizerEmployee_Required" />
+    <SiteConfig SiteConfigType="Mandatory" ConfigKey="SHOW.SLIP.FIRST.AUTHORIZER"></SiteConfig>
+  </Property>
+
+  <Property Key="SlipFirstAuthorizerPassword" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="JackpotModel_FirstAuthorizerPassword_Required" />
+    <SiteConfig SiteConfigType="Mandatory" ConfigKey="SHOW.SLIP.SECOND.AUTHORIZER"></SiteConfig>
+  </Property>
+
+  <Property Key="SlipSecondAuthorizer" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="JackpotModel_SecondAuthorizerEmployee_Required" />
+    <SiteConfig SiteConfigType="Mandatory" ConfigKey="SHOW.JACKPOT.SECOND.AUTHORIZER"></SiteConfig>
+  </Property>
+
+  <Property Key="SlipSecondAuthorizerPassword" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="JackpotModel_SecondAuthorizerPassword_Required" />
+    <SiteConfig SiteConfigType="Mandatory" ConfigKey="SHOW.JACKPOT.SECOND.AUTHORIZER"></SiteConfig>
+  </Property>
+  <!-- End of Dispute Configs-->
+  
+  <!--Fill Configs Start-->
+
+  <Property Key="FillDTOSlotNumber" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="FillDTO_SlotNumber_Required" />
+    <RangeValidator DoValidate="true" Type="Range" MessageKey="FillDTO_SlotNumber_Exceeded_Range" MinValue="1" MaxValue="99999" />
+    <LengthValidator DoValidate="true" Type="Length" MessageKey="FillDTO_SlotNumber_Exceeded_Length" MinLength="1" MaxLength="5" />
+    <SiteConfig SiteConfigType="Visible" ConfigKey="PROMPT.SLIP.SLOT"></SiteConfig>
+  </Property>
+
+  <Property Key="FillDTOSlotLocation" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="JackpotModel_Location_Required" />
+    <LengthValidator DoValidate="true" Type="Length" MessageKey="JackpotModel_Location_Exceeded_Length" MinLength="1" MaxLength="10" />
+    <CustomValidator DoValidate="true" Type="Custom" MessageKey="JackpotModel_Location_Is_Invalid" ValidationType="AlphaNumeric">
+      <Expression>^[a-zA-Z0-9]*$</Expression>
+    </CustomValidator>
+    <SiteConfig SiteConfigType="Visible" ConfigKey="PROMPT.SLIP.STAND"></SiteConfig>
+  </Property>
+
+  <Property Key="FillDTOAmount" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="FillDTO_Amount_Required" />
+    <LengthValidator DoValidate="true" Type="Length" MessageKey="FillDTO_Amount_Exceeded_Length" MinLength="1" MaxLength="17" />
+    <RangeValidator DoValidate="true" Type="Range" MessageKey="FillDTO_Amount_Exceeded_Range" MinValue="0.01" MaxValue="99999999999999.00" />
+  </Property>
+
+  <Property Key="FillDTOWinNum" AccessPolicyCode="">
+    <LengthValidator DoValidate="true" Type="Length" MessageKey="FillDTO_WindowNumber_Exceeded_Length" MinLength="1" MaxLength="3" />
+    <RangeValidator DoValidate="true" Type="Range" MessageKey="FillDTO_WindowNumber_Exceeded_Range" MinValue="1" MaxValue="999" />
+    <SiteConfig SiteConfigType="Visible" ConfigKey="ALLOW.WINDOW.ON.BEEF.SLIPS"></SiteConfig>
+  </Property>
+
+  <Property Key="FillDTOFirstAuthLoginName" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="JackpotModel_FirstAuthorizerEmployee_Required" />
+    <SiteConfig SiteConfigType="Mandatory" ConfigKey="SHOW.SLIP.FIRST.AUTHORIZER"></SiteConfig>
+  </Property>
+
+  <Property Key="FillDTOFirstAuthPassword" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="JackpotModel_FirstAuthorizerPassword_Required" />
+    <SiteConfig SiteConfigType="Mandatory" ConfigKey="SHOW.SLIP.SECOND.AUTHORIZER"></SiteConfig>
+  </Property>
+
+  <Property Key="FillDTOSecondAuthLoginName" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="JackpotModel_SecondAuthorizerEmployee_Required" />
+    <SiteConfig SiteConfigType="Mandatory" ConfigKey="SHOW.JACKPOT.SECOND.AUTHORIZER"></SiteConfig>
+  </Property>
+
+  <Property Key="FillDTOSecondAuthPassword" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="JackpotModel_SecondAuthorizerPassword_Required" />
+    <SiteConfig SiteConfigType="Mandatory" ConfigKey="SHOW.JACKPOT.SECOND.AUTHORIZER"></SiteConfig>
+  </Property>
+
+
+  <!--Fill Configs End-->
+
+  <!--Bleed Configs Start-->
+  <Property Key="BleedDTOSlotNumber" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="BleedDTO_SlotNumber_Required" />
+    <RangeValidator DoValidate="true" Type="Range" MessageKey="BleedDTO_SlotNumber_Exceeded_Range" MinValue="1" MaxValue="99999" />
+    <LengthValidator DoValidate="true" Type="Length" MessageKey="BleedDTO_SlotNumber_Exceeded_Length" MinLength="1" MaxLength="5" />
+    <SiteConfig SiteConfigType="Visible" ConfigKey="PROMPT.SLIP.SLOT"></SiteConfig>
+  </Property>
+
+  <Property Key="BleedDTOSlotLocation" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="JackpotModel_Location_Required" />
+    <LengthValidator DoValidate="true" Type="Length" MessageKey="JackpotModel_Location_Exceeded_Length" MinLength="1" MaxLength="10" />
+    <CustomValidator DoValidate="true" Type="Custom" MessageKey="JackpotModel_Location_Is_Invalid" ValidationType="AlphaNumeric">
+      <Expression>^[a-zA-Z0-9]*$</Expression>
+    </CustomValidator>
+    <SiteConfig SiteConfigType="Visible" ConfigKey="PROMPT.SLIP.STAND"></SiteConfig>
+  </Property>
+
+  <Property Key="BleedDTOAmount" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="BleedDTO_Amount_Required" />
+    <LengthValidator DoValidate="true" Type="Length" MessageKey="BleedDTO_Amount_Exceeded_Length" MinLength="1" MaxLength="17" />
+    <RangeValidator DoValidate="true" Type="Range" MessageKey="BleedDTO_Amount_Exceeded_Range" MinValue="0.01" MaxValue="99999999999999.00" />
+  </Property>
+
+  <Property Key="BleedDTOWinNum" AccessPolicyCode="">
+    <LengthValidator DoValidate="true" Type="Length" MessageKey="BleedDTO_WindowNumber_Exceeded_Length" MinLength="1" MaxLength="3" />
+    <RangeValidator DoValidate="true" Type="Range" MessageKey="BleedDTO_WindowNumber_Exceeded_Range" MinValue="1" MaxValue="999" />
+    <SiteConfig SiteConfigType="Visible" ConfigKey="ALLOW.WINDOW.ON.BEEF.SLIPS"></SiteConfig>
+  </Property>
+  <!--Bleed Configs End-->
+
+  <!-- Manual& Pending Jackpot -->
+
+  <Property Key="AssetNumber" AccessPolicyCode="UN_ACCESS_POLICY">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="JackpotModel_SlotNumber_Required" />
+    <RangeValidator DoValidate="true" Type="Range" MessageKey="JackpotModel_SlotNumber_Exceeded_Range" MinValue="1" MaxValue="99999" />
+    <LengthValidator DoValidate="true" Type="Length" MessageKey="JackpotModel_SlotNumber_Exceeded_Length" MinLength="1" MaxLength="5" />
+    <SiteConfig SiteConfigType="Visible" ConfigKey="PROMPT.JACKPOT.SLOT"></SiteConfig>
+  </Property>
+  <Property Key="AssetLocation" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="JackpotModel_Location_Required" />
+    <LengthValidator DoValidate="true" Type="Length" MessageKey="JackpotModel_Location_Exceeded_Length" MinLength="1" MaxLength="10" />
+    <CustomValidator DoValidate="true" Type="Custom" MessageKey="JackpotModel_Location_Is_Invalid" ValidationType="AlphaNumeric">
+      <Expression>^[a-zA-Z0-9]*$</Expression>
+    </CustomValidator>
+  <SiteConfig SiteConfigType="Visible" ConfigKey="PROMPT.JACKPOT.STAND"></SiteConfig>
+  </Property>
+  <Property Key="PlayerCardNumber" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="JackpotModel_PlayerCard_Required" />
+    <LengthValidator DoValidate="true" Type="Length" MessageKey="JackpotModel_PlayerCard_Exceeded_Length" MinLength="1" MaxLength="64" />
+    <CustomValidator DoValidate="true" Type="Custom" MessageKey="JackpotModel_PlayerCard_Is_Invalid" ValidationType="AlphaNumeric">
+      <Expression>^[a-zA-Z0-9]*$</Expression>
+    </CustomValidator>
+    <SiteConfig SiteConfigType="Mandatory" ConfigKey="IS.PLAYER.CARD.MANDATORY"></SiteConfig>
+  </Property>
+  <Property Key="PlayerName" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="JackpotModel_PlayerName_Required" />
+    <LengthValidator DoValidate="true" Type="Length" MessageKey="JackpotModel_PlayerName_Exceeded_Length" MinLength="1" MaxLength="37" />
+    <CustomValidator DoValidate="true" Type="Custom" MessageKey="JackpotModel_PlayerName_Is_Invalid" ValidationType="AlphaNumeric">
+      <Expression>^[a-zA-Z0-9_ ]*$</Expression>
+    </CustomValidator>
+    <SiteConfig SiteConfigType="Mandatory" ConfigKey="IS.PLAYER.NAME.MANDATORY"></SiteConfig>
+  </Property>
+  <Property Key="HandPaidAmount" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="JackpotModel_HandPaidAmount_Required" />
+    <LengthValidator DoValidate="true" Type="Length" MessageKey="JackpotModel_HandPaidAmount_Exceeded_Length" MinLength="1" MaxLength="17" />
+    <RangeValidator DoValidate="true" Type="Range" MessageKey="JackpotModel_HandPaidAmount_Exceeded_Range" MinValue="0.01" MaxValue="99999999999999.00" />
+  </Property>
+
+  <Property Key="DisplayHitAmount" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="JackpotModel_DisplayHitAmount_Required" />
+    <LengthValidator DoValidate="true" Type="Length" MessageKey="JackpotModel_DisplayHitAmount_Exceeded_Length" MinLength="1" MaxLength="17" />
+  </Property>
+  <Property Key="TaxRate" AccessPolicyCode="">
+    <SiteConfig SiteConfigType="Visible" ConfigKey="USE.TAX.WITHHOLDING.ON.JPT.SLIP"></SiteConfig>
+  </Property>
+
+  <Property Key="SelectedTax" AccessPolicyCode="">
+    <SiteConfig SiteConfigType="Visible" ConfigKey="USE.TAX.WITHHOLDING.ON.JPT.SLIP"></SiteConfig>
+  </Property>
+  
+  <Property Key="WinningCombination" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="JackpotModel_WinningCombination_Required" />
+    <LengthValidator DoValidate="true" Type="Length" MessageKey="JackpotModel_WinningCombination_Exceeded_Length" MinLength="1" MaxLength="15" />
+    <CustomValidator DoValidate="true" Type="Custom" MessageKey="JackpotModel_WinningCombination_Is_Invalid" ValidationType="AlphaNumeric">
+      <Expression>^[a-zA-Z0-9]*$</Expression>
+    </CustomValidator>
+    <SiteConfig SiteConfigType="Mandatory" ConfigKey="IS.WIN.COMB.MANDATORY"></SiteConfig>
+    <SiteConfig SiteConfigType="Visible" ConfigKey="ALLOW.WIN.COMB.ON.JPTS.SLIPS"></SiteConfig>
+  </Property>
+  <Property Key="PayLine" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="JackpotModel_PayLine_Required" />
+    <LengthValidator DoValidate="true" Type="Length" MessageKey="JackpotModel_PayLine_Exceeded_Length" MinLength="1" MaxLength="10" />
+    <RangeValidator DoValidate="true" Type="Range" MessageKey="JackpotModel_PayLine_Exceeded_Range" MinValue="1" MaxValue="2147483647" />
+    <CustomValidator DoValidate="true" Type="Custom" MessageKey="JackpotModel_PayLine_Is_Invalid" ValidationType="Number" /> 
+    <SiteConfig SiteConfigType="Mandatory" ConfigKey="IS.PAY.LINE.MANDATORY"></SiteConfig>
+    <SiteConfig SiteConfigType="Visible" ConfigKey="ALLOW.PAY.LINE.ON.JPTS.SLIPS"></SiteConfig>
+  </Property>
+  <Property Key="CoinsPlayed" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="JackpotModel_CoinsPlayed_Required" />
+    <LengthValidator DoValidate="true" Type="Length" MessageKey="JackpotModel_CoinsPlayed_Exceeded_Length" MinLength="1" MaxLength="10" />
+    <RangeValidator DoValidate="true" Type="Range" MessageKey="JackpotModel_CoinsPlayed_Exceeded_Range" MinValue="0" MaxValue="2147483647" />
+    <CustomValidator DoValidate="true" Type="Custom" MessageKey="JackpotModel_CoinsPlayed_Is_Invalid" ValidationType="Number"/>   
+    <SiteConfig SiteConfigType="Mandatory" ConfigKey="IS.COINS.PLAYED.MANDATORY"></SiteConfig>
+    <SiteConfig SiteConfigType="Visible" ConfigKey="ALLOW.COINS.PLAYED.ON.JPTS.SLIPS"></SiteConfig>
+  </Property>
+  <Property Key="JackpotType" AccessPolicyCode="">
+    <!--RequiredValidator DoValidate="true" Type="Required" MessageKey="JackpotModel_JackpotType_Required" /-->
+  </Property>
+
+  <Property Key="ChequeIssueDate" AccessPolicyCode="">
+    <DateFormat DateFormat="yy-mm-dd" NumberOfMonths="1" ShowButtonPanel="true" MinDate="0" ChangeMonth="true" ChangeYear="true" ChangeDate="true" DateCssClass="krishna-textbox-datepicker" />
+  </Property>
+  
+  <Property Key="CashierWindowNumber" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="JackpotModel_WindowNumber_Required" />
+    <LengthValidator DoValidate="true" Type="Length" MessageKey="JackpotModel_WindowNumber_Exceeded_Length" MinLength="1" MaxLength="3" />
+    <RangeValidator DoValidate="true" Type="Range" MessageKey="JackpotModel_WindowNumber_Exceeded_Range" MinValue="1" MaxValue="999" />
+    <SiteConfig SiteConfigType="Mandatory" ConfigKey="IS.WINDOW.MANDATORY"></SiteConfig>
+    <SiteConfig SiteConfigType="Visible" ConfigKey="ALLOW.WINDOW.ON.JPTS.SLIPS"></SiteConfig>
+  </Property>
+
+  <Property Key="FirstAuthorizer" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="JackpotModel_FirstAuthorizerEmployee_Required" />
+    <SiteConfig SiteConfigType="Mandatory" ConfigKey="SHOW.JACKPOT.FIRST.AUTHORIZER"></SiteConfig>
+  </Property>
+
+  <Property Key="FirstAuthorizerPassword" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="JackpotModel_FirstAuthorizerPassword_Required" />
+    <SiteConfig SiteConfigType="Mandatory" ConfigKey="SHOW.JACKPOT.FIRST.AUTHORIZER"></SiteConfig>
+  </Property>
+
+  <Property Key="OverrideAuthorizer" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="JackpotModel_OverrideEmployee_Required" />
+  </Property>
+
+  <Property Key="OverrideAuthorizerPassword" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="JackpotModel_OverridePassword_Required" />
+  </Property>
+
+  <Property Key="SecondAuthorizer" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="JackpotModel_SecondAuthorizerEmployee_Required" />
+    <SiteConfig SiteConfigType="Mandatory" ConfigKey="SHOW.JACKPOT.SECOND.AUTHORIZER"></SiteConfig>
+  </Property>
+
+  <Property Key="SecondAuthorizerPassword" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="JackpotModel_SecondAuthorizerPassword_Required" />
+    <SiteConfig SiteConfigType="Mandatory" ConfigKey="SHOW.JACKPOT.SECOND.AUTHORIZER"></SiteConfig>
+  </Property>
+
+  <!-- End of Manual & Pending Jackpot configs-->
+
+  <!-- Void-->
+  <Property Key="Void_SlotActivityType" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="VoidSlipDTO_SlotActivityType_Required" />
+  </Property>
+
+  <Property Key="Void_VoidOverrideReason" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="VoidSlipDTO_VoidOverrideReason_Required" />
+  </Property>
+
+  <Property Key="Void_VoidSearchCriteria" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="VoidSlipDTO_VoidSearchCriteria_Required" />
+  </Property>
+
+  <Property Key="Void_AssetNumber" AccessPolicyCode="">
+    <RangeValidator DoValidate="true" Type="Range" MessageKey="VoidSlipDTO_VoidSearchCriteria_AssetNumber_Exceeded_Range" MinValue="1" MaxValue="99999" />
+    <LengthValidator DoValidate="true" Type="Length" MessageKey="VoidSlipDTO_VoidSearchCriteria_AssetNumber_Exceeded_Length" MinLength="1" MaxLength="5" />
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="VoidSlipDTO_AssetNumber_Required" />
+  </Property>
+  <Property Key="Void_AssetLocation" AccessPolicyCode="">
+    <LengthValidator DoValidate="true" Type="Length" MessageKey="VoidSlipDTO_VoidSearchCriteria_Location_Exceeded_Length" MinLength="1" MaxLength="10" />
+    <CustomValidator DoValidate="true" Type="Custom" MessageKey="VoidSlipDTO_VoidSearchCriteria_Location_Is_Invalid" ValidationType="AlphaNumeric">
+      <Expression>^[a-zA-Z0-9]*$</Expression>
+    </CustomValidator>
+  </Property>
+
+  <Property Key="Void_SequenceNumber" AccessPolicyCode="">
+    <LengthValidator DoValidate="true" Type="Length" MessageKey="VoidSlipDTO_VoidSearchCriteria_SequenceNumber_Length_Val" MinLength="1" MaxLength="18" />
+    <RegExValidator DoValidate="true" Type="RegExp" MessageKey="VoidSlipDTO_VoidSearchCriteria_SequenceNumber_RegEx_Val">
+      <RegExpression>^[1-9][0-9]*$</RegExpression>
+    </RegExValidator>
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="VoidDisputeSlipsDTO_SequenceNumber_Required" />
+  </Property>
+
+  <Property Key="Void_GamingDate" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="VoidSlipDTO_GamingDate_Required" />
+  </Property>
+
+  <Property Key="VoidSlip_SlotActivityType" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="VoidSlipDTO_SlotActivityType_Required" />
+  </Property>
+
+  <Property Key="VoidSlip_VoidOverrideReason" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="VoidSlipDTO_VoidOverrideReason_Required" />
+  </Property>
+
+  <Property Key="VoidJackpot_VoidSearchCriteria" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="VoidSlipDTO_VoidSearchCriteria_Required" />
+  </Property>
+  <Property Key="VoidJackpot_VoidOverrideReason" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="VoidSlipDTO_VoidOverrideReason_Required" />
+  </Property>
+
+  <Property Key="VoidSlip_SequenceNumber" AccessPolicyCode="">
+    <LengthValidator DoValidate="true" Type="Length" MessageKey="VoidSlipDTO_VoidSearchCriteria_SequenceNumber_Length_Val" MinLength="1" MaxLength="18" />
+    <RegExValidator DoValidate="true" Type="RegExp" MessageKey="VoidSlipDTO_VoidSearchCriteria_SequenceNumber_RegEx_Val">
+      <RegExpression>^[1-9][0-9]*$</RegExpression>
+    </RegExValidator>
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="VoidDisputeSlipsDTO_SequenceNumber_Required" />
+  </Property>
+  
+  <!-- End of Void configs -->
+
+  <!-- Reports -->
+  <Property Key="ReportModel_CalendarDate" AccessPolicyCode="UN_ACCESS_POLICY">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="Report_CalendarDate_Required" />
+  </Property>
+
+  <Property Key="ReportModel_FromTime" AccessPolicyCode="UN_ACCESS_POLICY">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="Report_From_Required" />
+  </Property>
+
+  <Property Key="ReportModel_ToTime" AccessPolicyCode="UN_ACCESS_POLICY">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="Report_To_Required" />
+  </Property>
+
+  <Property Key="ReportModel_GamingDate" AccessPolicyCode="UN_ACCESS_POLICY">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="Report_GamingDate_Required" />
+  </Property>
+
+  <Property Key="ReportModel_SlotNumberName" AccessPolicyCode="UN_ACCESS_POLICY">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="Report_SlotNumber_Required" />
+  </Property>  
+  <!-- End Of Reports-->
+  <Property Key="EmployeeCardNumber" AccessPolicyCode="UN_ACCESS_POLICY">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="Employee_CardNumber_Required" />
+    <LengthValidator DoValidate="true" Type="Length" MessageKey="Common_Exceed_Length" MinLength="1" MaxLength="4" />
+    <RegExValidator DoValidate="true" Type="RegExp" MessageKey="Employee_CardNumber_InValid">
+      <RegExpression>^[0-9a-eA-F]*$</RegExpression>
+    </RegExValidator>
+  </Property>
+  <Property Key="AddCardModel_From" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="AddCardModel_From_Required" />
+    <LengthValidator DoValidate="true" Type="Length" MessageKey="Common_Exceed_Length" MinLength="1" MaxLength="4" />
+    <RegExValidator DoValidate="true" Type="RegExp" MessageKey="Employee_CardNumber_InValid">
+      <RegExpression>^[0-9a-fA-F]*$</RegExpression>
+    </RegExValidator>
+  </Property>
+  <Property Key="AddCardModel_To" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="AddCardModel_To_Required" />
+    <LengthValidator DoValidate="true" Type="Length" MessageKey="Common_Exceed_Length" MinLength="1" MaxLength="4" />
+    <RegExValidator DoValidate="true" Type="RegExp" MessageKey="Employee_CardNumber_InValid">
+      <RegExpression>^[0-9a-fA-F]*$</RegExpression>
+    </RegExValidator>
+  </Property>
+  <Property Key="PostalCode" AccessPolicyCode="">
+    <Autocomplete ActionName="process" ControllerName="Player_PostalCode_Get" MinCharRequired="0" MaxResultCount="0" OrderBy="Asc" SearchType="None" ActionURL="Player_PostalCode_Get/process" />
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="AddPlayerModel_PostalCode_Required" />
+  </Property>
+  <Property Key="AccountNumber" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="AddPlayerModel_AccountNumber_Required" />
+  </Property>
+  <Property Key="LastName" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="AddPlayerModel_LastName_Required" />
+  </Property>
+  <Property Key="FullName" AccessPolicyCode="FULLNAME_ACCESS_POLICY">
+  </Property>
+
+  <Property Key="PhoneNumber" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="AddPlayerModel_PhoneNumber_Required" />
+    <CustomValidator DoValidate="true" Type="Custom" MessageKey="AddPlayerModel_PhoneNumber_Invalid" ValidationType="Phone">
+      <Expression>^\d{3}$</Expression>
+    </CustomValidator>
+  </Property>
+  <Property Key="SSN" AccessPolicyCode="">
+    <CustomValidator DoValidate="true" Type="Custom" MessageKey="PlayerIdentificationModel_SSN_Invalid" ValidationType="SSN">
+      <Expression>^\d{3}-\d{2}-\d{4}$</Expression>
+    </CustomValidator>
+  </Property>
+  <Property Key="DLExpireDate" AccessPolicyCode="">
+    <DateFormat DateFormat="yy-mm-dd" NumberOfMonths="1" ShowButtonPanel="true" MinDate="0" ChangeMonth="true" ChangeYear="true" ChangeDate="true" DateCssClass="krishna-textbox-datepicker" />
+  </Property>
+  <Property Key="PassportExpireDate" AccessPolicyCode="">
+    <DateFormat DateFormat="yy-mm-dd" NumberOfMonths="1" ShowButtonPanel="true" MinDate="0" ChangeMonth="true" ChangeYear="true" ChangeDate="true" DateCssClass="krishna-textbox-datepicker" />
+  </Property>
+  <Property Key="SeniorsCardExpireDate" AccessPolicyCode="">
+    <DateFormat DateFormat="yy-mm-dd" NumberOfMonths="1" ShowButtonPanel="true" MinDate="0" ChangeMonth="true" ChangeYear="true" ChangeDate="true" DateCssClass="krishna-textbox-datepicker" />
+  </Property>
+  <Property Key="BirthCertificateIssueDate" AccessPolicyCode="">
+    <DateFormat DateFormat="yy-mm-dd" NumberOfMonths="1" ShowButtonPanel="true" MinDate="0" ChangeMonth="true" ChangeYear="true" ChangeDate="true" DateCssClass="krishna-textbox-datepicker" />
+  </Property>
+  <Property Key="ProofOfAgeIssueDate" AccessPolicyCode="">
+    <DateFormat DateFormat="yy-mm-dd" NumberOfMonths="1" ShowButtonPanel="true" MinDate="0" ChangeMonth="true" ChangeYear="true" ChangeDate="true" DateCssClass="krishna-textbox-datepicker" />
+  </Property>
+  
+  <Property Key="BirthDate" AccessPolicyCode="">
+    <DateFormat DateFormat="yy-mm-dd" NumberOfMonths="1" ShowButtonPanel="true" MaxDate="0" ChangeMonth="true" ChangeYear="true" ChangeDate="true" DateCssClass="krishna-textbox-datepicker" />
+  </Property>
+  <Property Key="WeddingDate" AccessPolicyCode="">
+    <DateFormat DateFormat="yy-mm-dd" NumberOfMonths="1" ShowButtonPanel="true" MaxDate="0" ChangeMonth="true" ChangeYear="true" ChangeDate="true" DateCssClass="krishna-textbox-datepicker" />
+  </Property>
+
+  <Property Key="OldPIN" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="PlayerMaintenanceModel_PlayerResultSet_OldPIN_Required" />
+    <LengthValidator DoValidate="true" Type="Length" MessageKey="PlayerMaintenanceModel_PlayerResultSet_OldPIN_Length" MinLength="4" MaxLength="4" />
+  </Property>
+  <Property Key="NewPIN" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="PlayerMaintenanceModel_PlayerResultSet_NewPIN_Required" />
+    <LengthValidator DoValidate="true" Type="Length" MessageKey="PlayerMaintenanceModel_PlayerResultSet_NewPIN_Length" MinLength="4" MaxLength="4" />
+  </Property>
+  <Property Key="ReEnterNewPin" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="PlayerMaintenanceModel_ReEnterNewPin_Required" />
+    <LengthValidator DoValidate="true" Type="Length" MessageKey="PlayerMaintenanceModel_PlayerResultSet_ReEnterNewPin_Length" MinLength="4" MaxLength="4" />
+  </Property>
+  <Property Key="EnrollPlayerFirstName" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="EnrollPlayerModel_FirstName_Required" />
+  </Property>
+  <Property Key="EnrollPlayerLastName" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="EnrollPlayerModel_LastName_Required" />
+  </Property>
+  <Property Key="EnrollPlayerTitle" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="EnrollPlayerModel_Title_Required" />
+  </Property>
+  <Property Key="EnrollPlayerBirthDate" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="EnrollPlayerModel_BirthDate_Required" />
+    <DateFormat DateFormat="yy-mm-dd" NumberOfMonths="1" ShowButtonPanel="true" MaxDate="0" ChangeMonth="true" ChangeYear="true" ChangeDate="true" DateCssClass="krishna-textbox-datepicker" />
+  </Property>
+  <Property Key="EnrollPlayerAddressInfoLine1" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="EnrollPlayerModel_AddressInfo_Line1_Required" />
+  </Property>
+  <Property Key="EnrollPlayerAddressInfoCountryId" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="EnrollPlayerModel_AddressInfo_CountryId_Required" />
+  </Property>
+  <Property Key="EnrollPlayerAddressInfoStateId" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="EnrollPlayerModel_AddressInfo_StateId_Required" />
+  </Property>
+  <Property Key="EnrollPlayerAddressInfoCity" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="EnrollPlayerModel_AddressInfo_City_Required" />
+  </Property>
+  <Property Key="EnrollPlayerAddressInfoPostalCode" AccessPolicyCode="">
+    <Autocomplete ActionName="process" ControllerName="Player_PostalCode_Get" MinCharRequired="0" MaxResultCount="5" OrderBy="Asc" SearchType="None" ActionURL="Player_PostalCode_Get/process" />
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="EnrollPlayerModel_AddressInfo_PostalCode_Required" />
+    <RangeValidator DoValidate="true" Type="Range" MessageKey="EnrollPlayerModel_AddressInfo_PostalCode_Invalid" MinValue="100" MaxValue="999999999" />
+  </Property>
+  <Property Key="EnrollAlternatePlayerAddressInfoLine1" AccessPolicyCode="" />
+  <Property Key="EnrollAlternatePlayerAddressInfoCountry" AccessPolicyCode="" />
+  <Property Key="EnrollAlternatePlayerAddressInfoState" AccessPolicyCode="" />
+  <Property Key="EnrollAlternatePlayerAddressInfoCity" AccessPolicyCode="" />
+  <Property Key="EnrollAlternatePlayerAddressInfoPostalCodeId" AccessPolicyCode="" />
+  <Property Key="EnrollPlayerPlayerIdenInfoPlayerIdenNum" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="EnrollPlayerModel_PlayerIdentificationInfo_PlayerIdentificationNum_Required" />
+  </Property>
+  <Property Key="EnrollPlayerPlayerIdenInfoExpiryDate" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="EnrollPlayerModel_PlayerIdentificationInfo_ExpiryDate_Required" />
+    <DateFormat DateFormat="yy-mm-dd" NumberOfMonths="1" ShowButtonPanel="true" MinDate="0" ChangeMonth="true" ChangeYear="true" ChangeDate="true" DateCssClass="krishna-textbox-datepicker" />
+  </Property>
+  <Property Key="EnrollPlayerPlayerIdenInfoPlayerId" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="EnrollPlayerModel_PlayerIdentificationInfo_IdentificationId_Required" />
+  </Property>
+  
+  <!--<Property Key="EditPlayerContactNumber" AccessPolicyCode="PHONE_ACCESS_POLICY">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="EditPlayerModel_ContactNumber_Required" />
+    <CustomValidator DoValidate="true" Type="Custom" MessageKey="EditPlayerModel_ContactNumber_Invalid" ValidationType="Phone">
+      <Expression>^\d{10}$</Expression>
+    </CustomValidator>
+    <LengthValidator DoValidate="true" Type="Length" MessageKey="EditPlayerModel_UserName_Length" MinLength="0" MaxLength="10" />
+  </Property>-->
+
+  <Property Key="CheckForDefaultGroupId" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="PlayerGroupDTO_IsDefault" />
+    <CustomValidator DoValidate="true" Type="Custom" MessageKey="PlayerGroupDTO_IsDefault_Required" ValidationType ="Number">
+      <Expression>[^0]</Expression>
+    </CustomValidator>
+  </Property>
+
+  <Property Key="PlayerAddressInfoStateId" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="PlayerAddressViewModel_PlayerAddressDTO_StateId_Required" />
+  </Property>
+  <Property Key="PlayerAddressInfoLine1" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="PlayerAddressViewModel_PlayerAddressDTO_Line1_Required" />
+  </Property>
+  <Property Key="PlayerAddressInfoCountryId" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="PlayerAddressViewModel_PlayerAddressDTO_CountryId_Required" />
+  </Property>
+  <Property Key="PlayerAddressInfoCity" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="PlayerAddressViewModel_PlayerAddressDTO_City_Required" />
+  </Property>
+  <Property Key="PlayerAddressInfoPostalCode" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="PlayerAddressViewModel_PlayerAddressDTO_PostalCode_Required" />
+  </Property>
+
+  <Property Key="PlayerEmail" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="PlayerEmailDTO_PlayerEmailAddress" />
+    <CustomValidator DoValidate="true" Type="Custom" MessageKey="PlayerEmailDTO_PlayerEmailAddress_Invalid" ValidationType ="Email">
+      <Expression>^\s*[\w\-\+_]+(\.[\w\-\+_]+)*\@[\w\-\+_]+\.[\w\-\+_]+(\.[\w\-\+_]+)*\s*$</Expression>
+    </CustomValidator>
+  </Property>
+  <Property Key="playerAlternateEmailAddress" AccessPolicyCode="">
+    <CustomValidator DoValidate="true" Type="Custom" MessageKey="PlayerEmailDTO_AlternateEmailAddress_Invalid" ValidationType ="Email">
+      <Expression>^\s*[\w\-\+_]+(\.[\w\-\+_]+)*\@[\w\-\+_]+\.[\w\-\+_]+(\.[\w\-\+_]+)*\s*$</Expression>
+    </CustomValidator>
+  </Property>
+  <!--Player Club Starts-->
+  <Property Key="MembershipClubMembershipFee" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="MembershipClub_MembershipClub_MembershipFee_Required" />
+    <RangeValidator DoValidate="true" Type="Range" MessageKey="MembershipClub_MembershipClub_MembershipFee_MinMax" MinValue="0" MaxValue="1000000000" />
+  </Property>
+  <Property Key="MembershipClubClubStateExpiryDate" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="MembershipClub_MembershipClub_ClubStateExpiryDate_Required" />
+    <DateFormat DateFormat="yy-mm-dd" NumberOfMonths="1" ShowButtonPanel="true" MinDate="0" ChangeMonth="true" ChangeYear="true" ChangeDate="true" DateCssClass="krishna-textbox-datepicker" />
+  </Property>
+
+  <!--Player Club Ends-->
+
+  <!-- Void Slip
+	<Property Key="VoidModel_SequenceNumber" AccessPolicyCode="">
+		<LengthValidator DoValidate="true" Type="Length" MessageKey="VoidModel_Sequence_Length_Exceeded" MinLength="1" MaxLength="18" />
+		<RegExValidator DoValidate="true" Type="RegExp" MessageKey="VoidModel_SequenceNumber_RegEx_Val">
+			<RegExpression>^[1-9][0-9]*$</RegExpression>
+		</RegExValidator>
+	</Property>
+	<Property Key="VoidModel_AssetNumber" AccessPolicyCode="">
+		<LengthValidator DoValidate="true" Type="Length" MessageKey="VoidModel_AssetNumber_Length_Exceeded" MinLength="1" MaxLength="5" />
+		<RegExValidator DoValidate="true" Type="RegExp" MessageKey="VoidModel_SequenceNumber_RegEx_Val">
+			<RegExpression>^[1-9][0-9]*$</RegExpression>
+		</RegExValidator>
+	</Property>-->
+  <Property Key="VoidModel_SelectedSlipType" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="VoidModel_SelectedSlipType_Required" />
+  </Property>
+  <!--Property Key="VoidModel_SelectedSearchCriteria" AccessPolicyCode="">
+		<RequiredValidator DoValidate="true" Type="Required" MessageKey="VoidModel_SelectedSearchCriteria_Required" />
+	</Property-->
+
+  <Property Key="PlayerReportModelReportDate" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="PlayerReportModel_ReportDate_Required" />
+  </Property>
+  <Property Key="PlayerScanModelCountryId" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="PlayerScan_PlayerCountryID_Required" />
+  </Property>
+  <Property Key="PlayerScanModelStateId" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="PlayerScan_PlayerStateID_Required" />
+  </Property>
+  <Property Key="PlayerScanModelId" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="PlayerScan_ID_Required" />
+  </Property>
+  <Property Key="ProcessEmployeePassword" AccessPolicyCode="PWD_ACCESS_POLICY">
+    <Masking MaskingChar="." MaskingType="Partial" MaskCharLength="10" MaskingPosition="Last" />
+  </Property>
+
+  <Property Key="PlayerContactNumber" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="PlayerContactNumber_Required" />
+    <CustomValidator DoValidate="true" Type="Custom" MessageKey="PlayerContactNumber_Invalid" ValidationType="Phone">
+      <Expression>^[+]\d{2}[\s]{1}\d{2}[\s]?\d{8}$</Expression>
+    </CustomValidator>
+    <LengthValidator DoValidate="true" Type="Length" MessageKey="PlayerContactNumber_Invalid" MinLength="0" MaxLength="15" />
+  </Property>
+  
+  <!--<Property Key="PlayerPhoneModel_Mobile" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="PlayerPhoneDto_MobileNumber_Mobile_Required" />
+   <CustomValidator DoValidate="true" Type="Custom" MessageKey="PlayerPhoneDto_MobileNumber_Mobile_Invalid" ValidationType="Phone">
+      <Expression>^\d{10}$</Expression>
+    </CustomValidator>
+    <LengthValidator DoValidate="true" Type="Length" MessageKey="PlayerPhoneDto_MobileNumber_Mobile_Length" MinLength="0" MaxLength="13" />
+  </Property>
+  <Property Key="PlayerPhoneModel_Home" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="PlayerPhoneDto_HomeNumber_Home_Required" />
+    <CustomValidator DoValidate="true" Type="Custom" MessageKey="PlayerPhoneDto_HomeNumber_Home_Invalid" ValidationType="Phone">
+      <Expression>^\d{10}$</Expression>
+    </CustomValidator>
+    <LengthValidator DoValidate="true" Type="Length" MessageKey="PlayerPhoneDto_HomeNumber_Home_Length" MinLength="0" MaxLength="10" />
+  </Property>-->
+
+  <Property Key="PlayerContactNumber_Alternate" AccessPolicyCode="">
+    <CustomValidator DoValidate="true" Type="Custom" MessageKey="PlayerContactNumber_Invalid" ValidationType="Phone">
+      <Expression>^[+]\d{2}[\s]{1}\d{2}[\s]?\d{8}$</Expression>
+      <!-- Expression to accept both +XX XXXXXXXXXX and +XX XX XXXXXXXX-->
+    </CustomValidator>
+    <LengthValidator DoValidate="true" Type="Length" MessageKey="PlayerContactNumber_Invalid" MinLength="0" MaxLength="15" />
+  </Property>
+
+  <Property Key="Rating_SlotNo" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="RatingResultSet_SlotId_Required" />
+  </Property>
+  <Property Key="Rating_EndDate" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="RatingResultSet_EndDate_Required" />
+  </Property>
+  <Property Key="Rating_EndTime" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="RatingResultSet_EndTime_Required" />
+  </Property>
+  <Property Key="Rating_TotalDurationinMinutes" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="RatingResultSet_TotalDurationinMinutes_Required" />
+    <RangeValidator DoValidate="true" Type="Range" MessageKey="RatingResultSet_TotalDurationinMinutes_Required_MinMax"  MinValue="0" MaxValue="1440" />
+  </Property>
+  <Property Key="Rating_Bet" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="RatingResultSet_Bet_Required" />
+    <RangeValidator DoValidate="true" Type="Range" MessageKey="RatingResultSet_Bet_Required_MinMax" MinValue="1" MaxValue="1000000000" />
+    <!--<LengthValidator DoValidate="true" Type="Length" MessageKey="RatingResultSet_Bet_Len_Required_MinMax" MinLength="0" MaxLength="14" />-->
+  </Property>
+  <Property Key="Rating_PaidOut" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="RatingResultSet_PaidOut_Required" />
+    <RangeValidator DoValidate="true" Type="Range" MessageKey="RatingResultSet_PaidOut_Required_MinMax"  MinValue="0" MaxValue="1000000000" />
+    <!--<LengthValidator DoValidate="true" Type="Length" MessageKey="RatingResultSet_PaidOut_Len_Required_MinMax" MinLength="0" MaxLength="14" />-->
+  </Property>
+  <Property Key="Rating_Jackpot" AccessPolicyCode="">
+    <RangeValidator DoValidate="true" Type="Range" MessageKey="RatingResultSet_Jackpot_Required_MinMax"  MinValue="0" MaxValue="1000000000" />
+    <!--<LengthValidator DoValidate="true" Type="Length" MessageKey="RatingResultSet_Jackpot_Len_Required_MinMax" MinLength="0" MaxLength="14" />-->
+  </Property>
+  <Property Key="Rating_DocumentNumber" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="RatingResultSet_DocumentNumber_Required" />
+  </Property>
+  <Property Key="Rating_Remarks" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="RatingResultSet_Remarks_Required" />
+  </Property>
+
+  <Property Key="VoidManualRatingViewModel_VoidRatingResultSet_VoidDocumentNumber" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="VoidManualRatingViewModel_RatingResultSet_VoidDocumentNumber_Required" />
+  </Property>
+  <Property Key="VoidManualRatingViewModel_VoidRatingResultSet_VoidRemarks" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="VoidManualRatingViewModel_RatingResultSet_VoidRemarks_Required" />
+  </Property>
+
+  <Property Key="OtherRating_DocNo" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="OtherRatingResultSet_DocumentNumber_Required" />
+  </Property>
+  <Property Key="OtherRating_Location" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="OtherRatingResultSet_Location_Required" />
+  </Property>
+  <Property Key="OtherRating_Revenue" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="OtherRatingResultSet_Revenue_Required" />
+  </Property>
+  <Property Key="OtherRating_TranactionTime" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="OtherRatingResultSet_TranactionTime_Required" />
+  </Property>
+  <Property Key="OtherRating_Remarks" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="OtherRatingResultSet_Remarks_Required" />
+  </Property>
+
+  <!--PreCommitment -->
+  <!--<Property Key="EnrollmentModel_ComboPackageCodes" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="EnrollmentModel_ComboPackageCodes" />
+  </Property>-->
+  <!--<Property Key="EnrollmentModel_ActionsList" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="EnrollmentModel_ActionsList" />
+  </Property>-->
+  <Property Key="EnrollmentModel_EnrollmentDTO_Description" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="EnrollmentModel_EnrollmentDTO_Description" />
+  </Property>
+  <Property Key="EnrollmentModel_EnrollmentDTO_Consecutiveday" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="EnrollmentModel_EnrollmentDTO_Consecutiveday" />
+    <LengthValidator DoValidate="true" Type="Length" MessageKey="EnrollmentModel_EnrollmentDTO_Consecutiveday_Exceeded_Length" MinLength="1" MaxLength="2" />
+    <RangeValidator DoValidate="true" Type="Range" MessageKey="EnrollmentModel_EnrollmentDTO_Consecutiveday_Invalid" MinValue="1" MaxValue="30" />
+  </Property>
+
+  <Property Key="PIN_Config" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="PIN_Config" />
+    <LengthValidator DoValidate="true" Type="Length" MessageKey="PreCommitment_PIN_Config_Invalid" MinLength="4" MaxLength="4" />
+  </Property>
+
+  <Property Key="UnEnrollmentModel_UnEnrollmentDTO_Reason" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="UnEnrollmentModel_UnEnrollmentDTO_Reason" />
+  </Property>
+  <!--END PreCommitment-->
+
+  <Property Key="PeriodValuePropertyConfig00" AccessPolicyCode="">
+    <RangeValidator DoValidate="true" Type="Range" MessageKey="createEnrollmentDTO_RuleList_0__Period_0__PeriodValue" MinValue="0" MaxValue="1000000" />
+  </Property>
+
+  <!-- Jackpot search-->
+  <Property Key="JackpotListModelFilterDataSlotNumber" AccessPolicyCode="">
+    <LengthValidator DoValidate="true" Type="Length" MessageKey="JackpotListModelFilterData_SlotNumber_Length_Val" MinLength="1" MaxLength="5" />
+    <RegExValidator DoValidate="true" Type="RegExp" MessageKey="JackpotListModelFilterData_SlotNumber_RegEx_Val">
+      <RegExpression>^[1-9][0-9]*$</RegExpression>
+    </RegExValidator>
+  </Property>
+  <Property Key="JackpotListModelFilterDataLocation" AccessPolicyCode="">
+    <LengthValidator DoValidate="true" Type="Length" MessageKey="JackpotListModelFilterData_Location_Exceeded_Length" MinLength="1" MaxLength="10" />
+    <CustomValidator DoValidate="true" Type="Custom" MessageKey="JackpotListModelFilterData_Location_Is_Invalid" ValidationType="AlphaNumeric" />
+  </Property>
+  <Property Key="JackpotListModelFilterDataSequenceNumber" AccessPolicyCode="">
+    <LengthValidator DoValidate="true" Type="Length" MessageKey="JackpotListModelFilterData_SequenceNumber_Length_Val" MinLength="1" MaxLength="18" />
+    <RegExValidator DoValidate="true" Type="RegExp" MessageKey="JackpotListModelFilterData_SequenceNumber_RegEx_Val">
+      <RegExpression>^[1-9][0-9]*$</RegExpression>
+    </RegExValidator>
+  </Property>
+  <Property Key="JackpotListModelFilterDataLastXMinute" AccessPolicyCode="">
+    <LengthValidator DoValidate="true" Type="Length" MessageKey="JackpotListModelFilterData_LastXMinute_Length_Val" MinLength="1" MaxLength="5" />
+    <RegExValidator DoValidate="true" Type="RegExp" MessageKey="JackpotListModelFilterData_LastXMinute_RegEx_Val">
+      <RegExpression>^[1-9][0-9]*$</RegExpression>
+    </RegExValidator>
+  </Property>
+
+  <Property Key="VoidDocumentNumber" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="PlayerRatingViewModel_RatingResultSet_VoidDocumentNumber_Required" />
+  </Property>
+  <Property Key="VoidRemarks" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="PlayerRatingViewModel_RatingResultSet_VoidRemarks_Required" />
+  </Property>
+
+  <!--TICKETS-->
+  <Property Key="TicketsVoidModel_TicketBarCode" AccessPolicyCode="">
+    <LengthValidator DoValidate="true" Type="Length" MessageKey="TicketsVoidModel_TicketBarCode_Length" MinLength="11" MaxLength="18" />
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="TicketsVoidModel_TicketBarCode_Required" />
+  </Property>
+  <Property Key="RedeemTicketStepsModel_Barcode" AccessPolicyCode="">
+    <LengthValidator DoValidate="true" Type="Length" MessageKey="TicketBarCode_Length" MinLength="11" MaxLength="18" />
+    <!--<RequiredValidator DoValidate="true" Type="Required" MessageKey="TicketBarCode_Required" />-->
+  </Property>
+  <Property Key="RedeemTicketStepsModel_RedeemPlayerCardNumber" AccessPolicyCode="">
+    <LengthValidator DoValidate="true" Type="Length" MessageKey="RedeemTicketStepsModel_PlayerCard_Exceeded_Length" MinLength="1" MaxLength="64" />
+    <CustomValidator DoValidate="true" Type="Custom" MessageKey="RedeemTicketStepsModel_PlayerCard_Is_Invalid" ValidationType="AlphaNumeric">
+      <Expression>^[a-zA-Z0-9]*$</Expression>
+    </CustomValidator>
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="PlayerCard_Required" />
+  </Property>
+  <Property Key="RedeemTicketStepsModel_ChequeDate" AccessPolicyCode="">
+    <DateFormat DateFormat="yy-mm-dd" NumberOfMonths="1" ShowButtonPanel="true" MinDate="0" ChangeMonth="true" ChangeYear="true" ChangeDate="true" DateCssClass="krishna-textbox-datepicker" />
+  </Property>
+  <Property Key="RedeemTicketStepsModel_ChequeNo" AccessPolicyCode="">
+    <LengthValidator DoValidate="true" Type="Length" MessageKey="RedeemTicketStepsModel_PlayerCard_Exceeded_Length" MinLength="0" MaxLength="20" />
+  </Property>
+  <Property Key="StolenStart" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="TicketsStolenModel_StolenStart_Required" />
+    <DateFormat DateFormat="yy-mm-dd" NumberOfMonths="1" ShowButtonPanel="true" MaxDate="0" ChangeMonth="true" ChangeYear="true" ChangeDate="true" DateCssClass="krishna-textbox-datepicker" />
+  </Property>
+  <Property Key="StolenEnd" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="TicketsStolenModel_StolenEnd_Required" />
+    <DateFormat DateFormat="yy-mm-dd" NumberOfMonths="1" ShowButtonPanel="true" MaxDate="0" ChangeMonth="true" ChangeYear="true" ChangeDate="true" DateCssClass="krishna-textbox-datepicker" />
+  </Property>
+  <Property Key="StolenIssueLocation" AccessPolicyCode="">
+    <LengthValidator DoValidate="true" Type="Length" MessageKey="TicketsStolenModel_Location_Exceeded_Length" MinLength="1" MaxLength="10" />
+    <CustomValidator DoValidate="true" Type="Custom" MessageKey="TicketsStolenModel_Location_Is_Invalid" ValidationType="AlphaNumeric">
+      <Expression>^[a-zA-Z0-9]*$</Expression>
+    </CustomValidator>
+  </Property>
+  <Property Key="DamagedStart" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="TicketsDamagedModel_DamagedStart_Required" />
+    <DateFormat DateFormat="yy-mm-dd" NumberOfMonths="1" ShowButtonPanel="true" MaxDate="0" ChangeMonth="true" ChangeYear="true" ChangeDate="true" DateCssClass="krishna-textbox-datepicker" />
+  </Property>
+  <Property Key="DamagedEnd" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="TicketsDamagedModel_DamagedEnd_Required" />
+    <DateFormat DateFormat="yy-mm-dd" NumberOfMonths="1" ShowButtonPanel="true" MaxDate="0" ChangeMonth="true" ChangeYear="true" ChangeDate="true" DateCssClass="krishna-textbox-datepicker" />
+  </Property>
+  <Property Key="DamagedIssueLocation" AccessPolicyCode="">
+    <LengthValidator DoValidate="true" Type="Length" MessageKey="TicketsDamagedModel_Location_Exceeded_Length" MinLength="1" MaxLength="10" />
+    <CustomValidator DoValidate="true" Type="Custom" MessageKey="TicketsDamagedModel_Location_Is_Invalid" ValidationType="AlphaNumeric">
+      <Expression>^[a-zA-Z0-9]*$</Expression>
+    </CustomValidator>
+  </Property>
+  <!--END TICKETS-->
+
+  <Property Key="PlayerCardModel_NumberOfCopies" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="PlayerCard_NumberOfCopies" />
+    <RegExValidator DoValidate="true" Type="RegExp" MessageKey="PlayerCard_NumberOfCopies_Validation">
+      <RegExpression>^([1-9]|[1][0])$</RegExpression>
+    </RegExValidator>
+  </Property>
+  <Property Key="PlayerCardModel_CardFormat" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="PlayerCardModel_CardFormat_Required" />
+  </Property>
+  <Property Key="PlayerCardModel_PlayerCardDto_PlayerCardName" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="PlayerCardModel_PlayerCardDto_PlayerCardName_Required" />
+  </Property>
+  <Property Key="PlayerCardModel_PlayerCardDto_EncoderType" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="PlayerCardModel_PlayerCardDto_EncoderType_Required" />
+  </Property>
+  <Property Key="PlayerCardModel_PlayerCardDto_DataCardConnectionType" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="PlayerCardModel_PlayerCardDto_DataCardConnectionType_Required" />
+  </Property>
+
+  <!--Player Notes and Memos-->
+  <Property Key="PlayerNoteMaintananceDocumentNumber" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="PlayerNoteViewModel_AddPlayerText__DocumentNumber_ToolTip" />
+  </Property>
+  <Property Key="PlayerNoteMaintananceReason" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="PlayerNoteViewModel_AddPlayerText_Ref1_ToolTip_WaterMark" />
+  </Property>
+  <Property Key="PlayerNoteMaintananceRemarks" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="PlayerNoteViewModel_AddPlayerText_Ref2_ToolTip" />
+  </Property>
+  <Property Key="PlayerMemosMaintananceDocumentNumber" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="PlayerMemosViewModel_AddPlayerText_DocumentNumber_ToolTip" />
+  </Property>
+  <Property Key="PlayerMemosMaintananceReason" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="PlayerMemosViewModel_AddPlayerText_Ref1_ToolTip" />
+  </Property>
+  <Property Key="PlayerMemosMaintananceRemarks" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="PlayerMemosViewModel_AddPlayerText_Ref2_Required" />
+  </Property>
+  <Property Key="PlayerMemosMaintananceDept" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="PlayerMemosViewModel_AddPlayerText_DeptId_ToolTip" />
+  </Property>
+  <Property Key="PlayerMemosMaintananceType" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="PlayerMemosViewModel_TextTypeList_ToolTip" />
+  </Property>
+  <Property Key="PlayerMemosMaintananceType_SelectedDepId" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="PlayerMemosMaintananceType_SelectedDepId_ToolTip_Label" />
+  </Property>
+  <Property Key="PlayerMemosMaintananceExpiryDate" AccessPolicyCode="">
+    <DateFormat DateFormat="yy-mm-dd" NumberOfMonths="1" ShowButtonPanel="true" MinDate="0" ChangeMonth="true" ChangeYear="true" ChangeDate="true" DateCssClass="krishna-textbox-datepicker" />
+  </Property>
+  <!--END Player Notes and Memos-->
+  <Property Key="PlayerBan_BancodeId" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="PlayerBan_SelectBanCode" />
+  </Property>
+  <Property Key="PlayerBan_ReasoncodeId" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="PlayerBan_SelectReasonCode" />
+  </Property>
+  <Property Key="ValidateAuthorizerModel_LoginId" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="ValidateAuthorizerModel_LoginId_Msg" />
+  </Property>
+  <Property Key="ValidateAuthorizerModel_Password" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="ValidateAuthorizerModel_Password_Msg" />
+  </Property>
+  <!--Inventory-->
+  <Property Key="Variance_NextGamingDate" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="Variance_NextGamingDate_Msg" />
+  </Property>
+  <Property Key="Variance_RollAmt" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="Variance_RollAmt_Msg" />
+  </Property>
+  <Property Key="PostVarianceDTO_Comments" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="Variance_Comments_Msg" />
+  </Property>
+
+  <Property Key="PostVarianceDTO_Amount" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="Variance_RollAmt_Msg" />
+  </Property>
+
+  <Property Key="BankTransfer_Comments" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="BankTransfer_Comments_Msg" />
+  </Property>
+  <Property Key="Credit_Comments" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="Credit_Comments_Msg" />
+  </Property>
+  <Property Key="FundsInflowExternal_Comments" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="FundsInflowExternal_Comments_Msg" />
+  </Property>
+
+  <Property Key="FillRequest_Comments" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="FillRequest_Comments_Msg" />
+  </Property>
+  <Property Key="MovementDetail_Comments" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="MovementDetail_Comments_Msg" />
+  </Property>
+
+  <!--UpdateInventory-->
+  <Property Key="UpdateInventory_Comments" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="UpdateInventory_Comments_Msg" />
+  </Property>
+  <Property Key="Shift_Required" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="Shift_Required_Msg" />
+    <CustomValidator DoValidate="true" Type="Custom" MessageKey="Shift_Invalid" ValidationType="Number">
+    </CustomValidator>
+  </Property>
+
+  <!--Awards-->
+  <Property Key="AwardType_AccountTypeId" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="AwardType_AccountTypeId_Msg" />
+  </Property>
+  <Property Key="AwardType_TransactionTypeId" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="AwardType_TransactionTypeId_Msg" />
+  </Property>
+
+  <Property Key="AuthorizeTransaction_SelectedPrizeId" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="AuthorizeTransactionDTO_SelectedPrizeId_Msg" />
+  </Property>
+  <Property Key="AuthorizeTransaction_Quantity" AccessPolicyCode="">
+    <RangeValidator DoValidate="true" Type="Range" MessageKey="AuthorizeTransactionDTO_Quantity_Msg" MinValue="1" MaxValue="99999" />
+  </Property>
+  <Property Key="AdjustTransaction_DebitValue" AccessPolicyCode="">
+    <RangeValidator DoValidate="true" Type="Range" MessageKey="AdjustTransaction_DebitValue_Msg" MinValue="0" MaxValue="99999" />
+  </Property>
+  <Property Key="AdjustTransaction_CreditValue" AccessPolicyCode="">
+    <RangeValidator DoValidate="true" Type="Range" MessageKey="AdjustTransaction_CreditValue_Msg" MinValue="0" MaxValue="99999" />
+  </Property>
+
+  <Property Key="VoidDetail_Remark" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="VoidDetail_Remark_Msg" />
+  </Property>
+  <!--Awards-->
+
+  <!--SoftCount-->
+  <Property Key="SoftCountMap_AssetNumber" AccessPolicyCode="UN_ACCESS_POLICY">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="AssetSoftCountModel_SlotNumber_Required" />
+    <RangeValidator DoValidate="true" Type="Range" MessageKey="AssetSoftCountModel_SlotNumber_Exceeded_Range" MinValue="1" MaxValue="99999" />
+    <LengthValidator DoValidate="true" Type="Length" MessageKey="AssetSoftCountModel_SlotNumber_Exceeded_Length" MinLength="1" MaxLength="5" />
+  </Property>
+
+  <Property Key="SoftCountMap_Location" AccessPolicyCode="UN_ACCESS_POLICY">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="AssetSoftCountModel_Location_Required" />
+    <LengthValidator DoValidate="true" Type="Length" MessageKey="AssetSoftCountModel_Location_Exceeded_Length" MinLength="1" MaxLength="10" />
+    <RegExValidator DoValidate="true" Type="RegExp" MessageKey="AssetSoftCountModel_AssetLocation_InValid">
+      <RegExpression>^[a-zA-Z0-9]+$</RegExpression>
+    </RegExValidator>
+  </Property>
+
+
+  <Property Key="SoftCountMap_Barcode" AccessPolicyCode="UN_ACCESS_POLICY">
+    <LengthValidator DoValidate="true" Type="Length" MessageKey="AssetSoftCountModel_TicketBarCode_Length" MinLength="11" MaxLength="18" />
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="AssetSoftCountModel_TicketBarCode_Required" />
+    <RegExValidator DoValidate="true" Type="RegExp" MessageKey="AssetSoftCountModel_TicketBarCode_InValid">
+      <RegExpression>^([0-9]*)$</RegExpression>
+    </RegExValidator>
+  </Property>
+  
+    <Property Key="NoteCounter_Service" AccessPolicyCode="UN_ACCESS_POLICY">
+    <LengthValidator DoValidate="true" Type="Length" MessageKey="NoteCounterModel_NoteCounterService_Length" MinLength="1" MaxLength="20" />
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="NoteCounterModel_NoteCounterService_Required" />
+    <RegExValidator DoValidate="true" Type="RegExp" MessageKey="NoteCounterModel_NoteCounterService_Invalid">
+      <RegExpression>^[a-zA-Z0-9]+$</RegExpression>
+    </RegExValidator>
+  </Property>
+  
+    <Property Key="NoteCounter_ServiceIP" AccessPolicyCode="UN_ACCESS_POLICY">
+    <!--<LengthValidator DoValidate="true" Type="Length" MessageKey="AssetSoftCountModel_TicketBarCode_Length" MinLength="11" MaxLength="18" />-->
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="NoteCounterModel_ServiceIP_Required" />
+    <RegExValidator DoValidate="true" Type="RegExp" MessageKey="NoteCounterModel_ServiceIP_Invalid">
+      <RegExpression>^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])$</RegExpression>
+    </RegExValidator>
+
+  </Property>
+  
+    <Property Key="NoteCounter_ServicePort" AccessPolicyCode="UN_ACCESS_POLICY">
+    <!--<LengthValidator DoValidate="true" Type="Length" MessageKey="AssetSoftCountModel_TicketBarCode_Length" MinLength="11" MaxLength="18" />-->
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="NoteCounterModel_ServicePort_Required" />
+    <RegExValidator DoValidate="true" Type="RegExp" MessageKey="NoteCounterModel_ServicePort_InValid">
+      <RegExpression>^([0-5]?\d?\d?\d?\d|6[0-4]\d\d\d|65[0-4]\d\d|655[0-2]\d|6553[0-5])$</RegExpression>
+    </RegExValidator>
+  </Property>
+  
+     <Property Key="NoteCounterSettings_ServiceIP" AccessPolicyCode="UN_ACCESS_POLICY">
+    <!--<LengthValidator DoValidate="true" Type="Length" MessageKey="AssetSoftCountModel_TicketBarCode_Length" MinLength="11" MaxLength="18" />-->
+    <!--<RequiredValidator DoValidate="true" Type="Required" MessageKey="NoteCounterModel_ServiceIP_Required" />-->
+    <RegExValidator DoValidate="true" Type="RegExp" MessageKey="NoteCounterModel_ServiceIP_Invalid">
+      <RegExpression>^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])$</RegExpression>
+    </RegExValidator>
+
+  </Property>
+  
+    <Property Key="NoteCounterSettings_ServicePort" AccessPolicyCode="UN_ACCESS_POLICY">
+    <!--<LengthValidator DoValidate="true" Type="Length" MessageKey="AssetSoftCountModel_TicketBarCode_Length" MinLength="11" MaxLength="18" />-->
+    <!--<RequiredValidator DoValidate="true" Type="Required" MessageKey="NoteCounterModel_ServicePort_Required" />-->
+    <RegExValidator DoValidate="true" Type="RegExp" MessageKey="NoteCounterModel_ServicePort_InValid">
+      <RegExpression>^([0-5]?\d?\d?\d?\d|6[0-4]\d\d\d|65[0-4]\d\d|655[0-2]\d|6553[0-5])$</RegExpression>
+    </RegExValidator>
+  </Property>
+  <!--SoftCount-->
+
+  <!-- HardCount --><!--
+  <Property Key="HardCount_AssetNumber" AccessPolicyCode="UN_ACCESS_POLICY">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="SlotHardCountModel_AssetNumber_Required" />
+    <RangeValidator DoValidate="true" Type="Range" MessageKey="SlotHardCountModel_AssetNumber_Exceeded_Range" MinValue="1" MaxValue="99999" />
+    <LengthValidator DoValidate="true" Type="Length" MessageKey="SlotHardCountModel_AssetNumber_Exceeded_Length" MinLength="1" MaxLength="5" />
+  </Property>
+  --><!-- HardCount -->
+
+  <Property Key="eFund_Ref1" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="eFund_Ref1_REQD" />
+  </Property>
+
+  <Property Key="eFund_DocumentNumber" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="eFund_DocumentNumber_REQD" />
+  </Property>
+
+  <!--Site Registration Start-->
+  <Property Key="SiteRegistrationSiteNumber" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="SiteRegistrationSiteNumber_Required" />
+    <LengthValidator DoValidate="true" Type="Length" MessageKey="SiteRegistrationSiteNumber_Exceeded_Length" MinLength="1" MaxLength="3" />
+    <RegExValidator DoValidate="true" Type="RegExp" MessageKey="SiteRegistrationSiteNumber_InValid">
+      <RegExpression>^[0-9]*$</RegExpression>
+    </RegExValidator>
+  </Property>
+
+  <Property Key="SiteRegistrationEdcIp" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="SiteRegistrationEdcIp_Required" />
+    <RegExValidator DoValidate="true" Type="RegExp" MessageKey="SiteRegistrationEdcIp_InValid">
+      <RegExpression>^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])$</RegExpression>
+    </RegExValidator>
+  </Property>
+  
+  <Property Key="SiteRegistrationPortNum" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="SiteRegistrationPortNum_Required" />
+    <RegExValidator DoValidate="true" Type="RegExp" MessageKey="SiteRegistrationPortNum_InValid">
+      <RegExpression>^([0-5]?\d?\d?\d?\d|6[0-4]\d\d\d|65[0-4]\d\d|655[0-2]\d|6553[0-5])$</RegExpression>
+    </RegExValidator>
+  </Property>
+
+  <!--Site Registration End-->
+  
+  <Property Key="PlayerReportModelReports" AccessPolicyCode="">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="PlayerReportModel_ReportsName_Required" />
+  </Property>
+
+  <!--HardMeter-->
+  <Property Key="HardMeter_Records" AccessPolicyCode="UN_ACCESS_POLICY">
+    <RequiredValidator DoValidate="true" Type="Required" MessageKey="HardMeterModel_Records_Required" />
+    <RangeValidator DoValidate="true" Type="Range" MessageKey="HardMeterModel_Records_Exceeded_Range" MinValue="1" MaxValue="150" />
+    <LengthValidator DoValidate="true" Type="Length" MessageKey="HardMeterModel_Records_Exceeded_Length" MinLength="1" MaxLength="3" />
+  </Property>
+  
+</ModelProperties>

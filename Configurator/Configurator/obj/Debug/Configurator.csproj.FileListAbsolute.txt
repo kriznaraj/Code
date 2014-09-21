@@ -1,0 +1,126 @@
+C:\starteam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\Configurator.exe.config
+C:\starteam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\HostingConfig\ClientHostConfig.xml
+C:\starteam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\Configurations\CommandBuilderConfig.xml
+C:\starteam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\Configurations\ExceptionHandlePolicy.xml
+C:\starteam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\Configurations\InstrumentationConfiguration.xml
+C:\starteam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\Configurations\LoggerConfiguration.xml
+C:\starteam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\Configurations\TraceConfiguration.xml
+C:\starteam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\Configurations\CommandActionTypeConfig.xml
+C:\starteam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\Configurations\CommandTypeConfig.xml
+C:\starteam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\Configurations\CustomValidationExpressionConfig.xml
+C:\starteam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\Configurations\ErrorResources.xml
+C:\starteam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\Configurations\StringResources.xml
+C:\starteam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\Configurations\UIExceptionHandlePolicy.xml
+C:\starteam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\Configurations\DenomTemplates.xml
+C:\starteam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\Configurations\DataGridDefinitions.xml
+C:\starteam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\Configurations\UILayoutConfig.xml
+C:\starteam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\Configurations\ControlDefaultConfigurations.xml
+C:\starteam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\Configurations\ControlTemplateConfiguration.xml
+C:\starteam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\Configurations\ModelConfigurations.xml
+C:\starteam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\Configurations\PropertyConfigurations.xml
+C:\starteam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\Configurator.exe
+C:\starteam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\Configurator.pdb
+C:\starteam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\BallyTech.UI.Web.ControlLibrary.dll
+C:\starteam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\BallyTech.UI.Web.Data.dll
+C:\starteam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\BallyTech.UI.Web.Framework.dll
+C:\starteam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\System.Data.SQLite.dll
+C:\starteam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\BallyTech.UI.Web.ResourceManager.dll
+C:\starteam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\BallyTech.UI.Web.Framework.Interfaces.dll
+C:\starteam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\System.Web.Http.dll
+C:\starteam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\System.Web.Http.SelfHost.dll
+C:\starteam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\System.Net.Http.Formatting.dll
+C:\starteam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\Newtonsoft.Json.dll
+C:\starteam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\NetSerializer.dll
+C:\starteam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\protobuf-net.dll
+C:\starteam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\BallyTech.UI.Web.ControlLibrary.pdb
+C:\starteam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\BallyTech.UI.Web.Framework.pdb
+C:\starteam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\BallyTech.UI.Web.Data.pdb
+C:\starteam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\System.Data.SQLite.pdb
+C:\starteam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\BallyTech.UI.Web.ResourceManager.pdb
+C:\starteam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\BallyTech.UI.Web.Framework.Interfaces.pdb
+C:\starteam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\obj\Debug\Configurator.csprojResolveAssemblyReference.cache
+C:\starteam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\obj\Debug\Configurator.exe
+C:\starteam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\obj\Debug\Configurator.pdb
+C:\StarTeam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\Configurations\MessagingConfiguration.xml
+C:\StarTeam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\Configurations\EventMessageConfig.xml
+D:\StarTeam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\Configurations\MessagingConfiguration.xml
+D:\StarTeam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\Configurations\EventMessageConfig.xml
+D:\StarTeam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\HostingConfig\ClientHostConfig.xml
+D:\StarTeam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\Configurations\CommandBuilderConfig.xml
+D:\StarTeam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\Configurations\ExceptionHandlePolicy.xml
+D:\StarTeam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\Configurations\InstrumentationConfiguration.xml
+D:\StarTeam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\Configurations\LoggerConfiguration.xml
+D:\StarTeam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\Configurations\TraceConfiguration.xml
+D:\StarTeam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\Configurations\CommandActionTypeConfig.xml
+D:\StarTeam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\Configurations\CommandTypeConfig.xml
+D:\StarTeam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\Configurations\CustomValidationExpressionConfig.xml
+D:\StarTeam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\Configurations\ErrorResources.xml
+D:\StarTeam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\Configurations\StringResources.xml
+D:\StarTeam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\Configurations\UIExceptionHandlePolicy.xml
+D:\StarTeam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\Configurations\DenomTemplates.xml
+D:\StarTeam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\Configurations\DataGridDefinitions.xml
+D:\StarTeam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\Configurations\UILayoutConfig.xml
+D:\StarTeam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\Configurations\ControlDefaultConfigurations.xml
+D:\StarTeam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\Configurations\ControlTemplateConfiguration.xml
+D:\StarTeam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\Configurations\ModelConfigurations.xml
+D:\StarTeam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\Configurations\PropertyConfigurations.xml
+D:\StarTeam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\Configurator.exe.config
+D:\StarTeam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\Configurator.exe
+D:\StarTeam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\Configurator.pdb
+D:\StarTeam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\BallyTech.UI.Web.ControlLibrary.dll
+D:\StarTeam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\BallyTech.UI.Web.Data.dll
+D:\StarTeam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\BallyTech.UI.Web.Framework.dll
+D:\StarTeam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\System.Data.SQLite.dll
+D:\StarTeam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\BallyTech.UI.Web.ResourceManager.dll
+D:\StarTeam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\BallyTech.UI.Web.Framework.Interfaces.dll
+D:\StarTeam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\System.Web.Http.dll
+D:\StarTeam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\System.Web.Http.SelfHost.dll
+D:\StarTeam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\System.Net.Http.Formatting.dll
+D:\StarTeam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\Newtonsoft.Json.dll
+D:\StarTeam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\NetSerializer.dll
+D:\StarTeam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\protobuf-net.dll
+D:\StarTeam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\BallyTech.UI.Web.ControlLibrary.pdb
+D:\StarTeam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\BallyTech.UI.Web.Framework.pdb
+D:\StarTeam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\BallyTech.UI.Web.Data.pdb
+D:\StarTeam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\System.Data.SQLite.pdb
+D:\StarTeam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\BallyTech.UI.Web.ResourceManager.pdb
+D:\StarTeam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\bin\Debug\BallyTech.UI.Web.Framework.Interfaces.pdb
+D:\StarTeam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\obj\Debug\Configurator.csprojResolveAssemblyReference.cache
+D:\StarTeam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\obj\Debug\Configurator.exe
+D:\StarTeam\Projects\Site Controller\Coding\Source\Site Controller\UI.Web.Demo\Configurator\obj\Debug\Configurator.pdb
+D:\KRISHNA\Code\Configurator\Configurator\obj\Debug\Configurator.csprojResolveAssemblyReference.cache
+D:\KRISHNA\Code\Configurator\Configurator\bin\Debug\Configurations\EventMessageConfig.xml
+D:\KRISHNA\Code\Configurator\Configurator\bin\Debug\HostingConfig\ClientHostConfig.xml
+D:\KRISHNA\Code\Configurator\Configurator\bin\Debug\Configurations\CommandActionTypeConfig.xml
+D:\KRISHNA\Code\Configurator\Configurator\bin\Debug\Configurations\CommandTypeConfig.xml
+D:\KRISHNA\Code\Configurator\Configurator\bin\Debug\Configurations\CustomValidationExpressionConfig.xml
+D:\KRISHNA\Code\Configurator\Configurator\bin\Debug\Configurations\ErrorResources.xml
+D:\KRISHNA\Code\Configurator\Configurator\bin\Debug\Configurations\StringResources.xml
+D:\KRISHNA\Code\Configurator\Configurator\bin\Debug\Configurations\UIExceptionHandlePolicy.xml
+D:\KRISHNA\Code\Configurator\Configurator\bin\Debug\Configurations\DenomTemplates.xml
+D:\KRISHNA\Code\Configurator\Configurator\bin\Debug\Configurations\DataGridDefinitions.xml
+D:\KRISHNA\Code\Configurator\Configurator\bin\Debug\Configurations\UILayoutConfig.xml
+D:\KRISHNA\Code\Configurator\Configurator\bin\Debug\Configurations\ControlDefaultConfigurations.xml
+D:\KRISHNA\Code\Configurator\Configurator\bin\Debug\Configurations\ControlTemplateConfiguration.xml
+D:\KRISHNA\Code\Configurator\Configurator\bin\Debug\Configurations\ModelConfigurations.xml
+D:\KRISHNA\Code\Configurator\Configurator\bin\Debug\Configurations\PropertyConfigurations.xml
+D:\KRISHNA\Code\Configurator\Configurator\bin\Debug\Newtonsoft.Json.dll
+D:\KRISHNA\Code\Configurator\Configurator\bin\Debug\NetSerializer.dll
+D:\KRISHNA\Code\Configurator\Configurator\bin\Debug\protobuf-net.dll
+D:\KRISHNA\Code\Configurator\Configurator\bin\Debug\Controls.Configurator.exe.config
+D:\KRISHNA\Code\Configurator\Configurator\bin\Debug\Controls.Configurator.exe
+D:\KRISHNA\Code\Configurator\Configurator\bin\Debug\Controls.Configurator.pdb
+D:\KRISHNA\Code\Configurator\Configurator\bin\Debug\Controls.ControlLibrary.dll
+D:\KRISHNA\Code\Configurator\Configurator\bin\Debug\Controls.ControlLibrary.pdb
+D:\KRISHNA\Code\Configurator\Configurator\obj\Debug\Controls.Configurator.exe
+D:\KRISHNA\Code\Configurator\Configurator\obj\Debug\Controls.Configurator.pdb
+D:\KRISHNA\Code\Configurator\Configurator\bin\Debug\Controls.Framework.dll
+D:\KRISHNA\Code\Configurator\Configurator\bin\Debug\Controls.Framework.pdb
+D:\KRISHNA\Code\Configurator\Configurator\bin\Debug\Controls.Framework.Interfaces.dll
+D:\KRISHNA\Code\Configurator\Configurator\bin\Debug\Controls.Framework.Interfaces.pdb
+D:\KRISHNA\Code\Configurator\Configurator\bin\Debug\Controls.ResourceManager.dll
+D:\KRISHNA\Code\Configurator\Configurator\bin\Debug\Controls.ResourceManager.pdb
+D:\KRISHNA\Code\Configurator\Configurator\bin\Debug\Controls.Data.dll
+D:\KRISHNA\Code\Configurator\Configurator\bin\Debug\Controls.Data.pdb
+D:\KRISHNA\Code\Configurator\Configurator\bin\Debug\Controls.Utilities.dll
+D:\KRISHNA\Code\Configurator\Configurator\bin\Debug\Controls.Utilities.pdb

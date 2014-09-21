@@ -1,0 +1,8 @@
+D:\StarTeam\Projects\Site Controller\Coding\Source\Infrastructure\UIFramework\Framework.Interfaces\bin\Debug\BallyTech.UI.Web.Framework.Interfaces.dll
+D:\StarTeam\Projects\Site Controller\Coding\Source\Infrastructure\UIFramework\Framework.Interfaces\bin\Debug\BallyTech.UI.Web.Framework.Interfaces.pdb
+D:\StarTeam\Projects\Site Controller\Coding\Source\Infrastructure\UIFramework\Framework.Interfaces\obj\Debug\BallyTech.UI.Web.Framework.Interfaces.dll
+D:\StarTeam\Projects\Site Controller\Coding\Source\Infrastructure\UIFramework\Framework.Interfaces\obj\Debug\BallyTech.UI.Web.Framework.Interfaces.pdb
+D:\KRISHNA\Code\Infrastructure\UIFramework\Framework.Interfaces\bin\Debug\Controls.Framework.Interfaces.dll
+D:\KRISHNA\Code\Infrastructure\UIFramework\Framework.Interfaces\bin\Debug\Controls.Framework.Interfaces.pdb
+D:\KRISHNA\Code\Infrastructure\UIFramework\Framework.Interfaces\obj\Debug\Controls.Framework.Interfaces.dll
+D:\KRISHNA\Code\Infrastructure\UIFramework\Framework.Interfaces\obj\Debug\Controls.Framework.Interfaces.pdb

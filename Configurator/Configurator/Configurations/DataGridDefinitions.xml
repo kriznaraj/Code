@@ -1,0 +1,354 @@
+<?xml version="1.0"?>
+<DataGridDefinitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <DataGridDefinition GridName="PlayerGrid">
+    <DataGridColumnDefinition ColumnName="PlayerID" DisplayMember="PlayerID" Width="auto" ColumnDataType="Number" Alignment="right" HeaderName="Player ID" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="PlayerName" DisplayMember="PlayerName" Width="auto" ColumnDataType="Text" Alignment="right" HeaderName="Player Name" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="AccountNumber" DisplayMember="AccountNumber" Width="auto" ColumnDataType="Number" Alignment="right" HeaderName="Account Number" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="PhoneNumber" DisplayMember="PhoneNumber" Width="auto" ColumnDataType="Text" Alignment="right" HeaderName="Phone Number" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="City" DisplayMember="City" Width="auto" ColumnDataType="Text" Alignment="right" HeaderName="City" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="DOB" DisplayMember="DOB" Width="auto" ColumnDataType="Date" Alignment="right" HeaderName="Date of birth" SearchType="Contains" AccessPolicyCode="" />
+  </DataGridDefinition>
+  <DataGridDefinition GridName="PlayersListGrid">
+    <DataGridColumnDefinition ColumnName="PlayerID" DisplayMember="PlayerID" Width="auto" ColumnDataType="Number" Alignment="right" HeaderName="Player ID" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="FirstName" DisplayMember="FirstName" Width="auto" ColumnDataType="Text" Alignment="right" HeaderName="First Name" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="LastName" DisplayMember="LastName" Width="auto" ColumnDataType="Text" Alignment="right" HeaderName="Last Name" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="AccountNumber" DisplayMember="AccountNumber" Width="auto" ColumnDataType="Number" Alignment="right" HeaderName="Account Number" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="PhoneNumber" DisplayMember="PhoneNumber" Width="auto" ColumnDataType="Text" Alignment="right" HeaderName="Phone Number" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="DOB" DisplayMember="DOB" Width="auto" ColumnDataType="Date" Alignment="right" HeaderName="Date of birth" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="SSN" DisplayMember="SSN" Width="auto" ColumnDataType="Text" Alignment="right" HeaderName="SSN" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="AccountNumber" DisplayMember="AccountNumber" Width="auto" ColumnDataType="Number" Alignment="right" HeaderName="Account Number" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="Gender" DisplayMember="Gender" Width="auto" ColumnDataType="Text" Alignment="right" HeaderName="Gender" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="IsActive" DisplayMember="Status" Width="auto" ColumnDataType="Text" Alignment="right" HeaderName="Gender" SearchType="Contains" AccessPolicyCode="" />
+  </DataGridDefinition>
+  <!--<DataGridDefinition GridName="EnrollPlayerGrid">
+    <DataGridColumnDefinition ColumnName="PlayerID" DisplayMember="Id" Width="auto" ColumnDataType="Number" Alignment="right" HeaderName="Player ID" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="FirstName" DisplayMember="FirstName" Width="auto" ColumnDataType="Text" Alignment="right" HeaderName="First Name" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="LastName" DisplayMember="LastName" Width="auto" ColumnDataType="Text" Alignment="right" HeaderName="Last Name" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="AccountNumber" DisplayMember="AccountNumber" Width="auto" ColumnDataType="Number" Alignment="right" HeaderName="Account Number" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="DOB" DisplayMember="DOB" Width="auto" ColumnDataType="Date" Alignment="right" HeaderName="Date of birth" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="PhoneNumber" DisplayMember="PhoneNumber" Width="auto" ColumnDataType="Text" Alignment="right" HeaderName="Phone Number" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="City" DisplayMember="City" Width="auto" ColumnDataType="Text" Alignment="right" HeaderName="City" SearchType="Contains" AccessPolicyCode="" />
+  </DataGridDefinition>-->
+
+  <DataGridDefinition GridName="EnrollPlayerGrid">
+    <DataGridColumnDefinition ColumnName="PlayerID" DisplayMember="Id" Width="auto" ColumnDataType="Number" Alignment="right" HeaderName="Player ID" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="FirstName" DisplayMember="FirstName" Width="auto" ColumnDataType="Text" Alignment="right" HeaderName="First Name" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="LastName" DisplayMember="LastName" Width="auto" ColumnDataType="Text" Alignment="right" HeaderName="Last Name" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="AccountNumber" DisplayMember="AccountNumber" Width="auto" ColumnDataType="Number" Alignment="right" HeaderName="Account Number" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="DOB" DisplayMember="BirthDateAsString" Width="auto" ColumnDataType="Date" Alignment="right" HeaderName="Date of birth" SearchType="Contains" AccessPolicyCode="" />
+    <!--<DataGridColumnDefinition ColumnName="PhoneNumber" DisplayMember="PlayerPhone[0].Number" Width="auto" ColumnDataType="Text" Alignment="right" HeaderName="Phone Number" SearchType="Contains" AccessPolicyCode="" />-->
+  </DataGridDefinition>
+  <DataGridDefinition GridName="PlayersSearchResultGrid">
+    <DataGridColumnDefinition ColumnName="PlayerImage" DisplayMember="Image" Width="150" ColumnDataType="Image" Alignment="Left" HeaderName="Image" IsSortable="false" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="PlayerNoteImagePath" DisplayMember="PlayerNoteImagePath" Width="50" ColumnDataType="Image" Alignment="Left" IsSortable="true" HeaderName="Player Note" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="FirstName" DisplayMember="FirstName" Width="auto" ColumnDataType="Text" Alignment="Left" HeaderName="Name" IsSortable="true" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="MemberShipNumber" DisplayMember="MembershipNumber" Width="auto" ColumnDataType="Text" Alignment="Left" HeaderName="Card  Number" IsSortable="true" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="Points" DisplayMember="PtsBal" Width="auto" ColumnDataType="Number" Alignment="Left" HeaderName="Points" IsSortable="true" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="Date Of Birth" DisplayMember="BirthDateForGrid" Width="auto" ColumnDataType="Text" Alignment="Left" HeaderName="Date of birth" IsSortable="true" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="StateName" DisplayMember="StateName" Width="auto" ColumnDataType="Text" Alignment="Left" HeaderName="State" IsSortable="true" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="PlayerFlags" DisplayMember="PlayerFlags" Width="auto" ColumnDataType="Text" Alignment="Left" HeaderName="Flag" IsSortable="true" SearchType="Contains" AccessPolicyCode="" />
+  </DataGridDefinition>
+
+ <DataGridDefinition GridName="AssetSearchGrid">
+    <DataGridColumnDefinition ColumnName="AssetType" DisplayMember="AssetTypeText" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Asset Type" SearchType="Contains" AccessPolicyCode="" IsSortable="true" />
+    <DataGridColumnDefinition ColumnName="AssetNumber" DisplayMember="AssetNumber" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Asset Number/Terminal ID" SearchType="Contains" AccessPolicyCode="" IsSortable="true" />
+    <DataGridColumnDefinition ColumnName="Location" DisplayMember="Location" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Location" SearchType="Contains" AccessPolicyCode="" IsSortable="false" />
+    <DataGridColumnDefinition ColumnName="SerialNumber" DisplayMember="SerialNumber" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Serial Number" SearchType="Contains" AccessPolicyCode="" IsSortable="false" />
+    <DataGridColumnDefinition ColumnName="Manufacturer" DisplayMember="Manufacturer" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Manufacturer Name" SearchType="Contains" AccessPolicyCode="" IsSortable="true"/>
+    <DataGridColumnDefinition ColumnName="EnrollmentStatus" DisplayMember="EnrollmentText" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Slot/Controller Status" SearchType="Contains" AccessPolicyCode="" IsSortable="false" />
+    <DataGridColumnDefinition ColumnName="RegulatoryID" DisplayMember="RegulatoryId" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Regulatory ID" SearchType="Contains" AccessPolicyCode="" IsSortable="false" />
+    <DataGridColumnDefinition ColumnName="Name" DisplayMember="TerminalNameText" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Terminal Name" SearchType="Contains" AccessPolicyCode="" IsSortable="false" />
+    <DataGridColumnDefinition ColumnName="AssetConnectionStatus" DisplayMember="AssetConnectionText" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Connection Status" SearchType="Contains" AccessPolicyCode="" IsSortable="false" />
+    <!--<DataGridColumnDefinition ColumnName="SyncTime" DisplayMember="SyncTime" Width="auto" ColumnDataType="Date" Alignment="left" HeaderName="Sync Time" SearchType="Contains" AccessPolicyCode="" />-->
+  </DataGridDefinition>
+
+  <DataGridDefinition GridName="ActiveCardGrid">
+    <DataGridColumnDefinition ColumnName="EmployeeName" DisplayMember="EmployeeName" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="User_ActiveCardList_Name_GridLabel" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="CardNumber" DisplayMember="CardNumber" Width="auto" ColumnDataType="Text" Alignment="right" HeaderName="User_ActiveCardList_Card_GridLabel" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="SignOnTime" DisplayMember="SignOnTime" Width="auto" ColumnDataType="Text" Alignment="right" HeaderName="User_ActiveCardList_SignOnTs_GridLabel" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="AutoSignOffTime" DisplayMember="AutoSignOffTime" Width="auto" ColumnDataType="Text" Alignment="right" HeaderName="User_ActiveCardList_AutoSignOffTs_GridLabel" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="JackPotAmount" DisplayMember="JackPotAmount" Width="auto" ColumnDataType="Number" Alignment="right" HeaderName="User_ActiveCardList_Jackpot_GridLabel" SearchType="Contains" AccessPolicyCode="" />
+    <!--<DataGridColumnDefinition ColumnName="PhoneNumber" DisplayMember="PlayerPhone[0].Number" Width="auto" ColumnDataType="Text" Alignment="right" HeaderName="Phone Number" SearchType="Contains" AccessPolicyCode="" />-->
+  </DataGridDefinition>
+
+	<DataGridDefinition GridName="EmployeesListGrid">
+		<DataGridColumnDefinition ColumnName="Login" DisplayMember="LoginName" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="User_EmployeesList_Login_GridLabel" SearchType="Contains" AccessPolicyCode="" />
+		<DataGridColumnDefinition ColumnName="EmployeeName" DisplayMember="Name" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="User_EmployeesList_EmployeeName_GridLabel" SearchType="Contains" AccessPolicyCode="" />
+		<DataGridColumnDefinition ColumnName="IsActive" DisplayMember="IsActive" Width="auto" ColumnDataType="Text" Alignment="right" HeaderName="User_EmployeesList_IsActive_GridLabel" SearchType="Contains" AccessPolicyCode="" />
+		<DataGridColumnDefinition ColumnName="IsAutoSignOffEnabled" DisplayMember="IsAutoSignOffEnabled" Width="auto" ColumnDataType="Text" Alignment="right" HeaderName="User_EmployeesList_IsAutoSignOffEnabled_GridLabel" SearchType="Contains" AccessPolicyCode="" />
+		<DataGridColumnDefinition ColumnName="CardNumber" DisplayMember="CardNumber" Width="auto" ColumnDataType="Text" Alignment="right" HeaderName="User_EmployeesList_CardNumber_GridLabel" SearchType="Contains" AccessPolicyCode="" />
+		<DataGridColumnDefinition ColumnName="IsLocked" DisplayMember="IsLocked" Width="auto" ColumnDataType="Text" Alignment="right" HeaderName="User_EmployeesList_IsLocked_GridLabel" SearchType="Contains" AccessPolicyCode="" />
+	</DataGridDefinition>
+	
+	<DataGridDefinition GridName="EmployeeCardsListGrid">
+		<DataGridColumnDefinition ColumnName="CardNumber" DisplayMember="CardNumber" Width="auto" ColumnDataType="Text" Alignment="right" HeaderName="User_EmployeeCardsList_CardNumber_GridLabel" SearchType="Contains" AccessPolicyCode="" />
+		<DataGridColumnDefinition ColumnName="Status" DisplayMember="Status" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="User_EmployeeCardsList_Status_GridLabel" SearchType="Contains" AccessPolicyCode="" />
+		<DataGridColumnDefinition ColumnName="AssignedTo" DisplayMember="UserName" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="User_EmployeeCardsList_UserName_GridLabel" SearchType="Contains" AccessPolicyCode="" />
+	</DataGridDefinition>
+	
+  <DataGridDefinition GridName="CountRoomSummaryGrid">
+    <DataGridColumnDefinition ColumnName="Description" DisplayMember="Description" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="SoftCount_CountRoom_GridLabel" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="CountingMethod" DisplayMember="CountingMethod" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="SoftCount_EntryType_GridLabel" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="Status" DisplayMember="Status" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="SoftCount_Status_GridLabel" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="StartedAt" DisplayMember="StartedAt" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="SoftCount_StartedDateTime_GridLabel" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="GamingDay" DisplayMember="GamingDay" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="SoftCount_GamingDate_GridLabel" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="StartedBy" DisplayMember="StartedBy" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="SoftCount_Employee_GridLabel" SearchType="Contains" AccessPolicyCode="" />
+  </DataGridDefinition>
+
+  <DataGridDefinition GridName="SoftCountSummaryGrid">
+    <DataGridColumnDefinition ColumnName="Location" DisplayMember="Location" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="SoftCount_Location_GridLabel" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="AssetNumber" DisplayMember="AssetNumber" Width="auto" ColumnDataType="Number" Alignment="right" HeaderName="SoftCount_AssetNumber_GridLabel" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="TotalBills" DisplayMember="TotalBills" Width="auto" ColumnDataType="Number" Alignment="right" HeaderName="SoftCount_TotalBills_GridLabel" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="TotalTickets" DisplayMember="TotalTickets" Width="auto" ColumnDataType="Number" Alignment="right" HeaderName="SoftCount_TotalTickets_GridLabel" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="GrandTotal" DisplayMember="GrandTotal" Width="auto" ColumnDataType="Number" Alignment="right" HeaderName="SoftCount_GrandTotal_GridLabel" SearchType="Contains" AccessPolicyCode="" />
+  </DataGridDefinition>
+
+  <DataGridDefinition GridName="TotalTicketsGrid">
+    <DataGridColumnDefinition ColumnName="TicketType" DisplayMember="TicketType" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="SoftCount_TicketType_GridLabel" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="Count" DisplayMember="Count" Width="auto" ColumnDataType="Number" Alignment="right" HeaderName="SoftCount_Count_GridLabel" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="Amount" DisplayMember="Amount" Width="auto" ColumnDataType="Number" Alignment="right" HeaderName="SoftCount_Amount_GridLabel" SearchType="Contains" AccessPolicyCode="" />
+  </DataGridDefinition>
+
+  <DataGridDefinition GridName="VoucherSummaryListGrid">
+    <DataGridColumnDefinition ColumnName="Location" DisplayMember="Location" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="SoftCount_Location_GridLabel" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="CountedAt" DisplayMember="CountedAt" Width="auto" ColumnDataType="Number" Alignment="right" HeaderName="SoftCount_AssetNumber_GridLabel" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="Barcode" DisplayMember="Barcode" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="SoftCount_Barcode_GridLabel" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="Amount" DisplayMember="Amount" Width="auto" ColumnDataType="Number" Alignment="right" HeaderName="SoftCount_Amount_GridLabel" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="AuditCode" DisplayMember="AuditCode" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="SoftCount_Reason_GridLabel" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="TicketType" DisplayMember="TicketType" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="SoftCount_TicketType_GridLabel" SearchType="Contains" AccessPolicyCode="" />
+  </DataGridDefinition>
+
+  <DataGridDefinition GridName="GetErrorsListGrid">
+    <DataGridColumnDefinition ColumnName="Location" DisplayMember="Location" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="SoftCount_Location_GridLabel" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="ErrorItem" DisplayMember="ErrorItem" Width="auto" ColumnDataType="Number" Alignment="right" HeaderName="SoftCount_AssetNumber_GridLabel" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="Description" DisplayMember="Description" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="SoftCount_Description_GridLabel" SearchType="Contains" AccessPolicyCode="" />
+  </DataGridDefinition>
+
+  <DataGridDefinition GridName="VoucherGrid">
+    <DataGridColumnDefinition ColumnName="Barcode" DisplayMember="Barcode" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="SoftCount_Barcode_GridLabel" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="Amount" DisplayMember="Amount" Width="auto" ColumnDataType="Number" Alignment="right" HeaderName="SoftCount_Amount_GridLabel" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="TicketType" DisplayMember="TicketType" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="SoftCount_TicketType_GridLabel" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="AuditCode" DisplayMember="AuditCode" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="SoftCount_Reason_GridLabel" SearchType="Contains" AccessPolicyCode="" />
+  </DataGridDefinition>
+  <!-- HardCount Grid definition -->
+
+  <DataGridDefinition GridName="HardCountListGrid">
+    <DataGridColumnDefinition ColumnName="Key" DisplayMember="Key" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="HardCount_Scale_GridLabel" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="EntryType" DisplayMember="EntryType" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="HardCount_EntryType_GridLabel" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="Status" DisplayMember="Status" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="HardCount_Status_GridLabel" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="StartedAt" DisplayMember="StartedAt" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="HardCount_StartedDateTime_GridLabel" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="GamingDay" DisplayMember="GamingDay" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="HardCount_GamingDate_GridLabel" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="StartedBy" DisplayMember="StartedBy" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="HardCount_Employee_GridLabel" SearchType="Contains" AccessPolicyCode="" />
+  </DataGridDefinition>
+
+  <DataGridDefinition GridName="HardCountSummaryGrid">
+    <DataGridColumnDefinition ColumnName="Location" DisplayMember="Location" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="HardCount_Location_GridLabel" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="AssetNumber" DisplayMember="AssetNumber" Width="auto" ColumnDataType="Number" Alignment="right" HeaderName="HardCount_Slot_GridLabel" SearchType="Contains" AccessPolicyCode="" />    
+    <DataGridColumnDefinition ColumnName="Denom" DisplayMember="Denom" Width="auto" ColumnDataType="Number" Alignment="right" HeaderName="HardCount_Denom_GridLabel" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="Count" DisplayMember="Count" Width="auto" ColumnDataType="Number" Alignment="right" HeaderName="HardCount_Count_GridLabel" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="Amount" DisplayMember="Amount" Width="auto" ColumnDataType="Number" Alignment="right" HeaderName="HardCount_Amount_GridLabel" SearchType="Contains" AccessPolicyCode="" />
+  </DataGridDefinition>
+
+  <DataGridDefinition GridName="HardCountSummaryDetailsGrid">
+    <DataGridColumnDefinition ColumnName="Location" DisplayMember="Location" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="HardCount_Location_GridLabel" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="AssetNumber" DisplayMember="AssetNumber" Width="auto" ColumnDataType="Number" Alignment="right" HeaderName="HardCount_Slot_GridLabel" SearchType="Contains" AccessPolicyCode="" />    
+    <DataGridColumnDefinition ColumnName="Denom" DisplayMember="Denom" Width="auto" ColumnDataType="Number" Alignment="right" HeaderName="HardCount_Denom_GridLabel" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="Amount" DisplayMember="Amount" Width="auto" ColumnDataType="Number" Alignment="right" HeaderName="HardCount_Amount_GridLabel" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="Reason" DisplayMember="Reason" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="HardCount_Reason_GridLabel" SearchType="Contains" AccessPolicyCode="" />
+  </DataGridDefinition>
+
+  <DataGridDefinition GridName="ErrorsDetailsGrid">
+    <DataGridColumnDefinition ColumnName="AssetNumber" DisplayMember="AssetNumber" Width="auto" ColumnDataType="Text" Alignment="right" HeaderName="HardCount_Slot_GridLabel" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="ErrorDescription" DisplayMember="ErrorDescription" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="HardCount_Description_GridLabel" SearchType="Contains" AccessPolicyCode="" />
+  </DataGridDefinition>
+
+  <!-- HardCount Grid definition -->
+
+  <!--  Inventory-->
+  <DataGridDefinition GridName="PendingRequestSummaryGrid">
+    <DataGridColumnDefinition ColumnName="SourceLocation" DisplayMember="SourceLocation" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Source Location" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="Type" DisplayMember="Type" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Type" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="Amount" DisplayMember="Amount" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Amount" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="Status" DisplayMember="Status" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Status" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="RequestedTime" DisplayMember="RequestedTime" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Requested Time" SearchType="Contains" AccessPolicyCode="" />
+  </DataGridDefinition>
+
+  <DataGridDefinition GridName="TransactionHistoryGrid">
+    <DataGridColumnDefinition ColumnName="TranId" DisplayMember="TranId" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Location" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="Location" DisplayMember="SourceLocation" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Location" SearchType="Contains" AccessPolicyCode="" /><!-- Changed To Location-->
+    <!--<DataGridColumnDefinition ColumnName="Destination" DisplayMember="DestinationLocation" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Destination" SearchType="Contains" AccessPolicyCode="" />-->
+    <DataGridColumnDefinition ColumnName="TransType" DisplayMember="TransType" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Transaction Type" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="RefNo" DisplayMember="RefNo" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Reference No" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="Amount" DisplayMember="Amount" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Amount($)" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="Status" DisplayMember="Status" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Status" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="GamingDate" DisplayMember="GmaingDateAsString" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Gaming Date" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="Shift" DisplayMember="Shift" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Shift" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="Employee" DisplayMember="Employee" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Employee" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="PostedDateTime" DisplayMember="PostedDateTimeAsString" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="PostedDate Time" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="IsVoid" DisplayMember="IsVoid" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="IsVoid" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="LocnId" DisplayMember="LocnId" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="LocnId" SearchType="Contains" AccessPolicyCode="" />
+ 
+  </DataGridDefinition>
+
+  <DataGridDefinition GridName="EndSessionGrid">
+    <DataGridColumnDefinition ColumnName="LocnId" DisplayMember="LocnId" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="LocationId" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="EmployeeID" DisplayMember="LoggedInUserId" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Employee ID" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="EmployeeName" DisplayMember="LoggedInUserName" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Employee Name" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="Location" DisplayMember="LocnName" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Location" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="GamingDate" DisplayMember="CurrentGamingDateAsString" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Gaming Date" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="Shift" DisplayMember="Shift" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Shift" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="LoginDateTime" DisplayMember="LoggedInDateAndTime" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Login Date/Time" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="TerminalID" DisplayMember="LoggedInTreminal" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Terminal ID" SearchType="Contains" AccessPolicyCode="" />
+  </DataGridDefinition>
+  
+  <!--Slips Inquiry-->
+  <DataGridDefinition GridName="SlipsInquiryTableGrid_Def">
+    <DataGridColumnDefinition ColumnName="SequenceNumber" DisplayMember="SequenceNumber" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Sequence Number" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="AssetNumber" DisplayMember="AssetNumber" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Asset Number" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="AssetLocation" DisplayMember="AssetLocation" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Asset Location" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="OriginalAmount" DisplayMember="OriginalAmount" Width="auto" ColumnDataType="Text" Alignment="right" HeaderName="Slip Amount ($)" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="Status" DisplayMember="Status" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Slip Status" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="GamingDayAsString" DisplayMember="GamingDayAsString" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Gaming Day" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="Type" DisplayMember="Type" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Slip Type" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="EventDateAsString" DisplayMember="EventDateAsString" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Event Date" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="ProcessedDateAsString" DisplayMember="ProcessedDateAsString" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Processed Date" SearchType="Contains" AccessPolicyCode="" />
+  
+  </DataGridDefinition>
+  
+  <DataGridDefinition GridName="DisputeInquiryTableGrid_Def">
+    <DataGridColumnDefinition ColumnName="SequenceNumber" DisplayMember="SequenceNumber" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Sequence Number" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="AssetNumber" DisplayMember="AssetNumber" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Asset Number" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="AssetLocation" DisplayMember="AssetLocation" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Asset Location" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="CashAmount" DisplayMember="CashAmount" Width="auto" ColumnDataType="Text" Alignment="right" HeaderName="Slip Amount ($)" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="Status" DisplayMember="Status" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Slip Status" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="GamingDayAsString" DisplayMember="GamingDayAsString" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Gaming Day" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="Type" DisplayMember="Type" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Slip Type" SearchType="Contains" AccessPolicyCode="" />
+  
+  </DataGridDefinition>
+  
+  <DataGridDefinition GridName="FillBleedInquiryTableGrid_Def">
+    <DataGridColumnDefinition ColumnName="SequenceNumber" DisplayMember="SequenceNumber" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Sequence Number" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="AssetNumber" DisplayMember="AssetNumber" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Asset Number" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="AssetLocation" DisplayMember="AssetLocation" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Asset Location" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="CashAmount" DisplayMember="CashAmount" Width="auto" ColumnDataType="Text" Alignment="right" HeaderName="Slip Amount ($)" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="Status" DisplayMember="Status" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Slip Status" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="GamingDayAsString" DisplayMember="GamingDayAsString" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Gaming Day" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="Type" DisplayMember="Type" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Slip Type" SearchType="Contains" AccessPolicyCode="" />
+  
+  </DataGridDefinition>
+
+  <DataGridDefinition GridName="SlipsDetailsDatagrid_Def">
+    <DataGridColumnDefinition ColumnName="DateTimeAsString" DisplayMember="DateTimeAsString" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Date/Time" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="Status" DisplayMember="Status" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Status" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="GamingDay" DisplayMember="GamingDay" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Gaming Day" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="Login" DisplayMember="Login" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Login" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="Reason" DisplayMember="Reason" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Reason" SearchType="Contains" AccessPolicyCode="" />
+  </DataGridDefinition>
+
+  <DataGridDefinition GridName="SlipsDisputeDatagrid_Def">
+    <DataGridColumnDefinition ColumnName="DateTime" DisplayMember="DateTime" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Date/Time" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="SlipStatus" DisplayMember="SlipStatus" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Status" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="GamingDay" DisplayMember="GamingDay" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Gaming Day" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="SlipLogin" DisplayMember="SlipLogin" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Login" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="SlipReson" DisplayMember="SlipReson" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Reason" SearchType="Contains" AccessPolicyCode="" />
+  </DataGridDefinition>
+
+  <!-- ElectronicFund -->
+  <DataGridDefinition GridName="ElectronicFundPendingTransactions">
+    <DataGridColumnDefinition ColumnName="TransactionDateTime" DisplayMember="TransactionDateTime" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="TransactionDateTime" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="SlotNumber" DisplayMember="SlotNumber" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="SlotNumber" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="Stand" DisplayMember="Stand" Width="auto" ColumnDataType="Number" Alignment="left" HeaderName="Stand" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="AmountRequested" DisplayMember="AmountRequested" Width="auto" ColumnDataType="Number" Alignment="left" HeaderName="AmountRequested" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="AccountType" DisplayMember="AccountTypeGroup" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="AccountType" SearchType="Contains" AccessPolicyCode="" />
+  </DataGridDefinition>
+  <!-- End of ElectronicFund -->
+  <DataGridDefinition GridName="CompPrizeDetailGrid_Def">
+    <DataGridColumnDefinition ColumnName="Balance" DisplayMember="Balance" Width="auto" ColumnDataType="Number" Alignment="right" HeaderName="Balance" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="DebitAdjust" DisplayMember="DebitAdjust" Width="auto" ColumnDataType="Number" Alignment="right" HeaderName="Debit Value" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="CreditAdjust" DisplayMember="CreditAdjust" Width="auto" ColumnDataType="Number" Alignment="right" HeaderName="Credit Value" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="Authorized" DisplayMember="Authorized" Width="auto" ColumnDataType="Number" Alignment="right" HeaderName="Authorized" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="Remaining" DisplayMember="Remaining" Width="auto" ColumnDataType="Number" Alignment="right" HeaderName="Remaining" SearchType="Contains" AccessPolicyCode="" />
+  </DataGridDefinition>
+  
+  <DataGridDefinition GridName="PrizeDetailGrid_Def">
+    <DataGridColumnDefinition ColumnName="Begin" DisplayMember="Balance" Width="auto" ColumnDataType="Number" Alignment="right" HeaderName="Balance" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="Base" DisplayMember="Base" Width="auto" ColumnDataType="Number" Alignment="right" HeaderName="Base" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="Bonus" DisplayMember="Bonus" Width="auto" ColumnDataType="Number" Alignment="right" HeaderName="Bonus" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="DebitAdjust" DisplayMember="DebitAdjust" Width="auto" ColumnDataType="Number" Alignment="right" HeaderName="Debit Value" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="CreditAdjust" DisplayMember="CreditAdjust" Width="auto" ColumnDataType="Number" Alignment="right" HeaderName="Credit Value" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="Redeem" DisplayMember="Redeem" Width="auto" ColumnDataType="Number" Alignment="right" HeaderName="Redeem" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="Remaining" DisplayMember="Remaining" Width="auto" ColumnDataType="Number" Alignment="right" HeaderName="Remaining" SearchType="Contains" AccessPolicyCode="" />
+  </DataGridDefinition>
+
+
+  <DataGridDefinition GridName="PlayerAdjustCompGrid_Def">
+    <DataGridColumnDefinition ColumnName="Beginning" DisplayMember="Beginning" Width="auto" ColumnDataType="Text" Alignment="right" HeaderName="Beginning" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="Added" DisplayMember="Added" Width="auto" ColumnDataType="Text" Alignment="right" HeaderName="(+) Added" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="Subtracted" DisplayMember="Subtracted" Width="auto" ColumnDataType="Text" Alignment="right" HeaderName="(-) Subtracted" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="Remaining" DisplayMember="Remaining" Width="auto" ColumnDataType="Text" Alignment="right" HeaderName="(=) Remaining" SearchType="Contains" AccessPolicyCode="" />
+  </DataGridDefinition>
+
+  <DataGridDefinition GridName="PlayerVoidCompGrid_Def">
+    <DataGridColumnDefinition ColumnName="TranId" DisplayMember="TranId" Width="auto" ColumnDataType="Text" Alignment="right" HeaderName="TranId" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="PrizeName" DisplayMember="PrizeName" Width="auto" ColumnDataType="Text" Alignment="right" HeaderName="Prize" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="AuthAward" DisplayMember="AuthAward" Width="auto" ColumnDataType="Text" Alignment="right" HeaderName="Auth.Award ($)" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="TranCode" DisplayMember="TranCode" Width="auto" ColumnDataType="Text" Alignment="right" HeaderName="Tran.Code" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="DocumentNumber" DisplayMember="DocumentNumber" Width="auto" ColumnDataType="Text" Alignment="right" HeaderName="Document No." SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="GamingDateShift" DisplayMember="GamingDateShift" Width="auto" ColumnDataType="Text" Alignment="right" HeaderName="Gaming Dt" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="AuthUser" DisplayMember="AuthUser" Width="auto" ColumnDataType="Text" Alignment="right" HeaderName="Auth.Employee" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="LocationCode" DisplayMember="LocationCode" Width="auto" ColumnDataType="Text" Alignment="right" HeaderName="Location" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="Quantity" DisplayMember="Quantity" Width="auto" ColumnDataType="Number" Alignment="right" HeaderName="Quantity" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="Status" DisplayMember="Status" Width="auto" ColumnDataType="Text" Alignment="right" HeaderName="Status" SearchType="Contains" AccessPolicyCode="" />
+
+
+  </DataGridDefinition>
+<DataGridDefinition GridName="SettleDetail_Def">
+    <DataGridColumnDefinition ColumnName="TranId" DisplayMember="TranId" Width="auto" ColumnDataType="Number" Alignment="right" HeaderName="TranId" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="PrizeName" DisplayMember="PrizeName" Width="auto" ColumnDataType="Text" Alignment="right" HeaderName="Prize Name" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="AuthAward" DisplayMember="AuthAward" Width="auto" ColumnDataType="Number" Alignment="right" HeaderName="Auth Award ($)" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="GamingDateShift" DisplayMember="GamingDateShift" Width="auto" ColumnDataType="Text" Alignment="right" HeaderName="Gaming Dt" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="LocationCode" DisplayMember="LocationCode" Width="auto" ColumnDataType="Text" Alignment="right" HeaderName="Location" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="AuthUser" DisplayMember="AuthUser" Width="auto" ColumnDataType="Text" Alignment="right" HeaderName="Auth User" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="Quantity" DisplayMember="Quantity" Width="auto" ColumnDataType="Number" Alignment="right" HeaderName="Quantity" SearchType="Contains" AccessPolicyCode="" />
+  </DataGridDefinition>
+
+  <!--TICKETS-->
+  
+  <DataGridDefinition GridName="TicketsOfflineGrid">
+    <DataGridColumnDefinition ColumnName="Barcode" DisplayMember="Barcode" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Barcode" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="Amount" DisplayMember="Amount" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Amount" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="AssetNumber" DisplayMember="AssetNumber" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="AssetNumber" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="PrintDateTime" DisplayMember="PrintDateTime" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Printed Date/Time" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="Result" DisplayMember="Result" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Result" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="PlayerId" DisplayMember="PlayerId" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Player ID" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="Reason" DisplayMember="Reason" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Reason" SearchType="Contains" AccessPolicyCode="" />
+  </DataGridDefinition>
+
+  <DataGridDefinition GridName="TicketsStolenGrid">
+    <DataGridColumnDefinition ColumnName="Barcode" DisplayMember="Barcode" Width="auto" ColumnDataType="Text" Alignment="right" HeaderName="Tickets_Barcode_GridLabel" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="Amount" DisplayMember="Amount" Width="auto" ColumnDataType="Text" Alignment="right" HeaderName="Tickets_Amount_GridLabel" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="Status" DisplayMember="Status" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Tickets_Status_GridLabel" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="Location" DisplayMember="CreatedAsset" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Tickets_Location_GridLabel" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="DateTime" DisplayMember="EffectiveDate" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Tickets_DtTime_GridLabel" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="BarcodeType" DisplayMember="BarcodeType" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Tickets_BarcodeType_GridLabel" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="PlayerId" DisplayMember="PlayerCard" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Tickets_PlayerId_GridLabel" SearchType="Contains" AccessPolicyCode="" />
+  </DataGridDefinition>
+
+  <DataGridDefinition GridName="TicketsDamagedGrid">
+    <DataGridColumnDefinition ColumnName="Barcode" DisplayMember="Barcode" Width="auto" ColumnDataType="Text" Alignment="right" HeaderName="Tickets_Barcode_GridLabel" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="Amount" DisplayMember="Amount" Width="auto" ColumnDataType="Text" Alignment="right" HeaderName="Tickets_Amount_GridLabel" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="Status" DisplayMember="Status" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Tickets_Status_GridLabel" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="Location" DisplayMember="CreatedAsset" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Tickets_Location_GridLabel" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="DateTime" DisplayMember="EffectiveDate" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Tickets_DtTime_GridLabel" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="BarcodeType" DisplayMember="BarcodeType" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Tickets_BarcodeType_GridLabel" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="PlayerId" DisplayMember="PlayerCard" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Tickets_PlayerId_GridLabel" SearchType="Contains" AccessPolicyCode="" />
+  </DataGridDefinition>
+  
+   <DataGridDefinition GridName="CoreSync_Def">
+    <DataGridColumnDefinition ColumnName="ProductName" DisplayMember="ProductName" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Products" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="WebServiceURL" DisplayMember="WebServiceURL" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Web Service URL" SearchType="Contains" AccessPolicyCode="" />
+    <DataGridColumnDefinition ColumnName="SyncStatus" DisplayMember="SyncStatus" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Sync Status" SearchType="Contains" AccessPolicyCode="" />
+  </DataGridDefinition>
+  <!--END TICKETS-->
+  
+</DataGridDefinitions>

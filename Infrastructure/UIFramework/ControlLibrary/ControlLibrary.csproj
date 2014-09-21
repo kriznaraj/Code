@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C3912E3D-03E2-4E61-9B58-189464C2B702}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Controls.ControlLibrary</RootNamespace>
+    <AssemblyName>Controls.ControlLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\Controls.ControlLibrary.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>dumil.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Configuration\ConfigurationReader.cs" />
+    <Compile Include="Configuration\ControlPropertyConfigurationCache.cs" />
+    <Compile Include="Configuration\ControlPropertyConfigurator.cs" />
+    <Compile Include="Configuration\ControlTemplateConfiguration.cs" />
+    <Compile Include="Configuration\DenomTemplateColumnDefinition.cs" />
+    <Compile Include="Configuration\DenomTemplates.cs" />
+    <Compile Include="Configuration\CustomValidationExpressionConfiguration.cs" />
+    <Compile Include="Configuration\DataGridDefinitions.cs" />
+    <Compile Include="Configuration\DataColumnDefinition.cs" />
+    <Compile Include="Configuration\ModelConfiguration.cs" />
+    <Compile Include="Configuration\ModelPropertyConfiguration.cs" />
+    <Compile Include="Configuration\PropertyConfiguration.cs" />
+    <Compile Include="ControlExtensions\BallyTenderInfoListExtension.cs" />
+    <Compile Include="ControlExtensions\DenomDataSource.cs" />
+    <Compile Include="ControlExtensions\NameGenerator.cs" />
+    <Compile Include="ControlLibConstants.cs" />
+    <Compile Include="ControlExtensions\TemplateDropDownExtension.cs" />
+    <Compile Include="Enum\ButtonCatagory.cs" />
+    <Compile Include="Enum\AccessType.cs" />
+    <Compile Include="Enum\BindingMode.cs" />
+    <Compile Include="Enum\DenomModeType.cs" />
+    <Compile Include="Enum\CurrencySymbolPositionType.cs" />
+    <Compile Include="Enum\PositionType.cs" />
+    <Compile Include="Enum\DenomColumnDataType.cs" />
+    <Compile Include="Enum\GridFilterType.cs" />
+    <Compile Include="Enum\GridColumnType.cs" />
+    <Compile Include="Enum\ListBoxType.cs" />
+    <Compile Include="Enum\DefaultTemplate.cs" />
+    <Compile Include="ControlExtensions\BallyGridExtension.cs" />
+    <Compile Include="ControlExtensions\BallyTextBlockExtension.cs" />
+    <Compile Include="ControlExtensions\BallyTemplateListBoxExtension.cs" />
+    <Compile Include="ControlExtensions\ItemDataSource.cs" />
+    <Compile Include="Enum\SiteConfigType.cs" />
+    <Compile Include="HtmlEmitter\TenderInfoListHTMLEmitter.cs" />
+    <Compile Include="HtmlEmitter\TemplateDropDownHTMLEmitter.cs" />
+    <Compile Include="HtmlEmitter\GridHTMLEmitter.cs" />
+    <Compile Include="HtmlEmitter\ListBoxHTMLEmitter.cs" />
+    <Compile Include="Interfaces\Configuration\IDenomTemplateColumnDefinition.cs" />
+    <Compile Include="Interfaces\Configuration\IDenomTemplates.cs" />
+    <Compile Include="Interfaces\Configuration\ICustomValidationExpressionConfiguration.cs" />
+    <Compile Include="Interfaces\Configuration\IGridDataColumnDefinitions.cs" />
+    <Compile Include="Interfaces\Configuration\IDataColumnDefinition.cs" />
+    <Compile Include="Interfaces\Configuration\IControlTemplateConfiguration.cs" />
+    <Compile Include="Interfaces\Configuration\IModelConfiguration.cs" />
+    <Compile Include="Interfaces\Configuration\IPropertyConfiguration.cs" />
+    <Compile Include="Interfaces\Configuration\IModelPropertyConfiguration.cs" />
+    <Compile Include="Interfaces\ControlBehaviourParams\IGridDefaultBehaviourPropertyBag.cs" />
+    <Compile Include="Interfaces\Security\IAccessPolicy.cs" />
+    <Compile Include="Interfaces\Security\ISecurity.cs" />
+    <Compile Include="Interfaces\SiteSpecificConfiguration\ISiteConfig.cs" />
+    <Compile Include="PropertyBags\DenomControlPropertyBag.cs" />
+    <Compile Include="PropertyBags\TemplateDropDownPropertyBag.cs" />
+    <Compile Include="PropertyBags\GridPropertyBag.cs" />
+    <Compile Include="ControlBehaviourParams\AutoCompleteBehaviourPropertyBag.cs" />
+    <Compile Include="ControlBehaviourParams\DatePropertyBag.cs" />
+    <Compile Include="ControlBehaviourParams\MaskingBehaviourPropertyBag.cs" />
+    <Compile Include="ControlBehaviourParams\TimePropertBag.cs" />
+    <Compile Include="ControlHelper.cs" />
+    <Compile Include="ControlLibraryConfig.cs" />
+    <Compile Include="Enum\ButtonType.cs" />
+    <Compile Include="Enum\ControlNames.cs" />
+    <Compile Include="Enum\CustomValidationType.cs" />
+    <Compile Include="Enum\DisplayType.cs" />
+    <Compile Include="Enum\DropDownType.cs" />
+    <Compile Include="Enum\InputType.cs" />
+    <Compile Include="Enum\MaskingPosition.cs" />
+    <Compile Include="Enum\MaskingType.cs" />
+    <Compile Include="Enum\NumberFormat.cs" />
+    <Compile Include="Enum\OrderByType.cs" />
+    <Compile Include="Enum\RestrictionType.cs" />
+    <Compile Include="Enum\SearchType.cs" />
+    <Compile Include="Enum\TemplateType.cs" />
+    <Compile Include="Enum\TextBoxType.cs" />
+    <Compile Include="Enum\TextFormat.cs" />
+    <Compile Include="Enum\ValidatorsType.cs" />
+    <Compile Include="Externalizer.cs" />
+    <Compile Include="ControlExtensions\BallyButtonExtension.cs" />
+    <Compile Include="ControlExtensions\BallyDateTimePickerExtension.cs" />
+    <Compile Include="ControlExtensions\BallyDropDownListExtension.cs" />
+    <Compile Include="ControlExtensions\BallyShuttleListExtension.cs" />
+    <Compile Include="ControlExtensions\BallyListBoxExtension.cs" />
+    <Compile Include="HtmlEmitter\ButtonHTMLEmitter.cs" />
+    <Compile Include="ControlExtensions\BallyCheckBoxExtension.cs" />
+    <Compile Include="HtmlEmitter\CheckBoxHTMLEmitter.cs" />
+    <Compile Include="HtmlEmitter\CheckBoxListHTMLEmitter.cs" />
+    <Compile Include="HtmlEmitter\ControlHTMLEmitter.cs" />
+    <Compile Include="ControlExtensions\ExtensionUtility.cs" />
+    <Compile Include="ControlExtensions\BallyLabelExtension.cs" />
+    <Compile Include="HtmlEmitter\DateTimeHTMLEmitter.cs" />
+    <Compile Include="HtmlEmitter\DropDownHTMLEmitter.cs" />
+    <Compile Include="HtmlEmitter\HTMLEmitterUtility.cs" />
+    <Compile Include="HtmlEmitter\LabelHTMLEmitter.cs" />
+    <Compile Include="ControlExtensions\BallyNumericTextBoxExtension.cs" />
+    <Compile Include="HtmlEmitter\NumericTextBoxHTMLEmitter.cs" />
+    <Compile Include="ControlExtensions\BallyPasswordBoxExtension.cs" />
+    <Compile Include="HtmlEmitter\PasswordBoxHTMLEmitter.cs" />
+    <Compile Include="ControlExtensions\BallyRadioButtonExtension.cs" />
+    <Compile Include="HtmlEmitter\RadioButtonHTMLEmitter.cs" />
+    <Compile Include="ControlExtensions\BallyTextAreaExtension.cs" />
+    <Compile Include="HtmlEmitter\RadioButtonListHTMLEmitter.cs" />
+    <Compile Include="HtmlEmitter\ShuttleHTMLEmitter.cs" />
+    <Compile Include="HtmlEmitter\TemplateListHTMLEmitter.cs" />
+    <Compile Include="HtmlEmitter\TextAreaHTMLEmitter.cs" />
+    <Compile Include="ControlExtensions\BallyTextBoxExtension.cs" />
+    <Compile Include="HtmlEmitter\TextBoxHTMLEmitter.cs" />
+    <Compile Include="Interfaces\ControlBehaviourParams\IDatePropertyBag.cs" />
+    <Compile Include="Interfaces\ControlBehaviourParams\ITimePropertyBag.cs" />
+    <Compile Include="PropertyBagFillers\FillerParams.cs" />
+    <Compile Include="Interfaces\Configuration\IConfigurationReader.cs" />
+    <Compile Include="Interfaces\ControlBehaviourParams\IAutoCompleteBehaviourPropertyBag.cs" />
+    <Compile Include="Interfaces\ControlBehaviourParams\IMaskingBehaviourPropertyBag.cs" />
+    <Compile Include="Interfaces\PropertyBags\IControlDefaultPropertyBag.cs" />
+    <Compile Include="Interfaces\Validation\ICustomValidator.cs" />
+    <Compile Include="Interfaces\Validation\ILengthValidator.cs" />
+    <Compile Include="Interfaces\Validation\IRangeValidator.cs" />
+    <Compile Include="Interfaces\Validation\IRegExValidator.cs" />
+    <Compile Include="Interfaces\Validation\IRequiredValidator.cs" />
+    <Compile Include="Interfaces\Validation\ISpecialCharValidator.cs" />
+    <Compile Include="Interfaces\Validation\IValidator.cs" />
+    <Compile Include="PropertyBags\CheckBoxListPropertyBag.cs" />
+    <Compile Include="PropertyBags\DateTimePropertyBag.cs" />
+    <Compile Include="PropertyBags\DropDownPropertyBag.cs" />
+    <Compile Include="PropertyBags\ListPropertyBag.cs" />
+    <Compile Include="PropertyBags\RadioButtonListPropertyBag.cs" />
+    <Compile Include="PropertyBags\ShuttlePropertyBag.cs" />
+    <Compile Include="Security\AccessPolicy.cs" />
+    <Compile Include="Security\Security.cs" />
+    <Compile Include="SiteSpecificConfiguration\SiteConfig.cs" />
+    <Compile Include="Validation\CustomValidators.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PropertyBags\ButtonPropertyBag.cs" />
+    <Compile Include="PropertyBags\CheckBoxPropertyBag.cs" />
+    <Compile Include="PropertyBags\ControlDefaultPropertyBag.cs" />
+    <Compile Include="PropertyBags\ControlPropertyBag.cs" />
+    <Compile Include="PropertyBags\ControlPropertyBagExtension.cs" />
+    <Compile Include="PropertyBagFillers\ControlBehaviorFiller.cs" />
+    <Compile Include="PropertyBagFillers\ControlDefaultsFiller.cs" />
+    <Compile Include="PropertyBagFillers\ControlLocalizationFiller.cs" />
+    <Compile Include="PropertyBagFillers\ControlOverriddenBehaviorFiller.cs" />
+    <Compile Include="PropertyBagFillers\ControlPropertyFiller.cs" />
+    <Compile Include="PropertyBagFillers\ControlPropertyFillerFactory.cs" />
+    <Compile Include="PropertyBagFillers\ControlSecurityFiller.cs" />
+    <Compile Include="PropertyBagFillers\ControlValidationFiller.cs" />
+    <Compile Include="PropertyBags\LabelPropertyBag.cs" />
+    <Compile Include="PropertyBags\NumericTextBoxPropertyBag.cs" />
+    <Compile Include="PropertyBags\PasswordBoxPropertyBag.cs" />
+    <Compile Include="PropertyBags\RadioButtonPropertyBag.cs" />
+    <Compile Include="PropertyBags\StylePropertyBag.cs" />
+    <Compile Include="PropertyBags\TextAreaPropertyBag.cs" />
+    <Compile Include="PropertyBags\TextBoxPropertyBag.cs" />
+    <Compile Include="Validation\LengthValidator.cs" />
+    <Compile Include="Validation\RangeValidator.cs" />
+    <Compile Include="Validation\RegExValidator.cs" />
+    <Compile Include="Validation\RequiredValidator.cs" />
+    <Compile Include="Validation\SpecialCharValidator.cs" />
+    <Compile Include="Validation\ValidationBase.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="dumil.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Utilities\Utilities.csproj">
+      <Project>{983802f9-ac26-4a1d-8d50-2a54c3e0fe8c}</Project>
+      <Name>Utilities %28Utilities\Utilities%29</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Framework.Interfaces\Framework.Interfaces.csproj">
+      <Project>{3039db3e-9585-4a62-8475-839cb5fa0997}</Project>
+      <Name>Framework.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ResourceManager\ResourceManager.csproj">
+      <Project>{3c42d58d-3e57-4582-af2d-9b1f4bcadbae}</Project>
+      <Name>ResourceManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UI.Data\UI.Data.csproj">
+      <Project>{b44e28b0-2a03-4268-858d-adb34e93bb90}</Project>
+      <Name>UI.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

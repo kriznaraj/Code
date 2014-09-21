@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Configuration>
+    <Module Name="Common">
+      <MVC.Controllers>
+
+      </MVC.Controllers>
+
+      <!--<Commands>
+        <command name="GetLocation" type="BallyTech.Application.Module.Player.GetLocation"/>
+        <command name="GetRoles" type="BallyTech.Application.Module.Player.GetRoles"/>
+      </Commands>-->
+    </Module>
+
+    <Module Name="Players">
+      <MVC.Controllers>
+        <MVC.Controller name="Login" allowanonymous="true">
+          <Commands>
+            <Command Name="GetRole" TranCode="">
+              <Result type="JSON" view="" div=""/>
+            </Command>
+            <Command type="HomeImplementation1">
+              <Result type="view" view="Login" div=""/>
+            </Command>
+          </Commands>
+        </MVC.Controller>
+
+        <MVC.Controller name="PlayerManage" allowanonymous="true">
+          <Commands>
+            <Command name="UpdatePlayer" TranCode="">
+              <Result type="view" view="Login" div=""/>
+            </Command>
+            <Command name="CreatePlayer">
+              <Result type="view" view="Login" div=""/>
+            </Command>
+            <Command name="GetRoles">
+              <Result type="view" view="Login" div=""/>
+            </Command>
+          </Commands>
+        </MVC.Controller>
+      </MVC.Controllers>
+      <Commands>
+        <Command name="UpdatePlayer" type="BallyTech.Application.Module.Player.UpdatePlayer"/>
+        <Command name="CreatePlayer" type="BallyTech.Application.Module.Player.SavePlayer"/>
+      </Commands>
+    </Module>
+  </Configuration>

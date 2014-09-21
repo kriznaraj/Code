@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TraceConfiguration DirectoryPerTrace="true">
+  <!-- SourceLevel | Filter: All = -1,  Critical = 1,  Error = 3,  Warning = 7,  Information = 15,  Verbose = 31,  ActivityTracing = 65280 -->
+  <!-- TraceOutputOptions: None = 0, LogicalOperationStack= 1,  DateTime = 2, Timestamp = 4, ProcessId = 8, ThreadId =16, Callstack = 32 -->
+  <!-- TraceNamePosition Prefix = 1, Postfix = 2, None = 3-->
+
+  <!-- Trace ID: Unique identifier for each trace
+             Name: Trace name
+             SourceLevel: Specifies the levels of trace messages filtered by the source switch and event type filter.-->
+  <!-- Handler
+             Type: Type of the trace handler
+             TraceOptions: Specifies trace data options to be written to the trace output
+             Filter: Specifies the levels of trace messages filtered by the trace listener-->
+  <!-- FileName
+             Format: Log file format
+             MaxSize: Maximum size for each trace file in KB
+             TraceNamePosition: Specify trace name position in trace file name ex: postfix or prefix -->
+  <Trace ID="1" Name="Trace1" SourceLevel="-1">
+    <Handler Type="Controls.Debugging.FileTraceHandler" TraceOptions="63" Filter="65311">
+      <FileName Format="[dd]_[MM]_[yyyy]_[HH]" MaxSize="100" TraceNamePosition="2"></FileName>
+    </Handler>
+  </Trace>
+  <Trace ID="2" Name="Trace2" SourceLevel="-1">
+    <Handler Type="Controls.Debugging.XmlTraceHandler" TraceOptions="63" Filter="65311">
+      <FileName Format="[dd]_[MM]_[yyyy]_[HH]" MaxSize="100" TraceNamePosition="2"></FileName>
+    </Handler>
+    <Handler Type="Controls.Debugging.DelimtedListTraceHandler" TraceOptions="63" Filter="31">
+      <FileName Format="[dd]_[MM]_[yyyy]_[HH]" MaxSize="100" TraceNamePosition="3"></FileName>
+    </Handler>
+  </Trace>
+  <Trace ID="3" Name="Trace3" SourceLevel="-1">
+    <Handler Type="Controls.Debugging.EventLogTraceHandler" TraceOptions="63" Filter="65311">
+      <FileName Format="[dd]_[MM]_[yyyy]_[HH]" MaxSize="100" TraceNamePosition="3"></FileName>
+    </Handler>
+  </Trace>
+</TraceConfiguration>

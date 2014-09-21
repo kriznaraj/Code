@@ -1,0 +1,38 @@
+D:\StarTeam\Projects\Site Controller\Coding\Source\Infrastructure\UIFramework\Framework.Extensions\bin\Debug\BallyTech.UI.Web.Framework.Extensions.dll
+D:\StarTeam\Projects\Site Controller\Coding\Source\Infrastructure\UIFramework\Framework.Extensions\bin\Debug\BallyTech.UI.Web.Framework.Extensions.pdb
+D:\StarTeam\Projects\Site Controller\Coding\Source\Infrastructure\UIFramework\Framework.Extensions\bin\Debug\BallyTech.UI.Web.Data.dll
+D:\StarTeam\Projects\Site Controller\Coding\Source\Infrastructure\UIFramework\Framework.Extensions\bin\Debug\BallyTech.UI.Web.Framework.dll
+D:\StarTeam\Projects\Site Controller\Coding\Source\Infrastructure\UIFramework\Framework.Extensions\bin\Debug\BallyTech.UI.Web.Framework.Interfaces.dll
+D:\StarTeam\Projects\Site Controller\Coding\Source\Infrastructure\UIFramework\Framework.Extensions\bin\Debug\BallyTech.UI.Web.ResourceManager.dll
+D:\StarTeam\Projects\Site Controller\Coding\Source\Infrastructure\UIFramework\Framework.Extensions\bin\Debug\BallyTech.UI.Web.ControlLibrary.dll
+D:\StarTeam\Projects\Site Controller\Coding\Source\Infrastructure\UIFramework\Framework.Extensions\bin\Debug\Newtonsoft.Json.dll
+D:\StarTeam\Projects\Site Controller\Coding\Source\Infrastructure\UIFramework\Framework.Extensions\bin\Debug\NetSerializer.dll
+D:\StarTeam\Projects\Site Controller\Coding\Source\Infrastructure\UIFramework\Framework.Extensions\bin\Debug\protobuf-net.dll
+D:\StarTeam\Projects\Site Controller\Coding\Source\Infrastructure\UIFramework\Framework.Extensions\bin\Debug\BallyTech.UI.Web.Framework.Interfaces.pdb
+D:\StarTeam\Projects\Site Controller\Coding\Source\Infrastructure\UIFramework\Framework.Extensions\bin\Debug\BallyTech.UI.Web.Framework.pdb
+D:\StarTeam\Projects\Site Controller\Coding\Source\Infrastructure\UIFramework\Framework.Extensions\bin\Debug\BallyTech.UI.Web.Data.pdb
+D:\StarTeam\Projects\Site Controller\Coding\Source\Infrastructure\UIFramework\Framework.Extensions\bin\Debug\BallyTech.UI.Web.ResourceManager.pdb
+D:\StarTeam\Projects\Site Controller\Coding\Source\Infrastructure\UIFramework\Framework.Extensions\bin\Debug\BallyTech.UI.Web.ControlLibrary.pdb
+D:\StarTeam\Projects\Site Controller\Coding\Source\Infrastructure\UIFramework\Framework.Extensions\obj\Debug\Framework.Extensions.csprojResolveAssemblyReference.cache
+D:\StarTeam\Projects\Site Controller\Coding\Source\Infrastructure\UIFramework\Framework.Extensions\obj\Debug\BallyTech.UI.Web.Framework.Extensions.dll
+D:\StarTeam\Projects\Site Controller\Coding\Source\Infrastructure\UIFramework\Framework.Extensions\obj\Debug\BallyTech.UI.Web.Framework.Extensions.pdb
+D:\KRISHNA\Code\Infrastructure\UIFramework\Framework.Extensions\obj\Debug\Framework.Extensions.csprojResolveAssemblyReference.cache
+D:\KRISHNA\Code\Infrastructure\UIFramework\Framework.Extensions\bin\Debug\Newtonsoft.Json.dll
+D:\KRISHNA\Code\Infrastructure\UIFramework\Framework.Extensions\bin\Debug\NetSerializer.dll
+D:\KRISHNA\Code\Infrastructure\UIFramework\Framework.Extensions\bin\Debug\protobuf-net.dll
+D:\KRISHNA\Code\Infrastructure\UIFramework\Framework.Extensions\bin\Debug\Controls.ControlLibrary.dll
+D:\KRISHNA\Code\Infrastructure\UIFramework\Framework.Extensions\bin\Debug\Controls.ControlLibrary.pdb
+D:\KRISHNA\Code\Infrastructure\UIFramework\Framework.Extensions\bin\Debug\Controls.Framework.dll
+D:\KRISHNA\Code\Infrastructure\UIFramework\Framework.Extensions\bin\Debug\Controls.Framework.pdb
+D:\KRISHNA\Code\Infrastructure\UIFramework\Framework.Extensions\bin\Debug\Controls.Framework.Extensions.dll
+D:\KRISHNA\Code\Infrastructure\UIFramework\Framework.Extensions\bin\Debug\Controls.Framework.Extensions.pdb
+D:\KRISHNA\Code\Infrastructure\UIFramework\Framework.Extensions\obj\Debug\Controls.Framework.Extensions.dll
+D:\KRISHNA\Code\Infrastructure\UIFramework\Framework.Extensions\obj\Debug\Controls.Framework.Extensions.pdb
+D:\KRISHNA\Code\Infrastructure\UIFramework\Framework.Extensions\bin\Debug\Controls.Framework.Interfaces.dll
+D:\KRISHNA\Code\Infrastructure\UIFramework\Framework.Extensions\bin\Debug\Controls.Framework.Interfaces.pdb
+D:\KRISHNA\Code\Infrastructure\UIFramework\Framework.Extensions\bin\Debug\Controls.ResourceManager.dll
+D:\KRISHNA\Code\Infrastructure\UIFramework\Framework.Extensions\bin\Debug\Controls.ResourceManager.pdb
+D:\KRISHNA\Code\Infrastructure\UIFramework\Framework.Extensions\bin\Debug\Controls.Data.dll
+D:\KRISHNA\Code\Infrastructure\UIFramework\Framework.Extensions\bin\Debug\Controls.Data.pdb
+D:\KRISHNA\Code\Infrastructure\UIFramework\Framework.Extensions\bin\Debug\Controls.Utilities.dll
+D:\KRISHNA\Code\Infrastructure\UIFramework\Framework.Extensions\bin\Debug\Controls.Utilities.pdb

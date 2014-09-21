@@ -1,0 +1,1387 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CommandTypeConfig>
+  <CommandConfig
+        key="Common.Login"
+        uri="BallyTech.UI.Web.Command.Common.LoginCommand,BallyTech.UI.Web.Command.Common" />
+  <CommandConfig
+        key="Common.Logon"
+        uri="BallyTech.UI.Web.Command.Common.LogonCommand,BallyTech.UI.Web.Command.Common" />
+  <CommandConfig
+        key="Common.SignoffCommand"
+        uri="BallyTech.UI.Web.Command.Common.SignoffCommand,BallyTech.UI.Web.Command.Common" />
+  <CommandConfig
+        key="Common.GetRoleCommand"
+        uri="BallyTech.UI.Web.Command.Common.GetRoleCommand,BallyTech.UI.Web.Command.Common" />
+  <CommandConfig
+        key="Common.DashboardCommand"
+        uri="BallyTech.UI.Web.Command.Common.DashboardCommand,BallyTech.UI.Web.Command.Common" />
+  <CommandConfig
+        key="Framework.DashboardMenuListCommand"
+        uri="BallyTech.UI.Web.Command.Framework.DashboardMenuListCommand,BallyTech.UI.Web.Command.Framework" />
+  <CommandConfig
+        key="Common.LoggerCommand"
+        uri="BallyTech.UI.Web.Command.Common.LoggerCommand,BallyTech.UI.Web.Command.Common" />
+  <CommandConfig
+        key="Player.GetPostalCodeCommand"
+        uri="BallyTech.UI.Web.Command.Player.GetPostalCodeCommand,  BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.GetClubCommand"
+        uri="BallyTech.UI.Web.Command.Player.GetClubCommand,BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.SaveClubCommand"
+        uri="BallyTech.UI.Web.Command.Player.SaveClubCommand,BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+      key = "Player.SuspendMembershipCommand"
+      uri = "BallyTech.UI.Web.Command.Player.SuspendMembershipCommand,BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.VoidMembershipClubCommand"
+        uri="BallyTech.UI.Web.Command.Player.VoidMembershipClubCommand,BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.GetClubConfigurationsCommand"
+        uri="BallyTech.UI.Web.Command.Player.GetClubConfigurationsCommand,BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.GetPlayerReportCommand"
+        uri="BallyTech.UI.Web.Command.Player.GetPlayerReportCommand,BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.PlayerReportCommand"
+        uri="BallyTech.UI.Web.Command.Player.PlayerReportCommand,BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.IsMembershipNumberSearch"
+        uri="BallyTech.UI.Web.Command.Player.IsMembershipNumberSearch,  BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Exception.HandledExceptionCommand"
+        uri="Controls.Framework.HandledExceptionCommand,  Controls.Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c03530e9d763a944" />
+  <CommandConfig
+        key="Exception.UnhandledExceptionCommand"
+        uri="Controls.Framework.UnhandledExceptionCommand,  Controls.Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c03530e9d763a944" />
+  <CommandConfig
+        key="Player.EnrollmentPrerequisiteCommand"
+        uri="BallyTech.UI.Web.Command.Player.EnrollmentPrerequisiteCommand,  BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.SaveEnrollPlayerCommand"
+        uri="BallyTech.UI.Web.Command.Player.SaveEnrollPlayerCommand,  BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.GetTerritorialStateCommand"
+        uri="BallyTech.UI.Web.Command.Player.GetTerritorialStateCommand,  BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.GetCityCommand"
+        uri="BallyTech.UI.Web.Command.Player.GetCityCommand,  BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.SearchPlayerCommand"
+        uri="BallyTech.UI.Web.Command.Player.SearchPlayerCommand,BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.EmptySearchPlayerCommand"
+        uri="BallyTech.UI.Web.Command.Player.EmptySearchPlayerCommand,BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.SearchRecentEnrollmentsCommand"
+        uri="BallyTech.UI.Web.Command.Player.SearchRecentEnrollmentsCommand,BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.SearchAccountNumberCommand"
+        uri="BallyTech.UI.Web.Command.Player.SearchAccountNumberCommand,  BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.PlayerDetailsByMembershipNumberCommand"
+        uri="BallyTech.UI.Web.Command.Player.PlayerDetailsByMembershipNumberCommand,BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Assets.AssetsSearchCommand"
+        uri="BallyTech.UI.Web.Command.Assets.AssetsSearchCommand,  BallyTech.UI.Web.Command.Assets" />
+  <CommandConfig
+        key="Assets.TriggerAssetMatrixSynchCommand"
+        uri="BallyTech.UI.Web.Command.Assets.TriggerAssetMatrixSynchCommand,  BallyTech.UI.Web.Command.Assets" />
+  <CommandConfig
+        key="Assets.AssetsEnrollCommand"
+        uri="BallyTech.UI.Web.Command.Assets.AssetsEnrolledResultsCommand,  BallyTech.UI.Web.Command.Assets" />
+  <CommandConfig
+        key="Assets.AssetIndividualEnrollCommand"
+        uri="BallyTech.UI.Web.Command.Assets.AssetIndividualEnrolledResultsCommand,  BallyTech.UI.Web.Command.Assets" />
+  <CommandConfig
+        key="Assets.AssetIndividualUnEnrollCommand"
+        uri="BallyTech.UI.Web.Command.Assets.AssetIndividualUnEnrollResultsCommand,  BallyTech.UI.Web.Command.Assets" />
+  <CommandConfig
+        key="Assets.AssetsUnEnrollCommand"
+        uri="BallyTech.UI.Web.Command.Assets.AssetsUnEnrolledResultsCommand,  BallyTech.UI.Web.Command.Assets" />
+  <CommandConfig
+        key="Assets.AssetsSearchResultsCommand"
+        uri="BallyTech.UI.Web.Command.Assets.AssetsSearchResultsCommand,  BallyTech.UI.Web.Command.Assets" />
+  <CommandConfig
+        key="Assets.AssetsSearchResultsDataCommand"
+        uri="BallyTech.UI.Web.Command.Assets.AssetsSearchResultsDataCommand,  BallyTech.UI.Web.Command.Assets" />
+  <CommandConfig
+        key="Assets.AssetsSearchResultsCancelCommand"
+        uri="BallyTech.UI.Web.Command.Assets.AssetsSearchResultsCancelCommand,  BallyTech.UI.Web.Command.Assets" />
+  <CommandConfig
+        key="Assets.AssetsSortResultsCommand"
+        uri="BallyTech.UI.Web.Command.Assets.AssetsSortResultsCommand,  BallyTech.UI.Web.Command.Assets" />
+  <CommandConfig
+        key="Assets.AssetsViewCommand"
+        uri="BallyTech.UI.Web.Command.Assets.AssetsViewCommand,  BallyTech.UI.Web.Command.Assets" />
+  
+  <CommandConfig  key = "Assets.InsiteConrollerIndividualStart"
+        uri = "BallyTech.UI.Web.Command.Assets.InsiteConrollerIndividualStart,  BallyTech.UI.Web.Command.Assets" />
+  
+  <CommandConfig  key = "Assets.InsiteControllerIndividualStop"
+      uri = "BallyTech.UI.Web.Command.Assets.InsiteControllerIndividualStop,  BallyTech.UI.Web.Command.Assets" />
+  
+  <CommandConfig  key = "Assets.SuspiciousSlotsViewCommand"
+        uri = "BallyTech.UI.Web.Command.Assets.SuspiciousSlotsViewCommand,  BallyTech.UI.Web.Command.Assets" />
+
+  <CommandConfig  key = "Assets.SuspiciousSlotsActivateCommand"
+        uri = "BallyTech.UI.Web.Command.Assets.SuspiciousSlotsActivateCommand,  BallyTech.UI.Web.Command.Assets" />
+
+  <CommandConfig  key = "Assets.InsiteControllerStartCommand"
+      uri = "BallyTech.UI.Web.Command.Assets.InsiteControllerStartCommand,  BallyTech.UI.Web.Command.Assets" />
+
+  <CommandConfig  key = "Assets.InsiteControllerStopCommand"
+      uri = "BallyTech.UI.Web.Command.Assets.InsiteControllerStopCommand,  BallyTech.UI.Web.Command.Assets" />
+
+  <CommandConfig
+        key="Player.GetPlayerDetails"
+        uri="BallyTech.UI.Web.Command.Player.GetPlayerDetails,  BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.PlayerScanCommand"
+        uri="BallyTech.UI.Web.Command.Player.PlayerScanCommand,BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.SavePlayerDetails"
+        uri="BallyTech.UI.Web.Command.Player.SavePlayerDetails,  BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.GetPlayerEmailDetails"
+        uri="BallyTech.UI.Web.Command.Player.GetPlayerEmailDetails,  BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.SavePlayerEmailDetails"
+        uri="BallyTech.UI.Web.Command.Player.SavePlayerEmailDetails,  BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.ActivatePlayer"
+        uri="BallyTech.UI.Web.Command.Player.ActivatePlayer,  BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.UploadBalanceCommand"
+        uri="BallyTech.UI.Web.Command.Player.UploadBalanceCommand,  BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.GetPlayerIdentification"
+        uri="BallyTech.UI.Web.Command.Player.GetPlayerIdentification,  BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.SavePlayerIdentification"
+        uri="BallyTech.UI.Web.Command.Player.SavePlayerIdentification,  BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.GetPlayerEseries"
+        uri="BallyTech.UI.Web.Command.Player.GetPlayerEseries,  BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.GetElectronicFundProfiles"
+        uri="BallyTech.UI.Web.Command.Player.GetElectronicFundProfiles,  BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.SavePlayerESeries"
+        uri="BallyTech.UI.Web.Command.Player.SavePlayerESeries,  BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.GetPlayerContact"
+        uri="BallyTech.UI.Web.Command.Player.GetPlayerContact,  BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.SavePlayerContact"
+        uri="BallyTech.UI.Web.Command.Player.SavePlayerContact,  BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.GetPlayerBeverageCommand"
+        uri="BallyTech.UI.Web.Command.Player.GetPlayerBeverageCommand,BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.SavePlayerBeverageCommand"
+        uri="BallyTech.UI.Web.Command.Player.SavePlayerBeverageCommand,BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.GetPlayerBalanceCommand"
+        uri="BallyTech.UI.Web.Command.Player.GetPlayerBalanceCommand,BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.GetPlayerGroupCommand"
+        uri="BallyTech.UI.Web.Command.Player.GetPlayerGroupCommand,BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.SavePlayerGroupCommand"
+        uri="BallyTech.UI.Web.Command.Player.SavePlayerGroupCommand,  BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.GetPlayerTypeCommand"
+        uri="BallyTech.UI.Web.Command.Player.GetPlayerTypeCommand,BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.SavePlayerTypeCommand"
+        uri="BallyTech.UI.Web.Command.Player.SavePlayerTypeCommand,BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.GetAddressCommand"
+        uri="BallyTech.UI.Web.Command.Player.GetAddressCommand,  BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.SavePlayerAddress"
+        uri="BallyTech.UI.Web.Command.Player.SavePlayerAddress,  BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.ChangePinCommand"
+        uri="BallyTech.UI.Web.Command.Player.ChangePinCommand,  BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.ChangePinLoadCommand"
+        uri="BallyTech.UI.Web.Command.Player.ChangePinLoadCommand,  BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.GetPlayerFlagCommand"
+        uri="BallyTech.UI.Web.Command.Player.GetPlayerFlagCommand,BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.SavePlayerFlagCommand"
+        uri="BallyTech.UI.Web.Command.Player.SavePlayerFlagCommand,BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.GetPlayerGenderCommand"
+        uri="BallyTech.UI.Web.Command.Player.GetPlayerGenderCommand,BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.SavePlayerGenderDetails"
+        uri="BallyTech.UI.Web.Command.Player.SavePlayerGenderDetails,BallyTech.UI.Web.Command.Players" />
+  <!-- Player Tags -->
+  <CommandConfig
+        key="Player.AddPlayerTagCommand"
+        uri="BallyTech.UI.Web.Command.Player.AddPlayerTagCommand,  BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.RemovePlayerTagCommand"
+        uri="BallyTech.UI.Web.Command.Player.RemovePlayerTagCommand,  BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.EditPlayerTagCommand"
+        uri="BallyTech.UI.Web.Command.Player.EditPlayerTagCommand,  BallyTech.UI.Web.Command.Players" />
+  <!-- End of Player Tags -->
+  <!-- Electronic Fund -->
+  <CommandConfig
+        key="Player.ClearPendingElectronicFundCommand"
+        uri="BallyTech.UI.Web.Command.Player.ElectronicFund.ClearPendingElectronicFundCommand,  BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.GetElectronicFundPendingsCommand"
+        uri="BallyTech.UI.Web.Command.Player.ElectronicFund.GetElectronicFundPendingsCommand,  BallyTech.UI.Web.Command.Players" />
+  <!-- End of Electronic Fund -->
+  <CommandConfig
+        key="Player.CopyPlayerNotesMemosCommand"
+        uri="BallyTech.UI.Web.Command.Player.CopyPlayerNotesMemosCommand, BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.CreatePlayerNotesMemosCommand"
+        uri="BallyTech.UI.Web.Command.Player.CreatePlayerNotesMemosCommand, BallyTech.UI.Web.Command.Players" />
+
+  <CommandConfig
+        key="Player.EditPlayerTextCommand"
+        uri="BallyTech.UI.Web.Command.Player.EditPlayerTextCommand, BallyTech.UI.Web.Command.Players" />
+  
+  <CommandConfig
+        key="Player.GetPlayerMemosCommand"
+        uri="BallyTech.UI.Web.Command.Player.GetPlayerMemosCommand, BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.GetPlayerNotesCommand"
+        uri="BallyTech.UI.Web.Command.Player.GetPlayerNotesCommand, BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.SavePlayerNotesMemosCommand"
+        uri="BallyTech.UI.Web.Command.Player.SavePlayerNotesMemosCommand, BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.VoidPlayerMemosCommand"
+        uri="BallyTech.UI.Web.Command.Player.VoidPlayerMemosCommand, BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.VoidPlayerNotesCommand"
+        uri="BallyTech.UI.Web.Command.Player.VoidPlayerNotesCommand, BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.SettlePlayerMemosCommand"
+        uri="BallyTech.UI.Web.Command.Player.SettlePlayerMemosCommand, BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.SettlePlayerNotesCommand"
+        uri="BallyTech.UI.Web.Command.Player.SettlePlayerNotesCommand, BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.GetPlayerSmokingInfoCommand"
+        uri="BallyTech.UI.Web.Command.Player.GetPlayerSmokingInfoCommand,BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.SavePlayerSmokingInfoCommand"
+        uri="BallyTech.UI.Web.Command.Player.SavePlayerSmokingInfoCommand,BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.SavePlayerCardCommand"
+        uri="BallyTech.UI.Web.Command.Player.SavePlayerCardCommand, BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.PlayerCardCommand"
+        uri="BallyTech.UI.Web.Command.Player.PlayerCardCommand, BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="PreCommitment.LoadUnEnrollmentCommand"
+        uri="BallyTech.UI.Web.Command.PreCommitment.LoadUnEnrollmentCommand,BallyTech.UI.Web.Command.PreCommitment" />
+  <CommandConfig
+        key="PreCommitment.SaveUnEnrollmentCommand"
+        uri="BallyTech.UI.Web.Command.PreCommitment.SaveUnEnrollmentCommand,BallyTech.UI.Web.Command.PreCommitment" />
+  <CommandConfig
+        key="PreCommitment.LoadEnrollmentCommand"
+        uri="BallyTech.UI.Web.Command.PreCommitment.LoadEnrollmentCommand,BallyTech.UI.Web.Command.PreCommitment" />
+  <CommandConfig
+        key="PreCommitment.EnrollmentOptionChangeCommand"
+        uri="BallyTech.UI.Web.Command.PreCommitment.EnrollmentOptionChangeCommand,BallyTech.UI.Web.Command.PreCommitment" />
+  <CommandConfig
+        key="PreCommitment.SaveEnrollmentCommand"
+        uri="BallyTech.UI.Web.Command.PreCommitment.SaveEnrollmentCommand,BallyTech.UI.Web.Command.PreCommitment" />
+  <CommandConfig
+        key="Player.VoidManualRatingCommand"
+        uri="BallyTech.UI.Web.Command.Player.VoidManualRatingCommand, BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.VoidManualRatingLoadCommand"
+        uri="BallyTech.UI.Web.Command.Player.VoidManualRatingLoadCommand, BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.VoidManualRatingSaveCommand"
+        uri="BallyTech.UI.Web.Command.Player.VoidManualRatingSaveCommand, BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.VoidManualRatingSaveResponse"
+        uri="BallyTech.UI.Web.Command.Player.VoidManualRatingSaveResponse, BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.VoidManualRatingSaveNoResponse"
+        uri="BallyTech.UI.Web.Command.Player.VoidManualRatingSaveNoResponse, BallyTech.UI.Web.Command.Players" />
+  
+  <!-- DIRECTED MESSAGES-->
+  
+  <CommandConfig  key = "DirectedMessages.PromotionalMessagesLoadCommand"
+          uri = "BallyTech.UI.Web.Command.DirectedMessages.PromotionalMessagesLoadCommand, BallyTech.UI.Web.Command.DirectedMessages" />
+
+  <CommandConfig  key = "DirectedMessages.FlashMessagesLoadCommand"
+        uri = "BallyTech.UI.Web.Command.DirectedMessages.FlashMessagesLoadCommand, BallyTech.UI.Web.Command.DirectedMessages" />
+  
+  <CommandConfig  key = "DirectedMessages.FlashMessagesSendCommand"
+  uri = "BallyTech.UI.Web.Command.DirectedMessages.FlashMessagesSendCommand, BallyTech.UI.Web.Command.DirectedMessages" />
+
+  <CommandConfig  key = "DirectedMessages.PromotionalMessagesSendCommand"
+  uri = "BallyTech.UI.Web.Command.DirectedMessages.PromotionalMessagesSendCommand, BallyTech.UI.Web.Command.DirectedMessages" />
+
+  <CommandConfig  key = "DirectedMessages.UploadedSlotNumberValidateCommand"
+uri = "BallyTech.UI.Web.Command.DirectedMessages.UploadedSlotNumberValidateCommand, BallyTech.UI.Web.Command.DirectedMessages" />
+  
+  <CommandConfig  key = "DirectedMessages.SlotListLoadCommand"
+uri = "BallyTech.UI.Web.Command.DirectedMessages.SlotListLoadCommand, BallyTech.UI.Web.Command.DirectedMessages" />
+
+  
+  <CommandConfig  key = "DirectedMessages.GetAllSlotsCommand"
+uri = "BallyTech.UI.Web.Command.DirectedMessages.GetAllSlotsCommand, BallyTech.UI.Web.Command.DirectedMessages" />
+  
+  <!--END OF DIRECTED MESSAGES-->
+  
+  <!--TICKETS-->
+  <CommandConfig
+        key="Tickets.TicketsPrintCommand"
+        uri="BallyTech.UI.Web.Command.Tickets.TicketsPrintCommand, BallyTech.UI.Web.Command.Tickets" />
+  <CommandConfig
+        key="Tickets.PrintTicketCommand"
+        uri="BallyTech.UI.Web.Command.Tickets.PrintTicketCommand,  BallyTech.UI.Web.Command.Tickets" />
+  <CommandConfig
+        key="Tickets.TicketsVoidCommand"
+        uri="BallyTech.UI.Web.Command.Tickets.TicketsVoidCommand, BallyTech.UI.Web.Command.Tickets" />
+  <CommandConfig
+        key="Tickets.VoidTicketCommand"
+        uri="BallyTech.UI.Web.Command.Tickets.VoidTicketCommand,  BallyTech.UI.Web.Command.Tickets" />
+  <CommandConfig
+        key="Tickets.VoidSearchTicketCommand"
+        uri="BallyTech.UI.Web.Command.Tickets.VoidSearchTicketCommand,  BallyTech.UI.Web.Command.Tickets" />
+  <!--<CommandConfig  
+        key = "Tickets.RedeemTicketCommand"
+        uri = "BallyTech.UI.Web.Command.Tickets.RedeemTicketCommand, BallyTech.UI.Web.Command.Tickets" />-->
+  <CommandConfig  
+        key = "Tickets.RedeemTicketCommand"
+        uri="BallyTech.UI.Web.Command.Tickets.RedeemTicketStepsCommand, BallyTech.UI.Web.Command.Tickets" />
+  <CommandConfig
+        key="Tickets.SearchTicketCommand"
+        uri="BallyTech.UI.Web.Command.Tickets.SearchTicketCommand, BallyTech.UI.Web.Command.Tickets" />
+  <CommandConfig
+        key="Tickets.ProcessRedeemCommand"
+        uri="BallyTech.UI.Web.Command.Tickets.ProcessRedeemCommand, BallyTech.UI.Web.Command.Tickets" />
+  <CommandConfig
+        key="Tickets.ProcessOverrrideRedeemCommand"
+        uri="BallyTech.UI.Web.Command.Tickets.ProcessOverrrideRedeemCommand, BallyTech.UI.Web.Command.Tickets" />
+  <CommandConfig
+        key="Tickets.AuthorizePrintTicketCommand"
+        uri="BallyTech.UI.Web.Command.Tickets.AuthorizePrintTicketCommand, BallyTech.UI.Web.Command.Tickets" />
+  <CommandConfig
+        key="Tickets.GetTicketPayoutBehaviourCommand"
+        uri="BallyTech.UI.Web.Command.Tickets.GetTicketPayoutBehaviourCommand, BallyTech.UI.Web.Command.Tickets" />
+  <!--<CommandConfig  
+        key = "Tickets.OfflineTicketRedeemCommand"
+        uri="BallyTech.UI.Web.Command.Tickets.OfflineTicketRedeemCommand, BallyTech.UI.Web.Command.Tickets" />
+  <CommandConfig
+        key="Tickets.OfflineTicketRedeemResultsCommand"
+        uri="BallyTech.UI.Web.Command.Tickets.OfflineTicketRedeemResultsCommand, BallyTech.UI.Web.Command.Tickets" />-->
+  <CommandConfig
+        key="Tickets.ProcessOfflineTicketRedeemCommand"
+        uri="BallyTech.UI.Web.Command.Tickets.ProcessOfflineTicketRedeemCommand, BallyTech.UI.Web.Command.Tickets" />
+  <!--<CommandConfig  
+        key = "Tickets.DeleteOfflineTicketRedeemCommand"
+        uri = "BallyTech.UI.Web.Command.Tickets.DeleteOfflineTicketRedeemCommand, BallyTech.UI.Web.Command.Tickets" />-->
+  <CommandConfig  
+        key = "Tickets.StolenTicketCommand"
+        uri="BallyTech.UI.Web.Command.Tickets.StolenTicketCommand, BallyTech.UI.Web.Command.Tickets" />
+  <CommandConfig
+        key="Tickets.StolenTicketSlidingCommand"
+        uri="BallyTech.UI.Web.Command.Tickets.StolenTicketSlidingCommand, BallyTech.UI.Web.Command.Tickets" />
+  <CommandConfig
+        key="Tickets.StolenTicketGridCommand"
+        uri="BallyTech.UI.Web.Command.Tickets.StolenTicketGridCommand, BallyTech.UI.Web.Command.Tickets" />
+  <CommandConfig
+        key="Tickets.StolenTicketGridDataCommand"
+        uri="BallyTech.UI.Web.Command.Tickets.StolenTicketGridDataCommand, BallyTech.UI.Web.Command.Tickets" />
+  <CommandConfig
+        key="Tickets.TicketsStolenCommand"
+        uri="BallyTech.UI.Web.Command.Tickets.TicketsStolenCommand, BallyTech.UI.Web.Command.Tickets" />
+  <CommandConfig
+        key="Tickets.TicketsDamagedCommand"
+        uri="BallyTech.UI.Web.Command.Tickets.TicketsDamagedCommand, BallyTech.UI.Web.Command.Tickets" />
+  <CommandConfig
+        key="Tickets.DamagedTicketSlidingCommand"
+        uri="BallyTech.UI.Web.Command.Tickets.DamagedTicketSlidingCommand, BallyTech.UI.Web.Command.Tickets" />
+  <CommandConfig
+        key="Tickets.DamagedTicketGridCommand"
+        uri="BallyTech.UI.Web.Command.Tickets.DamagedTicketGridCommand, BallyTech.UI.Web.Command.Tickets" />
+  <CommandConfig
+        key="Tickets.DamagedTicketGridDataCommand"
+        uri="BallyTech.UI.Web.Command.Tickets.DamagedTicketGridDataCommand, BallyTech.UI.Web.Command.Tickets" />
+  <CommandConfig  
+        key = "Tickets.GetMultiRedeemPayoutCommand"
+        uri = "BallyTech.UI.Web.Command.Tickets.GetMultiRedeemPayoutCommand, BallyTech.UI.Web.Command.Tickets" />
+  <CommandConfig  
+        key = "Tickets.OfflineRedeemCommand"
+        uri = "BallyTech.UI.Web.Command.Tickets.OfflineRedeemCommand, BallyTech.UI.Web.Command.Tickets" />
+  <CommandConfig  
+        key = "Tickets.ValidateOfflineTicketCommand"
+        uri = "BallyTech.UI.Web.Command.Tickets.ValidateOfflineTicketCommand, BallyTech.UI.Web.Command.Tickets" />
+  <!-- END TICKETS-->
+  
+  <CommandConfig
+        key="UserManagement.AdvancedEmployeeSearchCommand"
+        uri="BallyTech.UI.Web.Command.UserManagement.AdvancedEmployeeSearchCommand,  BallyTech.UI.Web.Command.UserManagement" />
+  <CommandConfig
+        key="UserManagement.AdvancedEmployeeSearchResultCommand"
+        uri="BallyTech.UI.Web.Command.UserManagement.AdvancedEmployeeSearchResultCommand,  BallyTech.UI.Web.Command.UserManagement" />
+  <CommandConfig
+        key="UserManagement.ManageUsersListCommand"
+        uri="BallyTech.UI.Web.Command.UserManagement.ManageUsersListCommand,  BallyTech.UI.Web.Command.UserManagement" />
+  <CommandConfig
+        key="UserManagement.ManageUsersListCommandLoad"
+        uri="BallyTech.UI.Web.Command.UserManagement.ManageUsersListCommandLoad,  BallyTech.UI.Web.Command.UserManagement" />
+  <CommandConfig
+        key="UserManagement.UserDetailsCommand"
+        uri="BallyTech.UI.Web.Command.UserManagement.UserDetailsCommand,  BallyTech.UI.Web.Command.UserManagement" />
+  <CommandConfig
+        key="UserManagement.ActivateCommand"
+        uri="BallyTech.UI.Web.Command.UserManagement.ActivateCommand,  BallyTech.UI.Web.Command.UserManagement" />
+  <CommandConfig
+        key="UserManagement.UnLockCommand"
+        uri="BallyTech.UI.Web.Command.UserManagement.UnLockCommand,  BallyTech.UI.Web.Command.UserManagement" />
+  <CommandConfig
+        key="UserManagement.EnableAutoSignOffCommand"
+        uri="BallyTech.UI.Web.Command.UserManagement.EnableAutoSignOffCommand,  BallyTech.UI.Web.Command.UserManagement" />
+  <CommandConfig
+        key="UserManagement.DeActivateCommand"
+        uri="BallyTech.UI.Web.Command.UserManagement.DeActivateCommand,  BallyTech.UI.Web.Command.UserManagement" />
+  <CommandConfig
+        key="UserManagement.DisableAutoSignOffCommand"
+        uri="BallyTech.UI.Web.Command.UserManagement.DisableAutoSignOffCommand,  BallyTech.UI.Web.Command.UserManagement" />
+  <CommandConfig
+        key="UserManagement.ResetpasswordLoadCommand"
+        uri="BallyTech.UI.Web.Command.UserManagement.ResetpasswordLoadCommand,  BallyTech.UI.Web.Command.UserManagement" />
+  <CommandConfig
+        key="UserManagement.ResetPasswordCommand"
+        uri="BallyTech.UI.Web.Command.UserManagement.ResetPasswordCommand,  BallyTech.UI.Web.Command.UserManagement" />
+  <CommandConfig
+        key="Common.ChangePasswordPopup"
+        uri="BallyTech.UI.Web.Command.Common.ChangePasswordPopupCommand,  BallyTech.UI.Web.Command.Common" />
+  <CommandConfig
+        key="Common.AuthenticateCommand"
+        uri="BallyTech.UI.Web.Command.Common.AuthenticateCommand,BallyTech.UI.Web.Command.Common" />
+  <CommandConfig
+        key="Common.GetLocationsCommand"
+        uri="BallyTech.UI.Web.Command.Common.GetLocationCommand,BallyTech.UI.Web.Command.Common" />
+  <CommandConfig
+        key="Common.GetLoginSiteListCommand"
+        uri="BallyTech.UI.Web.Command.Common.GetLoginSiteListCommand,BallyTech.UI.Web.Command.Common" />
+  <CommandConfig
+        key="Player.GetPlayerRatingCommand"
+        uri="BallyTech.UI.Web.Command.Player.GetPlayerRatingCommand,BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.SavePlayerRatingCommand"
+        uri="BallyTech.UI.Web.Command.Player.SavePlayerRatingCommand,BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.GetPlayerOtherRatingCommand"
+        uri="BallyTech.UI.Web.Command.Player.GetPlayerOtherRatingCommand,BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.SavePlayerOtherRatingCommand"
+        uri="BallyTech.UI.Web.Command.Player.SavePlayerOtherRatingCommand,BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Common.ClearUISessionCommand"
+        uri="BallyTech.UI.Web.Command.Common.ClearUISessionCommand,  BallyTech.UI.Web.Command.Common" />
+  <!--Employee Card-->
+  <CommandConfig
+        key="UserManagement.ManageCardsLoadCommand"
+        uri="BallyTech.UI.Web.Command.UserManagement.ManageCardsLoadCommand,  BallyTech.UI.Web.Command.UserManagement" />
+  <CommandConfig
+        key="UserManagement.ManageCardsListLoadCommand"
+        uri="BallyTech.UI.Web.Command.UserManagement.ManageCardsListLoadCommand,  BallyTech.UI.Web.Command.UserManagement" />
+  <CommandConfig
+        key="UserManagement.AddCardCommand"
+        uri="BallyTech.UI.Web.Command.UserManagement.AddCardCommand,  BallyTech.UI.Web.Command.UserManagement" />
+  <CommandConfig
+        key="UserManagement.AddCardSaveCommand"
+        uri="BallyTech.UI.Web.Command.UserManagement.AddCardSaveCommand,  BallyTech.UI.Web.Command.UserManagement" />
+  <CommandConfig
+        key="UserManagement.AddMultipleCardsCommand"
+        uri="BallyTech.UI.Web.Command.UserManagement.AddMultipleCardsCommand,  BallyTech.UI.Web.Command.UserManagement" />
+  <CommandConfig
+        key="UserManagement.AssignCardCommand"
+        uri="BallyTech.UI.Web.Command.UserManagement.AssignCardCommand,  BallyTech.UI.Web.Command.UserManagement" />
+  <CommandConfig
+        key="UserManagement.AssignCardSliderCommand"
+        uri="BallyTech.UI.Web.Command.UserManagement.AssignCardSliderCommand,  BallyTech.UI.Web.Command.UserManagement" />
+  <CommandConfig
+        key="UserManagement.DeleteCardCommand"
+        uri="BallyTech.UI.Web.Command.UserManagement.DeleteCardCommand,  BallyTech.UI.Web.Command.UserManagement" />
+  <CommandConfig
+        key="UserManagement.EmployeeCardSignOnLoginCommand"
+        uri="BallyTech.UI.Web.Command.UserManagement.EmployeeCardSignOnLoginCommand,  BallyTech.UI.Web.Command.UserManagement" />
+  <CommandConfig
+        key="UserManagement.EmployeeCardSignOnAuthenticateCommand"
+        uri="BallyTech.UI.Web.Command.UserManagement.EmployeeCardSignOnAuthenticateCommand,  BallyTech.UI.Web.Command.UserManagement" />
+  <CommandConfig
+        key="UserManagement.EmployeeCardSignOnCommand"
+        uri="BallyTech.UI.Web.Command.UserManagement.EmployeeCardSignOnCommand,  BallyTech.UI.Web.Command.UserManagement" />
+  <CommandConfig
+        key="UserManagement.AdminCardSignOnLoginCommand"
+        uri="BallyTech.UI.Web.Command.UserManagement.AdminCardSignOnLoginCommand,  BallyTech.UI.Web.Command.UserManagement" />
+  <CommandConfig
+        key="UserManagement.AdminCardSignOnEmployeeDetailsCommand"
+        uri="BallyTech.UI.Web.Command.UserManagement.AdminCardSignOnEmployeeDetailsCommand,  BallyTech.UI.Web.Command.UserManagement" />
+  <CommandConfig
+        key="UserManagement.AdminCardSignOnCommand"
+        uri="BallyTech.UI.Web.Command.UserManagement.AdminCardSignOnCommand,  BallyTech.UI.Web.Command.UserManagement" />
+  <CommandConfig
+        key="UserManagement.AdminCardSignOnIsAuthenticationRequiredCommand"
+        uri="BallyTech.UI.Web.Command.UserManagement.AdminCardSignOnIsAuthenticationRequiredCommand,  BallyTech.UI.Web.Command.UserManagement" />
+  <CommandConfig
+        key="UserManagement.AdminCardSignOnAuthenticateCommand"
+        uri="BallyTech.UI.Web.Command.UserManagement.AdminCardSignOnAuthenticateCommand,  BallyTech.UI.Web.Command.UserManagement" />
+  <CommandConfig
+        key="UserManagement.ActiveCardsListLoginCommand"
+        uri="BallyTech.UI.Web.Command.UserManagement.ActiveCardsListLoginCommand,  BallyTech.UI.Web.Command.UserManagement" />
+  <CommandConfig
+        key="UserManagement.ActiveCardsListAuthenticateCommand"
+        uri="BallyTech.UI.Web.Command.UserManagement.ActiveCardsListAuthenticateCommand,  BallyTech.UI.Web.Command.UserManagement" />
+  <CommandConfig
+        key="UserManagement.ActiveCardsListCommand"
+        uri="BallyTech.UI.Web.Command.UserManagement.ActiveCardsListCommand,  BallyTech.UI.Web.Command.UserManagement" />
+  <CommandConfig
+        key="UserManagement.ActiveCardsListSignOffCommand"
+        uri="BallyTech.UI.Web.Command.UserManagement.ActiveCardsListSignOffCommand,  BallyTech.UI.Web.Command.UserManagement" />
+  <CommandConfig
+        key="UserManagement.EmployeeCardSignOffLoginCommand"
+        uri="BallyTech.UI.Web.Command.UserManagement.EmployeeCardSignOffLoginCommand,  BallyTech.UI.Web.Command.UserManagement" />
+  <CommandConfig
+        key="UserManagement.EmployeeCardSignOffCommand"
+        uri="BallyTech.UI.Web.Command.UserManagement.EmployeeCardSignOffCommand,  BallyTech.UI.Web.Command.UserManagement" />
+  <CommandConfig
+        key="UserManagement.UnassignCardCommand"
+        uri="BallyTech.UI.Web.Command.UserManagement.UnassignCardCommand,  BallyTech.UI.Web.Command.UserManagement" />
+  <CommandConfig
+        key="UserManagement.AssignCardToUserLoadCommand"
+        uri="BallyTech.UI.Web.Command.UserManagement.AssignCardToUserLoadCommand,  BallyTech.UI.Web.Command.UserManagement" />
+  <CommandConfig
+        key="UserManagement.AssignCardToUserCommand"
+        uri="BallyTech.UI.Web.Command.UserManagement.AssignCardToUserCommand,  BallyTech.UI.Web.Command.UserManagement" />
+  <CommandConfig
+        key="UserManagement.GetPrintEmployeeCardCommand"
+        uri="BallyTech.UI.Web.Command.UserManagement.GetPrintEmployeeCardCommand,  BallyTech.UI.Web.Command.UserManagement" />
+  <CommandConfig
+        key="UserManagement.SavePrintEmployeeCardCommand"
+        uri="BallyTech.UI.Web.Command.UserManagement.SavePrintEmployeeCardCommand,  BallyTech.UI.Web.Command.UserManagement" />
+  <!--End Employee Card-->
+  <!--Site GamingDay-->
+  <CommandConfig
+        key="SiteGamingDay.SiteGamingDayCommand"
+        uri="BallyTech.UI.Web.Command.SiteGamingDay.SiteGamingDayCommand,  BallyTech.UI.Web.Command.SiteGamingDay" />
+  <CommandConfig
+        key="SiteGamingDay.StartCollectionCommand"
+        uri="BallyTech.UI.Web.Command.SiteGamingDay.StartCollectionCommand,  BallyTech.UI.Web.Command.SiteGamingDay" />
+  <CommandConfig
+        key="SiteGamingDay.StopCollectionCommand"
+        uri="BallyTech.UI.Web.Command.SiteGamingDay.StopCollectionCommand,  BallyTech.UI.Web.Command.SiteGamingDay" />
+  <!--End Site GamingDay-->
+  <!--Softcount-->
+  <CommandConfig
+        key="SoftCount.SoftCountCommand"
+        uri="BallyTech.UI.Web.Command.SoftCount.SoftCountCommand, BallyTech.UI.Web.Command.SoftCount" />
+  <CommandConfig
+        key="SoftCount.CountRoomSummaryCommand"
+        uri="BallyTech.UI.Web.Command.SoftCount.CountRoomSummaryCommand,  BallyTech.UI.Web.Command.SoftCount" />
+  <CommandConfig
+        key="SoftCount.SoftCountSessionClearCommand"
+        uri="BallyTech.UI.Web.Command.SoftCount.SoftCountSessionClearCommand,  BallyTech.UI.Web.Command.SoftCount" />
+  <CommandConfig
+        key="SoftCount.SoftCountSessionSignOffCommand"
+        uri="BallyTech.UI.Web.Command.SoftCount.SoftCountSessionSignOffCommand,  BallyTech.UI.Web.Command.SoftCount" />
+  <CommandConfig
+        key="SoftCount.OpenCountRoomCommand"
+        uri="BallyTech.UI.Web.Command.SoftCount.OpenCountRoomCommand,  BallyTech.UI.Web.Command.SoftCount" />
+  <CommandConfig
+        key="SoftCount.OpenCountRoomCancelCommand"
+        uri="BallyTech.UI.Web.Command.SoftCount.OpenCountRoomCancelCommand,  BallyTech.UI.Web.Command.SoftCount" />
+  <CommandConfig
+        key="SoftCount.CreateSoftCountCommand"
+        uri="BallyTech.UI.Web.Command.SoftCount.CreateSoftCountCommand,  BallyTech.UI.Web.Command.SoftCount" />
+  <CommandConfig
+        key="SoftCount.AssetTotalsSummaryCommand"
+        uri="BallyTech.UI.Web.Command.SoftCount.AssetTotalsSummaryCommand,  BallyTech.UI.Web.Command.SoftCount" />
+  <CommandConfig
+        key="SoftCount.AssetSoftCountBillsLoadCommand"
+        uri="BallyTech.UI.Web.Command.SoftCount.AssetSoftCountBillsLoadCommand,  BallyTech.UI.Web.Command.SoftCount" />
+  <CommandConfig
+        key="SoftCount.AssetTotalTicketsGridDataLoadCommand"
+        uri="BallyTech.UI.Web.Command.SoftCount.AssetTotalTicketsGridDataLoadCommand,  BallyTech.UI.Web.Command.SoftCount" />
+  <CommandConfig
+        key="SoftCount.AssetAddCommand"
+        uri="BallyTech.UI.Web.Command.SoftCount.AssetAddCommand,  BallyTech.UI.Web.Command.SoftCount" />
+  <CommandConfig
+        key="SoftCount.SaveBillsCommand"
+        uri="BallyTech.UI.Web.Command.SoftCount.SaveBillsCommand,  BallyTech.UI.Web.Command.SoftCount" />
+  <CommandConfig
+        key="SoftCount.AssetEditCommand"
+        uri="BallyTech.UI.Web.Command.SoftCount.AssetEditCommand,  BallyTech.UI.Web.Command.SoftCount" />
+  <CommandConfig
+        key="SoftCount.AssetRemoveCommand"
+        uri="BallyTech.UI.Web.Command.SoftCount.AssetRemoveCommand,  BallyTech.UI.Web.Command.SoftCount" />
+  <CommandConfig
+        key="SoftCount.VoucherCommand"
+        uri="BallyTech.UI.Web.Command.SoftCount.VoucherCommand,  BallyTech.UI.Web.Command.SoftCount" />
+  <CommandConfig
+        key="SoftCount.VoucherGridLoadCommand"
+        uri="BallyTech.UI.Web.Command.SoftCount.VoucherGridLoadCommand,  BallyTech.UI.Web.Command.SoftCount" />
+  <CommandConfig
+        key="SoftCount.VoucherCancelCommand"
+        uri="BallyTech.UI.Web.Command.SoftCount.VoucherCancelCommand,  BallyTech.UI.Web.Command.SoftCount" />
+  <CommandConfig
+        key="SoftCount.QuestionableCommand"
+        uri="BallyTech.UI.Web.Command.SoftCount.QuestionableCommand,  BallyTech.UI.Web.Command.SoftCount" />
+  <CommandConfig
+        key="SoftCount.QuestionableGridLoadCommand"
+        uri="BallyTech.UI.Web.Command.SoftCount.QuestionableGridLoadCommand,  BallyTech.UI.Web.Command.SoftCount" />
+  <CommandConfig
+        key="SoftCount.TicketsMissingBatchCommand"
+        uri="BallyTech.UI.Web.Command.SoftCount.TicketsMissingBatchCommand,  BallyTech.UI.Web.Command.SoftCount" />
+  <CommandConfig
+        key="SoftCount.TicketsMissingBatchGridLoadCommand"
+        uri="BallyTech.UI.Web.Command.SoftCount.TicketsMissingBatchGridLoadCommand,  BallyTech.UI.Web.Command.SoftCount" />
+  <CommandConfig
+        key="SoftCount.CurrentBatchCommand"
+        uri="BallyTech.UI.Web.Command.SoftCount.CurrentBatchCommand,  BallyTech.UI.Web.Command.SoftCount" />
+  <CommandConfig
+        key="SoftCount.CurrentBatchGridLoadCommand"
+        uri="BallyTech.UI.Web.Command.SoftCount.CurrentBatchGridLoadCommand,  BallyTech.UI.Web.Command.SoftCount" />
+  <CommandConfig
+        key="SoftCount.ErrorsCommand"
+        uri="BallyTech.UI.Web.Command.SoftCount.ErrorsCommand,  BallyTech.UI.Web.Command.SoftCount" />
+  <CommandConfig
+        key="SoftCount.ErrorsGridLoadCommand"
+        uri="BallyTech.UI.Web.Command.SoftCount.ErrorsGridLoadCommand,  BallyTech.UI.Web.Command.SoftCount" />
+  <CommandConfig
+        key="SoftCount.EditAssetTicketsLoadCommand"
+        uri="BallyTech.UI.Web.Command.SoftCount.EditAssetTicketsLoadCommand,  BallyTech.UI.Web.Command.SoftCount" />
+  <CommandConfig
+        key="SoftCount.AddTicketCommand"
+        uri="BallyTech.UI.Web.Command.SoftCount.AddTicketCommand,  BallyTech.UI.Web.Command.SoftCount" />
+  <CommandConfig
+        key="SoftCount.OpenSoftCountLoadCommand"
+        uri="BallyTech.UI.Web.Command.SoftCount.OpenSoftCountLoadCommand,  BallyTech.UI.Web.Command.SoftCount" />
+  <CommandConfig
+        key="SoftCount.RemoveTicketCommand"
+        uri="BallyTech.UI.Web.Command.SoftCount.RemoveTicketCommand,  BallyTech.UI.Web.Command.SoftCount" />
+  <CommandConfig
+        key="SoftCount.AssetCancelCommand"
+        uri="BallyTech.UI.Web.Command.SoftCount.AssetCancelCommand,  BallyTech.UI.Web.Command.SoftCount" />
+  <CommandConfig
+        key="SoftCount.SoftCountSummaryCancelCommand"
+        uri="BallyTech.UI.Web.Command.SoftCount.SoftCountSummaryCancelCommand,  BallyTech.UI.Web.Command.SoftCount" />
+  <CommandConfig
+        key="SoftCount.ChangeAssetCommand"
+        uri="BallyTech.UI.Web.Command.SoftCount.ChangeAssetCommand,  BallyTech.UI.Web.Command.SoftCount" />
+  <CommandConfig
+        key="SoftCount.AssetSaveCommand"
+        uri="BallyTech.UI.Web.Command.SoftCount.AssetSaveCommand,  BallyTech.UI.Web.Command.SoftCount" />
+  <CommandConfig
+        key="SoftCount.AssetAddBillsLoadCommand"
+        uri="BallyTech.UI.Web.Command.SoftCount.AssetAddBillsLoadCommand,  BallyTech.UI.Web.Command.SoftCount" />
+  <CommandConfig
+        key="SoftCount.AddAssetSaveBills"
+        uri="BallyTech.UI.Web.Command.SoftCount.AddAssetSaveBills,  BallyTech.UI.Web.Command.SoftCount" />
+  <CommandConfig
+        key="SoftCount.AddAssetTicketAdd"
+        uri="BallyTech.UI.Web.Command.SoftCount.AddAssetTicketAdd,  BallyTech.UI.Web.Command.SoftCount" />
+  <CommandConfig
+        key="SoftCount.AddAssetTicketRemove"
+        uri="BallyTech.UI.Web.Command.SoftCount.AddAssetTicketRemove,  BallyTech.UI.Web.Command.SoftCount" />
+  <CommandConfig
+        key="SoftCount.FileUploadCommand"
+        uri="BallyTech.UI.Web.Command.SoftCount.FileUploadCommand,  BallyTech.UI.Web.Command.SoftCount" />
+  <CommandConfig
+        key="SoftCount.FileUploadSubmitCommand"
+        uri="BallyTech.UI.Web.Command.SoftCount.FileUploadSubmitCommand,  BallyTech.UI.Web.Command.SoftCount" />
+  <CommandConfig
+        key="SoftCount.EndFileUploadCommand"
+        uri="BallyTech.UI.Web.Command.SoftCount.EndFileUploadCommand,  BallyTech.UI.Web.Command.SoftCount" />
+  <CommandConfig
+        key="SoftCount.FileUploadCancelCommand"
+        uri="BallyTech.UI.Web.Command.SoftCount.FileUploadCancelCommand,  BallyTech.UI.Web.Command.SoftCount" />
+  <CommandConfig
+        key="SoftCount.AddNewAssetCommand"
+        uri="BallyTech.UI.Web.Command.SoftCount.AddNewAssetCommand,  BallyTech.UI.Web.Command.SoftCount" />
+  <CommandConfig
+        key="SoftCount.ChangeAssetSliderLoadCommand"
+        uri="BallyTech.UI.Web.Command.SoftCount.ChangeAssetSliderLoadCommand,  BallyTech.UI.Web.Command.SoftCount" />
+  <CommandConfig
+        key="SoftCount.CountRoomSummarySignOffCommand"
+        uri="BallyTech.UI.Web.Command.SoftCount.CountRoomSummarySignOffCommand,  BallyTech.UI.Web.Command.SoftCount" />
+  <CommandConfig
+        key="SoftCount.AssetVerificationCommand"
+        uri="BallyTech.UI.Web.Command.SoftCount.AssetVerificationCommand,  BallyTech.UI.Web.Command.SoftCount" />
+  <CommandConfig  key = "SoftCount.InitiateCountingCommand"
+uri = "BallyTech.UI.Web.Command.SoftCount.InitiateCountingCommand,  BallyTech.UI.Web.Command.SoftCount" />
+  <CommandConfig  key = "SoftCount.AddBillsNewAssetCommand"
+uri = "BallyTech.UI.Web.Command.SoftCount.AddBillsNewAssetCommand,  BallyTech.UI.Web.Command.SoftCount" />
+  <!-- End Softcount-->
+  <!--Start HardCount-->
+  <CommandConfig
+        key="HardCount.HardCountCommand"
+        uri="BallyTech.UI.Web.Command.HardCount.HardCountCommand, BallyTech.UI.Web.Command.HardCount" />
+  <CommandConfig
+        key="HardCount.HardCountGridDataLoadCommand"
+        uri="BallyTech.UI.Web.Command.HardCount.HardCountGridDataLoadCommand,  BallyTech.UI.Web.Command.HardCount" />
+  <CommandConfig
+        key="HardCount.HardCountGamingDayEnabledCommand"
+        uri="BallyTech.UI.Web.Command.HardCount.HardCountGamingDayEnabledCommand,  BallyTech.UI.Web.Command.HardCount" />
+  <CommandConfig
+        key="HardCount.AssetHardCountGridDataLoadCommand"
+        uri="BallyTech.UI.Web.Command.HardCount.AssetHardCountGridDataLoadCommand,  BallyTech.UI.Web.Command.HardCount" />
+  <CommandConfig
+        key="HardCount.HardCountSessionOpenCommand"
+        uri="BallyTech.UI.Web.Command.HardCount.HardCountSessionOpenCommand,  BallyTech.UI.Web.Command.HardCount" />
+  <CommandConfig
+        key="HardCount.ScaleSummarySignOffCommand"
+        uri="BallyTech.UI.Web.Command.HardCount.ScaleSummarySignOffCommand,  BallyTech.UI.Web.Command.HardCount" />
+  <CommandConfig
+        key="HardCount.HardCountSummaryCancelCommand"
+        uri="BallyTech.UI.Web.Command.HardCount.HardCountSummaryCancelCommand,  BallyTech.UI.Web.Command.HardCount" />
+  <CommandConfig
+        key="HardCount.HardCountSessionSignOffYesCommand"
+        uri="BallyTech.UI.Web.Command.HardCount.HardCountSessionSignOffYesCommand,  BallyTech.UI.Web.Command.HardCount" />
+  <CommandConfig
+        key="HardCount.RejectedEntriesSummaryCommand"
+        uri="BallyTech.UI.Web.Command.HardCount.RejectedEntriesSummaryCommand,  BallyTech.UI.Web.Command.HardCount" />
+  <CommandConfig
+        key="HardCount.RejectedEntriesGridDataLoadCommand"
+        uri="BallyTech.UI.Web.Command.HardCount.RejectedEntriesGridDataLoadCommand,  BallyTech.UI.Web.Command.HardCount" />
+  <CommandConfig
+        key="HardCount.RejectedEntriesDeleteYesCommand"
+        uri="BallyTech.UI.Web.Command.HardCount.RejectedEntriesDeleteYesCommand,  BallyTech.UI.Web.Command.HardCount" />
+  <CommandConfig
+        key="HardCount.RejectedEntriesGridCloseCommand"
+        uri="BallyTech.UI.Web.Command.HardCount.RejectedEntriesGridCloseCommand,  BallyTech.UI.Web.Command.HardCount" />
+  <CommandConfig
+        key="HardCount.DuplicateEntriesSummaryCommand"
+        uri="BallyTech.UI.Web.Command.HardCount.DuplicateEntriesSummaryCommand, BallyTech.UI.Web.Command.HardCount" />
+  <CommandConfig
+        key="HardCount.DuplicateEntriesGridDataLoadCommand"
+        uri="BallyTech.UI.Web.Command.HardCount.DuplicateEntriesGridDataLoadCommand, BallyTech.UI.Web.Command.HardCount" />
+  <CommandConfig
+        key="HardCount.DuplicateEntriesDeleteYesCommand"
+        uri="BallyTech.UI.Web.Command.HardCount.DuplicateEntriesDeleteYesCommand,  BallyTech.UI.Web.Command.HardCount" />
+  <CommandConfig
+        key="HardCount.ErrorsSummaryCommand"
+        uri="BallyTech.UI.Web.Command.HardCount.ErrorsSummaryCommand, BallyTech.UI.Web.Command.HardCount" />
+  <CommandConfig
+        key="HardCount.ErrorsGridDataLoadCommand"
+        uri="BallyTech.UI.Web.Command.HardCount.ErrorsGridDataLoadCommand, BallyTech.UI.Web.Command.HardCount" />
+  <CommandConfig
+        key="HardCount.ErrorDeleteYesCommand"
+        uri="BallyTech.UI.Web.Command.HardCount.ErrorDeleteYesCommand,  BallyTech.UI.Web.Command.HardCount" />
+  <CommandConfig
+        key="HardCount.HardCountUploadCommand"
+        uri="BallyTech.UI.Web.Command.HardCount.HardCountUploadCommand,  BallyTech.UI.Web.Command.HardCount" />
+  <CommandConfig
+        key="HardCount.HardCountUploadSubmitCommand"
+        uri="BallyTech.UI.Web.Command.HardCount.HardCountUploadSubmitCommand,  BallyTech.UI.Web.Command.HardCount" />
+  <CommandConfig
+        key="HardCount.HardCountUploadEndFileCommand"
+        uri="BallyTech.UI.Web.Command.HardCount.HardCountUploadEndFileCommand,  BallyTech.UI.Web.Command.HardCount" />
+  <CommandConfig
+        key="HardCount.HardCountUploadCancelCommand"
+        uri="BallyTech.UI.Web.Command.HardCount.HardCountUploadCancelCommand,  BallyTech.UI.Web.Command.HardCount" />
+  <CommandConfig
+        key="HardCount.SlotDeleteYesCommand"
+        uri="BallyTech.UI.Web.Command.HardCount.SlotDeleteYesCommand,  BallyTech.UI.Web.Command.HardCount" />
+  <CommandConfig
+        key="HardCount.SlotEditCommand"
+        uri="BallyTech.UI.Web.Command.HardCount.SlotEditCommand,  BallyTech.UI.Web.Command.HardCount" />
+  <CommandConfig
+        key="HardCount.SlotAddCommand"
+        uri="BallyTech.UI.Web.Command.HardCount.SlotAddCommand,  BallyTech.UI.Web.Command.HardCount" />
+  <CommandConfig
+        key="HardCount.SlotLocationCommand"
+        uri="BallyTech.UI.Web.Command.HardCount.SlotLocationCommand,  BallyTech.UI.Web.Command.HardCount" />
+  <CommandConfig
+        key="HardCount.SlotValidateCommand"
+        uri="BallyTech.UI.Web.Command.HardCount.SlotValidateCommand,  BallyTech.UI.Web.Command.HardCount" />
+  <CommandConfig
+        key="HardCount.SlotCancelCommand"
+        uri="BallyTech.UI.Web.Command.HardCount.SlotCancelCommand,  BallyTech.UI.Web.Command.HardCount" />
+  <CommandConfig
+        key="HardCount.SlotNumberChangeYesCommand"
+        uri="BallyTech.UI.Web.Command.HardCount.SlotNumberChangeYesCommand,  BallyTech.UI.Web.Command.HardCount" />
+  <CommandConfig
+        key="HardCount.SaveCoinsCommand"
+        uri="BallyTech.UI.Web.Command.HardCount.SaveCoinsCommand,  BallyTech.UI.Web.Command.HardCount" />
+  <CommandConfig
+        key="HardCount.HardCountSessionClearYesCommand"
+        uri="BallyTech.UI.Web.Command.HardCount.HardCountSessionClearYesCommand,  BallyTech.UI.Web.Command.HardCount" />
+  <!-- End HardCount-->
+  <!--Start HardCount HopperWeigh-->
+  <CommandConfig
+        key="HardCount.HopperWeighCommand"
+        uri="BallyTech.UI.Web.Command.HardCount.HopperWeighCommand, BallyTech.UI.Web.Command.HardCount" />
+  <CommandConfig
+        key="HardCount.HopperWeighAddCommand"
+        uri="BallyTech.UI.Web.Command.HardCount.HopperWeighAddCommand,  BallyTech.UI.Web.Command.HardCount" />
+  <CommandConfig
+        key="HardCount.HopperWeighAddEmptyRecordsCommand"
+        uri="BallyTech.UI.Web.Command.HardCount.HopperWeighAddEmptyRecordsCommand,  BallyTech.UI.Web.Command.HardCount" />
+  <CommandConfig
+        key="HardCount.HopperWeighAddDeleteCommand"
+        uri="BallyTech.UI.Web.Command.HardCount.HopperWeighAddDeleteCommand,  BallyTech.UI.Web.Command.HardCount" />
+  <CommandConfig
+        key="HardCount.HopperWeighAddSaveCommand"
+        uri="BallyTech.UI.Web.Command.HardCount.HopperWeighAddSaveCommand,  BallyTech.UI.Web.Command.HardCount" />
+  <CommandConfig
+        key="HardCount.HopperWeighEditCommand"
+        uri="BallyTech.UI.Web.Command.HardCount.HopperWeighEditCommand,  BallyTech.UI.Web.Command.HardCount" />
+  <CommandConfig
+        key="HardCount.HopperWeighEditDeleteCommand"
+        uri="BallyTech.UI.Web.Command.HardCount.HopperWeighEditDeleteCommand,  BallyTech.UI.Web.Command.HardCount" />
+  <CommandConfig
+        key="HardCount.HopperWeighEditUpdateCommand"
+        uri="BallyTech.UI.Web.Command.HardCount.HopperWeighEditUpdateCommand,  BallyTech.UI.Web.Command.HardCount" />
+  <CommandConfig
+        key="HardCount.HopperWeighDeleteCommand"
+        uri="BallyTech.UI.Web.Command.HardCount.HopperWeighDeleteCommand,  BallyTech.UI.Web.Command.HardCount" />
+  <!-- End HardCount HopperWeigh-->
+  <!--Start HardCount WrapAmount-->
+  <CommandConfig
+		key="HardCount.WrapAmountCommand"
+        uri="BallyTech.UI.Web.Command.HardCount.WrapAmountCommand, BallyTech.UI.Web.Command.HardCount" />  
+  <CommandConfig  
+		key = "HardCount.WrapAmountBasedOnGamingDayCommand"
+        uri = "BallyTech.UI.Web.Command.HardCount.WrapAmountBasedOnGamingDayCommand, BallyTech.UI.Web.Command.HardCount" />
+  <CommandConfig  
+		key = "HardCount.WrapAmountSaveCommand"
+        uri = "BallyTech.UI.Web.Command.HardCount.WrapAmountSaveCommand, BallyTech.UI.Web.Command.HardCount" />    
+  <!-- End HardCount WrapAmount-->
+  <!-- Slip Command -->
+  <!--Search-->
+  <CommandConfig
+        key="Jackpot.SearchJackpotCommand"
+        uri="BallyTech.UI.Web.Command.Jackpot.SearchJackpotCommand,  BallyTech.UI.Web.Command.Jackpot" />
+  <CommandConfig
+        key="Jackpot.AdvancedSearchJackpotCommand"
+        uri="BallyTech.UI.Web.Command.Jackpot.AdvancedSearchJackpotCommand,  BallyTech.UI.Web.Command.Jackpot" />
+  <!-- Slips Inquiry-->
+  <CommandConfig
+        key="Jackpot.JackpotInquiryCommand"
+        uri="BallyTech.UI.Web.Command.Jackpot.JackpotInquiryCommand,  BallyTech.UI.Web.Command.Jackpot" />
+  <CommandConfig
+        key="Jackpot.JackpotInquiryAdvanceSearchCommand"
+        uri="BallyTech.UI.Web.Command.Jackpot.JackpotInquiryAdvanceSearchCommand,  BallyTech.UI.Web.Command.Jackpot" />
+  <CommandConfig
+        key="Jackpot.JackpotInquiryTableGridCommand"
+        uri="BallyTech.UI.Web.Command.Jackpot.JackpotInquiryTableGridCommand,  BallyTech.UI.Web.Command.Jackpot" />
+  <CommandConfig
+        key="Jackpot.JackpotInquiryDetailsTableGridCommand"
+        uri="BallyTech.UI.Web.Command.Jackpot.JackpotInquiryDetailsTableGridCommand,  BallyTech.UI.Web.Command.Jackpot" />
+  <CommandConfig
+        key="Slips.SlipsDisputeTableGridCommand"
+        uri="BallyTech.UI.Web.Command.Slips.SlipsDisputeTableGridCommand,  BallyTech.UI.Web.Command.Slips" />
+  <CommandConfig
+        key="Slip.DisputeInquiryCommand"
+        uri="BallyTech.UI.Web.Command.Slip.DisputeInquiryCommand,  BallyTech.UI.Web.Command.Slip" />
+  <CommandConfig
+        key="Slip.DisputeInquiryAdvanceSearchCommand"
+        uri="BallyTech.UI.Web.Command.Slip.DisputeInquiryAdvanceSearchCommand,  BallyTech.UI.Web.Command.Slip" />
+  <CommandConfig
+        key="Slip.DisputeInquiryTableGridCommand"
+        uri="BallyTech.UI.Web.Command.Slip.DisputeInquiryTableGridCommand,  BallyTech.UI.Web.Command.Slip" />
+  <CommandConfig
+        key="Slip.DisputeInquiryDetailsTableGridCommand"
+        uri="BallyTech.UI.Web.Command.Slip.DisputeInquiryDetailsTableGridCommand,  BallyTech.UI.Web.Command.Slip" />
+  <CommandConfig
+        key="Slip.FillBleedInquiryCommand"
+        uri="BallyTech.UI.Web.Command.Slip.FillBleedInquiryCommand,  BallyTech.UI.Web.Command.Slip" />
+  <CommandConfig
+        key="Slip.FillBleedInquiryAdvanceSearchCommand"
+        uri="BallyTech.UI.Web.Command.Slip.FillBleedInquiryAdvanceSearchCommand,  BallyTech.UI.Web.Command.Slip" />
+  <CommandConfig
+        key="Slip.FillBleedInquiryTableGridCommand"
+        uri="BallyTech.UI.Web.Command.Slip.FillBleedInquiryTableGridCommand,  BallyTech.UI.Web.Command.Slip" />
+  <CommandConfig
+        key="Slip.FillBleedInquiryDetailsTableGridCommand"
+        uri="BallyTech.UI.Web.Command.Slip.FillBleedInquiryDetailsTableGridCommand,  BallyTech.UI.Web.Command.Slip" />
+  <!--Process Pending -->
+  <CommandConfig
+        key="Jackpot.LoadPendingJackpotProcessConfigCommand"
+        uri="BallyTech.UI.Web.Command.Jackpot.LoadPendingJackpotProcessConfigCommand,  BallyTech.UI.Web.Command.Jackpot" />
+  <CommandConfig
+        key="Jackpot.ProcessPendingJackpotCommand"
+        uri="BallyTech.UI.Web.Command.Jackpot.ProcessPendingJackpotCommand,  BallyTech.UI.Web.Command.Jackpot" />
+  <CommandConfig
+        key="Jackpot.OverrideAuthPendingJackpotCommand"
+        uri="BallyTech.UI.Web.Command.Jackpot.OverrideAuthPendingJackpotCommand,  BallyTech.UI.Web.Command.Jackpot" />
+  <CommandConfig
+        key="Jackpot.AuthorizePendingJackpotCommand"
+        uri="BallyTech.UI.Web.Command.Jackpot.AuthorizePendingJackpotCommand,  BallyTech.UI.Web.Command.Jackpot" />
+  <CommandConfig
+        key="Jackpot.PaymentAndProcessPendingJackpotCommand"
+        uri="BallyTech.UI.Web.Command.Jackpot.PaymentAndProcessPendingJackpotCommand,  BallyTech.UI.Web.Command.Jackpot" />
+  <CommandConfig
+        key="Jackpot.ValidateDenominationAndProcessPendingJackpotCommand"
+        uri="BallyTech.UI.Web.Command.Jackpot.ValidateDenominationAndProcessPendingJackpotCommand,  BallyTech.UI.Web.Command.Jackpot" />
+  <CommandConfig
+        key="Jackpot.GetRemoteResetJackpotCommand"
+        uri="BallyTech.UI.Web.Command.Jackpot.GetRemoteResetJackpotCommand,  BallyTech.UI.Web.Command.Jackpot" />
+  <CommandConfig
+        key="Jackpot.ProcessRemoteResetJackpotCommand"
+        uri="BallyTech.UI.Web.Command.Jackpot.ProcessRemoteResetJackpotCommand,  BallyTech.UI.Web.Command.Jackpot" />
+<!--Keypad Processing -->
+  <CommandConfig  key = "Jackpot.LoadKeypadProcessingConfigCommand"
+        uri = "BallyTech.UI.Web.Command.Jackpot.LoadKeypadProcessingConfigCommand,  BallyTech.UI.Web.Command.Jackpot" />
+
+  <CommandConfig  key = "Jackpot.GetKeypadJackpotCommand"
+             uri = "BallyTech.UI.Web.Command.Jackpot.GetKeypadJackpotCommand,  BallyTech.UI.Web.Command.Jackpot" />
+
+  <CommandConfig  key = "Jackpot.ProcessKeypadCommand"
+              uri = "BallyTech.UI.Web.Command.Jackpot.ProcessKeypadCommand,  BallyTech.UI.Web.Command.Jackpot" />
+
+  <CommandConfig  key = "Jackpot.PaymentAndProcessKeypadCommand"
+             uri = "BallyTech.UI.Web.Command.Jackpot.PaymentAndProcessKeypadCommand,  BallyTech.UI.Web.Command.Jackpot" />
+
+  <CommandConfig  key = "Jackpot.ValidateDenominationAndProcessKeypadCommand"
+              uri = "BallyTech.UI.Web.Command.Jackpot.ValidateDenominationAndProcessKeypadCommand,  BallyTech.UI.Web.Command.Jackpot" />
+  <!--Void Slips-->
+  <CommandConfig
+        key="Slip.VoidGetJackpotCommand"
+        uri="BallyTech.UI.Web.Command.Slip.VoidGetJackpotCommand,  BallyTech.UI.Web.Command.Slip" />
+  <CommandConfig
+        key="Slip.VoidGetFillBleedCommand"
+        uri="BallyTech.UI.Web.Command.Slip.VoidGetFillBleedCommand,  BallyTech.UI.Web.Command.Slip" />
+  <CommandConfig
+        key="Slip.VoidGetDisputeCommand"
+        uri="BallyTech.UI.Web.Command.Slip.VoidGetDisputeCommand,  BallyTech.UI.Web.Command.Slip" />
+  <CommandConfig
+        key="Slip.VoidValidateJackpotCommand"
+        uri="BallyTech.UI.Web.Command.Slip.VoidValidateJackpotCommand,  BallyTech.UI.Web.Command.Slip" />
+  <CommandConfig
+        key="Slip.VoidValidateFillBleedCommand"
+        uri="BallyTech.UI.Web.Command.Slip.VoidValidateFillBleedCommand,  BallyTech.UI.Web.Command.Slip" />
+  <CommandConfig
+        key="Slip.VoidValidateDisputeCommand"
+        uri="BallyTech.UI.Web.Command.Slip.VoidValidateDisputeCommand,  BallyTech.UI.Web.Command.Slip" />
+  <CommandConfig
+        key="Slip.VoidPostJackpotCommand"
+        uri="BallyTech.UI.Web.Command.Slip.VoidPostJackpotCommand,  BallyTech.UI.Web.Command.Slip" />
+  <CommandConfig
+        key="Slip.VoidPostFillBleedCommand"
+        uri="BallyTech.UI.Web.Command.Slip.VoidPostFillBleedCommand,  BallyTech.UI.Web.Command.Slip" />
+  <CommandConfig
+        key="Slip.VoidPostDisputeCommand"
+        uri="BallyTech.UI.Web.Command.Slip.VoidPostDisputeCommand,  BallyTech.UI.Web.Command.Slip" />
+  <!--End Void Slips-->
+  <CommandConfig
+        key="Player.GetPlayerCardPrefix"
+        uri="BallyTech.UI.Web.Command.Player.GetPlayerCardPrefix,BallyTech.UI.Web.Command.Players" />
+  <!-- Reprint -->
+  <CommandConfig
+        key="Slip.LoadReprintJackpotConfigCommand"
+        uri="BallyTech.UI.Web.Command.Slip.LoadReprintJackpotConfigCommand,  BallyTech.UI.Web.Command.Slip" />
+  <CommandConfig
+        key="Slip.LoadReprintDisputeConfigCommand"
+        uri="BallyTech.UI.Web.Command.Slip.LoadReprintDisputeConfigCommand,  BallyTech.UI.Web.Command.Slip" />
+  <CommandConfig
+        key="Slip.LoadReprintFillBleedConfigCommand"
+        uri="BallyTech.UI.Web.Command.Slip.LoadReprintFillBleedConfigCommand,  BallyTech.UI.Web.Command.Slip" />
+  <CommandConfig
+        key="Slip.ReprintPostCommand"
+        uri="BallyTech.UI.Web.Command.Slip.ReprintPostCommand,  BallyTech.UI.Web.Command.Slip" />
+  <CommandConfig
+        key="Slip.ReprintPreviewCommand"
+        uri="BallyTech.UI.Web.Command.Slip.ReprintPreviewCommand,  BallyTech.UI.Web.Command.Slip" />
+  <CommandConfig
+        key="Player.SavePlayerGroupCommandNoResponse"
+        uri="BallyTech.UI.Web.Command.Player.SavePlayerGroupCommandNoResponse, BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Slip.ReprintValidateEmployee"
+        uri="BallyTech.UI.Web.Command.Slip.ReprintValidateEmployee,  BallyTech.UI.Web.Command.Slip" />
+  <!-- Reprint -->
+  <!-- Dispute -->
+  <CommandConfig
+        key="Slip.LoadDisputeProcessConfigCommand"
+        uri="BallyTech.UI.Web.Command.Slip.LoadDisputeProcessConfigCommand,  BallyTech.UI.Web.Command.Slip" />
+  <CommandConfig
+        key="Slip.ProcessDisputeCommand"
+        uri="BallyTech.UI.Web.Command.Slip.ProcessDisputeCommand,  BallyTech.UI.Web.Command.Slip" />
+  <CommandConfig
+        key="Slip.AuthorizeDisputeCommand"
+        uri="BallyTech.UI.Web.Command.Slip.AuthorizeDisputeCommand,  BallyTech.UI.Web.Command.Slip" />
+  <CommandConfig
+        key="Slip.PaymentAndProcessDisputeCommand"
+        uri="BallyTech.UI.Web.Command.Slip.PaymentAndProcessDisputeCommand,  BallyTech.UI.Web.Command.Slip" />
+  <CommandConfig
+        key="Slip.ValidateDenominationAndProcessDisputeCommand"
+        uri="BallyTech.UI.Web.Command.Slip.ValidateDenominationAndProcessDisputeCommand,  BallyTech.UI.Web.Command.Slip" />
+  <!-- Dispute -->
+  <!-- Manual Jackpot-->
+  <CommandConfig
+        key="Jackpot.LoadManualJackpotProcessConfigCommand"
+        uri="BallyTech.UI.Web.Command.Jackpot.LoadManualJackpotProcessConfigCommand,  BallyTech.UI.Web.Command.Jackpot" />
+  <CommandConfig
+        key="Jackpot.ValidateSlotAndProgressiveCommand"
+        uri="BallyTech.UI.Web.Command.Jackpot.ValidateSlotAndProgressiveCommand,  BallyTech.UI.Web.Command.Jackpot" />
+  <CommandConfig
+        key="Jackpot.ProcessManualJackpotCommand"
+        uri="BallyTech.UI.Web.Command.Jackpot.ProcessManualJackpotCommand,  BallyTech.UI.Web.Command.Jackpot" />
+  <CommandConfig
+        key="Jackpot.AuthorizeAndProcessManualJackpotCommand"
+        uri="BallyTech.UI.Web.Command.Jackpot.AuthorizeAndProcessManualJackpotCommand,  BallyTech.UI.Web.Command.Jackpot" />
+  <CommandConfig
+        key="Jackpot.PaymentAndProcessManualJackpotCommand"
+        uri="BallyTech.UI.Web.Command.Jackpot.PaymentAndProcessManualJackpotCommand,  BallyTech.UI.Web.Command.Jackpot" />
+  <CommandConfig
+        key="Jackpot.ValidateDenominationAndProcessJackpotCommand"
+        uri="BallyTech.UI.Web.Command.Jackpot.ValidateDenominationAndProcessJackpotCommand,  BallyTech.UI.Web.Command.Jackpot" />
+  <!--Bleed start-->
+  <CommandConfig
+        key="Slip.LoadBleedCommand"
+        uri="BallyTech.UI.Web.Command.Slip.LoadBleedCommand,  BallyTech.UI.Web.Command.Slip" />
+  <CommandConfig
+        key="Slip.BleedPostCommand"
+        uri="BallyTech.UI.Web.Command.Slip.BleedPostCommand,  BallyTech.UI.Web.Command.Slip" />
+  <!--Bleed End-->
+  <!--Fill Start-->
+  <CommandConfig
+        key="Slip.LoadFillCommand"
+        uri="BallyTech.UI.Web.Command.Slip.LoadFillCommand,  BallyTech.UI.Web.Command.Slip" />
+  <CommandConfig
+        key="Slip.FillValidateCommand"
+        uri="BallyTech.UI.Web.Command.Slip.FillValidateCommand,  BallyTech.UI.Web.Command.Slip" />
+  <CommandConfig
+        key="Slip.FillPostCommand"
+        uri="BallyTech.UI.Web.Command.Slip.FillPostCommand,  BallyTech.UI.Web.Command.Slip" />
+  <CommandConfig
+        key="Slip.CheckAuthorizerRequiredCommand"
+        uri="BallyTech.UI.Web.Command.Slip.CheckAuthorizerRequiredCommand,  BallyTech.UI.Web.Command.Slip" />
+  <!--Fill End-->
+  <!-- End of Manual Jackpot elements-->
+  <CommandConfig
+        key="PreCommitment.PCValidateUnEnrollmentCommand"
+        uri="BallyTech.UI.Web.Command.PreCommitment.PCValidateUnEnrollmentCommand, BallyTech.UI.Web.Command.PreCommitment" />
+  <CommandConfig
+        key="PreCommitment.PCPINValidateEnrollmentCommand"
+        uri="BallyTech.UI.Web.Command.PreCommitment.PCPINValidateEnrollmentCommand, BallyTech.UI.Web.Command.PreCommitment" />
+  <!--Settings-->
+  <CommandConfig  key = "Settings.SettingsCommand"
+         uri = "BallyTech.UI.Web.Command.Settings.SettingsCommand,BallyTech.UI.Web.Command.Settings" />
+  <CommandConfig  key = "Settings.SettingsAccountCommand"
+           uri = "BallyTech.UI.Web.Command.Settings.SettingsAccountCommand,BallyTech.UI.Web.Command.Settings" />
+  <CommandConfig key="Settings.SettingsChangePasswordCommand"
+                 uri = "BallyTech.UI.Web.Command.Settings.SettingsChangePasswordCommand,BallyTech.UI.Web.Command.Settings" />
+  <CommandConfig key="Settings.SettingsSaveAccountsCommand"
+                 uri = "BallyTech.UI.Web.Command.Settings.SettingsSaveAccountsCommand,BallyTech.UI.Web.Command.Settings" />
+  <CommandConfig key="Settings.SettingsSavePasswordCommand"
+                 uri = "BallyTech.UI.Web.Command.Settings.SettingsSavePasswordCommand,BallyTech.UI.Web.Command.Settings" />
+  <CommandConfig  key = "Settings.SettingsApplicationCommand"
+			 uri = "BallyTech.UI.Web.Command.Settings.SettingsApplicationCommand,BallyTech.UI.Web.Command.Settings" />
+  <CommandConfig  key = "Settings.SettingsApplicationSaveCommand"
+			 uri = "BallyTech.UI.Web.Command.Settings.SettingsApplicationSaveCommand,BallyTech.UI.Web.Command.Settings" />
+  <CommandConfig  key = "Settings.SettingsPersonalizeLoadCommand"
+			 uri = "BallyTech.UI.Web.Command.Settings.SettingsPersonalizationLoadCommand,BallyTech.UI.Web.Command.Settings" />
+  <CommandConfig  key = "Settings.SaveEmployeeImageCommand"
+				   uri = "BallyTech.UI.Web.Command.Settings.SaveEmployeeImageCommand,BallyTech.UI.Web.Command.Settings" />
+  <CommandConfig  key = "Settings.SiteDetailsCommand"
+				   uri = "BallyTech.UI.Web.Command.Settings.SiteDetailsCommand,BallyTech.UI.Web.Command.Settings" />
+  <CommandConfig  key = "Settings.NoteCounterSettingsLoadCommand"
+				 uri = "BallyTech.UI.Web.Command.Settings.NoteCounterSettingsLoadCommand,BallyTech.UI.Web.Command.Settings" />
+
+  <CommandConfig  key = "Settings.NoteCounterSrviceIpPortLoadCommand"
+				 uri = "BallyTech.UI.Web.Command.Settings.NoteCounterSrviceIpPortLoadCommand,BallyTech.UI.Web.Command.Settings" />
+
+  <CommandConfig  key = "Settings.NewNoteCounterSliderLoadCommand"
+       uri = "BallyTech.UI.Web.Command.Settings.NewNoteCounterSliderLoadCommand,BallyTech.UI.Web.Command.Settings" />
+
+  <CommandConfig  key = "Settings.NewNoteCounterSaveCommand"
+       uri = "BallyTech.UI.Web.Command.Settings.NewNoteCounterSaveCommand,BallyTech.UI.Web.Command.Settings" />
+
+  <CommandConfig  key = "Settings.NoteCounterSettingsSaveCommand"
+       uri = "BallyTech.UI.Web.Command.Settings.NoteCounterSettingsSaveCommand,BallyTech.UI.Web.Command.Settings" />
+  <!--Settings-->
+  <CommandConfig
+        key="Player.GetPlayerBanCommand"
+        uri="BallyTech.UI.Web.Command.Player.GetPlayerBanCommand,BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.SaveBanPlayerCommand"
+        uri="BallyTech.UI.Web.Command.Player.SaveBanPlayerCommand,BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.AddPlayerBanCommand"
+        uri="BallyTech.UI.Web.Command.Player.AddPlayerBanCommand,BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.EditPlayerBanCommand"
+        uri="BallyTech.UI.Web.Command.Player.EditPlayerBanCommand,BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Common.ValidateAuthorizerCommand"
+        uri="BallyTech.UI.Web.Command.Common.ValidateAuthorizerCommand,BallyTech.UI.Web.Command.Common" />
+  <CommandConfig
+        key="Player.AdvanceSearchPlayerLoadCommand"
+        uri="BallyTech.UI.Web.Command.Player.AdvanceSearchPlayerLoadCommand,BallyTech.UI.Web.Command.Players" />
+  <!--Inventory-->
+  <CommandConfig
+        key="Inventory.OpenLocationLoadCommand"
+        uri="BallyTech.UI.Web.Command.Inventory.OpenLocationLoadCommand, BallyTech.UI.Web.Command.Inventory" />
+  <CommandConfig
+        key="Inventory.CloseLocationLoadCommand"
+        uri="BallyTech.UI.Web.Command.Inventory.CloseLocationLoadCommand, BallyTech.UI.Web.Command.Inventory" />
+  <CommandConfig
+        key="Inventory.RollGamingDateProcessCommand"
+        uri="BallyTech.UI.Web.Command.Inventory.RollGamingDateProcessCommand, BallyTech.UI.Web.Command.Inventory" />
+  <CommandConfig
+        key="Inventory.RollGamingdateSaveCommand"
+        uri="BallyTech.UI.Web.Command.Inventory.RollGamingdateSaveCommand, BallyTech.UI.Web.Command.Inventory" />
+  <CommandConfig
+        key="Inventory.OpenLocationSaveCommand"
+        uri="BallyTech.UI.Web.Command.Inventory.OpenLocationSaveCommand, BallyTech.UI.Web.Command.Inventory" />
+  <CommandConfig
+        key="Inventory.CloseLocationSaveCommand"
+        uri="BallyTech.UI.Web.Command.Inventory.CloseLocationSaveCommand, BallyTech.UI.Web.Command.Inventory" />
+  <CommandConfig
+        key="Inventory.ManageLocationLoadCommand"
+        uri="BallyTech.UI.Web.Command.Inventory.ManageLocationLoadCommand, BallyTech.UI.Web.Command.Inventory" />
+  <CommandConfig
+        key="Inventory.FundsInflowLoadCommand"
+        uri="BallyTech.UI.Web.Command.Inventory.FundsInflowLoadCommand, BallyTech.UI.Web.Command.Inventory" />
+  <CommandConfig
+        key="Inventory.FillRequestLoadCommand"
+        uri="BallyTech.UI.Web.Command.Inventory.FillRequestLoadCommand, BallyTech.UI.Web.Command.Inventory" />
+  <CommandConfig
+        key="Inventory.SaveFillRequestCommand"
+        uri="BallyTech.UI.Web.Command.Inventory.SaveFillRequestCommand, BallyTech.UI.Web.Command.Inventory" />
+  <CommandConfig
+        key="Inventory.CreditLoadCommand"
+        uri="BallyTech.UI.Web.Command.Inventory.CreditLoadCommand, BallyTech.UI.Web.Command.Inventory" />
+  <CommandConfig
+        key="Inventory.SaveCreditRequestCommand"
+        uri="BallyTech.UI.Web.Command.Inventory.SaveCreditRequestCommand, BallyTech.UI.Web.Command.Inventory" />
+  <CommandConfig
+        key="Inventory.InventoryPreviewLoadCommand"
+        uri="BallyTech.UI.Web.Command.Inventory.InventoryPreviewLoadCommand, BallyTech.UI.Web.Command.Inventory" />
+  <CommandConfig
+        key="Inventory.InventoryPreviewOnChangeCommand"
+        uri="BallyTech.UI.Web.Command.Inventory.InventoryPreviewOnChangeCommand, BallyTech.UI.Web.Command.Inventory" />
+  <CommandConfig
+        key="Inventory.PostVarianceLoadCommand"
+        uri="BallyTech.UI.Web.Command.Inventory.PostVarianceLoadCommand, BallyTech.UI.Web.Command.Inventory" />
+  <CommandConfig
+        key="Inventory.RollGamingDateLoadCommand"
+        uri="BallyTech.UI.Web.Command.Inventory.RollGamingDateLoadCommand, BallyTech.UI.Web.Command.Inventory" />
+  <CommandConfig
+        key="Inventory.UpdateInventoryLoadCommand"
+        uri="BallyTech.UI.Web.Command.Inventory.UpdateInventoryLoadCommand, BallyTech.UI.Web.Command.Inventory" />
+  <CommandConfig
+        key="Inventory.SaveUpdateInventoryCommand"
+        uri="BallyTech.UI.Web.Command.Inventory.SaveUpdateInventoryCommand, BallyTech.UI.Web.Command.Inventory" />
+  <CommandConfig
+        key="Inventory.MovementSummaryLoadCommand"
+        uri="BallyTech.UI.Web.Command.Inventory.MovementSummaryLoadCommand,BallyTech.UI.Web.Command.Inventory" />
+  <CommandConfig
+        key="Inventory.MovementSummaryLoadGridCommand"
+        uri="BallyTech.UI.Web.Command.Inventory.MovementSummaryLoadGridCommand,BallyTech.UI.Web.Command.Inventory" />
+  <CommandConfig
+        key="Inventory.MovementSummaryViewCommand"
+        uri="BallyTech.UI.Web.Command.Inventory.MovementSummaryViewCommand,BallyTech.UI.Web.Command.Inventory" />
+  <CommandConfig
+        key="Inventory.MovementSummaryVoidCommand"
+        uri="BallyTech.UI.Web.Command.Inventory.MovementSummaryVoidCommand,BallyTech.UI.Web.Command.Inventory" />
+  <CommandConfig
+        key="Inventory.MovementSummaryProcessCommand"
+        uri="BallyTech.UI.Web.Command.Inventory.MovementSummaryProcessCommand,BallyTech.UI.Web.Command.Inventory" />
+  <CommandConfig
+        key="Inventory.MovementSummaryProcessCreditCommand"
+        uri="BallyTech.UI.Web.Command.Inventory.MovementSummaryProcessCreditCommand,BallyTech.UI.Web.Command.Inventory" />
+  <CommandConfig
+        key="Inventory.MovementSummaryRejectFillSaveCommand"
+        uri="BallyTech.UI.Web.Command.Inventory.MovementSummaryRejectFillSaveCommand,BallyTech.UI.Web.Command.Inventory" />
+  <CommandConfig
+        key="Inventory.MovementSummaryRejectCreditSaveCommand"
+        uri="BallyTech.UI.Web.Command.Inventory.MovementSummaryRejectCreditSaveCommand,BallyTech.UI.Web.Command.Inventory" />
+  <CommandConfig
+        key="Inventory.MovementSummaryCancelCommand"
+        uri="BallyTech.UI.Web.Command.Inventory.MovementSummaryCancelCommand,BallyTech.UI.Web.Command.Inventory" />
+  <CommandConfig
+        key="Inventory.MovementSummaryProcessFillSaveCommand"
+        uri="BallyTech.UI.Web.Command.Inventory.MovementSummaryProcessFillSaveCommand,BallyTech.UI.Web.Command.Inventory" />
+  <CommandConfig
+        key="Inventory.MovementSummaryProcessCreditSaveCommand"
+        uri="BallyTech.UI.Web.Command.Inventory.MovementSummaryProcessCreditSaveCommand,BallyTech.UI.Web.Command.Inventory" />
+  <CommandConfig
+        key="Inventory.TransactionHistoryLoadCommand"
+        uri="BallyTech.UI.Web.Command.Inventory.TransactionHistoryLoadCommand,BallyTech.UI.Web.Command.Inventory" />
+  <CommandConfig
+        key="Inventory.TransactionHistoryAdvancedSearchCommand"
+        uri="BallyTech.UI.Web.Command.Inventory.TransactionHistoryAdvancedSearchCommand,BallyTech.UI.Web.Command.Inventory" />
+  <CommandConfig
+        key="Inventory.TransactionHistoryLoadGridCommand"
+        uri="BallyTech.UI.Web.Command.Inventory.TransactionHistoryLoadGridCommand,BallyTech.UI.Web.Command.Inventory" />
+  <CommandConfig
+        key="Inventory.TransactionHistoryLoadSearchCommand"
+        uri="BallyTech.UI.Web.Command.Inventory.TransactionHistoryLoadSearchCommand,BallyTech.UI.Web.Command.Inventory" />
+  <CommandConfig
+        key="Inventory.TransactionHistoryViewDetailsCommand"
+        uri="BallyTech.UI.Web.Command.Inventory.TransactionHistoryViewDetailsCommand,BallyTech.UI.Web.Command.Inventory" />
+  <CommandConfig
+        key="Inventory.TransactionHistoryVoidCommand"
+        uri="BallyTech.UI.Web.Command.Inventory.TransactionHistoryVoidCommand,BallyTech.UI.Web.Command.Inventory" />
+  <CommandConfig
+        key="Inventory.TransactionHistoryVoidSaveCommand"
+        uri="BallyTech.UI.Web.Command.Inventory.TransactionHistoryVoidSaveCommand,BallyTech.UI.Web.Command.Inventory" />
+  <CommandConfig
+        key="Inventory.VerifyRollPostVariance"
+        uri="BallyTech.UI.Web.Command.Inventory.VerifyRollPostVariance,BallyTech.UI.Web.Command.Inventory" />
+  <!--  End Session-->
+  <CommandConfig
+        key="Inventory.EndSessionGridCommand"
+        uri="BallyTech.UI.Web.Command.Inventory.EndSessionGridCommand, BallyTech.UI.Web.Command.Inventory" />
+  <CommandConfig
+        key="Inventory.EndSessionLoadCommand"
+        uri="BallyTech.UI.Web.Command.Inventory.EndSessionLoadCommand, BallyTech.UI.Web.Command.Inventory" />
+  <CommandConfig
+        key="Inventory.EndSessionProcessCommand"
+        uri="BallyTech.UI.Web.Command.Inventory.EndSessionProcessCommand, BallyTech.UI.Web.Command.Inventory" />
+  <CommandConfig
+        key="Inventory.EndSessionSaveCommand"
+        uri="BallyTech.UI.Web.Command.Inventory.EndSessionSaveCommand, BallyTech.UI.Web.Command.Inventory" />
+  <CommandConfig
+        key="Inventory.InventoryInLoadCommand"
+        uri="BallyTech.UI.Web.Command.Inventory.InventoryInLoadCommand,BallyTech.UI.Web.Command.Inventory" />
+  <CommandConfig
+        key="Inventory.InventoryInSaveCommand"
+        uri="BallyTech.UI.Web.Command.Inventory.InventoryInSaveCommand,BallyTech.UI.Web.Command.Inventory" />
+  <CommandConfig
+        key="Inventory.InventoryOutLoadCommand"
+        uri="BallyTech.UI.Web.Command.Inventory.InventoryOutLoadCommand,  BallyTech.UI.Web.Command.Inventory" />
+  <CommandConfig
+        key="Inventory.InventoryOutSaveCommand"
+        uri="BallyTech.UI.Web.Command.Inventory.InventoryOutSaveCommand,  BallyTech.UI.Web.Command.Inventory" />
+  <CommandConfig
+        key="Player.ElectronicFundPendingTransactionCommand"
+        uri="BallyTech.UI.Web.Command.Player.ElectronicFundPendingTransactionCommand, BallyTech.UI.Web.Command.Players" />
+  <!--Awards-->
+  <CommandConfig
+        key="Player.PlayerAwardsCommand"
+        uri="BallyTech.UI.Web.Command.Player.Awards.PlayerAwardsCommand,BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.PlayerAwardAuthCommand"
+        uri="BallyTech.UI.Web.Command.Player.Awards.GetPlayerAwardAuthCommand,BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.PlayerPrizeDetailGridCommand"
+        uri="BallyTech.UI.Web.Command.Player.Awards.PlayerPrizeDetailGridCommand,  BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.SavePlayerAwardsAuthDetailCommand"
+        uri="BallyTech.UI.Web.Command.Players.Awards.SavePlayerAwardsAuthDetailCommand,  BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.SavePlayerAwardsAdjustDetailCommand"
+        uri="BallyTech.UI.Web.Command.Players.Awards.SavePlayerAwardsAdjustDetailCommand,  BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.SavePlayerAwardsVoidDetailCommand"
+        uri="BallyTech.UI.Web.Command.Players.Awards.SavePlayerAwardsVoidDetailCommand,  BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.SavePlayerAwardsSettleDetailCommand"
+        uri="BallyTech.UI.Web.Command.Players.Awards.SavePlayerAwardsSettleDetailCommand,  BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Common.SecondaryAuthorizerLoadCommand"
+        uri="BallyTech.UI.Web.Command.Common.SecondaryAuthorizerLoadCommand,BallyTech.UI.Web.Command.Common" />
+  <CommandConfig
+        key="Common.SecondaryAuthorizerCommand"
+        uri="BallyTech.UI.Web.Command.Common.SecondaryAuthorizerCommand,BallyTech.UI.Web.Command.Common" />
+  <CommandConfig
+        key="Player.GetAwardTypeCommand"
+        uri="BallyTech.UI.Web.Command.Players.Awards.GetAwardTypeCommand,  BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.PlayerAwardAdjustCommand"
+        uri="BallyTech.UI.Web.Command.Players.Awards.PlayerAwardAdjustCommand,  BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.PlayerAwardAuthorizeCommand"
+        uri="BallyTech.UI.Web.Command.Players.Awards.PlayerAwardAuthorizeCommand,  BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.PlayerAwardSettleCommand"
+        uri="BallyTech.UI.Web.Command.Players.Awards.PlayerAwardSettleCommand,  BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.PlayerAwardVoidCommand"
+        uri="BallyTech.UI.Web.Command.Players.Awards.PlayerAwardVoidCommand,  BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.GetPrizeDetailCommand"
+        uri="BallyTech.UI.Web.Command.Players.Awards.GetPrizeDetailCommand,  BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.GetAwardSettlement"
+        uri="BallyTech.UI.Web.Command.Players.Awards.GetAwardSettlement,  BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.PlayerAdjustCompGridCommand"
+        uri="BallyTech.UI.Web.Command.Players.Awards.PlayerAdjustCompGridCommand,  BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.PlayerVoidCompGridCommand"
+        uri="BallyTech.UI.Web.Command.Players.Awards.PlayerVoidCompGridCommand,  BallyTech.UI.Web.Command.Players" />
+  <CommandConfig
+        key="Player.GetSwipedPlayerBalanceCommand"
+        uri="BallyTech.UI.Web.Command.Players.Awards.GetSwipedPlayerBalanceCommand,  BallyTech.UI.Web.Command.Players" />
+  <!--Awards-->
+  <CommandConfig
+        key="Inventory.PostVarianceSaveCommand"
+        uri="BallyTech.UI.Web.Command.Inventory.PostVarianceSaveCommand,BallyTech.UI.Web.Command.Inventory" />
+  <CommandConfig
+        key="Inventory.PostVarianceVerifyCommand"
+        uri="BallyTech.UI.Web.Command.Inventory.VerifyPostVariance,BallyTech.UI.Web.Command.Inventory" />
+  <!--SlotRevenue- HardMeter-->
+  <CommandConfig
+        key="SlotRevenue.HardMeterCommand"
+        uri="BallyTech.UI.Web.Command.SlotRevenue.HardMeterCommand, BallyTech.UI.Web.Command.SlotRevenue" />
+  <CommandConfig
+        key="SlotRevenue.AddGamingdayLoadCommand"
+        uri="BallyTech.UI.Web.Command.SlotRevenue.AddGamingdayLoadCommand, BallyTech.UI.Web.Command.SlotRevenue" />
+  <CommandConfig
+        key="SlotRevenue.AddMeterData"
+        uri="BallyTech.UI.Web.Command.SlotRevenue.AddMeterData, BallyTech.UI.Web.Command.SlotRevenue" />
+  <CommandConfig
+        key="SlotRevenue.AddEmptyRecordsCommand"
+        uri="BallyTech.UI.Web.Command.SlotRevenue.AddEmptyRecordsCommand, BallyTech.UI.Web.Command.SlotRevenue" />
+  <CommandConfig
+        key="SlotRevenue.ViewAssetMeterDataCommand"
+        uri="BallyTech.UI.Web.Command.SlotRevenue.ViewAssetMeterDataCommand, BallyTech.UI.Web.Command.SlotRevenue" />
+  <CommandConfig
+        key="SlotRevenue.DeleteAssetGamingHardMetersData"
+        uri="BallyTech.UI.Web.Command.SlotRevenue.DeleteAssetGamingHardMetersData, BallyTech.UI.Web.Command.SlotRevenue" />
+  <CommandConfig
+        key="SlotRevenue.EditAssetGamingHardMetersData"
+        uri="BallyTech.UI.Web.Command.SlotRevenue.EditAssetGamingHardMetersData, BallyTech.UI.Web.Command.SlotRevenue" />
+  <CommandConfig
+        key="SlotRevenue.UpdateMeterData"
+        uri="BallyTech.UI.Web.Command.SlotRevenue.UpdateMeterData, BallyTech.UI.Web.Command.SlotRevenue" />
+  <CommandConfig
+      key = "SlotRevenue.GetHardMeterMeterDataByGamingday"
+      uri = "BallyTech.UI.Web.Command.SlotRevenue.GetHardMeterMeterDataByGamingday, BallyTech.UI.Web.Command.SlotRevenue" />
+  <!--Site Registration-->
+  <CommandConfig
+        key="Site.SiteCommand"
+        uri="BallyTech.UI.Web.Command.Site.SiteCommand, BallyTech.UI.Web.Command.Site" />
+  <CommandConfig
+        key="Site.ValidateEDCIP"
+        uri="BallyTech.UI.Web.Command.Site.ValidateEDCIP, BallyTech.UI.Web.Command.Site" />
+  <CommandConfig
+        key="Site.DataPullFromEDCCommand"
+        uri="BallyTech.UI.Web.Command.Site.DataPullFromEDCCommand, BallyTech.UI.Web.Command.Site" />
+  <CommandConfig
+        key="Site.CoreSyncGridCommand"
+        uri="BallyTech.UI.Web.Command.Site.CoreSyncGridCommand, BallyTech.UI.Web.Command.Site" />
+  <CommandConfig
+        key="Site.GetCoreSystemsCommand"
+        uri="BallyTech.UI.Web.Command.Site.GetCoreSystemsCommand, BallyTech.UI.Web.Command.Site" />
+  <CommandConfig
+        key="externalControlHelper.extenalControlHelper"
+        uri="BallyTech.UI.Web.Command.Common.ExternalControlHelperCommand,BallyTech.UI.Web.Command.Common" />
+  <!-- REPORTS -->
+  <CommandConfig  key = "Reports.ReportCommand"
+                    uri = "BallyTech.UI.Web.Command.Reports.ReportCommand, BallyTech.UI.Web.Command.Reports" />
+
+  <CommandConfig  key = "Reports.GetSelectedReportCommand"
+                    uri = "BallyTech.UI.Web.Command.Reports.GetSelectedReportCommand, BallyTech.UI.Web.Command.Reports" />
+
+  <CommandConfig  key = "Reports.RenderReportCommand"
+                    uri = "BallyTech.UI.Web.Command.Reports.RenderReportCommand, BallyTech.UI.Web.Command.Reports" />
+  <!-- END OF REPORTS -->
+</CommandTypeConfig>

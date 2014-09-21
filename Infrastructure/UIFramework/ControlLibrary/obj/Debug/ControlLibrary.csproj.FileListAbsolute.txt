@@ -1,0 +1,30 @@
+D:\StarTeam\Projects\Site Controller\Coding\Source\Infrastructure\UIFramework\ControlLibrary\bin\debug\BallyTech.UI.Web.ControlLibrary.dll
+D:\StarTeam\Projects\Site Controller\Coding\Source\Infrastructure\UIFramework\ControlLibrary\bin\debug\BallyTech.UI.Web.ControlLibrary.pdb
+D:\StarTeam\Projects\Site Controller\Coding\Source\Infrastructure\UIFramework\ControlLibrary\bin\debug\BallyTech.UI.Web.Framework.Interfaces.dll
+D:\StarTeam\Projects\Site Controller\Coding\Source\Infrastructure\UIFramework\ControlLibrary\bin\debug\BallyTech.UI.Web.ResourceManager.dll
+D:\StarTeam\Projects\Site Controller\Coding\Source\Infrastructure\UIFramework\ControlLibrary\bin\debug\BallyTech.UI.Web.Data.dll
+D:\StarTeam\Projects\Site Controller\Coding\Source\Infrastructure\UIFramework\ControlLibrary\bin\debug\Newtonsoft.Json.dll
+D:\StarTeam\Projects\Site Controller\Coding\Source\Infrastructure\UIFramework\ControlLibrary\bin\debug\NetSerializer.dll
+D:\StarTeam\Projects\Site Controller\Coding\Source\Infrastructure\UIFramework\ControlLibrary\bin\debug\protobuf-net.dll
+D:\StarTeam\Projects\Site Controller\Coding\Source\Infrastructure\UIFramework\ControlLibrary\bin\debug\BallyTech.UI.Web.Framework.Interfaces.pdb
+D:\StarTeam\Projects\Site Controller\Coding\Source\Infrastructure\UIFramework\ControlLibrary\bin\debug\BallyTech.UI.Web.ResourceManager.pdb
+D:\StarTeam\Projects\Site Controller\Coding\Source\Infrastructure\UIFramework\ControlLibrary\bin\debug\BallyTech.UI.Web.Data.pdb
+D:\StarTeam\Projects\Site Controller\Coding\Source\Infrastructure\UIFramework\ControlLibrary\obj\Debug\ControlLibrary.csprojResolveAssemblyReference.cache
+D:\StarTeam\Projects\Site Controller\Coding\Source\Infrastructure\UIFramework\ControlLibrary\obj\Debug\BallyTech.UI.Web.ControlLibrary.dll
+D:\StarTeam\Projects\Site Controller\Coding\Source\Infrastructure\UIFramework\ControlLibrary\obj\Debug\BallyTech.UI.Web.ControlLibrary.pdb
+D:\KRISHNA\Code\Infrastructure\UIFramework\ControlLibrary\obj\Debug\ControlLibrary.csprojResolveAssemblyReference.cache
+D:\KRISHNA\Code\Infrastructure\UIFramework\ControlLibrary\bin\debug\Newtonsoft.Json.dll
+D:\KRISHNA\Code\Infrastructure\UIFramework\ControlLibrary\bin\debug\NetSerializer.dll
+D:\KRISHNA\Code\Infrastructure\UIFramework\ControlLibrary\bin\debug\protobuf-net.dll
+D:\KRISHNA\Code\Infrastructure\UIFramework\ControlLibrary\bin\debug\Controls.ControlLibrary.dll
+D:\KRISHNA\Code\Infrastructure\UIFramework\ControlLibrary\bin\debug\Controls.ControlLibrary.pdb
+D:\KRISHNA\Code\Infrastructure\UIFramework\ControlLibrary\obj\Debug\Controls.ControlLibrary.dll
+D:\KRISHNA\Code\Infrastructure\UIFramework\ControlLibrary\obj\Debug\Controls.ControlLibrary.pdb
+D:\KRISHNA\Code\Infrastructure\UIFramework\ControlLibrary\bin\debug\Controls.Framework.Interfaces.dll
+D:\KRISHNA\Code\Infrastructure\UIFramework\ControlLibrary\bin\debug\Controls.Framework.Interfaces.pdb
+D:\KRISHNA\Code\Infrastructure\UIFramework\ControlLibrary\bin\debug\Controls.ResourceManager.dll
+D:\KRISHNA\Code\Infrastructure\UIFramework\ControlLibrary\bin\debug\Controls.ResourceManager.pdb
+D:\KRISHNA\Code\Infrastructure\UIFramework\ControlLibrary\bin\debug\Controls.Data.dll
+D:\KRISHNA\Code\Infrastructure\UIFramework\ControlLibrary\bin\debug\Controls.Data.pdb
+D:\KRISHNA\Code\Infrastructure\UIFramework\ControlLibrary\bin\debug\Controls.Utilities.dll
+D:\KRISHNA\Code\Infrastructure\UIFramework\ControlLibrary\bin\debug\Controls.Utilities.pdb

@@ -1,0 +1,8 @@
+D:\StarTeam\Projects\Site Controller\Coding\Source\Infrastructure\Utilities\obj\Debug\Utilities.csprojResolveAssemblyReference.cache
+D:\KRISHNA\Code\Infrastructure\Utilities\bin\Debug\NetSerializer.dll
+D:\KRISHNA\Code\Infrastructure\Utilities\bin\Debug\Newtonsoft.Json.dll
+D:\KRISHNA\Code\Infrastructure\Utilities\bin\Debug\protobuf-net.dll
+D:\KRISHNA\Code\Infrastructure\Utilities\bin\Debug\Controls.Utilities.dll
+D:\KRISHNA\Code\Infrastructure\Utilities\bin\Debug\Controls.Utilities.pdb
+D:\KRISHNA\Code\Infrastructure\Utilities\obj\Debug\Controls.Utilities.dll
+D:\KRISHNA\Code\Infrastructure\Utilities\obj\Debug\Controls.Utilities.pdb

@@ -1,0 +1,4190 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandActionTypeConfig>
+  <CommandActionConfig
+        key="dashboard"
+        refreshDiv=""
+        result="View"
+        view="dashboard"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Common.DashboardCommand" />
+
+  <CommandActionConfig
+        key="dashboard_menu"
+        refreshDiv=""
+        result="JSON"
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Framework.DashboardMenuListCommand" />
+
+  <CommandActionConfig
+        key="is_memberhip_number_search"
+        refreshDiv=""
+        result="JSON"
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.IsMembershipNumberSearch" />
+
+  <CommandActionConfig
+        key="GetPlayerCardPrefix"
+        refreshDiv=""
+        result="JSON"
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.GetPlayerCardPrefix" />
+
+  <CommandActionConfig
+        key="common_Logger_Post"
+        refreshDiv=""
+        result="JSON"
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Common.LoggerCommand" />
+
+  <CommandActionConfig
+        key="Player_PostalCode_Get"
+        refreshDiv=""
+        result="JSON"
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.GetPostalCodeCommand" />
+
+  <CommandActionConfig
+        key="common_handledexception"
+        refreshDiv=""
+        result="JSON"
+        view=""
+        allowAnonymous="true"
+        exceptionPolicy="UIDefault"
+        command="Exception.HandledExceptionCommand" />
+
+  <CommandActionConfig
+        key="common_unhandledexception"
+        refreshDiv=""
+        result="JSON"
+        view=""
+        allowAnonymous="true"
+        exceptionPolicy="UIDefault"
+        command="Exception.UnhandledExceptionCommand" />
+
+  <CommandActionConfig
+        key="Player_EnrollPlayer_load"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Player\\Player\\EnrollPlayer"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.EnrollmentPrerequisiteCommand" />
+
+  <CommandActionConfig
+        key="Player_EnrollPlayer_Post"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Player\\Maintainence\\PlayerMaintenance"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.SaveEnrollPlayerCommand" />
+
+  <CommandActionConfig
+        key="Player_GetTerritorialStateCommand_Get"
+        refreshDiv=""
+        result="JSON"
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.GetTerritorialStateCommand" />
+
+  <CommandActionConfig
+        key="Player_GetCityCommand_Get"
+        refreshDiv=""
+        result="JSON"
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.GetCityCommand" />
+
+  <CommandActionConfig
+        key="EnrollPlayer_DataGrid_Viewload"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Player\\Player\\PlayerDataGrid"
+        allowAnonymous="true"
+        exceptionPolicy="UIDefault"
+        command="ControlLibrary.EnrollPlayerDataGridCommand" />
+
+  <CommandActionConfig
+        key="EnrollPlayer_DataGrid_DataLoad"
+        refreshDiv=""
+        result="JSON"
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="ControlLibrary.EnrollPlayerDataGridDataLoadCommand" />
+
+  <CommandActionConfig
+        key="Player_Common_PlayerSearch"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Player\\PlayerSearch\\PlayerSearchResults"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.EmptySearchPlayerCommand" />
+
+  <CommandActionConfig
+        key="Player_Common_PlayerSearchGridViewData"
+        refreshDiv=""
+        result="JSON"
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.SearchPlayerCommand" />
+
+  <CommandActionConfig
+        key="Player_Common_SearchRecentPlayers"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Player\\PlayerSearch\\PlayerRecentEnrollments"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.SearchRecentEnrollmentsCommand" />
+
+  <CommandActionConfig
+        key="Player_Common_EditPlayer"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Player\\Maintainence\\PlayerMaintenance"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.PlayerDetailsByMembershipNumberCommand" />
+
+  <CommandActionConfig
+        key="Player_Common_PlayerGroup"
+        refreshDiv="Slidingpanel-wrapper"
+        result="PartialView"
+        view="Player\\Maintainence\\Groups"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.GetPlayerGroupCommand" />
+
+  <CommandActionConfig
+        key="Player_Common_PlayerGroup_Post"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Player\\Maintainence\\PlayerMaintenance"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.SavePlayerGroupCommand" />
+
+  <CommandActionConfig
+        key="Player_Common_PlayerType"
+        refreshDiv="Slidingpanel-wrapper"
+        result="PartialView"
+        view="Player\\Maintainence\\PlayerType"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.GetPlayerTypeCommand" />
+
+  <CommandActionConfig
+        key="PlayerMaintenance_Common_PlayerType_Save"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Player\\Maintainence\\PlayerMaintenance"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.SavePlayerTypeCommand" />
+
+  <CommandActionConfig
+        key="Player_Common_PlayerReport"
+        refreshDiv="Slidingpanel-wrapper"
+        result="PartialView"
+        view="Player\\Maintainence\\Reports"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.GetPlayerReportCommand" />
+
+  <CommandActionConfig
+        key="Player_Common_GetPlayerReportFile"
+        refreshDiv=""
+        result="JSON"
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.PlayerReportCommand" />
+
+  <CommandActionConfig
+        key="Rating_VoidManualRating_Preload"
+        refreshDiv="Slidingpanel-wrapper"
+        result="PartialView"
+        view="Player\\Rating\\VoidManualSlotRating"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.VoidManualRatingCommand" />
+
+  <CommandActionConfig
+        key="Rating_VoidManualRating_load"
+        refreshDiv="Vertical_Container"
+        result="PartialView"
+        view="Player\\Rating\\VoidManualSlotRatingTileGroup"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.VoidManualRatingLoadCommand" />
+
+  <CommandActionConfig
+        key="Rating_VoidManualRating_Save_NoResponse"
+        refreshDiv=""
+        result="JSON"
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.VoidManualRatingSaveNoResponse" />
+
+  <CommandActionConfig
+        key="Rating_VoidManualRating_Save"
+        refreshDiv="PlayerBalance_PartialView"
+        result="PartialView"
+        view="Player\\Maintainence\\PlayerBalance"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.VoidManualRatingSaveResponse" />
+
+  <CommandActionConfig
+        key="Player_Common_PlayerGroup_NoResponse"
+        refreshDiv=""
+        result="JSON"
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.SavePlayerGroupCommandNoResponse" />
+
+  <CommandActionConfig
+        key="AssetSearch_Load"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Asset\\AssetsSearch"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Assets.AssetsSearchCommand" />
+
+  <CommandActionConfig
+        key="AssetMatrixSynch_Trigger"
+        refreshDiv=""
+        result="JSON"
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Assets.TriggerAssetMatrixSynchCommand" />
+
+  <CommandActionConfig
+        key="AssetsAdvancedSearch_Load"
+        refreshDiv="Slidingpanel-wrapper"
+        result="PartialView"
+        view="Asset\\AssetsAdvancedSearch"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Assets.AssetsSearchCommand" />
+
+  <CommandActionConfig
+        key="AssetsSearchResults_Load"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Asset\\AssetsSearchResults"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Assets.AssetsSearchResultsCommand" />
+
+  <CommandActionConfig
+        key="AssetsSearchResults_GridLoad"
+        refreshDiv=""
+        result="JSON"
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Assets.AssetsSearchResultsDataCommand" />
+
+  <CommandActionConfig
+        key="AssetsSearchResultsCancel_Load"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Asset\\AssetsSearchResults"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Assets.AssetsSearchResultsCancelCommand" />
+
+  <CommandActionConfig
+        key="AssetsSortResults_Load"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Asset\\AssetsSearchResults"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Assets.AssetsSortResultsCommand" />
+
+  <CommandActionConfig
+        key="AssetsEnroll_Load"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Asset\\AssetsSearchResults"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Assets.AssetsEnrollCommand" />
+
+  <CommandActionConfig
+        key="AssetsIndividualEnroll_Load"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Asset\\AssetsView"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Assets.AssetIndividualEnrollCommand" />
+
+  <CommandActionConfig
+        key="AssetsIndividualUnEnroll_Load"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Asset\\AssetsView"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Assets.AssetIndividualUnEnrollCommand" />
+
+  <CommandActionConfig
+        key="AssetsUnEnroll_Load"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Asset\\AssetsSearchResults"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Assets.AssetsUnEnrollCommand" />
+
+  <CommandActionConfig
+        key="AssetsView_Load"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Asset\\AssetsView"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Assets.AssetsViewCommand" />
+
+  <CommandActionConfig
+        key="InsiteControllerIndividualStart_Load"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Asset\\AssetsView"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Assets.InsiteConrollerIndividualStart" />
+
+  <CommandActionConfig
+        key="InsiteControllerIndividualStop_Load"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Asset\\AssetsView"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Assets.InsiteControllerIndividualStop" />
+
+  <CommandActionConfig
+      key="AssetsStartController_Load"
+      refreshDiv="workSpace"
+      result="PartialView"
+      view="Asset\\AssetsSearchResults"
+      allowAnonymous="false"
+      exceptionPolicy="UIDefault"
+      command="Assets.InsiteControllerStartCommand" />
+
+  <CommandActionConfig
+      key="AssetsStopController_Load"
+      refreshDiv="workSpace"
+      result="PartialView"
+      view="Asset\\AssetsSearchResults"
+      allowAnonymous="false"
+      exceptionPolicy="UIDefault"
+      command="Assets.InsiteControllerStopCommand" />
+
+  <CommandActionConfig
+      key="SuspiciousSlotsView_Load"
+      refreshDiv="workSpace"
+      result="PartialView"
+      view="Asset\\ReactivateSlots"
+      allowAnonymous="false"
+      exceptionPolicy="UIDefault"
+      command="Assets.SuspiciousSlotsViewCommand" />
+
+  <CommandActionConfig
+      key="SuspiciousSlotsActivate_Load"
+      refreshDiv=""
+      result="JSON"
+      view=""
+      allowAnonymous="false"
+      exceptionPolicy="UIDefault"
+      command="Assets.SuspiciousSlotsActivateCommand" />
+
+  <CommandActionConfig
+        key="PlayerMaintenance_BirthDay_Load"
+        refreshDiv="Slidingpanel-wrapper"
+        result="PartialView"
+        view="Player\\Maintainence\\BirthDay"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.GetPlayerDetails" />
+
+  <CommandActionConfig
+        key="PlayerMaintenance_Anniversary_Load"
+        refreshDiv="Slidingpanel-wrapper"
+        result="PartialView"
+        view="Player\\Maintainence\\Anniversary"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.GetPlayerDetails" />
+
+  <CommandActionConfig
+        key="PlayerMaintenance_Flag_Load"
+        refreshDiv="Slidingpanel-wrapper"
+        result="PartialView"
+        view="Player\\Maintainence\\Flag"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.GetPlayerFlagCommand" />
+
+  <CommandActionConfig
+        key="Player_SaveFlag"
+        refreshDiv="PlayerFlag_PartialView"
+        result="PartialView"
+        view="Player\\Maintainence\\PlayerFlag"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.SavePlayerFlagCommand" />
+
+  <CommandActionConfig
+        key="PlayerMaintenance_Email_Load"
+        refreshDiv="Slidingpanel-wrapper"
+        result="PartialView"
+        view="Player\\Maintainence\\Email"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.GetPlayerEmailDetails" />
+
+  <CommandActionConfig
+        key="Load_Scan"
+        refreshDiv="Slidingpanel-wrapper"
+        result="PartialView"
+        view="Player\\Player\\PlayerScan"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.PlayerScanCommand" />
+
+  <CommandActionConfig
+        key="PlayerMaintenance_Email_Save"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Player\\Maintainence\\PlayerMaintenance"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.SavePlayerEmailDetails" />
+
+  <CommandActionConfig
+        key="Player_Common_Activate"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Player\\PlayerSearch\\PlayerSearchResults"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.ActivatePlayer" />
+
+  <CommandActionConfig
+        key="Player_Common_Upload"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Player\\PlayerSearch\\PlayerSearchResults"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.UploadBalanceCommand" />
+
+  <CommandActionConfig
+        key="PlayerMaintenance_PlayerName_Load"
+        refreshDiv="Slidingpanel-wrapper"
+        result="PartialView"
+        view="Player\\Maintainence\\PlayerName"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.GetPlayerDetails" />
+
+  <CommandActionConfig
+        key="PlayerMaintenance_Identifications_Load"
+        refreshDiv="Slidingpanel-wrapper"
+        result="PartialView"
+        view="Player\\Maintainence\\Identifications"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.GetPlayerIdentification" />
+
+  <CommandActionConfig
+        key="PlayerMaintenance_UpdateIdentification"
+        refreshDiv="identifications-tile"
+        result="PartialView"
+        view="Player\\Maintainence\\PlayerIdentifications"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.SavePlayerIdentification" />
+
+  <CommandActionConfig
+        key="PlayerMaintenance_Eseries_Load"
+        refreshDiv="Slidingpanel-wrapper"
+        result="PartialView"
+        view="Player\\Maintainence\\ESeries"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.GetPlayerEseries" />
+
+  <CommandActionConfig
+        key="GetElectronicFundProfiles_Load"
+        refreshDiv=""
+        result="JSON"
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.GetElectronicFundProfiles" />
+
+  <CommandActionConfig
+        key="PlayerMaintenance_UpdateESeries"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Player\\Maintainence\\PlayerMaintenance"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.SavePlayerESeries" />
+
+  <CommandActionConfig
+        key="PlayerMaintenance_Contacts_Load"
+        refreshDiv="Slidingpanel-wrapper"
+        result="PartialView"
+        view="Player\\Maintainence\\Contacts"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.GetPlayerContact" />
+
+  <CommandActionConfig
+        key="PlayerMaintenance_UpdateContact"
+        refreshDiv="contacts-tile"
+        result="PartialView"
+        view="Player\\Maintainence\\PlayerContacts"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.SavePlayerContact" />
+
+  <CommandActionConfig
+        key="Player_GetBeverage"
+        refreshDiv="Slidingpanel-wrapper"
+        result="PartialView"
+        view="Player\\Maintainence\\Beverage"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.GetPlayerBeverageCommand" />
+
+  <CommandActionConfig
+        key="Player_SaveBeverage"
+        refreshDiv="PlayerBeverage_PartialView"
+        result="PartialView"
+        view="Player\\Maintainence\\PlayerBeverage"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.SavePlayerBeverageCommand" />
+
+  <CommandActionConfig
+        key="Player_GetPlayerBalance"
+        refreshDiv="Slidingpanel-wrapper"
+        result="PartialView"
+        view="Player\\Maintainence\\Balance"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.GetPlayerBalanceCommand" />
+
+  <CommandActionConfig
+        key="PlayerMaintenance_Address_Load"
+        refreshDiv="Slidingpanel-wrapper"
+        result="PartialView"
+        view="Player\\Maintainence\\Address"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.GetAddressCommand" />
+
+  <CommandActionConfig
+        key="GetTerritorialStateCommand"
+        refreshDiv=""
+        result="JSON"
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.GetTerritorialStateCommand" />
+
+  <CommandActionConfig
+        key="GetCityCommand"
+        refreshDiv=""
+        result="JSON"
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.GetCityCommand" />
+
+  <CommandActionConfig
+        key="PlayerMaintenance_SavePlayerAddresses_Post"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Player\\Maintainence\\PlayerMaintenance"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.SavePlayerAddress" />
+
+  <CommandActionConfig
+        key="PlayerMaintenance_Changepin_load"
+        refreshDiv="Slidingpanel-wrapper"
+        result="PartialView"
+        view="Player\\Maintainence\\ChangePin"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.ChangePinLoadCommand" />
+
+  <CommandActionConfig
+        key="PlayerMaintenance_ChangePin_Save"
+        refreshDiv=""
+        result="JSON"
+        view="Player\\Maintainence\\PlayerMaintenance"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.ChangePinCommand" />
+
+  <CommandActionConfig
+        key="PlayerMaintenance_Club_Load"
+        refreshDiv="Slidingpanel-wrapper"
+        result="PartialView"
+        view="Player\\Maintainence\\Club"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.GetClubCommand" />
+
+  <CommandActionConfig
+        key="PlayerMaintenance_Club_Save"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Player\\Maintainence\\PlayerMaintenance"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.SaveClubCommand" />
+
+  <CommandActionConfig key= "PlayerMaintenance_Suspend_Membership"
+            refreshDiv = "workSpace"
+            result = "PartialView"
+            view = "Player\\Maintainence\\PlayerMaintenance"
+            allowAnonymous = "false"
+            exceptionPolicy = "UIDefault"
+            command = "Player.SuspendMembershipCommand" />
+
+  <CommandActionConfig
+        key="PlayerMaintenance_Club_Void"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Player\\Maintainence\\PlayerMaintenance"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.VoidMembershipClubCommand" />
+
+  <CommandActionConfig
+        key="PlayerMaintenance_ClubConfigurations_Load"
+        refreshDiv=""
+        result="JSON"
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.GetClubConfigurationsCommand" />
+
+  <CommandActionConfig
+        key="PlayerMaintenance_PlayerDetails_Post"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Player\\Maintainence\\PlayerMaintenance"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.SavePlayerDetails" />
+
+  <!-- Player Tags -->
+  <CommandActionConfig
+        key="PlayerMaintenance_AddPlayerTags"
+        refreshDiv=""
+        result="JSON"
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.AddPlayerTagCommand" />
+
+  <CommandActionConfig
+        key="PlayerMaintenance_RemovePlayerTags"
+        refreshDiv=""
+        result="JSON"
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.RemovePlayerTagCommand" />
+
+  <CommandActionConfig
+        key="PlayerMaintenance_EditPlayerTags"
+        refreshDiv="Slidingpanel-wrapper"
+        result="PartialView"
+        view="Player\\Maintainence\\Tag"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.EditPlayerTagCommand" />
+  <!-- End of Player Tags -->
+
+  <!-- Electronic Funds -->
+  <CommandActionConfig
+        key="ElectronicFund_GetPendingTransactions"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Player\\ElectronicFund\\ElectronicFundPendingTransactions"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.GetElectronicFundPendingsCommand" />
+
+  <CommandActionConfig
+        key="ElectronicFund_ClearPendingTransaction"
+        refreshDiv=""
+        result="JSON"
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.ClearPendingElectronicFundCommand" />
+
+  <CommandActionConfig
+        key="ElectronicFund_GetPendingTransactions_Grid"
+        refreshDiv=""
+        result="JSON"
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.GetElectronicFundPendingsCommand" />
+
+  <!-- Endo of Electronic Funds -->
+  <CommandActionConfig
+        key="PlayerMaintenance_Gender_Load"
+        refreshDiv="Slidingpanel-wrapper"
+        result="PartialView"
+        view="Player\\Maintainence\\Gender"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.GetPlayerGenderCommand" />
+
+  <CommandActionConfig
+        key="Player_Save_Gender_Details"
+        refreshDiv="PlayerGender_PartialView"
+        result="PartialView"
+        view="Player\\Maintainence\\PlayerGender"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.SavePlayerGenderDetails" />
+
+  <CommandActionConfig
+        key="PlayerMaintenance_Note_Copy"
+        refreshDiv="Slidingpanel-wrapper"
+        result="PartialView"
+        view="Player\\Maintainence\\AppNotes"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.CopyPlayerTextCommand" />
+
+  <CommandActionConfig
+        key="PlayerMaintenance_Smoking_Load"
+        refreshDiv="Slidingpanel-wrapper"
+        result="PartialView"
+        view="Player\\Maintainence\\Smoking"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.GetPlayerSmokingInfoCommand" />
+
+  <CommandActionConfig
+        key="Player_SavePlSmokingInfo"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Player\\Maintainence\\PlayerMaintenance"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.SavePlayerSmokingInfoCommand" />
+
+  <CommandActionConfig
+        key="Player_PlayerCard_get"
+        refreshDiv="Slidingpanel-wrapper"
+        result="PartialView"
+        view="Player\\Player\\PlayerCard"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.PlayerCardCommand" />
+
+  <CommandActionConfig
+        key="Player_PlayerCard_save"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Player\\Maintainence\\PlayerMaintenance"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.SavePlayerCardCommand" />
+
+  <CommandActionConfig
+        key="PlayerMaintenance_pctags_Load"
+        refreshDiv="Slidingpanel-wrapper"
+        result="PartialView"
+        view="Player\\Maintainence\\PreCommitmentUnEnrollment"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="PreCommitment.LoadUnEnrollmentCommand" />
+
+  <CommandActionConfig
+        key="PlayerMaintenance_PCUnEnrollment_Save"
+        refreshDiv=""
+        result="JSON"
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="PreCommitment.SaveUnEnrollmentCommand" />
+
+  <CommandActionConfig
+        key="PlayerMaintenance_PCEnrollment_Load"
+        refreshDiv="Slidingpanel-wrapper"
+        result="PartialView"
+        view="Player\\Maintainence\\PreCommitmentEnrollment"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="PreCommitment.LoadEnrollmentCommand" />
+
+  <CommandActionConfig
+        key="PlayerMaintenance_PCEnrollment_ComboChanged"
+        refreshDiv=""
+        result="JSON"
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="PreCommitment.EnrollmentOptionChangeCommand" />
+
+  <CommandActionConfig
+        key="PlayerMaintenance_PCEnrollment_Save"
+        refreshDiv=""
+        result="JSON"
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="PreCommitment.SaveEnrollmentCommand" />
+
+  <CommandActionConfig
+        key="Player_GetRatingCommand"
+        refreshDiv="Slidingpanel-wrapper"
+        result="PartialView"
+        view="Player\\Rating\\ManualSlotRating"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.GetPlayerRatingCommand" />
+
+  <CommandActionConfig
+        key="Player_SaveRatingCommand"
+        refreshDiv="PlayerBalance_PartialView"
+        result="PartialView"
+        view="Player\\Maintainence\\PlayerBalance"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.SavePlayerRatingCommand" />
+
+  <CommandActionConfig
+        key="Player_SaveRatingCommandWithoutView"
+        refreshDiv=""
+        result="JSON"
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.SavePlayerRatingCommand" />
+
+  <CommandActionConfig
+        key="Player_GetOtherRatingCommand"
+        refreshDiv="Slidingpanel-wrapper"
+        result="PartialView"
+        view="Player\\Rating\\OtherRating"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.GetPlayerOtherRatingCommand" />
+
+  <CommandActionConfig
+        key="Player_SaveOtherRatingCommand"
+        refreshDiv="PlayerBalance_PartialView"
+        result="PartialView"
+        view="Player\\Maintainence\\PlayerBalance"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.SavePlayerOtherRatingCommand" />
+
+		<!--DIRECTED MESSAGES-->
+		
+ <CommandActionConfig key= "DirectedMessages_Flash_Load"
+            refreshDiv = "workSpace"
+            result = "PartialView"
+            view = "DirectedMessages\\Flash"
+            allowAnonymous = "false"
+            exceptionPolicy = "UIDefault"
+            command = "DirectedMessages.FlashMessagesLoadCommand" />
+
+  <CommandActionConfig key= "DirectedMessages_UploadedSlotNumber_Validate"
+                refreshDiv = ""
+                result = "JSON"
+                view = ""
+                allowAnonymous = "false"
+                exceptionPolicy = "UIDefault"
+                command = "DirectedMessages.UploadedSlotNumberValidateCommand" />
+
+  <CommandActionConfig key= "DirectedMessages_LoadAllSlots"
+              refreshDiv = ""
+              result = "JSON"
+              view = ""
+              allowAnonymous = "false"
+              exceptionPolicy = "UIDefault"
+              command = "DirectedMessages.GetAllSlotsCommand" />
+
+
+<CommandActionConfig key= "DirectedMessages_SlotLoadByAreaNameChange"
+          refreshDiv = ""
+          result = "JSON"
+          view = ""
+          allowAnonymous = "false"
+          exceptionPolicy = "UIDefault"
+          command = "DirectedMessages.SlotListLoadCommand" />
+
+  <CommandActionConfig key= "DirectedMessages_Promotional_Load"
+          refreshDiv = "workSpace"
+          result = "PartialView"
+          view = "DirectedMessages\\PromotionalMsg"
+          allowAnonymous = "false"
+          exceptionPolicy = "UIDefault"
+          command = "DirectedMessages.PromotionalMessagesLoadCommand" />
+
+  <CommandActionConfig key= "DirectedMessages_Flash_Send"
+        refreshDiv = ""
+        result = "JSON"
+        view = ""
+        allowAnonymous = "false"
+        exceptionPolicy = "UIDefault"
+        command = "DirectedMessages.FlashMessagesSendCommand" />
+
+  <CommandActionConfig key= "DirectedMessages_Promotional_Send"
+      refreshDiv = ""
+      result = "JSON"
+      view = ""
+      allowAnonymous = "false"
+      exceptionPolicy = "UIDefault"
+      command = "DirectedMessages.PromotionalMessagesSendCommand" />
+	<!--DIRECTED MESSAGES-->
+	  
+		
+  <!--TICKETS-->
+  <CommandActionConfig
+        key="Tickets_Tickets_Print"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Tickets\\TicketsPrint"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Tickets.TicketsPrintCommand" />
+
+  <CommandActionConfig
+        key="Tickets_PrintTicket"
+        refreshDiv="printTicket"
+        result="JSON"
+        view="Tickets\\TicketsPrint"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Tickets.PrintTicketCommand" />
+
+  <CommandActionConfig
+        key="Tickets_Tickets_Void"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Tickets\\TicketsVoid"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Tickets.TicketsVoidCommand" />
+
+  <CommandActionConfig
+        key="Tickets_VoidTicket"
+        refreshDiv="workSpace"
+        result="JSON"
+        view="Tickets\\TicketsVoid"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Tickets.VoidTicketCommand" />
+
+  <CommandActionConfig
+        key="Tickets_VoidSearchTicket"
+        refreshDiv="void-ticket-details"
+        result="PartialView"
+        view="Tickets\\TicketsVoidDetails"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Tickets.VoidSearchTicketCommand" />
+
+  <CommandActionConfig
+        key="Ticket_Redeem_Load"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Tickets\\RedeemTicketSteps"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Tickets.RedeemTicketCommand" />
+
+  <CommandActionConfig
+        key="GetPlayerIdentificationDetails"
+        refreshDiv="workSpace"
+        result="JSON"
+        view="Tickets\\RedeemTicket"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Tickets.GetTicketPayoutBehaviourCommand" />
+
+  <CommandActionConfig
+        key="SearchTicket"
+        refreshDiv=""
+        result="JSON"
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Tickets.SearchTicketCommand" />
+
+  <CommandActionConfig key= "SearchOfflineTicket"
+                   refreshDiv = "Slidingpanel-wrapper"
+                   result = "PartialView"
+                   view = "Tickets\\OfflineTicket"
+                   allowAnonymous = "false"
+                   exceptionPolicy = "UIDefault"
+                   command = "Tickets.OfflineRedeemCommand" />
+
+  <CommandActionConfig key= "Ticket_MultiRedeem"
+                   refreshDiv = ""
+        result="JSON"
+        view="Tickets\\RedeemTicket"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+                   command = "Tickets.GetMultiRedeemPayoutCommand" />
+
+  <CommandActionConfig
+        key="Ticket_RedeemTicket"
+        refreshDiv="workSpace"
+        result="JSON"
+        view="Tickets\\RedeemTicket"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Tickets.ProcessRedeemCommand" />
+
+  <CommandActionConfig key= "Ticket_OfflineRedeemTicket"
+        refreshDiv="workSpace"
+        result="JSON"
+                   view = "Tickets\\TicketsOffline"
+                   allowAnonymous = "false"
+                   exceptionPolicy = "UIDefault"
+                   command = "Tickets.ValidateOfflineTicketCommand" />
+
+  <CommandActionConfig key= "Ticket_OverrideRedeemTicket"
+                   refreshDiv = "workSpace"
+                   result = "JSON"
+                   view = "Tickets\\TicketsOffline"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Tickets.ProcessOverrrideRedeemCommand" />
+
+  <CommandActionConfig
+        key="Tickets_OverridePrintTicket"
+        refreshDiv="workSpace"
+        result="JSON"
+        view="Tickets\\TicketsPrint"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Tickets.AuthorizePrintTicketCommand" />
+
+  <!--<CommandActionConfig key= "Offline_Ticket"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Tickets\\TicketsOffline"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+		                  command = "Tickets.OfflineTicketRedeemCommand" />-->
+
+  <!--<CommandActionConfig key= "OfflineTicketResults_GridLoad"
+        refreshDiv=""
+        result="JSON"
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+                      command = "Tickets.OfflineTicketRedeemResultsCommand" />-->
+
+  <CommandActionConfig
+        key="Process_Offline_Ticket"
+        refreshDiv=""
+        result="JSON"
+        view="Tickets\\TicketsOffline"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Tickets.ProcessOfflineTicketRedeemCommand" />
+
+  <!--<CommandActionConfig key= "Delete_Offline_Ticket"
+        refreshDiv=""
+        result="JSON"
+        view="Tickets\\TicketsOffline"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+                      command = "Tickets.DeleteOfflineTicketRedeemCommand" />-->
+
+  <CommandActionConfig
+        key="Ticket_Stolen_Load"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Tickets\\TicketsStolen"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Tickets.TicketsStolenCommand" />
+
+  <CommandActionConfig
+        key="TicketsStolenSliding_Load"
+        refreshDiv="tickets-search"
+        result="PartialView"
+        view="Tickets\\TicketsStolenSliding"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Tickets.StolenTicketSlidingCommand" />
+
+  <CommandActionConfig
+        key="TicketsStolenTable_Load"
+        refreshDiv=""
+        result="JSON"
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Tickets.StolenTicketGridDataCommand" />
+
+  <CommandActionConfig
+        key="TicketsStolenTablePage_Load"
+        refreshDiv="TicketsStolen"
+        result="PartialView"
+        view="Tickets\\TicketsStolenGrid"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Tickets.StolenTicketGridCommand" />
+
+  <CommandActionConfig
+        key="Tickets_StolenTicket"
+        refreshDiv=""
+        result="JSON"
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Tickets.StolenTicketCommand" />
+
+  <CommandActionConfig
+        key="Ticket_Damaged_Load"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Tickets\\TicketsDamaged"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Tickets.TicketsDamagedCommand" />
+
+  <CommandActionConfig
+        key="TicketsDamagedSliding_Load"
+        refreshDiv="tickets-search"
+        result="PartialView"
+        view="Tickets\\TicketsDamagedSliding"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Tickets.DamagedTicketSlidingCommand" />
+
+  <CommandActionConfig
+        key="TicketsDamagedTable_Load"
+        refreshDiv=""
+        result="JSON"
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Tickets.DamagedTicketGridDataCommand" />
+
+  <CommandActionConfig
+        key="TicketsDamagedTablePage_Load"
+        refreshDiv="TicketsDamaged"
+        result="PartialView"
+        view="Tickets\\TicketsDamagedGrid"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Tickets.DamagedTicketGridCommand" />
+
+  <!--EMPLOYEE-->
+  <CommandActionConfig
+        key="ManageUsers_Activate"
+        refreshDiv="ContextMenulist"
+        result=""
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="UserManagement.ActivateCommand" />
+
+  <CommandActionConfig
+        key="ManageUsers_UnLock"
+        refreshDiv="ContextMenulist"
+        result=""
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="UserManagement.UnLockCommand" />
+
+  <CommandActionConfig
+        key="ManageUsers_AutoSignOff"
+        refreshDiv="ContextMenulist"
+        result=""
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="UserManagement.EnableAutoSignOffCommand" />
+
+  <CommandActionConfig
+        key="ManageUsers_ResetPassword"
+        refreshDiv=""
+        result=""
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="UserManagement.ResetPasswordCommand" />
+
+  <CommandActionConfig
+        key="ManageUsers_DisableAutoSignOff"
+        refreshDiv="ContextMenulist"
+        result=""
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="UserManagement.DisableAutoSignOffCommand" />
+
+  <CommandActionConfig
+        key="ManageUsers_DeActivate"
+        refreshDiv="ContextMenulist"
+        result=""
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="UserManagement.DeActivateCommand" />
+
+  <CommandActionConfig
+        key="ManageUsers_Load"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="UserManagement\\ManageUsers"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="UserManagement.ManageUsersListCommandLoad" />
+
+  <CommandActionConfig
+        key="ManageUsers_Load_Thumbals"
+        refreshDiv=""
+        result="JSON"
+        view="UserManagement\\ManageUsers"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="UserManagement.ManageUsersListCommand" />
+
+  <CommandActionConfig
+        key="ManageUsers_Load_Thumbals_Refresh"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="UserManagement\\ManageUsers"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="UserManagement.ManageUsersListCommand" />
+
+  <CommandActionConfig
+        key="ResetPassword_Load"
+        refreshDiv="Slidingpanel-wrapper"
+        result="PartialView"
+        view="UserManagement\\ResetPassword"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="UserManagement.ResetpasswordLoadCommand" />
+
+  <CommandActionConfig
+        key="ChangePasswordPopup_Process"
+        command="Common.ChangePasswordPopup"
+        result=""
+        refreshDiv=""
+        view=""
+        allowAnonymous="true"
+        exceptionPolicy="UIDefault" />
+
+  <CommandActionConfig
+        key="UserDetails_Load"
+        refreshDiv="Slidingpanel-wrapper"
+        result="PartialView"
+        view="UserManagement\\UserDetails"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="UserManagement.UserDetailsCommand" />
+
+  <CommandActionConfig
+        key="EmployeeSearch_Load"
+        refreshDiv="Slidingpanel-wrapper"
+        result="PartialView"
+        view="UserManagement\\EmployeeSearch"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="UserManagement.AdvancedEmployeeSearchCommand" />
+
+  <CommandActionConfig
+        key="UISession_Clear"
+        refreshDiv=""
+        result="View"
+        view="Common\Login\Login"
+        allowAnonymous="true"
+        exceptionPolicy="UIDefault"
+        command="Common.ClearUISessionCommand" />
+
+  <CommandActionConfig
+        key="Get_Print_Employee_Card"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="UserManagement\\PrintEmployeeCard"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="UserManagement.GetPrintEmployeeCardCommand" />
+
+  <CommandActionConfig
+        key="Save_Print_Employee_Card"
+        refreshDiv=""
+        result="JSON"
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="UserManagement.SavePrintEmployeeCardCommand" />
+
+  <CommandActionConfig
+        key="Employee_SearchResult_Load"
+        refreshDiv=""
+        result="JSON"
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="UserManagement.AdvancedEmployeeSearchResultCommand" />
+
+  <CommandActionConfig
+        key="login_logon"
+        command="Common.Logon"
+        result="JSON"
+        refreshDiv=""
+        view=""
+        allowAnonymous="true"
+        exceptionPolicy="UIDefault" />
+
+  <CommandActionConfig
+        key="login_SiteSelect"
+        command="Common.GetRoleCommand"
+        result="JSON"
+        refreshDiv=""
+        view=""
+        allowAnonymous="true"
+        exceptionPolicy="UIDefault" />
+
+  <CommandActionConfig
+        key="login_Authenticate"
+        command="Common.AuthenticateCommand"
+        result="JSON"
+        refreshDiv=""
+        view=""
+        allowAnonymous="true"
+        exceptionPolicy="UIDefault" />
+
+  <CommandActionConfig
+        key="login_RoleSelect"
+        command="Common.GetLocationsCommand"
+        result="JSON"
+        refreshDiv=""
+        view=""
+        allowAnonymous="true"
+        exceptionPolicy="UIDefault" />
+
+  <CommandActionConfig
+        key="common_login_login_load"
+        command="Common.Login"
+        result="View"
+        refreshDiv=""
+        view="Common\Login\Login"
+        allowAnonymous="true"
+        exceptionPolicy="UIDefault" />
+
+  <CommandActionConfig
+        key="common_login_logout"
+        command="Common.SignoffCommand"
+        result="View"
+        refreshDiv=""
+        view="Common\Login\Login"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault" />
+
+  <CommandActionConfig
+        key="common_login_login_locnchange"
+        command="Common.GetRoleCommand"
+        result="JSON"
+        refreshDiv=""
+        view=""
+        allowAnonymous="true"
+        exceptionPolicy="UIDefault" />
+
+  <CommandActionConfig
+        key="login_GetSiteList"
+        command="Common.GetLoginSiteListCommand"
+        result="JSON"
+        refreshDiv=""
+        view=""
+        allowAnonymous="true"
+        exceptionPolicy="UIDefault" />
+
+  <!--Employee Card-->
+  <CommandActionConfig
+        key="ManageCards_Load"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="UserManagement\\ManageCards"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="UserManagement.ManageCardsLoadCommand" />
+
+  <CommandActionConfig
+        key="ManageCardsList_Load"
+        refreshDiv=""
+        result="JSON"
+        view="UserManagement\\ManageCards"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="UserManagement.ManageCardsListLoadCommand" />
+
+  <CommandActionConfig
+        key="AddCard_Load"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="UserManagement\\AddCard"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="UserManagement.AddCardCommand" />
+
+  <CommandActionConfig
+        key="AddCard_Save"
+        refreshDiv=""
+        result="JSON"
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="UserManagement.AddCardSaveCommand" />
+
+  <CommandActionConfig
+        key="DeleteCard_Load"
+        refreshDiv=""
+        result="JSON"
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="UserManagement.DeleteCardCommand" />
+
+  <CommandActionConfig
+        key="AssignCard_Load"
+        refreshDiv=""
+        result="PartialView"
+        view="UserManagement\\AssignCardSlider"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="UserManagement.AssignCardCommand" />
+
+  <CommandActionConfig
+        key="AssignCard_SliderLoad"
+        refreshDiv="Slidingpanel-wrapper"
+        result="PartialView"
+        view="UserManagement\\AssignCardSlider"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="UserManagement.AssignCardSliderCommand" />
+
+  <CommandActionConfig
+        key="AssignCardToUserLoad"
+        refreshDiv="Slidingpanel-wrapper"
+        result="PartialView"
+        view="UserManagement\\AssignCardToUser"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="UserManagement.AssignCardToUserLoadCommand" />
+
+  <CommandActionConfig
+        key="AssignCardToUser"
+        refreshDiv=""
+        result="PartialView"
+        view="UserManagement\\AssignCardToUser"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="UserManagement.AssignCardToUserCommand" />
+
+  <CommandActionConfig
+        key="EmployeeSignOn_Login"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="UserManagement\\EmployeeCardSignOnLogin"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="UserManagement.EmployeeCardSignOnLoginCommand" />
+
+  <CommandActionConfig
+        key="EmployeeSignOnLogin_Authenticate"
+        refreshDiv=""
+        result="JSON"
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="UserManagement.EmployeeCardSignOnAuthenticateCommand" />
+
+  <CommandActionConfig
+        key="EmployeeCardSignOn_Load"
+        refreshDiv=""
+        result="JSON"
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="UserManagement.EmployeeCardSignOnCommand" />
+
+  <CommandActionConfig
+        key="AdminCardSignOn_IsAuthenticationRequired"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="UserManagement\\AdminCardSignOnLogin"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="UserManagement.AdminCardSignOnIsAuthenticationRequiredCommand" />
+
+  <CommandActionConfig
+        key="Admin_SignOn_GetEmployeeInfo"
+        refreshDiv=""
+        result="JSON"
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="UserManagement.AdminCardSignOnEmployeeDetailsCommand" />
+
+  <CommandActionConfig
+        key="Admin_SignOn"
+        refreshDiv=""
+        result="JSON"
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="UserManagement.AdminCardSignOnCommand" />
+
+  <CommandActionConfig
+        key="AdminCardSignOnLogin_Authenticate"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="UserManagement\\AdminCardSignOnLogin"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="UserManagement.AdminCardSignOnAuthenticateCommand" />
+
+  <CommandActionConfig
+        key="EmployeeCardSignOff_Login"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="UserManagement\\EmployeeCardSignOffLogin"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="UserManagement.EmployeeCardSignOffLoginCommand" />
+
+  <CommandActionConfig
+        key="EmployeeCardSignOff_Load"
+        refreshDiv=""
+        result="JSON"
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="UserManagement.EmployeeCardSignOffCommand" />
+
+  <CommandActionConfig
+        key="ActiveCardsList_Login"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="UserManagement\\ActiveCardsListLogin"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="UserManagement.ActiveCardsListLoginCommand" />
+
+  <CommandActionConfig
+        key="ActiveCardsList_Authenticate"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="UserManagement\\ActiveCardsList"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="UserManagement.ActiveCardsListAuthenticateCommand" />
+
+  <CommandActionConfig
+        key="ActiveCardGrid_load"
+        refreshDiv=""
+        result="JSON"
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="UserManagement.ActiveCardsListCommand" />
+
+  <CommandActionConfig
+        key="ActiveCardsList_SignOff"
+        refreshDiv=""
+        result="JSON"
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="UserManagement.ActiveCardsListSignOffCommand" />
+
+  <CommandActionConfig
+        key="ManageUsers_UnassignCard"
+        refreshDiv="ContextMenulist"
+        result=""
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="UserManagement.UnassignCardCommand" />
+
+  <!--EMPLOYEE-->
+  <!--Site GamingDay-->
+  <CommandActionConfig
+        key="Drop_DropWindow_load"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="SiteGamingDay\\SiteGamingDay"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="SiteGamingDay.SiteGamingDayCommand" />
+
+  <CommandActionConfig
+        key="Drop_StartDrop_Post"
+        refreshDiv=""
+        result=""
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="SiteGamingDay.StartCollectionCommand" />
+
+  <CommandActionConfig
+        key="Drop_StopDrop_Post"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="SiteGamingDay\\SiteGamingDay"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="SiteGamingDay.StopCollectionCommand" />
+
+  <!--Site GamingDay-->
+  <!--SoftCount Commands-->
+  <CommandActionConfig key= "SoftCount_SoftCount_load"
+                       refreshDiv = "workSpace"
+                       result = "PartialView"
+                       view = "SoftCount\\CountRoomSummary"
+                       allowAnonymous = "false"
+                       exceptionPolicy = "UIDefault"
+                       command = "SoftCount.SoftCountCommand" />
+
+  <CommandActionConfig key= "SoftCount_SoftCountGridDataLoad_load"
+                       refreshDiv = ""
+                       result = "JSON"
+                       view = ""
+                       allowAnonymous = "false"
+                       exceptionPolicy = "UIDefault"
+                       command = "SoftCount.CountRoomSummaryCommand" />
+
+  <CommandActionConfig key="SoftCount_Create_SoftCountSummary_load"
+          refreshDiv = "workSpace"
+          result = "PartialView"
+          view = "SoftCount\\SoftCountSummary"
+          allowAnonymous = "false"
+          exceptionPolicy = "UIDefault"
+          command = "SoftCount.CreateSoftCountCommand" />
+
+  <CommandActionConfig key="SoftCount_Countroom_SignOff_load"
+           refreshDiv = "workSpace"
+           result = "PartialView"
+           view = "SoftCount\\CountRoomSummary"
+           allowAnonymous = "false"
+           exceptionPolicy = "UIDefault"
+           command = "SoftCount.CountRoomSummarySignOffCommand" />
+
+  <CommandActionConfig key= "SoftCount_SignOffSoftCount_load"
+             refreshDiv = "workSpace"
+             result = "PartialView"
+             view = "SoftCount\\CountRoomSummary"
+             allowAnonymous = "false"
+             exceptionPolicy = "UIDefault"
+             command = "SoftCount.SoftCountSessionSignOffCommand" />
+
+  <CommandActionConfig key="SoftCount_ClearSoftCount_load"
+               refreshDiv = "workSpace"
+               result = "PartialView"
+               view = "SoftCount\\CountRoomSummary"
+               allowAnonymous = "false"
+               exceptionPolicy = "UIDefault"
+               command = "SoftCount.SoftCountSessionClearCommand" />
+
+  <CommandActionConfig key= "SoftCount_GamingDayDisabled_AssetSoftCountGridDataLoad_load"
+                     refreshDiv = ""
+                     result = "JSON"
+                     view = ""
+                     allowAnonymous = "false"
+                     exceptionPolicy = "UIDefault"
+                     command = "SoftCount.AssetTotalsSummaryCommand" />
+
+  <CommandActionConfig key= "SoftCount_GamingDayDisabled_LoadBills_load"
+                   refreshDiv = ""
+                   result = "JSON"
+                   view = ""
+                   allowAnonymous = "false"
+                   exceptionPolicy = "UIDefault"
+                   command = "SoftCount.AssetSoftCountBillsLoadCommand" />
+
+  <CommandActionConfig key= "SoftCount_GamingDayDisabled_TotalTicketsGridDataLoad_load"
+                   refreshDiv = ""
+                   result = "JSON"
+                   view = ""
+                   allowAnonymous = "false"
+                   exceptionPolicy = "UIDefault"
+                   command = "SoftCount.AssetTotalTicketsGridDataLoadCommand" />
+
+  <CommandActionConfig key="SoftCount_GamingDayDisabled_AssetAdd_load"
+         refreshDiv = "workSpace"
+         result = "PartialView"
+         view = "SoftCount\\AddSlot"
+         allowAnonymous = "false"
+         exceptionPolicy = "UIDefault"
+         command = "SoftCount.AssetAddCommand" />
+
+  <CommandActionConfig key="SoftCount_SaveBills_EditSlot__load"
+       refreshDiv = "ContextMenulist"
+       result = "PartialView"
+       view = "SoftCount\\EditSlot"
+       allowAnonymous = "false"
+       exceptionPolicy = "UIDefault"
+       command = "SoftCount.SaveBillsCommand" />
+
+  <CommandActionConfig key="SoftCount_GamingDayDisabled_AssetEdit_load"
+        refreshDiv = "workSpace"
+        result = "PartialView"
+        view = "SoftCount\\EditSlot"
+        allowAnonymous = "false"
+        exceptionPolicy = "UIDefault"
+        command = "SoftCount.AssetEditCommand" />
+
+  <CommandActionConfig key="SoftCount_GamingDayDisabled_AssetRemove_load"
+   refreshDiv = "workSpace"
+   result = "PartialView"
+   view = "SoftCount\\SoftCountSummary"
+   allowAnonymous = "false"
+   exceptionPolicy = "UIDefault"
+   command = "SoftCount.AssetRemoveCommand" />
+
+  <CommandActionConfig key="SoftCount_GamingDayDisabled_QuestionableSummary_load"
+            refreshDiv = "workSpace"
+            result = "PartialView"
+            view = "SoftCount\\QuestionableGrid"
+            allowAnonymous = "false"
+            exceptionPolicy = "UIDefault"
+            command = "SoftCount.QuestionableCommand" />
+
+  <CommandActionConfig key= "SoftCount_QuestionableSummary_QuestionableSummaryGridDataLoad_load"
+            refreshDiv = ""
+            result = "JSON"
+            view = ""
+            allowAnonymous = "false"
+            exceptionPolicy = "UIDefault"
+            command = "SoftCount.QuestionableGridLoadCommand" />
+
+  <CommandActionConfig key= "SoftCount_CancelQuestionableSummary_SoftCount_load"
+              refreshDiv = "workSpace"
+              result = "PartialView"
+              view = "SoftCount\\SoftCountSummary"
+              allowAnonymous = "false"
+              exceptionPolicy = "UIDefault"
+              command = "SoftCount.VoucherCancelCommand" />
+
+  <CommandActionConfig key="SoftCount_GamingDayDisabled_MissingBatchSummary_load"
+            refreshDiv = "workSpace"
+            result = "PartialView"
+            view = "SoftCount\\TicketsMissingBatch"
+            allowAnonymous = "false"
+            exceptionPolicy = "UIDefault"
+            command = "SoftCount.TicketsMissingBatchCommand" />
+
+  <CommandActionConfig key= "SoftCount_MissingBatchSummary_MissingBatchSummaryGridDataLoad_load"
+              refreshDiv = ""
+              result = "JSON"
+              view = ""
+              allowAnonymous = "false"
+              exceptionPolicy = "UIDefault"
+              command = "SoftCount.TicketsMissingBatchGridLoadCommand" />
+
+  <CommandActionConfig key= "SoftCount_CancelMissingBatchSummary_SoftCount_load"
+              refreshDiv = "workSpace"
+              result = "PartialView"
+              view = "SoftCount\\SoftCountSummary"
+              allowAnonymous = "false"
+              exceptionPolicy = "UIDefault"
+              command = "SoftCount.VoucherCancelCommand" />
+
+  <CommandActionConfig key="SoftCount_GamingDayDisabled_CurrentBatchSummary_load"
+              refreshDiv = "workSpace"
+              result = "PartialView"
+              view = "SoftCount\\CurrentBatchGrid"
+              allowAnonymous = "false"
+              exceptionPolicy = "UIDefault"
+              command = "SoftCount.CurrentBatchCommand" />
+
+  <CommandActionConfig key= "SoftCount_CurrentBatchSummary_CurrentBatchSummaryGridDataLoad_load"
+              refreshDiv = ""
+              result = "JSON"
+              view = ""
+              allowAnonymous = "false"
+              exceptionPolicy = "UIDefault"
+              command = "SoftCount.CurrentBatchGridLoadCommand" />
+
+  <CommandActionConfig key= "SoftCount_CancelCurrentBatchSummary_SoftCount_load"
+              refreshDiv = "workSpace"
+              result = "PartialView"
+              view = "SoftCount\\SoftCountSummary"
+              allowAnonymous = "false"
+              exceptionPolicy = "UIDefault"
+              command = "SoftCount.VoucherCancelCommand" />
+
+  <CommandActionConfig key="SoftCount_GamingDayDisabled_GetErrorsSummary_load"
+            refreshDiv = "workSpace"
+            result = "PartialView"
+            view = "SoftCount\\ErrorsGrid"
+            allowAnonymous = "false"
+            exceptionPolicy = "UIDefault"
+            command = "SoftCount.ErrorsCommand" />
+
+  <CommandActionConfig key= "SoftCount_GetErrorsSummary_GetErrorsSummaryGridDataLoad_load"
+              refreshDiv = ""
+              result = "JSON"
+              view = ""
+              allowAnonymous = "false"
+              exceptionPolicy = "UIDefault"
+              command = "SoftCount.ErrorsGridLoadCommand" />
+
+  <CommandActionConfig key= "SoftCount_CancelGetErrorsSummary_SoftCount_load"
+              refreshDiv = "workSpace"
+              result = "PartialView"
+              view = "SoftCount\\SoftCountSummary"
+              allowAnonymous = "false"
+              exceptionPolicy = "UIDefault"
+              command = "SoftCount.VoucherCancelCommand" />
+
+  <CommandActionConfig key= "VoucherGridData_load"
+          refreshDiv = ""
+          result = "JSON"
+          view = ""
+          allowAnonymous = "false"
+          exceptionPolicy = "UIDefault"
+          command = "SoftCount.EditAssetTicketsLoadCommand" />
+
+  <CommandActionConfig key= "SoftCount_AddTicket_EditSlot_load"
+            refreshDiv = ""
+            result = "PartialView"
+            view = "SoftCount\\EditSlot"
+            allowAnonymous = "false"
+            exceptionPolicy = "UIDefault"
+            command = "SoftCount.AddTicketCommand" />
+
+  <CommandActionConfig key= "SoftCount_RemoveTicket_EditSlot__load"
+          refreshDiv = "ContextMenulist"
+          result = "PartialView"
+          view = "SoftCount\\EditSlot"
+          allowAnonymous = "false"
+          exceptionPolicy = "UIDefault"
+          command = "SoftCount.RemoveTicketCommand" />
+
+  <CommandActionConfig key="SoftCount_OpenSoftCount_load"
+     refreshDiv = "workSpace"
+     result = "PartialView"
+     view = "SoftCount\\SoftCountSummary"
+     allowAnonymous = "false"
+     exceptionPolicy = "UIDefault"
+     command = "SoftCount.OpenSoftCountLoadCommand" />
+
+  <CommandActionConfig key="SoftCount_CancelAsset_GamingDayDisabled_load"
+     refreshDiv = "workSpace"
+     result = "PartialView"
+     view = "SoftCount\\SoftCountSummary"
+     allowAnonymous = "false"
+     exceptionPolicy = "UIDefault"
+     command = "SoftCount.AssetCancelCommand" />
+
+  <CommandActionConfig key="SoftCount_CancelGamingDayDisabled_SoftCount_load"
+    refreshDiv = "workSpace"
+    result = "PartialView"
+    view = "SoftCount\\CountRoomSummary"
+    allowAnonymous = "false"
+    exceptionPolicy = "UIDefault"
+    command = "SoftCount.SoftCountSummaryCancelCommand" />
+
+  <CommandActionConfig key= "SoftCount_ChangeAsset_EditSlot_load"
+      refreshDiv = "Slidingpanel-wrapper"
+      result = "PartialView"
+      view = "SoftCount\\ChangeAssetSlider"
+      allowAnonymous = "false"
+      exceptionPolicy = "UIDefault"
+      command = "SoftCount.ChangeAssetCommand" />
+
+  <CommandActionConfig key= "SoftCount_AssetAdd_Save"
+      refreshDiv = "ContextMenulist"
+      result = "PartialView"
+      view = "SoftCount\\AddSlot"
+      allowAnonymous = "false"
+      exceptionPolicy = "UIDefault"
+      command = "SoftCount.AssetSaveCommand" />
+
+  <CommandActionConfig key= "SoftCount_Add_Slot_Bills_Load"
+    refreshDiv = "ContextMenulist"
+    result = "PartialView"
+    view = "SoftCount\\AddSlot"
+    allowAnonymous = "false"
+    exceptionPolicy = "UIDefault"
+    command = "SoftCount.AssetAddBillsLoadCommand" />
+
+  <CommandActionConfig key= "SoftCount_SaveBills_AddSlot_load"
+       refreshDiv = "ContextMenulist"
+       result = "PartialView"
+       view = "SoftCount\\AddSlot"
+       allowAnonymous = "false"
+       exceptionPolicy = "UIDefault"
+       command = "SoftCount.AddAssetSaveBills" />
+
+  <CommandActionConfig key= "SoftCount_AddTicket_AddSlot_load"
+      refreshDiv = ""
+      result = "PartialView"
+      view = "SoftCount\\AddSlot"
+      allowAnonymous = "false"
+      exceptionPolicy = "UIDefault"
+      command = "SoftCount.AddAssetTicketAdd" />
+
+  <CommandActionConfig key= "SoftCount_RemoveTicket_AddSlot_Load"
+    refreshDiv = ""
+    result = "PartialView"
+    view = "SoftCount\\AddSlot"
+    allowAnonymous = "false"
+    exceptionPolicy = "UIDefault"
+    command = "SoftCount.AddAssetTicketRemove" />
+
+  <CommandActionConfig key="SoftCount_GamingDayDisabled_FileUpload_load"
+     refreshDiv = "workSpace"
+     result = "PartialView"
+     view = "SoftCount\\FileUpload"
+     allowAnonymous = "false"
+     exceptionPolicy = "UIDefault"
+     command = "SoftCount.FileUploadCommand" />
+
+  <CommandActionConfig key="SoftCount_GamingDayDisabled_FileDataProcessing_load"
+     refreshDiv = "workSpace"
+     result = "PartialView"
+     view = "SoftCount\\SoftCountSummary"
+     allowAnonymous = "false"
+     exceptionPolicy = "UIDefault"
+     command = "SoftCount.FileUploadSubmitCommand" />
+
+  <CommandActionConfig key="SoftCount_CancelFileUpload_GamingDayDisabled_load"
+     refreshDiv = "workSpace"
+     result = "PartialView"
+     view = "SoftCount\\SoftCountSummary"
+     allowAnonymous = "false"
+     exceptionPolicy = "UIDefault"
+     command = "SoftCount.FileUploadCancelCommand" />
+
+  <CommandActionConfig key="SoftCount_End_UploadProcess"
+   refreshDiv = "workSpace"
+   result = "PartialView"
+   view = "SoftCount\\FileUpload"
+   allowAnonymous = "false"
+   exceptionPolicy = "UIDefault"
+   command = "SoftCount.EndFileUploadCommand" />
+
+  <CommandActionConfig key="SoftCount_AddNewAsset_load"
+       refreshDiv = "workSpace"
+       result = "PartialView"
+       view = "SoftCount\\AddSlot"
+       allowAnonymous = "false"
+       exceptionPolicy = "UIDefault"
+       command = "SoftCount.AddNewAssetCommand" />
+
+  <CommandActionConfig key="SoftCount_ChangeAsset_Slider_load"
+     refreshDiv = "Slidingpanel-wrapper"
+     result = "PartialView"
+     view = "SoftCount\\ChangeAssetSlider"
+     allowAnonymous = "false"
+     exceptionPolicy = "UIDefault"
+     command = "SoftCount.ChangeAssetSliderLoadCommand" />
+
+  <CommandActionConfig key="SoftCount_asset_validate_load"
+   refreshDiv = ""
+   result = "JSON"
+   view = ""
+   allowAnonymous = "false"
+   exceptionPolicy = "UIDefault"
+   command = "SoftCount.AssetVerificationCommand" />
+
+  <CommandActionConfig key= "SoftCount_StartCounting_load"
+    refreshDiv = ""
+    result = "JSON"
+    view = ""
+    allowAnonymous = "false"
+    exceptionPolicy = "UIDefault"
+    command = "SoftCount.InitiateCountingCommand" />
+
+  <CommandActionConfig key="SoftCount_Bills_AddNewAsset_load"
+    refreshDiv = "workSpace"
+    result = "PartialView"
+    view = "SoftCount\\AddSlot"
+    allowAnonymous = "false"
+    exceptionPolicy = "UIDefault"
+    command = "SoftCount.AddBillsNewAssetCommand" />
+  <!--SoftCount Commands-->
+
+  <!--HardCount Commands-->
+  <CommandActionConfig
+        key="HardCount_HardCount_load"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="HardCount\\HardCount"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="HardCount.HardCountCommand" />
+
+  <CommandActionConfig
+        key="HardCount_HardCountGridDataLoad_load"
+        refreshDiv=""
+        result="JSON"
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="HardCount.HardCountGridDataLoadCommand" />
+
+  <CommandActionConfig
+        key="HardCount_ProceedHardCount_load"
+        refreshDiv="ContextMenulist"
+        result="PartialView"
+        view="HardCount\\HardCountSummary"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="HardCount.HardCountGamingDayEnabledCommand" />
+
+  <CommandActionConfig
+        key="HardCount_HardCountSummary_AssetHardCountGridDataLoad_load"
+        refreshDiv=""
+        result="JSON"
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="HardCount.AssetHardCountGridDataLoadCommand" />
+
+  <CommandActionConfig
+        key="HardCount_SaveOpenHardCount_HardCountSummary_load"
+        refreshDiv="ContextMenulist"
+        result="PartialView"
+        view="HardCount\\HardCountSummary"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="HardCount.HardCountSessionOpenCommand" />
+
+  <CommandActionConfig
+        key="HardCount_Scale_SignOff_load"
+        refreshDiv="gamingdayDetails"
+        result="PartialView"
+        view="HardCount\\HardCount"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="HardCount.ScaleSummarySignOffCommand" />
+
+  <CommandActionConfig
+        key="HardCount_CancelHardCountSummary_HardCount_load"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="HardCount\\HardCount"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="HardCount.HardCountSummaryCancelCommand" />
+
+  <CommandActionConfig
+        key="HardCount_SignOffHardCount_Yes_load"
+        refreshDiv=""
+        result="PartialView"
+        view="HardCount\\HardCount"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="HardCount.HardCountSessionSignOffYesCommand" />
+
+  <CommandActionConfig
+        key="HardCount_HardCountSummary_RejectedEntriesSummary_load"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="HardCount\\HardCountRejectedEntriesSummary"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="HardCount.RejectedEntriesSummaryCommand" />
+
+  <CommandActionConfig
+        key="HardCount_RejectedEntriesSummary_GridDataLoad_load"
+        refreshDiv=""
+        result="JSON"
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="HardCount.RejectedEntriesGridDataLoadCommand" />
+
+  <CommandActionConfig
+        key="HardCount_RejectedEntriesSummary_RejectedEntriesDelete_Yes_load"
+        refreshDiv="ContextMenulist"
+        result="PartialView"
+        view="HardCount\\HardCountRejectedEntriesSummary"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="HardCount.RejectedEntriesDeleteYesCommand" />
+
+  <CommandActionConfig
+        key="HardCount_CancelRejectedSummaryDetailsGrid_HardCount_load"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="HardCount\\HardCountSummary"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="HardCount.RejectedEntriesGridCloseCommand" />
+
+  <CommandActionConfig
+        key="HardCount_HardCountSummary_DuplicateEntriesSummary_load"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="HardCount\\HardCountDuplicateEntriesSummary"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="HardCount.DuplicateEntriesSummaryCommand" />
+
+  <CommandActionConfig
+        key="HardCount_DuplicateEntriesSummary_GridDataLoad_load"
+        refreshDiv=""
+        result="JSON"
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="HardCount.DuplicateEntriesGridDataLoadCommand" />
+
+  <CommandActionConfig
+        key="HardCount_DuplicateEntriesSummary_DuplicateEntriesDelete_Yes_load"
+        refreshDiv="ContextMenulist"
+        result="PartialView"
+        view="HardCount\\HardCountDuplicateEntriesSummary"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="HardCount.DuplicateEntriesDeleteYesCommand" />
+
+  <CommandActionConfig
+        key="HardCount_CancelDuplicateSummaryDetailsGrid_HardCount_load"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="HardCount\\HardCountSummary"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="HardCount.RejectedEntriesGridCloseCommand" />
+
+  <CommandActionConfig
+        key="HardCount_HardCountSummary_ErrorsSummary_load"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="HardCount\\HardCountErrorsSummary"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="HardCount.ErrorsSummaryCommand" />
+
+  <CommandActionConfig
+        key="HardCount_ErrorsSummary_GridDataLoad_load"
+        refreshDiv=""
+        result="JSON"
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="HardCount.ErrorsGridDataLoadCommand" />
+
+  <CommandActionConfig
+        key="HardCount_ErrorsSummary_ErrorDelete_Yes_load"
+        refreshDiv="ContextMenulist"
+        result="PartialView"
+        view="HardCount\\HardCountErrorsSummary"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="HardCount.ErrorDeleteYesCommand" />
+
+  <CommandActionConfig
+        key="HardCount_CancelErrorsSummaryDetailsGrid_HardCount_load"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="HardCount\\HardCountSummary"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="HardCount.RejectedEntriesGridCloseCommand" />
+
+  <CommandActionConfig
+        key="HardCount_HardCountSummary_HardCountUpload_load"
+        refreshDiv="ContextMenulist"
+        result="PartialView"
+        view="HardCount\\HardCountUpload"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="HardCount.HardCountUploadCommand" />
+
+  <CommandActionConfig
+        key="HardCount_SubmitHardCountUpload_load"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="HardCount\\HardCountSummary"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="HardCount.HardCountUploadSubmitCommand" />
+
+  <CommandActionConfig
+        key="HardCount_End_UploadProcess"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="HardCount\\HardCountUpload"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="HardCount.HardCountUploadEndFileCommand" />
+
+  <CommandActionConfig
+        key="HardCount_CancelHardCountUpload_HardCountSummary_load"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="HardCount\\HardCountSummary"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="HardCount.HardCountUploadCancelCommand" />
+
+  <CommandActionConfig
+        key="HardCount_HardCountSummary_SlotDelete_Yes_load"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="HardCount\\HardCountSummary"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="HardCount.SlotDeleteYesCommand" />
+
+  <CommandActionConfig
+        key="HardCount_HardCountSummary_SlotEdit_load"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="HardCount\\AddEditSlot"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="HardCount.SlotEditCommand" />
+
+  <CommandActionConfig
+        key="HardCount_HardCountSummary_SlotAdd_load"
+        refreshDiv="ContextMenulist"
+        result="PartialView"
+        view="HardCount\\AddEditSlot"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="HardCount.SlotAddCommand" />
+
+  <CommandActionConfig
+        key="HardCount_OnFocusLeaveOfLocation_AddEditSlot_load"
+        refreshDiv=""
+        result="JSON"
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="HardCount.SlotLocationCommand" />
+
+  <CommandActionConfig
+        key="HardCount_CheckIsValidSlotOrNot_OnFocusLeaveOfSlotNumber_AddEditSlot_load"
+        refreshDiv="HardCountGlobal"
+        result="PartialView"
+        view="HardCount\\AddEditSlot"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="HardCount.SlotValidateCommand" />
+
+  <CommandActionConfig
+        key="HardCount_CancelSlot_HardCountSummary_load"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="HardCount\\HardCountSummary"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="HardCount.SlotCancelCommand" />
+
+  <CommandActionConfig
+        key="HardCount_ChangeSlotNumber_AddEditSlot_Yes_load"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="HardCount\\AddEditSlot"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="HardCount.SlotNumberChangeYesCommand" />
+
+  <CommandActionConfig
+        key="HardCount_AddCoins_AddEditSlot_load"
+        refreshDiv="ContextMenulist"
+        result="PartialView"
+        view="HardCount\\HardCountSummary"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="HardCount.SaveCoinsCommand" />
+
+  <CommandActionConfig
+        key="HardCount_ClearHardCount_Yes_load"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="HardCount\\HardCount"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="HardCount.HardCountSessionClearYesCommand" />
+  <!--HardCount Commands-->
+
+  <!--HardCount HopperWeigh Commands-->
+  <CommandActionConfig
+        key="HopperWeigh_load"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="HardCount\\HopperWeigh"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="HardCount.HopperWeighCommand" />
+
+  <CommandActionConfig
+        key="HopperWeigh_Add_load"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="HardCount\\HopperWeighAdd"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="HardCount.HopperWeighAddCommand" />
+
+  <CommandActionConfig
+        key="HopperWeigh_Add_Create_records"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="HardCount\\HopperWeighAdd"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="HardCount.HopperWeighAddEmptyRecordsCommand" />
+
+  <CommandActionConfig
+        key="HopperWeigh_Add_Delete_load"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="HardCount\\HopperWeighAdd"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="HardCount.HopperWeighAddDeleteCommand" />
+
+  <CommandActionConfig
+        key="HopperWeigh_Add_Save_HopperWeighData"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="HardCount\\HopperWeighAdd"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="HardCount.HopperWeighAddSaveCommand" />
+
+  <CommandActionConfig
+        key="HopperWeigh_Edit_load"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="HardCount\\HopperWeighEdit"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="HardCount.HopperWeighEditCommand" />
+
+  <CommandActionConfig
+        key="HopperWeigh_Edit_Delete_HopperWeighData"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="HardCount\\HopperWeighEdit"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="HardCount.HopperWeighEditDeleteCommand" />
+
+  <CommandActionConfig
+        key="HopperWeigh_Edit_Update_HopperWeighData"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="HardCount\\HopperWeighEdit"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="HardCount.HopperWeighEditUpdateCommand" />
+
+  <CommandActionConfig
+        key="HopperWeigh_Delete_load"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="HardCount\\HopperWeigh"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="HardCount.HopperWeighDeleteCommand" />
+  <!--HardCount HopperWeigh Commands-->
+
+  <!--HardCount WrapAmount Commands-->
+  <CommandActionConfig
+	    key="WrapAmount_load"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="HardCount\\WrapAmount"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="HardCount.WrapAmountCommand" />
+
+  <CommandActionConfig
+	    key="WrapAmount_Load_GamingDay_WrapAmountDetails"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="HardCount\\WrapAmount"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="HardCount.WrapAmountBasedOnGamingDayCommand" />
+
+  <CommandActionConfig
+	    key="WrapAmount_Save_WrapAmountDetailsData"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="HardCount\\WrapAmount"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="HardCount.WrapAmountSaveCommand" />
+  <!--HardCount WrapAmount Commands-->
+
+  <!-- Slip Commands -->
+  <!-- Search -->
+  <CommandActionConfig
+        key="PendingJackpots_Load"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Jackpot\\PendingJackpots"
+        allowAnonymous="true"
+        exceptionPolicy="UIDefault"
+        command="Jackpot.SearchJackpotCommand" />
+
+  <CommandActionConfig
+        key="PendingJackpotsAdvancedSearch_Load"
+        refreshDiv="Slidingpanel-wrapper"
+        result="PartialView"
+        view="Jackpot\\PendingJackpotsAdvancedSearch"
+        allowAnonymous="true"
+        exceptionPolicy="UIDefault"
+        command="Jackpot.AdvancedSearchJackpotCommand" />
+
+ <!-- Keypad Processing -->
+  <CommandActionConfig key= "KeypadProcessing_Load"
+                                  refreshDiv = "workSpace"
+                                  result = "PartialView"
+                                  view = "Jackpot\\KeypadProcessing"
+                                  allowAnonymous = "true"
+                                  exceptionPolicy = "UIDefault"
+                                  command = "Jackpot.LoadKeypadProcessingConfigCommand" />
+
+  <CommandActionConfig key= "KeypadProcessing_GetJackpot"
+                                                    refreshDiv = "workSpace"
+                                                    result = "JSON"
+                                                     view = "Jackpot\\KeypadProcessing"
+                                                    allowAnonymous = "true"
+                                                    exceptionPolicy = "UIDefault"
+                                                    command = "Jackpot.GetKeypadJackpotCommand" />
+  
+  <CommandActionConfig key= "KeypadProcessing_ProcessJackpot"
+                                                    refreshDiv = "workSpace"
+                                                    result = "JSON"
+                                                     view = "Jackpot\\KeypadProcessing"
+                                                    allowAnonymous = "true"
+                                                    exceptionPolicy = "UIDefault"
+                                                    command = "Jackpot.ProcessKeypadCommand" />
+
+  <CommandActionConfig key= "KeypadProcessing_PaymentAndProcessJackpot"
+                                                         refreshDiv = "workSpace"
+                                                         result = "JSON"
+                                                         view = "Jackpot\\KeypadProcessing"
+                                                         allowAnonymous = "true"
+                                                         exceptionPolicy = "UIDefault"
+                                                         command = "Jackpot.PaymentAndProcessKeypadCommand" />
+  
+  <CommandActionConfig key= "KeypadProcessing_ValidateDenominationAndProcessJackpot"
+                                                           refreshDiv = "workSpace"
+                                                           result = "JSON"
+                                                           view = "Jackpot\\KeypadProcessing"
+                                                           allowAnonymous = "true"
+                                                           exceptionPolicy = "UIDefault"
+                                                           command = "Jackpot.ValidateDenominationAndProcessKeypadCommand" />
+
+
+
+  <!-- Remote Resets -->
+  <CommandActionConfig
+        key="GetRemoteResetJackpotsCommand"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Jackpot\\ResetJackpots"
+        allowAnonymous="true"
+        exceptionPolicy="UIDefault"
+        command="Jackpot.GetRemoteResetJackpotCommand" />
+
+  <CommandActionConfig
+        key="ProcessRemoteResetJackpotCommand"
+        refreshDiv="workSpace"
+        result="JSON"
+        view="Jackpot\\ResetJackpots"
+        allowAnonymous="true"
+        exceptionPolicy="UIDefault"
+        command="Jackpot.ProcessRemoteResetJackpotCommand" />
+
+  <!-- Slips Inquiry-->
+  <CommandActionConfig
+        key="SlipsInquiry_Load"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Jackpot\\JackpotInquiry"
+        allowAnonymous="true"
+        exceptionPolicy="UIDefault"
+        command="Jackpot.JackpotInquiryCommand" />
+
+  <CommandActionConfig
+        key="SlipsInquirySliding_Load"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Jackpot\\JackpotInquirySliding"
+        allowAnonymous="true"
+        exceptionPolicy="UIDefault"
+        command="Jackpot.JackpotInquiryAdvanceSearchCommand" />
+
+  <CommandActionConfig
+        key="SlipsInquiryTable_Load"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Jackpot\\JackpotInquiryTable"
+        allowAnonymous="true"
+        exceptionPolicy="UIDefault"
+        command="Jackpot.JackpotInquiryCommand" />
+
+  <CommandActionConfig
+        key="Slips_Inquiry_JSON"
+        refreshDiv="workSpace"
+        result="JSON"
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Jackpot.JackpotInquiryCommand" />
+
+  <CommandActionConfig
+        key="Slips_Inquiry_Grid_Load"
+        refreshDiv="workSpace"
+        result="JSON"
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Jackpot.JackpotInquiryTableGridCommand" />
+
+  <CommandActionConfig
+        key="Slips_Deatils_Grid_Load"
+        refreshDiv="workSpace"
+        result="JSON"
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Jackpot.JackpotInquiryDetailsTableGridCommand" />
+
+  <CommandActionConfig
+        key="Slips_DetailView_Load"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Jackpot\\JackpotInquiryDetailView"
+        allowAnonymous="true"
+        exceptionPolicy="UIDefault"
+        command="Jackpot.JackpotInquiryCommand" />
+
+  <!-- Dispute Inquiry -->
+  <CommandActionConfig
+        key="DisputeInquiry_Load"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Dispute\\DisputeInquiry"
+        allowAnonymous="true"
+        exceptionPolicy="UIDefault"
+        command="Slip.DisputeInquiryCommand" />
+
+  <CommandActionConfig
+        key="DisputeInquirySliding_Load"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Dispute\\DisputeInquirySliding"
+        allowAnonymous="true"
+        exceptionPolicy="UIDefault"
+        command="Slip.DisputeInquiryAdvanceSearchCommand" />
+
+  <CommandActionConfig
+        key="DisputeInquiryTable_Load"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Dispute\\DisputeInquiryTable"
+        allowAnonymous="true"
+        exceptionPolicy="UIDefault"
+        command="Slip.DisputeInquiryCommand" />
+
+  <CommandActionConfig
+        key="Dispute_Inquiry_JSON"
+        refreshDiv="workSpace"
+        result="JSON"
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Slip.DisputeInquiryCommand" />
+
+  <CommandActionConfig
+        key="Dispute_Inquiry_Grid_Load"
+        refreshDiv="workSpace"
+        result="JSON"
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Slip.DisputeInquiryTableGridCommand" />
+
+  <CommandActionConfig
+        key="Dispute_Deatils_Grid_Load"
+        refreshDiv="workSpace"
+        result="JSON"
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Slip.DisputeInquiryDetailsTableGridCommand" />
+
+  <CommandActionConfig
+        key="Dispute_DetailView_Load"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Dispute\\DisputeInquiryDetailView"
+        allowAnonymous="true"
+        exceptionPolicy="UIDefault"
+        command="Slip.DisputeInquiryCommand" />
+
+  <!-- Fill Bleed Inquiry-->
+  <CommandActionConfig
+        key="FillBleedInquiry_Load"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="FillBleed\\FillBleedInquiry"
+        allowAnonymous="true"
+        exceptionPolicy="UIDefault"
+        command="Slip.FillBleedInquiryCommand" />
+
+  <CommandActionConfig
+        key="FillBleedInquirySliding_Load"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="FillBleed\\FillBleedInquirySliding"
+        allowAnonymous="true"
+        exceptionPolicy="UIDefault"
+        command="Slip.FillBleedInquiryAdvanceSearchCommand" />
+
+  <CommandActionConfig
+        key="FillBleedInquiryTable_Load"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="FillBleed\\FillBleedInquiryTable"
+        allowAnonymous="true"
+        exceptionPolicy="UIDefault"
+        command="Slip.FillBleedInquiryCommand" />
+
+  <CommandActionConfig
+        key="FillBleed_Inquiry_JSON"
+        refreshDiv="workSpace"
+        result="JSON"
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Slip.FillBleedInquiryCommand" />
+
+  <CommandActionConfig
+        key="FillBleed_Inquiry_Grid_Load"
+        refreshDiv="workSpace"
+        result="JSON"
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Slip.FillBleedInquiryTableGridCommand" />
+
+  <CommandActionConfig
+        key="FillBleed_Deatils_Grid_Load"
+        refreshDiv="workSpace"
+        result="JSON"
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Slip.FillBleedInquiryDetailsTableGridCommand" />
+
+  <CommandActionConfig
+        key="FillBleed_DetailView_Load"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="FillBleed\\FillBleedInquiryDetailView"
+        allowAnonymous="true"
+        exceptionPolicy="UIDefault"
+        command="Slip.FillBleedInquiryCommand" />
+
+  <!-- Process Pending -->
+  <CommandActionConfig
+        key="ProcessPendingJackpot_Load"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Jackpot\\PendingJackpotSteps"
+        allowAnonymous="true"
+        exceptionPolicy="UIDefault"
+        command="Jackpot.LoadPendingJackpotProcessConfigCommand" />
+
+  <CommandActionConfig
+        key="ProcessPendingJackpot_JackpotProcessBehaviour"
+        refreshDiv="WorkSpace"
+        result="JSON"
+        view="Jackpot\\PendingJackpotSteps"
+        allowAnonymous="true"
+        exceptionPolicy="UIDefault"
+        command="Jackpot.ProcessPendingJackpotCommand" />
+
+  <CommandActionConfig
+        key="ProcessPendingJackpot_OverrideAuthorizerEmp"
+        refreshDiv="WorkSpace"
+        result="JSON"
+        view="Jackpot\\PendingJackpotSteps"
+        allowAnonymous="true"
+        exceptionPolicy="UIDefault"
+        command="Jackpot.OverrideAuthPendingJackpotCommand" />
+
+  <CommandActionConfig
+        key="ProcessPendingJackpot_ValidateAuthorizerEmp"
+        refreshDiv="WorkSpace"
+        result="JSON"
+        view="Jackpot\\PendingJackpotSteps"
+        allowAnonymous="true"
+        exceptionPolicy="UIDefault"
+        command="Jackpot.AuthorizePendingJackpotCommand" />
+
+  <CommandActionConfig
+        key="ProcessPendingJackpot_PaymentAndProcessJackpot"
+        refreshDiv="WorkSpace"
+        result="JSON"
+        view="Jackpot\\PendingJackpotSteps"
+        allowAnonymous="true"
+        exceptionPolicy="UIDefault"
+        command="Jackpot.PaymentAndProcessPendingJackpotCommand" />
+
+  <CommandActionConfig
+        key="ProcessPendingJackpot_ValidateDenominationAndProcessJackpot"
+        refreshDiv="WorkSpace"
+        result="JSON"
+        view="Jackpot\\PendingJackpotSteps"
+        allowAnonymous="true"
+        exceptionPolicy="UIDefault"
+        command="Jackpot.ValidateDenominationAndProcessPendingJackpotCommand" />
+  <!-- Manual Jackpot -->
+
+  <CommandActionConfig
+        key="ProcessManualJackpot_Load"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Jackpot\\ManualJackpotSteps"
+        allowAnonymous="true"
+        exceptionPolicy="UIDefault"
+        command="Jackpot.LoadManualJackpotProcessConfigCommand" />
+
+  <CommandActionConfig
+        key="ProcessManualJackpot_ValidateSlotAndProgressive"
+        refreshDiv="workSpace"
+        result="JSON"
+        view="Jackpot\\ManualJackpotSteps"
+        allowAnonymous="true"
+        exceptionPolicy="UIDefault"
+        command="Jackpot.ValidateSlotAndProgressiveCommand" />
+
+  <CommandActionConfig
+        key="ProcessManualJackpot_JackpotProcessBehaviour"
+        refreshDiv="workSpace"
+        result="JSON"
+        view="Jackpot\\ManualJackpotSteps"
+        allowAnonymous="true"
+        exceptionPolicy="UIDefault"
+        command="Jackpot.ProcessManualJackpotCommand" />
+
+  <CommandActionConfig
+        key="ProcessManualJackpot_ValidateAuthorizerEmp"
+        refreshDiv="workSpace"
+        result="JSON"
+        view="Jackpot\\ManualJackpotSteps"
+        allowAnonymous="true"
+        exceptionPolicy="UIDefault"
+        command="Jackpot.AuthorizeAndProcessManualJackpotCommand" />
+
+  <CommandActionConfig
+        key="ProcessManualJackpot_PaymentAndProcessJackpot"
+        refreshDiv="workSpace"
+        result="JSON"
+        view="Jackpot\\ManualJackpotSteps"
+        allowAnonymous="true"
+        exceptionPolicy="UIDefault"
+        command="Jackpot.PaymentAndProcessManualJackpotCommand" />
+
+  <CommandActionConfig
+        key="ProcessManualJackpot_ValidateDenominationAndProcessJackpot"
+        refreshDiv="workSpace"
+        result="JSON"
+        view="Jackpot\\ManualJackpotSteps"
+        allowAnonymous="true"
+        exceptionPolicy="UIDefault"
+        command="Jackpot.ValidateDenominationAndProcessJackpotCommand" />
+  <!-- End of Manual Jackpot -->
+
+  <!--Bleed Start-->
+  <CommandActionConfig
+        key="Bleed_Load"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Slip\\SlipsBleed"
+        allowAnonymous="true"
+        exceptionPolicy="UIDefault"
+        command="Slip.LoadBleedCommand" />
+
+  <CommandActionConfig
+        key="Bleed_Slot_Post"
+        refreshDiv="workSpace"
+        result="JSON"
+        view=""
+        allowAnonymous="true"
+        exceptionPolicy="UIDefault"
+        command="Slip.BleedPostCommand" />
+  <!--Bleed End-->
+
+  <!--Fill Start-->
+  <CommandActionConfig
+        key="Fill_Load"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Slip\\SlipsFill"
+        allowAnonymous="true"
+        exceptionPolicy="UIDefault"
+        command="Slip.LoadFillCommand" />
+
+  <CommandActionConfig
+        key="Fill_Slot_Post"
+        refreshDiv="workSpace"
+        result="JSON"
+        view=""
+        allowAnonymous="true"
+        exceptionPolicy="UIDefault"
+        command="Slip.FillPostCommand" />
+
+  <CommandActionConfig
+        key="Fill_Validate"
+        refreshDiv="workSpace"
+        result="JSON"
+        view=""
+        allowAnonymous="true"
+        exceptionPolicy="UIDefault"
+        command="Slip.FillValidateCommand" />
+
+  <CommandActionConfig
+        key="Fill_HopperCount"
+        refreshDiv="workSpace"
+        result="JSON"
+        view=""
+        allowAnonymous="true"
+        exceptionPolicy="UIDefault"
+        command="Slip.CheckAuthorizerRequiredCommand" />
+  <!--Fill End-->
+
+  <!-- Void Slips-->
+  <CommandActionConfig
+        key="VoidLoadJackpotSlip"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Slip\\VoidJackpotSlip"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Slip.VoidGetJackpotCommand" />
+
+  <CommandActionConfig
+        key="VoidLoadFillBleedSlip"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Slip\\VoidFillBleedSlip"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Slip.VoidGetFillBleedCommand" />
+
+  <CommandActionConfig
+        key="VoidLoadDisputeSlip"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Slip\\VoidDisputeSlip"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Slip.VoidGetDisputeCommand" />
+
+  <CommandActionConfig
+        key="VoidValidateJackpotSlip"
+        refreshDiv=""
+        result="JSON"
+        view="Slip\\VoidSlip"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Slip.VoidValidateJackpotCommand" />
+
+  <CommandActionConfig
+        key="VoidValidateFillBleedSlip"
+        refreshDiv=""
+        result="JSON"
+        view="Slip\\VoidSlip"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Slip.VoidValidateFillBleedCommand" />
+
+  <CommandActionConfig
+        key="VoidValidateDisputeSlip"
+        refreshDiv=""
+        result="JSON"
+        view="Slip\\VoidSlip"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Slip.VoidValidateDisputeCommand" />
+
+  <CommandActionConfig
+        key="VoidPostJackpotSlip"
+        refreshDiv=""
+        result="JSON"
+        view="Slip\\VoidSlip"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Slip.VoidPostJackpotCommand" />
+
+  <CommandActionConfig
+        key="VoidPostFillBleedSlip"
+        refreshDiv=""
+        result="JSON"
+        view="Slip\\VoidSlip"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Slip.VoidPostFillBleedCommand" />
+
+  <CommandActionConfig
+        key="VoidPostDisputeSlip"
+        refreshDiv=""
+        result="JSON"
+        view="Slip\\VoidSlip"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Slip.VoidPostDisputeCommand" />
+  <!-- End void slips-->
+
+  <!-- Reprint -->
+  <CommandActionConfig
+        key="Reprint_Load_FillBleed"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Slip\\ReprintFillBleed"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Slip.LoadReprintFillBleedConfigCommand" />
+
+  <CommandActionConfig
+        key="Reprint_Load_Dispute"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Slip\\ReprintJackpotDisputeSlip"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Slip.LoadReprintDisputeConfigCommand" />
+
+  <CommandActionConfig
+        key="Reprint_Load_Jackpot"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Slip\\ReprintJackpotDisputeSlip"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Slip.LoadReprintJackpotConfigCommand" />
+
+  <CommandActionConfig
+        key="Reprint_Slip_Post"
+        refreshDiv="workSpace"
+        result="JSON"
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Slip.ReprintPostCommand" />
+
+  <CommandActionConfig
+        key="Reprint_Slip_Preview"
+        result="PartialView"
+        refreshDiv="jackpot_details"
+        view="Slip\\ReprintPreview"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Slip.ReprintPreviewCommand" />
+
+  <!-- Dispute -->
+  <CommandActionConfig
+        key="Dispute_Load"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Slip\\DisputeSlip"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Slip.LoadDisputeProcessConfigCommand" />
+
+  <CommandActionConfig
+        key="ProcessDispute_DisputeProcessBehaviour"
+        refreshDiv="workSpace"
+        result="JSON"
+        view="Slip\\DisputeSlip"
+        allowAnonymous="true"
+        exceptionPolicy="UIDefault"
+        command="Slip.ProcessDisputeCommand" />
+
+  <CommandActionConfig
+        key="ProcessDispute_ValidateAuthorizerEmp"
+        refreshDiv="variancediv"
+        result="JSON"
+        view="Slip\\DisputeSlip"
+        allowAnonymous="true"
+        exceptionPolicy="UIDefault"
+        command="Slip.AuthorizeDisputeCommand" />
+
+  <CommandActionConfig
+        key="ProcessDispute_PaymentAndProcessDispute"
+        refreshDiv="workSpace"
+        result="JSON"
+        view="Slip\\DisputeSlip"
+        allowAnonymous="true"
+        exceptionPolicy="UIDefault"
+        command="Slip.PaymentAndProcessDisputeCommand" />
+
+  <CommandActionConfig
+        key="ProcessDispute_ValidateDenominationAndProcessDispute"
+        refreshDiv="workSpace"
+        result="JSON"
+        view="Slip\\DisputeSlip"
+        allowAnonymous="true"
+        exceptionPolicy="UIDefault"
+        command="Slip.ValidateDenominationAndProcessDisputeCommand" />
+
+  <!-- Dispute -->
+  <CommandActionConfig
+        key="PlayerMaintenance_UnEnrollment_ValidatePIN"
+        result="JSON"
+        refreshDiv=""
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="PreCommitment.PCValidateUnEnrollmentCommand" />
+
+  <CommandActionConfig
+        key="PlayerMaintenance_Enrollment_ValidatePIN"
+        refreshDiv=""
+        result="JSON"
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="PreCommitment.PCPINValidateEnrollmentCommand" />
+
+  <!--Settings-->
+  <CommandActionConfig key= "Setting_Load"
+         refreshDiv = ""
+         result = "PartialView"
+          view = "Settings\\Settings"
+         allowAnonymous = "false"
+         exceptionPolicy = "UIDefault"
+         command = "Settings.SettingsCommand" />
+
+  <CommandActionConfig key= "SettingAccount_Load"
+            refreshDiv = "workSpace"
+            result = "PartialView"
+             view = "Settings\\Account"
+            allowAnonymous = "false"
+            exceptionPolicy = "UIDefault"
+            command = "Settings.SettingsAccountCommand" />
+
+  <CommandActionConfig key= "SettingsChangePassword_Load"
+             refreshDiv = ""
+             result = "PartialView"
+              view = "Settings\\ChangePasswordSlider"
+             allowAnonymous = "false"
+             exceptionPolicy = "UIDefault"
+             command = "Settings.SettingsChangePasswordCommand" />
+
+  <CommandActionConfig key="SettingAccountSave_Load"
+                     refreshDiv=""
+                     result="PartialView"
+                     view =""
+                     allowAnonymous =" false"
+                     exceptionPolicy="UIDefault"
+                     command="Settings.SettingsSaveAccountsCommand" />
+
+  <CommandActionConfig key="SettingChangePasswordSave"
+                       refreshDiv=""
+                       result="PartialView"
+                       view ="Settings\\ChangePasswordSlider"
+                       allowAnonymous =" false"
+                       exceptionPolicy="UIDefault"
+                       command="Settings.SettingsSavePasswordCommand" />
+
+  <CommandActionConfig key= "SettingApplication_Load"
+			 refreshDiv = "workSpace"
+			 result = "PartialView"
+			  view = "Settings\\Application"
+			 allowAnonymous = "false"
+			 exceptionPolicy = "UIDefault"
+			 command = "Settings.SettingsApplicationCommand" />
+
+  <CommandActionConfig key= "SettingApplication_Save"
+			 refreshDiv = ""
+			 result = "JSON"
+			  view = ""
+			 allowAnonymous = "false"
+			 exceptionPolicy = "UIDefault"
+			 command = "Settings.SettingsApplicationSaveCommand" />
+
+  <CommandActionConfig key= "SettingPersonalize_Load"
+			 refreshDiv = "workSpace"
+			 result = "PartialView"
+			  view = "Settings\\Personalize"
+			 allowAnonymous = "false"
+			 exceptionPolicy = "UIDefault"
+			 command = "Settings.SettingsPersonalizeLoadCommand" />
+
+  <CommandActionConfig key= "EmployeeImage_Save"
+			 refreshDiv = ""
+			 result = ""
+			 view = "JSON"
+			 allowAnonymous = "false"
+			 exceptionPolicy = "UIDefault"
+			 command = "Settings.SaveEmployeeImageCommand" />
+
+  <CommandActionConfig key= "SettingSiteDetails_Load"
+			 refreshDiv = "workSpace"
+			 result = "PartialView"
+			 view = "Settings\\SiteDetails"
+			 allowAnonymous = "false"
+			 exceptionPolicy = "UIDefault"
+			 command = "Settings.SiteDetailsCommand" />
+
+  <CommandActionConfig key="Setting_NoteCounterSettings_Load"
+     refreshDiv = "workSpace"
+     result = "PartialView"
+     view = "Settings\\NoteCounterSettings"
+     allowAnonymous = "false"
+     exceptionPolicy = "UIDefault"
+     command = "Settings.NoteCounterSettingsLoadCommand" />
+
+  <CommandActionConfig key="Settings_NoteCounterSreviceIpPort_Load"
+     refreshDiv = ""
+     result = "JSON"
+     view = ""
+     allowAnonymous = "false"
+     exceptionPolicy = "UIDefault"
+     command = "Settings.NoteCounterSrviceIpPortLoadCommand" />
+
+  <CommandActionConfig key="Settings_NewNoteCounterService_Load"
+      refreshDiv = "Slidingpanel-wrapper"
+      result = "PartialView"
+      view = "Settings\\NoteCounterSlider"
+      allowAnonymous = "false"
+      exceptionPolicy = "UIDefault"
+      command = "Settings.NewNoteCounterSliderLoadCommand" />
+
+  <CommandActionConfig key="Settings_NewNoteCounterService_Save"
+      refreshDiv = "workSpace"
+      result = "PartialView"
+      view = "Settings\\NoteCounterSettings"
+      allowAnonymous = "false"
+      exceptionPolicy = "UIDefault"
+      command = "Settings.NewNoteCounterSaveCommand" />
+
+  <CommandActionConfig key="Settings_NoteCounterSettingsSave_Load"
+      refreshDiv = ""
+      result = "JSON"
+      view = ""
+      allowAnonymous = "false"
+      exceptionPolicy = "UIDefault"
+      command = "Settings.NoteCounterSettingsSaveCommand" />
+  <!--Settings-->
+
+  <CommandActionConfig
+        key="PlayerMaintenance_Pin_Load"
+        refreshDiv="Slidingpanel-wrapper"
+        result="PartialView"
+        view="Player\\Maintainence\\Unlock"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.GetPlayerDetails" />
+
+  <CommandActionConfig
+        key="PlayerMaintenance_UnlockPin_Post"
+        refreshDiv="pin-tile"
+        result="PartialView"
+        view="Player\\Maintainence\\UnlockPin"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.SavePlayerDetails" />
+
+  <!--Notes And Memos-->
+  <CommandActionConfig
+        key="PlayerMaintenance_Note_Load"
+        refreshDiv="Slidingpanel-wrapper"
+        result="PartialView"
+        view="Player\\Maintainence\\Notes"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.GetPlayerNotesCommand" />
+
+  <CommandActionConfig
+        key="PlayerMaintenance_Note_Dept_Load"
+        refreshDiv="Notes_Container"
+        result="PartialView"
+        view="Player\\Maintainence\\NotesTileView"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.GetPlayerNotesCommand" />
+
+  <CommandActionConfig
+        key="PlayerMaintenanceContent_Note_Save"
+        refreshDiv="Slidingpanel-wrapper"
+        result="PartialView"
+        view="Player\\Maintainence\\PlayerNotes"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.SavePlayerNotesMemosCommand" />
+
+  <CommandActionConfig
+        key="PlayerMaintenance_Note_Settle"
+        refreshDiv="Slidingpanel-wrapper"
+        result="PartialView"
+        view="Player\\Maintainence\\PlayerNotes"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.SettlePlayerNotesCommand" />
+
+  <CommandActionConfig
+        key="PlayerMaintenance_Note_Void"
+        refreshDiv="Slidingpanel-wrapper"
+        result="PartialView"
+        view="Player\\Maintainence\\PlayerNotes"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.VoidPlayerNotesCommand" />
+
+  <CommandActionConfig
+        key="PlayerMaintenance_Memos_Load"
+        refreshDiv="Slidingpanel-wrapper"
+        result="PartialView"
+        view="Player\\Maintainence\\Memos"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.GetPlayerMemosCommand" />
+
+  <CommandActionConfig
+        key="PlayerMaintenance_Memos_Tile_Load"
+        refreshDiv="memoscontainer"
+        result="PartialView"
+        view="Player\\Maintainence\\MemosTileView"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.GetPlayerMemosCommand" />
+
+  <CommandActionConfig
+        key="PlayerMaintenance_Memos_CreateNew"
+        refreshDiv="Slidingpanel-wrapper"
+        result="PartialView"
+        view="Player\\Maintainence\\AddNotesMemos"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.CreatePlayerNotesMemosCommand" />
+  
+  <CommandActionConfig
+        key="PlayerMaintenance_EditPlayerText"
+        refreshDiv="Slidingpanel-wrapper"
+        result="PartialView"
+        view="Player\\Maintainence\\AddNotesMemos"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.EditPlayerTextCommand" />
+
+  <CommandActionConfig
+        key="PlayerMaintenance_Memos_Save"
+        refreshDiv="Slidingpanel-wrapper"
+        result="PartialView"
+        view="Player\\Maintainence\\PlayerMemos"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.SavePlayerNotesMemosCommand" />
+
+  <CommandActionConfig
+        key="Player_Notes_Memos_Copy"
+        refreshDiv="Slidingpanel-wrapper"
+        result="PartialView"
+        view="Player\\Maintainence\\AddNotesMemos"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.CopyPlayerNotesMemosCommand" />
+
+  <CommandActionConfig
+        key="PlayerMaintenance_Memos_Settle"
+        refreshDiv="Slidingpanel-wrapper"
+        result="PartialView"
+        view="Player\\Maintainence\\PlayerMemos"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.SettlePlayerMemosCommand" />
+
+  <CommandActionConfig
+        key="PlayerMaintenance_Memos_Void"
+        refreshDiv="Slidingpanel-wrapper"
+        result="PartialView"
+        view="Player\\Maintainence\\PlayerMemos"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.VoidPlayerMemosCommand" />
+
+  <CommandActionConfig
+        key="PlayerMaintenance_BanPlayer_Load"
+        refreshDiv="Slidingpanel-wrapper"
+        result="PartialView"
+        view="Player\\Maintainence\\BanView"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.GetPlayerBanCommand" />
+
+  <CommandActionConfig
+        key="PlayerMaintenance_BanPlayer_Save"
+        refreshDiv="ban-tile"
+        result="PartialView"
+        view="Player\\Maintainence\\BanTile"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.SaveBanPlayerCommand" />
+
+  <CommandActionConfig
+        key="PlayerMaintenance_BanPlayer_New"
+        refreshDiv="Slidingpanel-wrapper"
+        result="PartialView"
+        view="Player\\Maintainence\\Ban"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.AddPlayerBanCommand" />
+
+  <CommandActionConfig
+        key="PlayerMaintenance_BanPlayer_Edit"
+        refreshDiv="Slidingpanel-wrapper"
+        result="PartialView"
+        view="Player\\Maintainence\\Ban"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.EditPlayerBanCommand" />
+
+  <CommandActionConfig
+        key="Validate_Authorizer"
+        command="Common.ValidateAuthorizerCommand"
+        result="JSON"
+        refreshDiv=""
+        view=""
+        allowAnonymous="true"
+        exceptionPolicy="UIDefault" />
+
+  <CommandActionConfig
+        key="Player_Advance_Search_Load"
+        refreshDiv="Slidingpanel-wrapper"
+        result="PartialView"
+        view="Player\\PlayerSearch\\AdvancedSearch"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.AdvanceSearchPlayerLoadCommand" />
+
+  <!--Inventory-->
+  <CommandActionConfig
+        key="Inventory_OpenLocation_Load"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Inventory\\OpenLocation"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Inventory.OpenLocationLoadCommand" />
+
+  <CommandActionConfig
+        key="Inventory_OpenLocation_Save"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Inventory\\ManageLocation"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Inventory.OpenLocationSaveCommand" />
+
+  <CommandActionConfig
+        key="Inventory_CloseLocation_Load"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Inventory\\CloseLocation"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Inventory.CloseLocationLoadCommand" />
+
+  <CommandActionConfig
+        key="Inventory_CloseLocation_Save"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Inventory\\ManageLocation"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Inventory.CloseLocationSaveCommand" />
+
+  <CommandActionConfig
+        key="Inventory_ManageLocation_Load"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Inventory\\ManageLocation"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Inventory.ManageLocationLoadCommand" />
+
+  <CommandActionConfig
+        key="Inventory_FundsInflow_Load"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Inventory\\InventoryIn"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Inventory.FundsInflowLoadCommand" />
+
+  <CommandActionConfig
+        key="Inventory_FillRequest_Load"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Inventory\\FillRequest"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Inventory.FillRequestLoadCommand" />
+
+  <CommandActionConfig
+        key="Inventory_FillRequest_Post"
+        refreshDiv=""
+        result=""
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Inventory.SaveFillRequestCommand"
+        taskId="4010" />
+
+  <CommandActionConfig
+        key="Inventory_Credit_Load"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Inventory\\Credit"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Inventory.CreditLoadCommand" />
+
+  <CommandActionConfig
+        key="Inventory_Credit_Post"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Inventory\\ManageLocation"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Inventory.SaveCreditRequestCommand"
+        taskId="4013" />
+
+  <CommandActionConfig
+        key="Inventory_InventoryPreview_Load"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Inventory\\InventoryPreview"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Inventory.InventoryPreviewLoadCommand" />
+
+  <CommandActionConfig
+        key="Inventory_InventoryPreview_OnChange"
+        refreshDiv="DivTenderSet"
+        result="PartialView"
+        view="Inventory\\InventoryPreviewTenderSet"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Inventory.InventoryPreviewOnChangeCommand" />
+
+  <CommandActionConfig
+        key="Inventory_RollGamingDate_Load"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Inventory\\RollGamingDate"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Inventory.RollGamingDateLoadCommand" />
+
+  <CommandActionConfig
+        key="Inventory_RollGamingDate_Process"
+        refreshDiv=""
+        result="JSON"
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Inventory.RollGamingDateProcessCommand" />
+
+  <CommandActionConfig
+        key="Inventory_RollGamingDate_Save"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Inventory\\ManageLocation"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Inventory.RollGamingdateSaveCommand"
+        taskId="4009" />
+
+  <CommandActionConfig
+        key="Inventory_PostVariance_Load"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Inventory\\PostVariance"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Inventory.PostVarianceLoadCommand"
+        taskId="4009" />
+
+  <CommandActionConfig
+        key="Inventory_UpdateInventory_Load"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Inventory\\UpdateInventory"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Inventory.UpdateInventoryLoadCommand" />
+
+  <CommandActionConfig
+        key="Inventory_UpdateInventory_Post"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Inventory\\ManageLocation"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Inventory.SaveUpdateInventoryCommand"
+        taskId="4008" />
+
+  <CommandActionConfig
+        key="Inventory_MovementSummary_Load"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Inventory\\MovementSummary"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Inventory.MovementSummaryLoadCommand" />
+
+  <CommandActionConfig
+        key="Inventory_MovementSummary_LoadGrid"
+        refreshDiv=""
+        result="JSON"
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Inventory.MovementSummaryLoadGridCommand" />
+
+  <CommandActionConfig
+        key="Inventory_MovementSummary_View"
+        refreshDiv="Slidingpanel-wrapper"
+        result="PartialView"
+        view="Inventory\\MovementDetails"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Inventory.MovementSummaryViewCommand" />
+
+  <CommandActionConfig
+        key="Inventory_MovementSummary_ProcessFill"
+        refreshDiv="Slidingpanel-wrapper"
+        result="PartialView"
+        view="Inventory\\ProcessFillRequest"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Inventory.MovementSummaryProcessCommand"
+        taskId="4011" />
+
+  <CommandActionConfig
+        key="Inventory_MovementSummary_ProcessCredit"
+        refreshDiv="Slidingpanel-wrapper"
+        result="PartialView"
+        view="Inventory\\FillDetailsSliding"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Inventory.MovementSummaryProcessCommand"
+        taskId="4014" />
+
+  <CommandActionConfig
+        key="Inventory_MovementSummary_ProcessFill_Save"
+        refreshDiv=""
+        result=""
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Inventory.MovementSummaryProcessFillSaveCommand"
+        taskId="4011" />
+
+  <CommandActionConfig
+        key="Inventory_MovementSummary_ProcessCredit_Save"
+        refreshDiv=""
+        result=""
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Inventory.MovementSummaryProcessCreditSaveCommand"
+        taskId="4014" />
+
+  <CommandActionConfig
+        key="Inventory_MovementSummary_RejectFill"
+        refreshDiv="Slidingpanel-wrapper"
+        result="PartialView"
+        view="Inventory\\CancelFillRequest"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Inventory.MovementSummaryProcessCommand" />
+
+  <CommandActionConfig
+        key="Inventory_MovementSummary_RejectFill_Save"
+        refreshDiv=""
+        result=""
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Inventory.MovementSummaryRejectFillSaveCommand"
+        taskId="4012" />
+
+  <CommandActionConfig
+        key="Inventory_MovementSummary_RejectCredit"
+        refreshDiv="Slidingpanel-wrapper"
+        result="PartialView"
+        view="Inventory\\CancelCreditRequest"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Inventory.MovementSummaryProcessCommand" />
+
+  <CommandActionConfig
+        key="Inventory_MovementSummary_RejectCredit_Save"
+        refreshDiv=""
+        result=""
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Inventory.MovementSummaryRejectCreditSaveCommand"
+        taskId="4015" />
+
+  <CommandActionConfig
+        key="Inventory_TransactionHistory_Load"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Inventory\\TransactionHistory"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Inventory.TransactionHistoryLoadCommand" />
+
+  <CommandActionConfig
+        key="Inventory_TransactionHistoryAdvancedSearch_Load"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Inventory\\TransactionHistory"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Inventory.TransactionHistoryAdvancedSearchCommand" />
+
+  <CommandActionConfig
+        key="Inventory_TransactionHistory_LoadGrid"
+        refreshDiv=""
+        result="JSON"
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Inventory.TransactionHistoryLoadGridCommand" />
+
+  <CommandActionConfig
+        key="Inventory_TransactionHistory_LoadSearch"
+        refreshDiv="Slidingpanel-wrapper"
+        result="PartialView"
+        view="Inventory\\TransactionHistorySearch"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Inventory.TransactionHistoryLoadSearchCommand" />
+
+  <CommandActionConfig
+        key="Inventory_TransactionHistory_View"
+        refreshDiv="Slidingpanel-wrapper"
+        result="PartialView"
+        view="Inventory\\TransactionHistoryDetails"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Inventory.TransactionHistoryViewDetailsCommand" />
+
+  <CommandActionConfig
+        key="Inventory_TransactionHistory_Void"
+        refreshDiv="Slidingpanel-wrapper"
+        result="PartialView"
+        view="Inventory\\TransactionHistoryVoidRequest"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Inventory.TransactionHistoryVoidCommand" />
+
+  <CommandActionConfig
+        key="Inventory_TransactionHistory_VoidSave"
+        refreshDiv=""
+        result=""
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Inventory.TransactionHistoryVoidSaveCommand" />
+
+  <CommandActionConfig
+        key="Inventory_PostVariance_Save"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Inventory\\ManageLocation"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Inventory.PostVarianceSaveCommand"
+        taskId="4009" />
+
+  <CommandActionConfig
+        key="Inventory_PostVariance_Verify"
+        refreshDiv=""
+        result="JSON"
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Inventory.PostVarianceVerifyCommand" />
+
+  <CommandActionConfig
+        key="Inventory_RollPostVariance_Verify"
+        refreshDiv=""
+        result="JSON"
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Inventory.VerifyRollPostVariance" />
+
+  <CommandActionConfig
+        key="Inventory_FundsInflowExternal_Load"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Inventory\\InventoryIn"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Inventory.InventoryInLoadCommand"
+        taskId="4006" />
+
+  <CommandActionConfig
+        key="Inventory_FundsInflowExternal_Save"
+        refreshDiv=""
+        result=""
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Inventory.InventoryInSaveCommand"
+        taskId="4006" />
+  <CommandActionConfig
+        key="Inventory_BankTranfer_Load"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Inventory\\InventoryOut"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Inventory.InventoryOutLoadCommand"
+        taskId="4007" />
+
+  <CommandActionConfig
+        key="Inventory_BankTransfer_Save"
+        refreshDiv=""
+        result=""
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Inventory.InventoryOutSaveCommand"
+        taskId="4007" />
+
+  <!--  End Session-->
+  <CommandActionConfig
+        key="Inventory_EndSession_Load"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Inventory\\EndSession"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Inventory.EndSessionLoadCommand" />
+
+  <CommandActionConfig
+        key="Inventory_EndSessionGrid_Load"
+        refreshDiv=""
+        result="JSON"
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Inventory.EndSessionGridCommand" />
+
+  <CommandActionConfig
+        key="Inventory_EndSession_Save"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Inventory\\EndSession"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Inventory.EndSessionSaveCommand" />
+
+  <CommandActionConfig
+        key="Inventory_EndSession_Process"
+        refreshDiv="step2"
+        result="PartialView"
+        view="Inventory\\PostVariance"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Inventory.EndSessionProcessCommand" />
+
+  <!--Awards-->
+  <CommandActionConfig
+        key="PlayerAwardAuth_Load"
+        refreshDiv="step2"
+        result="PartialView"
+        view="Player\\Awards\\AuthComp"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.PlayerAwardAuthCommand" />
+
+  <CommandActionConfig
+        key="PrizeDetailGrid_Load"
+        refreshDiv=""
+        result="JSON"
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.PlayerPrizeDetailGridCommand" />
+
+  <CommandActionConfig
+        key="PlayerAuthAwardsDetail_Save"
+        refreshDiv="PlayerBalanceDiv"
+        result="PartialView"
+        view="Player\\Awards\\_PlayerAccountBalance"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.SavePlayerAwardsAuthDetailCommand" />
+
+  <CommandActionConfig
+        key="PlayerAdjustAwardsDetail_Save"
+        refreshDiv="PlayerBalanceDiv"
+        result="PartialView"
+        view="Player\\Awards\\_PlayerAccountBalance"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.SavePlayerAwardsAdjustDetailCommand" />
+
+  <CommandActionConfig
+        key="PlayerVoidAwardsDetail_Save"
+        refreshDiv="PlayerBalanceDiv"
+        result="PartialView"
+        view="Player\\Awards\\_PlayerAccountBalance"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.SavePlayerAwardsVoidDetailCommand" />
+
+  <CommandActionConfig
+        key="PlayerSettleAwardsDetail_Save"
+        refreshDiv="PlayerBalanceDiv"
+        result="PartialView"
+        view="Player\\Awards\\_PlayerAccountBalance"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.SavePlayerAwardsSettleDetailCommand" />
+
+  <CommandActionConfig
+        key="GetAwardTypes_Load"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Player\\Awards\\PlayerAward"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.PlayerAwardsCommand" />
+
+  <CommandActionConfig
+        key="PlayerAwardAdjust_Load"
+        refreshDiv="step2"
+        result="PartialView"
+        view="Player\\Awards\\AdjustDetail"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.PlayerAwardAdjustCommand" />
+
+  <CommandActionConfig
+        key="PlayerAwardAuthorize_Load"
+        refreshDiv="step2"
+        result="PartialView"
+        view="Player\\Awards\\AuthorizeDetail"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.PlayerAwardAuthorizeCommand" />
+
+  <CommandActionConfig
+        key="PlayerAwardSettle_Load"
+        refreshDiv="step2"
+        result="PartialView"
+        view="Player\\Awards\\SettleDetail"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.PlayerAwardSettleCommand" />
+
+  <CommandActionConfig
+        key="PlayerAwardVoid_Load"
+        refreshDiv="step2"
+        result="PartialView"
+        view="Player\\Awards\\VoidDetail"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.PlayerAwardVoidCommand" />
+
+  <CommandActionConfig
+        key="Awards_Prize_Get"
+        refreshDiv=""
+        result="JSON"
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.GetPrizeDetailCommand" />
+
+  <CommandActionConfig
+        key="PlayerAdjustCompGrid_Load"
+        refreshDiv=""
+        result="JSON"
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.PlayerAdjustCompGridCommand" />
+
+  <CommandActionConfig
+        key="PlayerVoidCompGrid_Load"
+        refreshDiv=""
+        result="JSON"
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.PlayerVoidCompGridCommand" />
+
+  <CommandActionConfig
+        key="Load_Settlement_Record"
+        refreshDiv=""
+        result="JSON"
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.GetAwardSettlement" />
+
+  <CommandActionConfig
+        key="SwipedPlayerBalance_Load"
+        refreshDiv="PlayerBalanceDiv"
+        result="PartialView"
+        view="Player\\Awards\\_PlayerAccountBalance"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Player.GetSwipedPlayerBalanceCommand" />
+
+  <CommandActionConfig
+        key="Load_SecondaryAuthorizer"
+        refreshDiv="#secondaryapproval"
+        result="PartialView"
+        view="Shared\\_SecondaryAuthorizer"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Common.SecondaryAuthorizerLoadCommand" />
+
+  <CommandActionConfig
+        key="Validate_SecondaryAuthorizer"
+        refreshDiv=""
+        result="JSON"
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Common.SecondaryAuthorizerCommand" />
+
+  <CommandActionConfig
+        key="Inventory_Inventory_Load"
+        refreshDiv="Slidingpanel-wrapper"
+        result="PartialView"
+        view="Inventory\\InventoryPreviewSliding"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Inventory.ManageLocationLoadCommand" />
+
+  <!--SlotRevenue- HardMeter-->
+  <CommandActionConfig
+        key="Hard_Meteres_Tile_Click"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="SlotRevenue\\HardMeter"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="SlotRevenue.HardMeterCommand" />
+
+  <CommandActionConfig
+        key="HardMeter_AddGamingday_Load"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="SlotRevenue\\AddGamingDay"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="SlotRevenue.AddGamingdayLoadCommand" />
+
+  <CommandActionConfig
+        key="HardMeter_Add_MeterData"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="SlotRevenue\\AddGamingDay"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="SlotRevenue.AddMeterData" />
+
+  <CommandActionConfig
+        key="HardMeter_Create_records"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="SlotRevenue\\AddGamingDay"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="SlotRevenue.AddEmptyRecordsCommand" />
+
+  <CommandActionConfig
+        key="HardMeter_View_Asset_Meter_Data"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="SlotRevenue\\ViewGamingDay"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="SlotRevenue.ViewAssetMeterDataCommand" />
+
+  <CommandActionConfig
+        key="HardMeter_Delete_records"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="SlotRevenue\\HardMeter"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="SlotRevenue.DeleteAssetGamingHardMetersData" />
+
+  <CommandActionConfig
+        key="HardMeter_Edit_records"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="SlotRevenue\\EditHardMeterData"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="SlotRevenue.EditAssetGamingHardMetersData" />
+
+  <CommandActionConfig
+        key="HardMeter_Update_MeterData"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="SlotRevenue\\EditHardMeterData"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="SlotRevenue.UpdateMeterData" />
+  
+  <CommandActionConfig
+        key="HardMeter_getMeterDataBy_Gamingday"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="SlotRevenue\\HardMeter"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="SlotRevenue.GetHardMeterMeterDataByGamingday" />
+  <!--Site Registration Start-->
+  <CommandActionConfig
+        key="Site_Registration_Tile_Click"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Site\\SiteRegistration"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Site.SiteCommand" />
+
+  <CommandActionConfig
+        key="Site_Validate_EDCIP"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Site\\SiteRegistration"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Site.ValidateEDCIP" />
+
+  <CommandActionConfig
+        key="Site_DataPullFromEDCCommand"
+        refreshDiv="workSpace"
+        result="PartialView"
+        view="Site\\SiteRegistration"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Site.DataPullFromEDCCommand" />
+
+  <CommandActionConfig
+        key="Site_GetCoreSystemsCommand"
+        refreshDiv=""
+        result="JSON"
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Site.GetCoreSystemsCommand" />
+
+  <CommandActionConfig
+        key="Site_CoreSyncGridCommand"
+        refreshDiv=""
+        result="JSON"
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Site.CoreSyncGridCommand" />
+
+  <!--Site Registration End-->
+  <CommandActionConfig
+        key="externalControlHelper_load"
+        refreshDiv="Slidingpanel-wrapper"
+        result="PartialView"
+        view="Common\\Helper\\Helpbase"
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="externalControlHelper.extenalControlHelper" />
+  <!-- REPORTS -->
+  <CommandActionConfig key= "Operational_Load"
+        refreshDiv = "workSpace"
+        result = "PartialView"
+        view = "Reports\\OperationalReport"
+        allowAnonymous = "false"
+        exceptionPolicy = "UIDefault"
+        command = "Reports.ReportCommand" />
+
+  <CommandActionConfig key= "Operational_SelectedReport_Load"
+       refreshDiv = "selectedReport"
+       result = "PartialView"
+       view = "Reports\\SelectedReport"
+       allowAnonymous = "false"
+       exceptionPolicy = "UIDefault"
+       command = "Reports.GetSelectedReportCommand" />
+
+  <CommandActionConfig
+        key="RenderReportCommand"
+        refreshDiv=""
+        result="JSON"
+        view=""
+        allowAnonymous="false"
+        exceptionPolicy="UIDefault"
+        command="Reports.RenderReportCommand" />
+  <!-- END OF REPORTS-->
+</CommandActionTypeConfig>

@@ -1,0 +1,8 @@
+D:\StarTeam\Projects\Site Controller\Coding\Source\Infrastructure\UIFramework\UI.Data\bin\Debug\BallyTech.UI.Web.Data.dll
+D:\StarTeam\Projects\Site Controller\Coding\Source\Infrastructure\UIFramework\UI.Data\bin\Debug\BallyTech.UI.Web.Data.pdb
+D:\StarTeam\Projects\Site Controller\Coding\Source\Infrastructure\UIFramework\UI.Data\obj\Debug\BallyTech.UI.Web.Data.dll
+D:\StarTeam\Projects\Site Controller\Coding\Source\Infrastructure\UIFramework\UI.Data\obj\Debug\BallyTech.UI.Web.Data.pdb
+D:\KRISHNA\Code\Infrastructure\UIFramework\UI.Data\bin\Debug\Controls.Data.dll
+D:\KRISHNA\Code\Infrastructure\UIFramework\UI.Data\bin\Debug\Controls.Data.pdb
+D:\KRISHNA\Code\Infrastructure\UIFramework\UI.Data\obj\Debug\Controls.Data.dll
+D:\KRISHNA\Code\Infrastructure\UIFramework\UI.Data\obj\Debug\Controls.Data.pdb

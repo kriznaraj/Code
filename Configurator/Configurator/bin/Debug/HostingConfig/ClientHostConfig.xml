@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ClientHostConfig>
+  <ClientHost ConfigName="playerEndPoint">
+    <HostConfig bindingName="playerEndPoint" bindingType="NetTcp" relativePath="Player"></HostConfig>
+  </ClientHost>
+  <ClientHost ConfigName="usersEndPoint">
+    <HostConfig bindingName="usersEndPoint" bindingType="NetTcp" relativePath="User"></HostConfig>
+  </ClientHost>
+  <ClientHost ConfigName="assetEndPoint">
+    <HostConfig bindingName="assetEndPoint" bindingType="NetTcp" relativePath="Asset"></HostConfig>
+  </ClientHost>
+  <ClientHost ConfigName="PreCommitmentEndPoint">
+    <HostConfig bindingName="PreCommitmentEndPoint" bindingType="NetTcp" relativePath="PreCommitment"></HostConfig>
+  </ClientHost>
+  <ClientHost ConfigName="dropEndPoint">
+    <HostConfig bindingName="dropEndPoint" bindingType="NetTcp" relativePath="Drop"></HostConfig>
+  </ClientHost>
+  <ClientHost ConfigName="softCountEndPoint">
+    <HostConfig bindingName="softCountEndPoint" bindingType="NetTcp" relativePath="SoftCount"></HostConfig>
+  </ClientHost>
+  <ClientHost ConfigName="slipEndPoint">
+    <HostConfig bindingName="slipEndPoint" bindingType="NetTcp" relativePath="Slip"></HostConfig>
+  </ClientHost>
+  <ClientHost ConfigName="ticketsEndPoint">
+    <HostConfig bindingName="ticketsEndPoint" bindingType="NetTcp" relativePath="Ticket"></HostConfig>
+  </ClientHost>
+  <ClientHost ConfigName="ratingEndPoint">
+    <HostConfig bindingName="ratingEndPoint" bindingType="NetTcp" relativePath="Rating"></HostConfig>
+  </ClientHost>
+  <ClientHost ConfigName="hardCountEndPoint">
+    <HostConfig bindingName="hardCountEndPoint" bindingType="NetTcp" relativePath="HardCount"></HostConfig>
+  </ClientHost>
+  <ClientHost ConfigName="awardEndPoint">
+    <HostConfig bindingName="awardEndPoint" bindingType="NetTcp" relativePath="Award"></HostConfig>
+  </ClientHost>
+  <ClientHost ConfigName="inventoryManagementEndPoint">
+    <HostConfig bindingName="inventoryManagementEndPoint" bindingType="NetTcp" relativePath="InventoryManagement"></HostConfig>
+  </ClientHost>
+</ClientHostConfig>

@@ -1,0 +1,24 @@
+D:\StarTeam\Projects\Site Controller\Coding\Source\Infrastructure\UIFramework\ResourceManager\bin\Debug\BallyTech.UI.Web.ResourceManager.dll.config
+D:\StarTeam\Projects\Site Controller\Coding\Source\Infrastructure\UIFramework\ResourceManager\bin\Debug\BallyTech.UI.Web.ResourceManager.dll
+D:\StarTeam\Projects\Site Controller\Coding\Source\Infrastructure\UIFramework\ResourceManager\bin\Debug\BallyTech.UI.Web.ResourceManager.pdb
+D:\StarTeam\Projects\Site Controller\Coding\Source\Infrastructure\UIFramework\ResourceManager\bin\Debug\BallyTech.UI.Web.Data.dll
+D:\StarTeam\Projects\Site Controller\Coding\Source\Infrastructure\UIFramework\ResourceManager\bin\Debug\Newtonsoft.Json.dll
+D:\StarTeam\Projects\Site Controller\Coding\Source\Infrastructure\UIFramework\ResourceManager\bin\Debug\NetSerializer.dll
+D:\StarTeam\Projects\Site Controller\Coding\Source\Infrastructure\UIFramework\ResourceManager\bin\Debug\protobuf-net.dll
+D:\StarTeam\Projects\Site Controller\Coding\Source\Infrastructure\UIFramework\ResourceManager\bin\Debug\BallyTech.UI.Web.Data.pdb
+D:\StarTeam\Projects\Site Controller\Coding\Source\Infrastructure\UIFramework\ResourceManager\obj\Debug\ResourceManager.csprojResolveAssemblyReference.cache
+D:\StarTeam\Projects\Site Controller\Coding\Source\Infrastructure\UIFramework\ResourceManager\obj\Debug\BallyTech.UI.Web.ResourceManager.dll
+D:\StarTeam\Projects\Site Controller\Coding\Source\Infrastructure\UIFramework\ResourceManager\obj\Debug\BallyTech.UI.Web.ResourceManager.pdb
+D:\KRISHNA\Code\Infrastructure\UIFramework\ResourceManager\obj\Debug\ResourceManager.csprojResolveAssemblyReference.cache
+D:\KRISHNA\Code\Infrastructure\UIFramework\ResourceManager\bin\Debug\Newtonsoft.Json.dll
+D:\KRISHNA\Code\Infrastructure\UIFramework\ResourceManager\bin\Debug\NetSerializer.dll
+D:\KRISHNA\Code\Infrastructure\UIFramework\ResourceManager\bin\Debug\protobuf-net.dll
+D:\KRISHNA\Code\Infrastructure\UIFramework\ResourceManager\bin\Debug\Controls.ResourceManager.dll.config
+D:\KRISHNA\Code\Infrastructure\UIFramework\ResourceManager\bin\Debug\Controls.ResourceManager.dll
+D:\KRISHNA\Code\Infrastructure\UIFramework\ResourceManager\bin\Debug\Controls.ResourceManager.pdb
+D:\KRISHNA\Code\Infrastructure\UIFramework\ResourceManager\obj\Debug\Controls.ResourceManager.dll
+D:\KRISHNA\Code\Infrastructure\UIFramework\ResourceManager\obj\Debug\Controls.ResourceManager.pdb
+D:\KRISHNA\Code\Infrastructure\UIFramework\ResourceManager\bin\Debug\Controls.Data.dll
+D:\KRISHNA\Code\Infrastructure\UIFramework\ResourceManager\bin\Debug\Controls.Data.pdb
+D:\KRISHNA\Code\Infrastructure\UIFramework\ResourceManager\bin\Debug\Controls.Utilities.dll
+D:\KRISHNA\Code\Infrastructure\UIFramework\ResourceManager\bin\Debug\Controls.Utilities.pdb

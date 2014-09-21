@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<EventMessageConfigs>
+  <EventMessageConfig EventName="DEFAULT">
+    <Context>CreateNew</Context>
+    <Mode>UnReliable</Mode>
+    <Priority>QueuedLow</Priority>
+  </EventMessageConfig>
+</EventMessageConfigs>

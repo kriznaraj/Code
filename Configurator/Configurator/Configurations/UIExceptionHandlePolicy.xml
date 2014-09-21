@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<Policies xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="exceptionhandlePolicy1">
+  <ExceptionHandlePolicy name="UIDefault">
+    <ExceptionHandlerConfig type="BallyTech.UI.Web.ExceptionHandling.JsonExceptionHandler, BallyTech.UI.Web.ExceptionHandling" handlerAction="Rethrow" exceptionType="Controls.Framework.JsonException,Controls.Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c03530e9d763a944" />
+    <ExceptionHandlerConfig type="BallyTech.UI.Web.ExceptionHandling.ViewExceptionHandler, BallyTech.UI.Web.ExceptionHandling" handlerAction="Rethrow" exceptionType="Controls.Framework.ViewException,Controls.Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c03530e9d763a944" />
+    <ExceptionHandlerConfig type="BallyTech.UI.Web.ExceptionHandling.SwallowHandler, BallyTech.UI.Web.ExceptionHandling" handlerAction="Swallow" exceptionType="System.Exception" />
+  </ExceptionHandlePolicy>
+</Policies>

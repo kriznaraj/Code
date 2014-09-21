@@ -1,0 +1,809 @@
+<?xml version="1.0"?>
+<Models xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Model Name="LoginInputView">
+    <property Key="UserName" Name="UserName" ExternalizationKey="LoginInputView_UserName" />
+    <property Key="Password" Name="Password" ExternalizationKey="LoginInputView_Password" />
+    <property Key="SiteID" Name="SiteID" ExternalizationKey="LoginInputView_SiteID" />
+    <property Key="RoleId" Name="RoleId" ExternalizationKey="LoginInputView_RoleId" />
+    <property Key="" Name="loginPopupChangePassword" IsComplexType ="true" ComplexTypeName="LoginPopupChangePassword" IsEnumerable="true" />
+  </Model>
+
+  <Model Name="LoginPopupChangePassword">
+    <property Key="OldPassword" Name="OldPassword" ExternalizationKey="LoginInputView_LoginPopupChangePassword_OldPassword" />
+    <property Key="NewPassword" Name="NewPassword" ExternalizationKey="LoginInputView_LoginPopupChangePassword_NewPassword" />
+    <property Key="ConfirmPassword" Name="ConfirmPassword" ExternalizationKey="LoginInputView_LoginPopupChangePassword_ConfirmPassword" />
+  </Model>
+
+  <Model Name="ResetPasswordModel">
+    <property Key="" Name="resetPasswordData" IsComplexType ="true" ComplexTypeName="ResetPasswordDTO" IsEnumerable="true" />
+  </Model>
+  <Model Name="ResetPasswordDTO">
+    <property Key="Password" Name="Password" ExternalizationKey="ResetPasswordModel_ResetPasswordDTO_Password" />
+    <property Key="ConfirmPassword" Name="ConfirmPassword" ExternalizationKey="ResetPasswordModel_ResetPasswordDTO_ConfirmPassword" />
+  </Model>
+  <Model Name="ChangePasswordModel">
+    <property Key="OldPassword" Name="OldPassword" ExternalizationKey="ChangePasswordModel_OldPassword" />
+    <property Key="NewPassword" Name="NewPassword" ExternalizationKey="ChangePasswordModel_NewPassword" />
+    <property Key="ConfirmPassword" Name="ConfirmPassword" ExternalizationKey="ChangePasswordModel_ConfirmPassword" />
+  </Model>
+
+  <Model Name="PrintEmployeeCardModel">
+    <property Key="" Name="printEmployeeCardDTO" IsComplexType ="true" ComplexTypeName="PrintEmployeeCardDTO" IsEnumerable="true" />
+  </Model>
+  <Model Name="PrintEmployeeCardDTO">
+    <property Key="EmployeeCardNumber" Name="CardNumber" ExternalizationKey="PrintEmployeeCardModel_PrintEmployeeCardDTO_CardNumber" />
+    <property Key="PrintEmployeeCardModelEmployeeName" Name="EmployeeName" ExternalizationKey="PrintEmployeeCardModel_PrintEmployeeCardDTO_EmployeeName" />
+    <property Key="PrintEmployeeCardModelNumberOfCopies" Name="NumberOfCopies" ExternalizationKey="PrintEmployeeCardModel_PrintEmployeeCardDTO_NumberOfCopies" />
+  </Model>
+
+  <Model Name="CardModel">
+    <property Key="CardNumber" Name="CardNumber" ExternalizationKey="CardModel_CardNumber" />
+  </Model>
+  
+  <Model Name="EnrollPlayerModel">
+    <property Key="" Name="NewPlayerData" IsComplexType ="true" ComplexTypeName="PlayerEnrollmentPrerequisiteDTO" IsEnumerable="false" />
+    <property Key="" Name="EnrollPlayerData" IsComplexType ="true" ComplexTypeName="EnrollPlayerDTO" IsEnumerable="false" />
+    <property Key="" Name="ScanningIdentificationId" ComplexTypeName="ScanningIdentificationId" IsEnumerable="false" />
+  </Model>
+
+  <Model Name="PlayerModel">
+    <property Key="" Name="Player" IsComplexType ="true" ComplexTypeName="PlayerDTO" IsEnumerable="false" />
+  </Model>
+  <Model Name="EnrollPlayerDTO">
+    <property Key="" Name="Membership" IsComplexType ="true" ComplexTypeName="MembershipDTO" IsEnumerable="false" />
+    <property Key="" Name="Player" IsComplexType ="true" ComplexTypeName="PlayerDTO" IsEnumerable="false" />
+  </Model>
+
+  <Model Name="MembershipDTO">
+    <property Key="EnrollPlayerAccountNumber" Name="Number" ExternalizationKey="EnrollPlayerModel_AccountNumber" />
+  </Model>
+  <Model Name="PlayerDTO">
+    <property Key="FullName" Name="FullName" ExternalizationKey="PlayerModel_Player_FullName" />
+    <property Key="" Name="PlayerNameDTO" IsComplexType ="true" ComplexTypeName="PlayerNameDTO" IsEnumerable="true" />
+    <property Key="" Name="PlayerBirthDateDTO" IsComplexType ="true" ComplexTypeName="PlayerBirthDateDTO" IsEnumerable="true" />
+    <property Key="" Name="PlayerAddresses" IsComplexType ="true" ComplexTypeName="PlayerAddressDTO" IsEnumerable="true" />
+    <property Key="" Name="PlayerPhone" IsComplexType ="true" ComplexTypeName="PlayerPhoneDTO" IsEnumerable="true" />
+    <property Key="" Name="PlayerEmail" IsComplexType ="true" ComplexTypeName="PlayerEmailDTO" IsEnumerable="true" />
+    <property Key="WeddingDate" Name="WeddingDate" ExternalizationKey="PlayerModel_Player_WeddingDate" />
+    <property Key="" Name="PlayerPinDTO" IsComplexType ="true" ComplexTypeName="PlayerPinDTO" IsEnumerable="false" />
+    <property Key="" Name="newPlayerIdentity" IsComplexType ="true" ComplexTypeName="EnrollPlayerIdentityDTO" IsEnumerable="true" />
+  </Model>
+
+  <!--Player Club Model Starts-->
+  <Model Name="MembershipClubModel">
+    <property Key="" Name="ClubAndPlayerType" IsComplexType ="true" ComplexTypeName="ClubAndPlayerTypeDTO" IsEnumerable="false" />
+  </Model>
+  <Model Name="ClubAndPlayerTypeDTO">
+    <property Key="" Name="MembershipClub" IsComplexType ="true" ComplexTypeName="MembershipClubDTO" IsEnumerable="false" />
+    <property Key="" Name="PlayerType" IsComplexType ="true" ComplexTypeName="ModifyPlayerTypeDTO" IsEnumerable="false" />
+  </Model>
+  <Model Name="MembershipClubDTO">
+    <property Key="MembershipClubMembershipFee" Name="MemberShipFee" ExternalizationKey="MembershipClub_MembershipClub_MembershipFee" />
+    <property Key="MembershipClubClubStateExpiryDate" Name="ClubStateExpiryDate" ExternalizationKey="MembershipClub_MembershipClub_ClubStateExpiryDate" />
+  </Model>
+  <!--Player Club Model Ends-->
+
+  <Model Name="EnrollPlayerIdentityDTO">
+    <property Key="EnrollPlayerPlayerIdenInfoPlayerId" Name="IdentificationId" ExternalizationKey="EnrollPlayerModel_PlayerIdentificationInfo_IdentificationId" />
+    <property Key="EnrollPlayerPlayerIdenInfoPlayerIdenNum" Name="IdentificationNumber" ExternalizationKey="EnrollPlayerModel_PlayerIdentificationInfo_PlayerIdentificationNum" />
+    <property Key="EnrollPlayerPlayerIdenInfoExpiryDate" Name="ExpiryDate" ExternalizationKey="EnrollPlayerModel_PlayerIdentificationInfo_ExpiryDate" />
+  </Model>
+
+  <Model Name="PlayerNameDTO">
+    <property Key="EnrollPlayerFirstName" Name="FirstName" ExternalizationKey="EnrollPlayerModel_FirstName" />
+    <property Key="EnrollPlayerLastName" Name="LastName"  ExternalizationKey="EnrollPlayerModel_LastName" />
+    <property Key="EnrollPlayerMiddleName" Name="MiddleName" ExternalizationKey="EnrollPlayerModel_MiddleName" />
+    <property Key="EnrollPlayerNickName" Name="NickName"  ExternalizationKey="EnrollPlayerModel_NickName" />
+    <property Key="EnrollPlayerTitle" Name="Title"  ExternalizationKey="EnrollPlayerModel_Title" />
+    <property Key="EnrollPlayerFullName" Name="FullName"  ExternalizationKey="EnrollPlayerModel_FullName" />
+  </Model>
+  <Model Name="PlayerBirthDateDTO">
+    <property Key="EnrollPlayerBirthDate" Name="BirthDate"  ExternalizationKey="EnrollPlayerModel_BirthDate" />
+  </Model>
+
+  <Model Name="PlayerAddressDTO">
+    <property Key="EnrollPlayerAddressInfoLine1" Name="Line1" ExternalizationKey="PlayerAddressViewModel_PlayerAddressDTO_Line1" />
+    <property Key="EnrollPlayerAddressInfoCountryId" Name="Country" ExternalizationKey="EnrollPlayerModel_AddressInfo_CountryId" />
+    <property Key="EnrollPlayerAddressInfoStateId" Name="State" ExternalizationKey="EnrollPlayerModel_AddressInfo_StateId" />
+    <property Key="EnrollPlayerAddressInfoCity" Name="City" ExternalizationKey="EnrollPlayerModel_AddressInfo_City" />
+    <property Key="EnrollPlayerAddressInfoPostalCode" Name="PostalCodeId" ExternalizationKey="EnrollPlayerModel_AddressInfo_PostalCode" />
+  </Model>
+
+  <Model Name="AlternateAddress">
+    <property Key="EnrollAlternatePlayerAddressInfoLine1" Name="Line1" ExternalizationKey="EnrollPlayerModel_AddressInfo_Line1" />
+    <property Key="EnrollAlternatePlayerAddressInfoCountry" Name="Country" ExternalizationKey="EnrollPlayerModel_AddressInfo_CountryId" />
+    <property Key="EnrollAlternatePlayerAddressInfoState" Name="State" ExternalizationKey="EnrollPlayerModel_AddressInfo_StateId" />
+    <property Key="EnrollAlternatePlayerAddressInfoCity" Name="City" ExternalizationKey="EnrollPlayerModel_AddressInfo_City" />
+    <property Key="EnrollAlternatePlayerAddressInfoPostalCodeId" Name="PostalCodeId" ExternalizationKey="EnrollPlayerModel_AddressInfo_PostalCode" />
+  </Model>
+
+  <Model Name="PlayerPhoneDTO">
+    <property Key="PlayerContactNumber" Name="Number" ExternalizationKey="PlayerContactNumber_Number" />
+  </Model>
+  <Model Name="PlayerIdentityDTO">
+    <property Key="EnrollPlayerPlayerIdenInfoPlayerId" Name="IdentificationId" ExternalizationKey="EnrollPlayerModel_PlayerIdentificationInfo_IdentificationId" />
+    <property Key="EnrollPlayerPlayerIdenInfoPlayerIdenNum" Name="IdentificationNumber" ExternalizationKey="EnrollPlayerModel_PlayerIdentificationInfo_PlayerIdentificationNum" />
+    <property Key="EnrollPlayerPlayerIdenInfoExpiryDate" Name="ExpiryDate" ExternalizationKey="EnrollPlayerModel_PlayerIdentificationInfo_ExpiryDate" />
+  </Model>
+  
+  <Model Name="PlayerPhoneModel">
+    <property Key="" Name="MobileNumber" IsComplexType ="true" ComplexTypeName="PlayerPhoneDTO" IsEnumerable="false" />
+    <property Key="" Name="HomeNumber" IsComplexType ="true" ComplexTypeName="PlayerPhoneDTO" IsEnumerable="false" />
+    <property Key="" Name="AltNumber" IsComplexType ="true" ComplexTypeName="AlternateNumberDTO" IsEnumerable="false" />
+  </Model>
+  
+  <Model Name="AlternateNumberDTO">
+    <property Key="PlayerContactNumber_Alternate" Name="Number" ExternalizationKey="PlayerPhoneDto_AltNumber_Alternate" />
+  </Model>
+  <Model Name="PlayerMaintenanceGroupModel">
+    <property Key="CheckForDefaultGroupId" Name="DefaultGroupId" ExternalizationKey="PlayerMaintenanceGroupModel_DefaultGroupId" />
+  </Model>
+
+  <Model Name="PlayerIdentificationModel">
+    <property Key="" Name="newPlayerIdentityDto" IsComplexType ="true" ComplexTypeName="MaintainPlayerIdentityDTO" IsEnumerable="false" />
+  </Model>
+  <Model Name="MaintainPlayerIdentityDTO">
+    <property Key="" Name="ssnDTO" IsComplexType ="true" ComplexTypeName="SSNIdentityDTO" IsEnumerable="false" />
+    <property Key="" Name="drivingLicenseDTO" IsComplexType ="true" ComplexTypeName="DrivingLicenseIdentityDTO" IsEnumerable="false" />
+    <property Key="" Name="passportDTO" IsComplexType ="true" ComplexTypeName="PassportIdentityDTO" IsEnumerable="false" />
+    <property Key="" Name="seniorsCardDTO" IsComplexType ="true" ComplexTypeName="SeniorsCardIdentityDTO" IsEnumerable="false" />
+    <property Key="" Name="birthCertificateDTO" IsComplexType ="true" ComplexTypeName="BirthCertificateIdentityDTO" IsEnumerable="false" />
+    <property Key="" Name="proofOfAgeDTO" IsComplexType ="true" ComplexTypeName="ProofOfAgeIdentityDTO" IsEnumerable="false" />
+  </Model>
+  <Model Name="SSNIdentityDTO">
+    <property Key="SSN" Name="IdentificationNumber" ExternalizationKey="PlayerIdentityDto_SSN_IdentificationNumber" />
+  </Model>
+  <Model Name="DrivingLicenseIdentityDTO">
+    <property Key="DLExpireDate" Name="ExpiryDate" ExternalizationKey="PlayerIdentityDto_DrivingLicense_ExpiryDate" />
+  </Model>
+  <Model Name="PassportIdentityDTO">
+    <property Key="PassportExpireDate" Name="ExpiryDate" ExternalizationKey="PlayerIdentityDto_Passport_ExpiryDate" />
+  </Model>
+  <Model Name="SeniorsCardIdentityDTO">
+    <property Key="SeniorsCardExpireDate" Name="ExpiryDate" ExternalizationKey="PlayerIdentityDto_SeniorsCard_ExpiryDate" />
+  </Model>
+  <Model Name="BirthCertificateIdentityDTO">
+    <property Key="BirthCertificateIssueDate" Name="IssueDate" ExternalizationKey="PlayerIdentityDto_BirthCertificate_IssueDate" />
+  </Model>
+  <Model Name="ProofOfAgeIdentityDTO">
+    <property Key="ProofOfAgeIssueDate" Name="IssueDate" ExternalizationKey="PlayerIdentityDto_ProofOfAge_IssueDate" />
+  </Model>
+
+  <Model Name="PlayerMaintenanceModel">
+    <property Key="" Name="PlayerResultSet" IsComplexType ="true" ComplexTypeName="PlayerDTO" IsEnumerable="true" />
+    <property Key="" Name="ReEnterNewPin" IsComplexType ="true" ComplexTypeName="ReEnterNewPinDTO" IsEnumerable="true" />
+  </Model>
+  <Model Name="PlayerPinDTO">
+    <property Key="OldPIN" Name="OldPIN" ExternalizationKey="PlayerMaintenanceModel_PlayerResultSet_OldPIN" />
+    <property Key="NewPIN" Name="NewPIN" ExternalizationKey="PlayerMaintenanceModel_PlayerResultSet_NewPIN" />
+  </Model>
+  <Model Name="ReEnterNewPinDTO">
+    <property Key="ReEnterNewPin" Name="ReEnterNewPin" ExternalizationKey="PlayerMaintenanceModel_ReEnterNewPin" />
+  </Model>
+
+  <Model Name="PlayerAddressViewModel">
+    <property Key="" Name="PlayerAddressDTO" ComplexTypeName="PlayerAddressDTO" IsComplexType ="true" IsEnumerable="true" />
+  </Model>
+  <Model Name="PlayerEmailModel">
+    <property Key="" Name="HomeAddress" IsComplexType ="true" ComplexTypeName="HomeEmailDTO" IsEnumerable="false" />
+    <property Key="" Name="AlternateAddress" IsComplexType ="true" ComplexTypeName="AlternateEmailDTO" IsEnumerable="false" />
+  </Model>
+  <Model Name="HomeEmailDTO">
+    <property Key="PlayerEmail_Home" Name="Address" ExternalizationKey="PlayerEmailDTO_PlayerEmail_Home" />
+  </Model>
+  <Model Name="AlternateEmailDTO">
+    <property Key="PlayerEmail_Alternate" Name="Address" ExternalizationKey="PlayerEmailDTO_PlayerEmail_Alternate" />
+  </Model>
+
+  <Model Name="PlayerScanModel">
+    <property Key="PlayerScanModelId" Name="Id" ExternalizationKey="PlayerScanModel_Id" />
+    <property Key="PlayerScanModelCountryId" Name="CountryId" ExternalizationKey="PlayerScanModel_CountryId" />
+    <property Key="PlayerScanModelStateId" Name="StateId" ExternalizationKey="PlayerScanModel_StateId" />
+  </Model>
+
+  <Model Name="PlayerReportModel">
+    <property Key="PlayerReportModelReportDate" Name="ReportDate" ExternalizationKey="PlayerReportModel_ReportDate" />
+    <property Key="PlayerReportModelReports" Name="ReportId" ExternalizationKey="ReportId" />
+  </Model>
+
+  <Model Name="PlayerNoteViewModel">
+    <property Key="" Name="AddPlayerText" IsComplexType ="true" ComplexTypeName="PlayerTextDTO" IsEnumerable="false" />
+  </Model>
+
+  <Model Name="PlayerTextDTO">
+    <property Key="PlayerNoteMaintananceDocumentNumber" Name="DocumentNumber" ExternalizationKey="PlayerNoteViewModel_AddPlayerText__DocumentNumber_ToolTip" />
+    <property Key="PlayerNoteMaintananceReason" Name="Ref1" ExternalizationKey="PlayerNoteViewModel_AddPlayerText_Ref1_ToolTip_WaterMark" />
+    <property Key="PlayerNoteMaintananceRemarks" Name="Ref2" ExternalizationKey="PlayerNoteViewModel_AddPlayerText_Ref2_ToolTip" />
+  </Model>
+
+  <Model Name="PlayerMemosViewModel">
+    <property Key="" Name="AddPlayerText" IsComplexType ="true" ComplexTypeName="PlayerMemoDTO" IsEnumerable="false" />
+    <property Key="PlayerMemosMaintananceType" Name="MemosTypeSelected" IsComplexType ="false" ExternalizationKey="PlayerMemosViewModel_TextTypeList" />
+    <property Key="PlayerMemosMaintananceType_SelectedDepId" Name="SelectedDepId" IsComplexType ="false" ExternalizationKey="PlayerMemosMaintananceType_SelectedDepId" />
+  </Model>
+
+  <Model Name="PlayerMemoDTO">
+    <property Key="PlayerMemosMaintananceDocumentNumber" Name="DocumentNumber" ExternalizationKey="PlayerMemosViewModel_AddPlayerText_DocumentNumber" />
+    <property Key="PlayerMemosMaintananceReason" Name="Ref1" ExternalizationKey="PlayerMemosViewModel_AddPlayerText_Ref1" />
+    <property Key="PlayerMemosMaintananceRemarks" Name="Ref2" ExternalizationKey="PlayerMemosModel_AddPlayerText_Ref2" />
+    <property Key="PlayerMemosMaintananceDept" Name="DeptId" ExternalizationKey="PlayerMemosModel_AddPlayerText_DeptId" />
+    <property Key="PlayerMemosMaintananceExpiryDate" Name="ExpiryDate" ExternalizationKey="PlayerMemosModel_AddPlayerText_ExpiryDate" />
+  </Model>
+
+<Model Name="PlayerRatingViewModel">
+    <property Key="" Name="RatingResultSet" IsComplexType ="true" ComplexTypeName="RatingDTO" IsEnumerable="false" />
+  </Model>
+  <Model Name="RatingDTO">
+    <property Key="Rating_SlotNo" Name="SlotId" ExternalizationKey="PlayerRatingViewModel_RatingResultSet_SlotNo" />
+    <property Key="Rating_EndDate" Name="EndDate" ExternalizationKey="PlayerRatingViewModel_RatingResultSet_EndDate" />
+    <property Key="Rating_EndTime" Name="EndTime" ExternalizationKey="PlayerRatingViewModel_RatingResultSet_EndTime" />
+    <property Key="Rating_Bet" Name="Bet" ExternalizationKey="PlayerRatingViewModel_RatingResultSet_Bet" />
+    <property Key="Rating_PaidOut" Name="PaidOut" ExternalizationKey="PlayerRatingViewModel_RatingResultSet_PaidOut" />
+    <property Key="Rating_JackPot" Name="JackPot" ExternalizationKey="PlayerRatingViewModel_RatingResultSet_JackPot" />
+    <property Key="Rating_TotalDurationinMinutes" Name="TotalDurationinMinutes" ExternalizationKey="PlayerRatingViewModel_RatingResultSet_TotalDurationinMinutes" />
+    <property Key="Rating_DocumentNumber" Name="DocumentNumber" ExternalizationKey="PlayerRatingViewModel_RatingResultSet_DocumentNumber" />
+    <property Key="Rating_Remarks" Name="Remarks" ExternalizationKey="PlayerRatingViewModel_RatingResultSet_Remarks" />
+  </Model>
+
+  <Model Name="OtherRatingViewModel">
+    <property Key="" Name="OtherRatingResultSet" IsComplexType ="true" ComplexTypeName="OtherRatingDTO" IsEnumerable="false" />
+    <property Key="OtherRating_Location" Name="LocnId" ExternalizationKey="OtherRatingViewModel_OtherRatingResultSet_Location" />
+  </Model>
+  <Model Name="OtherRatingDTO">
+    <property Key="OtherRating_DocNo" Name="DocumentNumber" ExternalizationKey="OtherRatingViewModel_OtherRatingResultSet_DocumentNumber" />
+    <property Key="OtherRating_Revenue" Name="Revenue" ExternalizationKey="OtherRatingViewModel_OtherRatingResultSet_Revenue" />
+    <property Key="OtherRating_TranactionTime" Name="TranactionTime" ExternalizationKey="OtherRatingViewModel_OtherRatingResultSet_TranactionTime" />
+    <property Key="OtherRating_Remarks" Name="Remarks" ExternalizationKey="OtherRatingViewModel_OtherRatingResultSet_Remarks" />
+  </Model>
+
+  <Model Name="VoidManualRatingViewModel">
+    <property Key="VoidManualRatingViewModel_VoidRatingResultSet_VoidDocumentNumber" Name="VoidDocumentNumber" ExternalizationKey="VoidRatingResultSet_VoidDocumentNumber" />
+    <property Key="VoidManualRatingViewModel_VoidRatingResultSet_VoidRemarks" Name="VoidRemarks" ExternalizationKey="VoidRatingResultSet_VoidRemarks" />
+  </Model>
+  <Model Name="JackpotListModel">
+    <property Key="JackpotListModelFilterDataSlotNumber" Name="SlotNumber" ExternalizationKey="JackpotListModelFilterData_SlotNumber" />
+    <property Key="JackpotListModelFilterDataSequenceNumber" Name="SequenceNumber" ExternalizationKey="JackpotListModelFilterData_SequenceNumber" />
+    <property Key="JackpotListModelFilterDataLastXMinute" Name="LastXMinute" ExternalizationKey="JackpotListModelFilterData_LastXMinute" />
+    <property Key="JackpotListModelFilterDataLocation" Name="Location" ExternalizationKey="JackpotListModelFilterData_Location" />
+  </Model>
+
+  <!--Reprint-->
+
+  <Model Name="ReprintModel">
+    <property Key="" Name="ReprintDTO" IsComplexType ="true" ComplexTypeName="ReprintDTO" IsEnumerable="true" />
+  </Model>
+  <Model Name="ReprintDTO">
+    <property Key="SequenceNumber" Name="SequenceNumber" ExternalizationKey="ReprintModel_ReprintDTO_SequenceNumber" />
+    <property Key="SlipType" Name="SlipType" ExternalizationKey="ReprintModel_ReprintDTO_SlipType" />
+    <property Key="Reason" Name="Reason" ExternalizationKey="ReprintModel_ReprintDTO_Reason" />
+  </Model>
+
+  <!--End of Reprint configs-->
+
+	<!--Dispute-->
+
+	<Model Name="DisputeModel" ConfigKey="DisputeValidation">
+		<property Key="" Name="DisputeDTO" IsComplexType ="true" ComplexTypeName="DisputeDTO" IsEnumerable="false" />
+	</Model>
+	<Model Name="DisputeDTO" ConfigKey="DisputeValidation">
+		<property Key="SlipAssetNumber" Name="AssetNumber" ExternalizationKey="DisputeModel_DisputeDTO_AssetNumber" />
+    <property Key="SlipAssetLocation" Name="AssetLocation" ExternalizationKey="DisputeModel_DisputeDTO_AssetLocation" />
+    
+    <property Key="DisputePlayerCardNumber" Name="PlayerCardNumber" ExternalizationKey="DisputeModel_DisputeDTO_PlayerCardNumber" />
+    <property Key="Reason" Name="Reason" ExternalizationKey="DisputeModel_DisputeDTO_Reason" />
+		<property Key="Amount" Name="Amount" ExternalizationKey="DisputeModel_DisputeDTO_Amount" />
+		<property Key="DisputeCashierWindowNumber" Name="CashierWindowNumber" ExternalizationKey="DisputeModel_DisputeDTO_CashierWindowNumber" />
+	</Model>
+
+  <Model Name="DisputeModel" ConfigKey="AuthorizerValidation">
+    <property Key="" Name="DisputeDTO" IsComplexType ="true" ComplexTypeName="DisputeDTO" IsEnumerable="false" />
+  </Model>
+  <Model Name="DisputeDTO" ConfigKey="AuthorizerValidation">
+    <property Key="SlipFirstAuthorizer" Name="FirstAuthorizer" />
+    <property Key="SlipFirstAuthorizerPassword" Name="FirstAuthorizerPassword"/>
+    <property Key="SlipSecondAuthorizer" Name="SecondAuthorizer"/>
+    <property Key="SlipSecondAuthorizerPassword" Name="SecondAuthorizerPassword"/>
+  </Model>
+
+  <Model Name="DisputeModel" ConfigKey="PaymentValidation">
+    <property Key="" Name="DisputeDTO" IsComplexType ="true" ComplexTypeName="DisputeDTO" IsEnumerable="false" />
+  </Model>
+  <Model Name="DisputeDTO" ConfigKey="PaymentValidation">
+    <property Key="DisputePlayerName" Name="PlayerName" ExternalizationKey="DisputeModel_DisputeDTO_PlayerName" />
+  </Model>
+
+	<!--End of Dispute configs-->	
+
+  <!--Fill Configs start-->
+  <Model Name="FillModel" ConfigKey="FillValidation">
+    <property Key="" Name="FillDTO" IsComplexType ="true" ComplexTypeName="FillDTO" IsEnumerable="false" />
+  </Model>
+  <Model Name="FillDTO" ConfigKey="FillValidation">
+    <property Key="FillDTOSlotNumber" Name="SlotNumber" ExternalizationKey="FillModel_FillDTO_SlotNumber" />
+    <property Key="FillDTOSlotLocation" Name="SlotLocation" ExternalizationKey="FillModel_FillDTO_SlotLocation" />
+    <property Key="FillDTOAmount" Name="Amount" ExternalizationKey="FillModel_FillDTO_Amount" />
+    <property Key="FillDTOWinNum" Name="WinNum" ExternalizationKey="FillModel_FillDTO_WinNum" />
+  </Model>
+  
+  <Model Name="FillModel" ConfigKey="AuthorizerValidation">
+    <property Key="" Name="FillDTO" IsComplexType ="true" ComplexTypeName="FillDTO" IsEnumerable="false" />
+  </Model>
+  <Model Name="FillDTO" ConfigKey="AuthorizerValidation">
+    <property Key="FillDTOFirstAuthLoginName" Name="FirstAuthLoginName" ExternalizationKey="FillModel_FillDTO_FirstAuthLoginName" />
+    <property Key="FillDTOFirstAuthPassword" Name="FirstAuthPassword" ExternalizationKey="FillModel_FillDTO_FirstAuthPassword" />
+    <property Key="FillDTOSecondAuthLoginName" Name="SecondAuthLoginName" ExternalizationKey="FillModel_FillDTO_SecondAuthLoginName" />
+    <property Key="FillDTOSecondAuthPassword" Name="SecondAuthPassword" ExternalizationKey="FillModel_FillDTO_SecondAuthPassword" />
+  </Model>
+  
+  <!--Fill Configs End-->
+
+  <!--Bleed Configs Start-->
+  <Model Name="BleedModel" ConfigKey="BleedValidation">
+    <property Key="" Name="BleedDTO" IsComplexType ="true" ComplexTypeName="BleedDTO" IsEnumerable="false" />
+  </Model>
+  <Model Name="BleedDTO" ConfigKey="BleedValidation">
+    <property Key="BleedDTOSlotNumber" Name="SlotNumber" ExternalizationKey="BleedModel_BleedDTO_SlotNumber" />
+    <property Key="BleedDTOSlotLocation" Name="SlotLocation" ExternalizationKey="BleedModel_BleedDTO_SlotLocation" />
+    <property Key="BleedDTOAmount" Name="Amount" ExternalizationKey="BleedModel_BleedDTO_Amount" />
+    <property Key="BleedDTOWinNum" Name="WinNum" ExternalizationKey="BleedModel_BleedDTO_WinNum" />
+  </Model>
+  <!--Bleed Configs end-->
+
+  <!-- Manual& Pending Jackpot -->
+
+  <!--<Model Name="ManualJackpotModel">
+    <property Key="" Name="ManualJackpotDTO" IsComplexType ="true" ComplexTypeName="ManualJackpotDTO" IsEnumerable="false" />
+    --><!--<property Key="JackpotType" Name="JackpotType" ExternalizationKey="JackpotModel_JackpotType" />--><!--
+    <property Key="TaxRate" Name="TaxRate" ExternalizationKey="JackpotModel_Tax" />
+  </Model>
+  <Model Name="ManualJackpotDTO">
+    <property Key="AssetNumber" Name="AssetNumber" ExternalizationKey="ManualJackpotModel_ManualJackpotDTO_AssetNumber" />
+    <property Key="AssetLocation" Name="AssetLocation" ExternalizationKey="ManualJackpotModel_ManualJackpotDTO_AssetLocation" />
+    <property Key="PlayerCardNumber" Name="PlayerCardNumber" ExternalizationKey="ManualJackpotModel_ManualJackpotDTO_PlayerCardNumber" />
+    <property Key="HandPaidAmount" Name="HandPaidAmount" ExternalizationKey="ManualJackpotModel_ManualJackpotDTO_HandPaidAmount" />
+    <property Key="PlayerName" Name="PlayerName" ExternalizationKey="ManualJackpotModel_ManualJackpotDTO_PlayerName" />
+    <property Key="WinningCombination" Name="WinningCombination" ExternalizationKey="ManualJackpotModel_ManualJackpotDTO_WinningCombination" />
+    <property Key="PayLine" Name="PayLine" ExternalizationKey="ManualJackpotModel_ManualJackpotDTO_PayLine" />
+    <property Key="CoinsPlayed" Name="CoinsPlayed" ExternalizationKey="ManualJackpotModel_ManualJackpotDTO_CoinsPlayed" />
+    <property Key="CashierWindowNumber" Name="CashierWindowNumber" ExternalizationKey="ManualJackpotModel_ManualJackpotDTO_CashierWindowNumber" />
+    <property Key="CashAmount" Name="CashAmount" ExternalizationKey="ManualJackpotModel_ManualJackpotDTO_CashAmount" />
+    <property Key="JackpotType" Name="JackpotType" ExternalizationKey="ManualJackpotModel_ManualJackpotDTO_JackpotType" />
+    <property Key="ChequeIssueDate" Name="ChequeIssueDate" ExternalizationKey="ManualJackpotModel_ManualJackpotDTO_ChequeIssueDate" />
+    
+
+  </Model>-->
+
+  <Model Name="ManualJackpotModel" ConfigKey="JackpotDetailsValidation">
+    <property Key="" Name="ManualJackpotDTO" IsComplexType ="true" ComplexTypeName="ManualJackpotDTO" IsEnumerable="false" />
+    <property Key="TaxRate" Name="TaxRate" ExternalizationKey="JackpotModel_Tax" />
+  </Model>
+  <Model Name="ManualJackpotDTO" ConfigKey="JackpotDetailsValidation">
+    <property Key="AssetNumber" Name="AssetNumber" ExternalizationKey="ManualJackpotModel_ManualJackpotDTO_AssetNumber" />
+    <property Key="AssetLocation" Name="AssetLocation" ExternalizationKey="ManualJackpotModel_ManualJackpotDTO_AssetLocation" />
+    <property Key="PlayerCardNumber" Name="PlayerCardNumber" ExternalizationKey="ManualJackpotModel_ManualJackpotDTO_PlayerCardNumber" />
+    <property Key="HandPaidAmount" Name="HandPaidAmount" ExternalizationKey="ManualJackpotModel_ManualJackpotDTO_HandPaidAmount" />
+    <property Key="WinningCombination" Name="WinningCombination" ExternalizationKey="ManualJackpotModel_ManualJackpotDTO_WinningCombination" />
+    <property Key="PayLine" Name="PayLine" ExternalizationKey="ManualJackpotModel_ManualJackpotDTO_PayLine" />
+    <property Key="CoinsPlayed" Name="CoinsPlayed" ExternalizationKey="ManualJackpotModel_ManualJackpotDTO_CoinsPlayed" />
+    <property Key="CashierWindowNumber" Name="CashierWindowNumber" ExternalizationKey="ManualJackpotModel_ManualJackpotDTO_CashierWindowNumber" />
+  </Model>
+
+  <Model Name="ManualJackpotModel" ConfigKey="AssetValidation">
+    <property Key="" Name="ManualJackpotDTO" IsComplexType ="true" ComplexTypeName="ManualJackpotDTO" IsEnumerable="false" />
+    <!--<property Key="JackpotType" Name="JackpotType" ExternalizationKey="JackpotModel_JackpotType" />-->
+  </Model>
+  <Model Name="ManualJackpotDTO" ConfigKey="AssetValidation">
+    <property Key="AssetNumber" Name="AssetNumber" ExternalizationKey="ManualJackpotModel_ManualJackpotDTO_AssetNumber" />   
+  </Model>
+
+  <Model Name="ManualJackpotModel" ConfigKey="AuthorizerValidation">
+    <property Key="" Name="ManualJackpotDTO" IsComplexType ="true" ComplexTypeName="ManualJackpotDTO" IsEnumerable="false" />
+  </Model>
+  <Model Name="ManualJackpotDTO" ConfigKey="AuthorizerValidation">
+    <property Key="FirstAuthorizer" Name="FirstAuthorizer" />
+    <property Key="FirstAuthorizerPassword" Name="FirstAuthorizerPassword"/>
+    <property Key="SecondAuthorizer" Name="SecondAuthorizer"/>
+    <property Key="SecondAuthorizerPassword" Name="SecondAuthorizerPassword"/>
+  </Model>
+
+  <Model Name="ManualJackpotModel" ConfigKey="PaymentValidation">
+    <property Key="" Name="ManualJackpotDTO" IsComplexType ="true" ComplexTypeName="ManualJackpotDTO" IsEnumerable="false" />
+  </Model>
+  <Model Name="ManualJackpotDTO" ConfigKey="PaymentValidation">
+    <property Key="PlayerName" Name="PlayerName" ExternalizationKey="ManualJackpotModel_ManualJackpotDTO_PlayerName" />
+  </Model>
+
+
+  <!--<Model Name="PendingJackpotModel">
+    <property Key="" Name="JackpotDTO" IsComplexType ="true" ComplexTypeName="PendingJackpotDTO" IsEnumerable="true" />
+  </Model>
+  <Model Name="PendingJackpotDTO">
+    <property Key="AssetNumber" Name="AssetNumber" ExternalizationKey="PendingJackpotModel_PendingJackpotDTO_AssetNumber" />
+    <property Key="AssetLocation" Name="AssetLocation" ExternalizationKey="PendingJackpotModel_PendingJackpotDTO_AssetLocation" />
+    <property Key="PlayerCardNumber" Name="PlayerCardNumber" ExternalizationKey="PendingJackpotModel_PendingJackpotDTO_PlayerCardNumber" />
+    <property Key="HandPaidAmount" Name="HandPaidAmount" ExternalizationKey="PendingJackpotModel_PendingJackpotDTO_HandPaidAmount" />
+    --><!--property Key="PlayerName" Name="PlayerName" ExternalizationKey="PendingJackpotModel_PendingJackpotDTO_PlayerName" /--><!--
+    <property Key="WinningCombination" Name="WinningCombination" ExternalizationKey="PendingJackpotModel_PendingJackpotDTO_WinningCombination" />
+    <property Key="PayLine" Name="PayLine" ExternalizationKey="PendingJackpotModel_PendingJackpotDTO_PayLine" />
+    <property Key="CoinsPlayed" Name="CoinsPlayed" ExternalizationKey="PendingJackpotModel_PendingJackpotDTO_CoinsPlayed" />
+    <property Key="CashierWindowNumber" Name="CashierWindowNumber" ExternalizationKey="PendingJackpotModel_PendingJackpotDTO_CashierWindowNumber" />
+    <property Key="CashAmount" Name="CashAmount" ExternalizationKey="PendingJackpotModel_PendingJackpotDTO_CashAmount" />
+    <property Key="DisplayHitAmount" Name="DisplayHitAmount" ExternalizationKey="PendingJackpotModel_PendingJackpotDTO_DisplayHitAmount" />
+  </Model>-->
+
+  <Model Name="PendingJackpotModel" ConfigKey="JackpotDetailsValidation">
+    <property Key="" Name="JackpotDTO" IsComplexType ="true" ComplexTypeName="PendingJackpotDTO" IsEnumerable="false" />
+    <property Key="SelectedTax" Name="SelectedTax" ExternalizationKey="JackpotModel_Tax" />
+  </Model>
+  <Model Name="PendingJackpotDTO" ConfigKey="JackpotDetailsValidation">
+    <property Key="AssetNumber" Name="AssetNumber" ExternalizationKey="PendingJackpotModel_PendingJackpotDTO_AssetNumber" />
+    <property Key="AssetLocation" Name="AssetLocation" ExternalizationKey="PendingJackpotModel_PendingJackpotDTO_AssetLocation" />
+    <property Key="PlayerCardNumber" Name="PlayerCardNumber" ExternalizationKey="PendingJackpotModel_PendingJackpotDTO_PlayerCardNumber" />
+    <property Key="HandPaidAmount" Name="HandPaidAmount" ExternalizationKey="PendingJackpotModel_PendingJackpotDTO_HandPaidAmount" />
+    <property Key="WinningCombination" Name="WinningCombination" ExternalizationKey="PendingJackpotModel_PendingJackpotDTO_WinningCombination" />
+    <property Key="PayLine" Name="PayLine" ExternalizationKey="PendingJackpotModel_PendingJackpotDTO_PayLine" />
+    <property Key="CoinsPlayed" Name="CoinsPlayed" ExternalizationKey="PendingJackpotModel_PendingJackpotDTO_CoinsPlayed" />
+    <property Key="CashierWindowNumber" Name="CashierWindowNumber" ExternalizationKey="PendingJackpotModel_PendingJackpotDTO_CashierWindowNumber" />
+    <property Key="DisplayHitAmount" Name="DisplayHitAmount" ExternalizationKey="PendingJackpotModel_PendingJackpotDTO_DisplayHitAmount" />
+  </Model>
+
+  <Model Name="PendingJackpotModel" ConfigKey="AuthorizerValidation">
+    <property Key="" Name="JackpotDTO" IsComplexType ="true" ComplexTypeName="PendingJackpotDTO" IsEnumerable="false" />
+  </Model>
+  <Model Name="PendingJackpotDTO" ConfigKey="AuthorizerValidation">
+    <property Key="FirstAuthorizer" Name="FirstAuthorizer" />
+    <property Key="FirstAuthorizerPassword" Name="FirstAuthorizerPassword"/>
+    <property Key="SecondAuthorizer" Name="SecondAuthorizer"/>
+    <property Key="SecondAuthorizerPassword" Name="SecondAuthorizerPassword"/>
+  </Model>
+
+  <Model Name="PendingJackpotModel" ConfigKey="OverrideAuthorizerValidation">
+    <property Key="" Name="JackpotDTO" IsComplexType ="true" ComplexTypeName="PendingJackpotDTO" IsEnumerable="false" />
+  </Model>
+  <Model Name="PendingJackpotDTO" ConfigKey="OverrideAuthorizerValidation">
+    <property Key="OverrideAuthorizer" Name="OverrideAuthorizer" />
+    <property Key="OverrideAuthorizerPassword" Name="OverrideAuthorizerPassword"/>
+  </Model>
+
+  <Model Name="PendingJackpotModel" ConfigKey="PaymentValidation">
+    <property Key="" Name="JackpotDTO" IsComplexType ="true" ComplexTypeName="PendingJackpotDTO" IsEnumerable="false" />
+  </Model>
+  <Model Name="PendingJackpotDTO" ConfigKey="PaymentValidation">
+    <property Key="PlayerName" Name="PlayerName" ExternalizationKey="PendingJackpotModel_PendingJackpotDTO_PlayerName" />
+  </Model>
+
+  <!-- End of Manual & Pending Jackpot configs-->
+
+  <!-- Void Slips-->
+  <Model Name="VoidJackpotViewModel">
+    <property Key="" Name="VoidJackpotSlipsDTO" IsComplexType ="true" ComplexTypeName="VoidJackpotDTO" IsEnumerable="true" />
+  </Model>
+  <Model Name="VoidJackpotDTO">
+    <property Key="VoidJackpot_VoidOverrideReason" Name="VoidOverrideReason" ExternalizationKey="VoidJackpotViewModel_VoidJackpotSlipsDTO_VoidOverrideReason" />
+    <property Key="VoidJackpot_VoidSearchCriteria" Name="VoidSearchCriteria" ExternalizationKey="VoidJackpotViewModel_VoidJackpotSlipsDTO_VoidSearchCriteria" />
+  </Model>
+  
+  <Model Name="VoidFillBleedViewModel">
+    <property Key="" Name="VoidFillBleedSlipsDTO" IsComplexType ="true" ComplexTypeName="VoidSlipDTO" IsEnumerable="true" />
+  </Model>
+  <Model Name="VoidDisputeViewModel">
+    <property Key="" Name="VoidDisputeSlipsDTO" IsComplexType ="true" ComplexTypeName="VoidSlipDTO" IsEnumerable="true" />
+  </Model>
+  <Model Name="VoidSlipDTO">
+    <property Key="VoidSlip_SlotActivityType" Name="SlotActivityType" ExternalizationKey="VoidFillBleedViewModel_VoidFillBleedSlipsDTO_SlotActivityType" />
+    <property Key="VoidSlip_VoidOverrideReason" Name="VoidOverrideReason" ExternalizationKey="VoidFillBleedViewModel_VoidFillBleedSlipsDTO_VoidOverrideReason" />
+    <property Key="VoidSlip_SequenceNumber" Name="SequenceNumber" ExternalizationKey="VoidFillBleedViewModel_VoidFillBleedSlipsDTO_SequenceNumber" />
+  </Model>
+
+  <!--End of Void configs-->
+
+  <!--TICKETS-->
+  <Model Name="TicketsVoidModel">
+    <property Key="TicketsVoidModel_TicketBarCode" Name="TicketBarCode" ExternalizationKey="TicketsVoidModel_TicketBarCode" />
+  </Model>
+  <Model Name="RedeemTicketStepsModel">
+    <!--<property Key="RedeemTicketStepsModel_Barcode" Name="Barcode" ExternalizationKey="RedeemTicketStepsModel_Barcode" />
+    <property Key="RedeemTicketStepsModel_RedeemPlayerCardNumber" Name="RedeemPlayerCardNumber" ExternalizationKey="RedeemTicketStepsModel_RedeemPlayerCardNumber" />
+    <property Key="RedeemTicketStepsModel_ChequeDate" Name="ChequeDate" ExternalizationKey="RedeemTicketStepsModel_ChequeDate" />
+   <property Key="RedeemTicketStepsModel_ChequeNo" Name="ChequeNo" ExternalizationKey="RedeemTicketStepsModel_ChequeNo" />-->
+  </Model>
+  <Model Name="TicketsStolenModel">
+    <property Key="StolenStart" Name="StolenStart" ExternalizationKey="TicketsStolenModel_StolenStart" />
+    <property Key="StolenEnd" Name="StolenEnd" ExternalizationKey="TicketsStolenModel_StolenEnd" />
+    <property Key="StolenIssueLocation" Name="StolenIssLoc" ExternalizationKey="TicketsStolenModel_StolenIssLoc" />
+  </Model>
+  <Model Name="TicketsDamagedModel">
+    <property Key="DamagedStart" Name="DamagedStart" ExternalizationKey="TicketsDamagedModel_DamagedStart" />
+    <property Key="DamagedEnd" Name="DamagedEnd" ExternalizationKey="TicketsDamagedModel_DamagedEnd" />
+    <property Key="DamagedIssueLocation" Name="DamagedIssLoc" ExternalizationKey="TicketsDamagedModel_DamagedIssLoc" />
+  </Model>
+  <!--END TICKETS-->
+  
+  <!-- Reports -->
+  <Model Name="ReportModel">
+    <property Key="ReportModel_CalendarDate" Name="CalendarDate" ExternalizationKey="ReportModel_CalendarDate" />
+    <property Key="ReportModel_FromTime" Name="FromTime" ExternalizationKey="ReportModel_FromTime" />
+    <property Key="ReportModel_ToTime" Name="ToTime" ExternalizationKey="ReportModel_ToTime" />
+    <property Key="ReportModel_GamingDate" Name="GamingDate" ExternalizationKey="ReportModel_GamingDate" />
+    <property Key="ReportModel_SlotNumberName" Name="SlotNumberName" ExternalizationKey="ReportModel_SlotNumberName" />
+  </Model>
+
+  <Model Name="ReportModel" ConfigKey="MainReport">
+  </Model>
+  <!-- End of Reports-->
+  <Model Name="AddCardModel">
+    <property Key="AddCardModel_From" Name="From" ExternalizationKey="AddCardModel_From" />
+    <property Key="AddCardModel_To" Name="To" ExternalizationKey="AddCardModel_To" />
+    <property Key="EmployeeCardNumber" Name="CardNumber" ExternalizationKey="AddCardModel_CardNumber" />
+  </Model>
+  <!-- card-->
+  <!--sign off-->
+  <Model Name="EmployeeCardSignOffModel">
+    <property Key="UserName" Name="Login" ExternalizationKey="EmployeeCardSignOffModel_Login" />
+    <property Key="Password" Name="Password" ExternalizationKey="EmployeeCardSignOffModel_Password" />
+  </Model>
+  <!--sign on-->
+  <Model Name="EmployeeCardSignOnModel">
+    <property Key="UserName" Name="Login" ExternalizationKey="EmployeeCardSignOnModel_Login" />
+    <property Key="Password" Name="Password" ExternalizationKey="EmployeeCardSignOnModel_Password" />
+    <property Key="EmployeeCardNumber" Name="CardNumber" ExternalizationKey="EmployeeCardSignOnModel_CardNumber" />
+  </Model>
+  <!--active cards list-->
+  <Model Name="ActiveCardsListAuthenticateModel">
+    <property Key="UserName" Name="Login" ExternalizationKey="ActiveCardsListAuthenticateModel_Login" />
+    <property Key="Password" Name="Password" ExternalizationKey="ActiveCardsListAuthenticateModel_Password" />
+  </Model>
+  <!--admin sign on-->
+  <Model Name="AdminCardSignOnModel">
+    <property Key="UserName" Name="Login" ExternalizationKey="AdminCardSignOnModel_Login" />
+    <property Key="EmployeeCardNumber" Name="CardNumber" ExternalizationKey="AdminCardSignOnModel_CardNumber" />
+    <property Key="Password" Name="Password" ExternalizationKey="AdminCardSignOnModel_Password" />
+    <property Key="UserName" Name="EmployeeLogin" ExternalizationKey="AdminCardSignOnModel_Login" />
+  </Model>
+
+  <Model Name="AssignEmployeeCardModel">
+    <property Key="" Name="AssignCardDto" IsComplexType ="true" ComplexTypeName="AssignCardDTO" IsEnumerable="true" />
+  </Model>
+  <Model Name="AssignCardDTO">
+    <property Key="EmployeeCardNumber" Name="CardNumber" ExternalizationKey="AssignEmployeeCardModel_AssignCardDTO_CardNumber" />
+  </Model>
+
+  <Model Name="AssignCardModel">
+    <property Key="UserName" Name="Login" ExternalizationKey="AssignCardModel_Login" />
+  </Model>
+
+  <Model Name="PlayerCardModel">
+    <property Key="PlayerCardDTO" Name="PlayerCardDto" IsComplexType ="true" ComplexTypeName="PlayerCardDTO" IsEnumerable="false" />
+    <property Key="PlayerCardModel_NumberOfCopies" Name="NumberOfCopies" ExternalizationKey="PlayerCardModel_NumberOfCopies" />
+    <property Key="PlayerCardModel_IsIncludeProfilePicture" Name="IsIncludeProfilePicture" ExternalizationKey="PlayerCardModel_IsIncludeProfilePicture" />  
+    <property Key="PlayerCardModel_CardFormat" Name="CardFormatId" ExternalizationKey="PlayerCardModel_CardFormat" />
+  </Model>
+  <Model Name="PlayerCardDTO">
+    <property Key="PlayerCardModel_PlayerCardDto_IsInactive" Name="IsInactive" ExternalizationKey="PlayerCardModel_PlayerCardDto_IsInactive" />    
+    <property Key="PlayerCardModel_PlayerCardDto_PlayerCardName" Name="PlayerCardName" ExternalizationKey="PlayerCardModel_PlayerCardDto_PlayerCardName" />
+    <property Key="PlayerCardModel_PlayerCardDto_AdditionalText" Name="AdditionalText" ExternalizationKey="PlayerCardModel_PlayerCardDto_AdditionalText" />
+    <property Key="PlayerCardModel_PlayerCardDto_EncoderType" Name="EncoderType" ExternalizationKey="PlayerCardModel_PlayerCardDto_EncoderType" />
+    <property Key="PlayerCardModel_PlayerCardDto_DataCardConnectionType" Name="DataCardConnectionType" ExternalizationKey="PlayerCardModel_PlayerCardDto_DataCardConnectionType" />
+  </Model>
+
+  <!--PreCommitment-->
+  <Model Name="EnrollmentModel">
+    <property Key="" Name="createEnrollmentDTO" IsComplexType ="true" ComplexTypeName="EnrollmentDTO" IsEnumerable="false" />
+  </Model>
+  <Model Name="EnrollmentDTO">
+
+    <property Key="" Name="PackageInfoDTO" IsComplexType ="true" ComplexTypeName="PackageInfoDTO" IsEnumerable="true" />
+    <property Key="" Name="PINConfigInfoDTO" IsComplexType ="true" ComplexTypeName="PINConfigInfoDTO" IsEnumerable="false" />
+  </Model>
+  <Model Name="PINConfigInfoDTO">
+    <property Key="PIN_Config" Name="Pin" ExternalizationKey="PIN_Config_Key" />
+  </Model>
+
+  <Model Name="PackageInfoDTO">
+    <property Key="" Name="RuleList" IsComplexType ="true" ComplexTypeName="RuleDTO" IsEnumerable="true" />
+    <property Key="EnrollmentModel_EnrollmentDTO_Description" Name="Description"   ExternalizationKey="EnrollmentModel_EnrollmentDTO_Description" />
+    <property Key="EnrollmentModel_EnrollmentDTO_Consecutiveday" Name="Consecutiveday" ExternalizationKey="EnrollmentModel_EnrollmentDTO_Consecutiveday" />
+  </Model>
+
+  <Model Name="RuleDTO">
+    <property Key="" Name="Period" IsComplexType ="true" ComplexTypeName="PeriodDTO" IsEnumerable="true" />
+  </Model>
+
+  <Model Name="UnEnrollmentModel">
+    <property Key="" Name="unEnrollmentDTO" IsComplexType ="true" ComplexTypeName="UnEnrollmentDTO" IsEnumerable="false" />
+    <property Key="" Name="pinConfigInfoDTO" IsComplexType ="true" ComplexTypeName="PINConfigInfoDTO" IsEnumerable="false" />
+  </Model>
+
+  <Model Name="PeriodDTO">
+    <property Key="PeriodValuePropertyConfig00" Name="PeriodValue" ExternalizationKey="PeriodValuePropertyConfig_Key" />
+  </Model>
+
+  <!--<Model Name="PeriodDTO">
+    <property Key="PriodValueValidation" Name="PeriodValue"   ExternalizationKey="PriodValueValidation" />
+  </Model>-->
+
+  <Model Name="UnEnrollmentDTO">
+    <property Key="UnEnrollmentModel_UnEnrollmentDTO_Reason" Name="Reason" ExternalizationKey="UnEnrollmentModel_UnEnrollmentDTO_Reason" />
+  </Model>
+
+  <!--PreCommitment-->
+
+  <Model Name="PlayerBanViewModel">
+    <property Key="PlayerBan_BancodeId" Name="SelectedBanCodeId" ExternalizationKey="PlayerBanViewModel_SelectedBanType" />
+    <property Key="PlayerBan_ReasoncodeId" Name="SelectedReasonCodeId" ExternalizationKey="PlayerBanViewModel_SelectedReasonCodeId" />
+  </Model>
+
+  <Model Name="ValidateAuthorizerModel">
+    <property Key="ValidateAuthorizerModel_LoginId" Name="UserName" ExternalizationKey="SecondaryApprovalViewModel_UserName_WaterMark" />
+    <property Key="ValidateAuthorizerModel_Password" Name="Password" ExternalizationKey="SecondaryApprovalViewModel_Password_WaterMark" />
+  </Model>
+  <!--inventory-->
+
+  <Model Name="PostVarianceModel">
+    <!--<property Key="Variance_NextGamingDate" Name="NextGamingDate" ExternalizationKey="PostVarianceModel_NextGamingDate" />
+		<property Key="Variance_RollAmt" Name="RollAmt" ExternalizationKey="PostVarianceModel_RollAmt" />-->
+    <property Key="" Name="postvarienceDTO" IsComplexType ="true" ComplexTypeName="PostVarianceDTO" IsEnumerable="false" />
+  </Model>
+  <Model Name="PostVarianceDTO">
+    <property Key="PostVarianceDTO_Comments" Name="Comments" ExternalizationKey="PostVarianceModel_postvarienceDTO_Comments" />
+    <property Key="PostVarianceDTO_Amount" Name="Amount" ExternalizationKey="PostVarianceModel_postvarienceDTO_Amount" />
+  </Model>
+  <Model Name="InventoryPreviewModel">
+    <property Key="Preview_Comments" Name="Comments" ExternalizationKey="InventoryPreviewModel_Comments" />
+  </Model>
+  <Model Name="TransactionHistoryDetailsModel">
+    <property Key="" Name="HistoryDetails" IsComplexType ="true" ComplexTypeName="TransactionDTO" IsEnumerable="false" />
+  </Model>
+  
+  <Model Name="OpenLocationModel">
+    <property Key="" Name="openLocationDTO" IsComplexType ="true" ComplexTypeName="OpenLocationDTO" IsEnumerable="false" />
+  </Model>
+  
+  <Model Name="OpenLocationDTO">
+    <property Key="" Name="TransactionDTO" IsComplexType ="true" ComplexTypeName="TransactionDTO" IsEnumerable="false" />
+  </Model>
+    
+  <Model Name="CloseLocationModel">
+    <property Key="" Name="closeLocationDTO" IsComplexType ="true" ComplexTypeName="CloseLocationDTO" IsEnumerable="false" />
+  </Model>
+  
+  <Model Name="CloseLocationDTO">
+    <property Key="" Name="TransactionDTO" IsComplexType ="true" ComplexTypeName="TransactionDTO" IsEnumerable="false" />
+  </Model>
+
+  <Model Name="InventoryOutModel">
+    <property Key="" Name="TransactionDTO" IsComplexType ="true" ComplexTypeName="TransactionDTO" IsEnumerable="false" />
+  </Model>
+  <Model Name="InventoryInModel">
+    <property Key="" Name="TransactionDTO" IsComplexType ="true" ComplexTypeName="TransactionDTO" IsEnumerable="false" />
+  </Model>
+  <!--UpdateInventoryModel-->
+  <Model Name="UpdateInventoryModel">
+    <property Key="" Name="TransactionDTO" IsComplexType ="true" ComplexTypeName="TransactionDTO" IsEnumerable="false" />
+  </Model>
+
+  <!--Roll-->
+
+  <Model Name="RollGamingDateModel">
+    <property Key="" Name="RollGamingDateDTO" IsComplexType ="true" ComplexTypeName="RollGamingDateDTO" IsEnumerable="false" />
+  </Model>
+  <Model Name="RollGamingDateDTO">
+    <property Key="" Name="TransactionDTO" IsComplexType ="true" ComplexTypeName="TransactionDTO" IsEnumerable="false" />
+    <property Key="Shift_Required" Name="NextShift" ExternalizationKey="Shift_Required" />
+  </Model>
+
+  <Model Name="TransactionDTO">
+    <property Key="FundsInflowExternal_Comments" Name="Comments" ExternalizationKey="FundsInflowExternalModel_Comments" />
+  </Model>
+
+  <!--CreditModel-->
+  <Model Name="CreditModel">
+    <property Key="Credit_Comments" Name="Comments" ExternalizationKey="CreditModel_Comments" />
+  </Model>
+
+   <!--FillRequestModel-->
+  <Model Name="FillRequestModel">
+    <property Key="FillRequest_Comments" Name="Comments" ExternalizationKey="FillRequestModel_Comments" />
+  </Model>
+
+  <!--MovementDetailModel-->
+  <Model Name="MovementDetailModel">
+    <property Key="MovementDetail_Comments" Name="Comments" ExternalizationKey="MovementDetailModel_Comments" />
+  </Model>
+
+  <!--Awards-->
+
+  <Model Name="AwardTypeGetViewModel">
+    <property Key="" Name ="AwardType"  IsComplexType ="true" ComplexTypeName="AwardTypeViewModel" IsEnumerable="false" />
+  </Model>
+  <Model Name="AwardTypeViewModel">
+    <property Key="AwardType_AccountTypeId" Name ="AccountTypeId" ExternalizationKey="AwardTypeViewModel_AccountTypeId" />
+    <property Key="AwardType_TransactionTypeId" Name ="TransactionTypeId" ExternalizationKey="AwardTypeViewModel_TransactionTypeId" />
+  </Model>
+  <Model Name="AuthorizeDetailViewModel">
+    <property Key="" Name ="AuthorizeTransaction"  IsComplexType ="true" ComplexTypeName="AuthorizeTransactionDTO" IsEnumerable="false" />
+  </Model>
+
+  <Model Name="AuthorizeTransactionDTO">
+    <property Key="AuthorizeTransaction_SelectedPrizeId" Name ="SelectedPrizeId" ExternalizationKey="AuthorizeTransactionDTO_SelectedPrizeId" />
+    <property Key="AuthorizeTransaction_Quantity" Name ="Quantity" ExternalizationKey="AuthorizeTransactionDTO_Quantity" />
+  </Model>
+  <Model Name="AdjustDetailViewModel">
+    <property Key="AdjustTransaction_CreditValue" Name ="CreditValue" ExternalizationKey="AdjustTransaction_CreditValue" />
+    <property Key="AdjustTransaction_DebitValue" Name ="DebitValue" ExternalizationKey="AdjustTransaction_DebitValue" />
+  </Model>
+
+  <Model Name="VoidDetailViewModel">
+    <property Key="VoidDetail_Remark" Name="Remarks" ExternalizationKey="VoidDetailViewModel_Remarks" />
+  </Model>
+
+  <!--Awards-->
+
+  <!--SoftCount-->
+  <Model Name="AssetSoftCountModel">
+    <property Key="" Name="SoftCountMap" IsComplexType ="true" ComplexTypeName="SoftCountMapperDTO" IsEnumerable="true" />
+  </Model>
+  <Model Name="SoftCountMapperDTO">
+    <property Key="SoftCountMap_AssetNumber" Name="AssetNumber" ExternalizationKey="AssetSoftCountModel_SoftCountMapperDTO_AssetNumber" />
+    <property Key="SoftCountMap_Barcode" Name="Barcode" ExternalizationKey="AssetSoftCountModel_SoftCountMapperDTO_Barcode" />
+    <property Key="SoftCountMap_Location" Name="Location" ExternalizationKey="AssetSoftCountModel_SoftCountMapperDTO_Location" />
+  </Model>
+
+  <Model Name="ChangeAssetModel">
+    <property Key="" Name="ChangeAssetDto" IsComplexType ="true" ComplexTypeName="ChangeAssetDTO" IsEnumerable="true" />
+  </Model>
+  <Model Name="ChangeAssetDTO">
+    <property Key="SoftCountMap_AssetNumber" Name="AssetNumber" ExternalizationKey="AssetSoftCountModel_SoftCountMapperDTO_AssetNumber" />
+    <property Key="SoftCountMap_Location" Name="Location" ExternalizationKey="AssetSoftCountModel_SoftCountMapperDTO_Location" />
+  </Model>
+
+  <Model Name="NewNoteCounterServiceModel">
+    <property Key="NoteCounter_Service" Name="NoteCounterservice" ExternalizationKey="NewNoteCounterServiceModel_NoteCounterService" />
+    <property Key="NoteCounter_ServiceIP" Name="ServiceIp" ExternalizationKey="NewNoteCounterServiceModel_ServiceIP" />
+    <property Key="NoteCounter_ServicePort" Name="ServicePORT" ExternalizationKey="NewNoteCounterServiceModel_ServicePort" />
+  </Model>
+
+  <Model Name="NoteCounterSettingsModel">
+    <property Key="NoteCounterSettings_ServiceIP" Name="ServiceIP" ExternalizationKey="NoteCounterSettingsModel_ServiceIP" />
+    <property Key="NoteCounterSettings_ServicePort" Name="ServicePort" ExternalizationKey="NoteCounterSettingsModel_ServicePort" />
+  </Model>
+  <!--SoftCount-->
+
+  <Model Name="ElectronicFundPendingMaintenanceViewModel">
+    <property Key="eFund_Ref1" Name="Ref1" ExternalizationKey="ElectronicFundPendingMaintenanceViewModel_Ref1" />
+    <property Key="eFund_DocumentNumber" Name="DocumentNumber" ExternalizationKey="ElectronicFundPendingMaintenanceViewModel_DocumentNumber" />
+  </Model>
+
+  <!-- HardCount -->
+  <!--
+  <Model Name="SlotHardCountModel">
+    <property Key="HardCount_AssetNumber" Name="AssetNumber" ExternalizationKey="SlotHardCountModel_HardCount_AssetNumber" />
+  </Model>
+  -->
+  <!-- HardCount -->
+  
+  <Model Name="SecondaryAuthorizerOutputViewModel">
+    <property Key="UserName" Name="Username" ExternalizationKey="LoginInputView_UserName" />
+    <property Key="Password" Name="Password" ExternalizationKey="LoginInputView_Password" />
+     <property Key="RoleId" Name="RoleId" ExternalizationKey="LoginInputView_RoleId" />
+  </Model>
+
+  <Model Name="SiteModel">
+    <property Key="" Name="siteSyncDTO" IsComplexType ="true" ComplexTypeName="SiteSyncDTO" IsEnumerable="true" />
+  </Model>
+  
+  <Model Name="SiteSyncDTO">
+    <property Key="SiteRegistrationSiteNumber" Name="SiteNum" ExternalizationKey="SiteModel_SiteSyncDTO_SiteNum" />
+    <property Key="SiteRegistrationEdcIp" Name="EdcIp" ExternalizationKey="SiteModel_SiteSyncDTO_EdcIp" />
+    <property Key="SiteRegistrationPortNum" Name="PortNum" ExternalizationKey="SiteModel_SiteSyncDTO_PortNum" />
+  </Model>
+
+  <!--HardMeter-->
+  <Model Name="HardMeterModel">
+    <property Key="HardMeter_Records" Name="Records" ExternalizationKey="HardMeterModel_Records" />
+  </Model>
+
+  <Model Name="HardMeterModel" ConfigKey="HardMeterModelNoValidation">
+  </Model>
+  
+</Models>

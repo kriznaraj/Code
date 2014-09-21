@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CustomValidationExpressions>
+  <CustomValidator ValidationType="Email">
+    <Expression></Expression>
+  </CustomValidator>
+  <CustomValidator ValidationType="AlphaNumeric">
+    <Expression>^[a-zA-Z0-9]*$</Expression>
+  </CustomValidator>
+  <CustomValidator ValidationType="Alphabet">
+    <Expression>^[a-zA-Z]*$</Expression>
+  </CustomValidator>
+  <CustomValidator ValidationType="Phone">
+    <Expression>^\d{10}$</Expression>
+  </CustomValidator>
+  <CustomValidator ValidationType="SSN">
+    <Expression>^\d{3}-\d{2}-\d{4}$</Expression>
+  </CustomValidator>
+  <CustomValidator ValidationType="CardNumber">
+    <Expression>^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$</Expression>
+  </CustomValidator>
+  <CustomValidator ValidationType="URL">
+    <Expression>(http|ftp|https):\/\/[\w\-_]+(\.[\w\-_]+)+([\w\-\.,@?^=%&amp;:/~\+#]*[\w\-\@?^=%&amp;/~\+#])?</Expression>
+  </CustomValidator>
+  <CustomValidator ValidationType="Number">
+    <Expression>[0-9]*$</Expression>
+  </CustomValidator>
+</CustomValidationExpressions>

@@ -1,0 +1,201 @@
+<?xml version="1.0"?>
+<DenomTemplates xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!--Control Library Tender Denom Configuration - DONT DELETE-->
+  <DenomTemplate TemplateName="TenderInfoInventoryIn">
+    <DenomTemplateColumnDefinition ColumnName="TenderId" DisplayMember="TenderId" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Tender_Id" IsEditable="false" CalculationRequired="false" Formula="" CalculationOn="" TotalRequired="false" FooterText="" IsReadOnly="true" IsVisible="false" AllowDecimal="false" DecimalPlaces="0" AllowNegativeValue="false" SpinnerRequired="false" Seed="0" CurrencySymbolRequired="false" CurrencySymbolPosition="Header" />
+    <DenomTemplateColumnDefinition ColumnName="TenderAmt" DisplayMember="TenderAmt" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Tender_Amt" IsEditable="false" CalculationRequired="false" Formula="" CalculationOn="" TotalRequired="false" FooterText="" IsReadOnly="true" IsVisible="false" AllowDecimal="false" DecimalPlaces="0" AllowNegativeValue="false" SpinnerRequired="false" Seed="0" CurrencySymbolRequired="false" CurrencySymbolPosition="Header" />
+    <DenomTemplateColumnDefinition ColumnName="Tender" DisplayMember="TenderCode" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Tender" IsEditable="false" CalculationRequired="false" Formula="" CalculationOn="" TotalRequired="false" FooterText="Grand_Total" IsReadOnly="false" IsVisible="true" AllowDecimal="false" DecimalPlaces="0" AllowNegativeValue="false" SpinnerRequired="false" Seed="0" CurrencySymbolRequired="true" CurrencySymbolPosition="Header" />
+    <DenomTemplateColumnDefinition
+      ColumnName="PhysicalQty"
+      DisplayMember="PhysicalQty"
+      Width="auto"
+      ColumnDataType="Number"
+      Alignment="center"
+      HeaderName="Physical_Qty"
+      IsEditable="true"
+      CalculationRequired="true"
+      Formula="PhysicalAmt=PhysicalQty*TenderAmt|Variance=SystemAmt-PhysicalAmt"
+      CalculationOn="KeyPress"
+      TotalRequired="true"
+      FooterText=""
+      IsReadOnly="false"
+      IsVisible="true"
+      AllowDecimal="false"
+      DecimalPlaces="0"
+      AllowNegativeValue="false"
+      SpinnerRequired="true"
+      Seed="1"
+      CurrencySymbolRequired="false"
+      CurrencySymbolPosition="Header" />
+    <DenomTemplateColumnDefinition ColumnName="PhysicalAmt" DisplayMember="PhysicalAmt" Width="auto" ColumnDataType="Number" Alignment="right" HeaderName="Physical_Amt" IsEditable="true" CalculationRequired="true" Formula="PhysicalQty=PhysicalAmt/TenderAmt|Variance=SystemAmt-PhysicalAmt" CalculationOn="KeyPress" TotalRequired="true" FooterText="" IsReadOnly="false" IsVisible="true" AllowDecimal="true" DecimalPlaces="3" AllowNegativeValue="false" SpinnerRequired="false" Seed="TenderAmt" CurrencySymbolRequired="true" CurrencySymbolPosition="Header" />
+    <DenomTemplateColumnDefinition ColumnName="SystemQty" DisplayMember="SystemQty" Width="auto" ColumnDataType="Number" Alignment="center" HeaderName="System_Qty" IsEditable="false" CalculationRequired="false" Formula="" CalculationOn="" TotalRequired="true" FooterText="" IsReadOnly="false" IsVisible="true" AllowDecimal="false" DecimalPlaces="0" AllowNegativeValue="false" SpinnerRequired="false" Seed="0" CurrencySymbolRequired="false" CurrencySymbolPosition="Header" />
+    <DenomTemplateColumnDefinition ColumnName="SystemAmt" DisplayMember="SystemAmt" Width="auto" ColumnDataType="Number" Alignment="right" HeaderName="System_Amt" IsEditable="false" CalculationRequired="false" Formula="" CalculationOn="" TotalRequired="true" FooterText=""  IsReadOnly="false" IsVisible="true" AllowDecimal="true" DecimalPlaces="3" AllowNegativeValue="false" SpinnerRequired="false" Seed="0" CurrencySymbolRequired="true" CurrencySymbolPosition="Header" />
+    <DenomTemplateColumnDefinition ColumnName="Variance" DisplayMember="Variance" Width="auto" ColumnDataType="Number" Alignment="right" HeaderName="Variance" IsEditable="false" CalculationRequired="false" Formula="" CalculationOn="" TotalRequired="true" FooterText="" IsReadOnly="false" IsVisible="true" AllowDecimal="true" DecimalPlaces="3" AllowNegativeValue="true" SpinnerRequired="false" Seed="0" CurrencySymbolRequired="true" CurrencySymbolPosition="Header" />
+  </DenomTemplate>
+
+  <!--Jackpot / Dispute Related Denom Details-->
+  <DenomTemplate TemplateName="ProcessJackpotTenderInfo">
+    <DenomTemplateColumnDefinition ColumnName="TenderId" DisplayMember="TenderId" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Tender_Id" IsEditable="false" CalculationRequired="false" Formula="" CalculationOn="" TotalRequired="false" FooterText="" IsReadOnly="true" IsVisible="false" AllowDecimal="false" DecimalPlaces="0" AllowNegativeValue="false" SpinnerRequired="false" Seed="0" CurrencySymbolRequired="false" CurrencySymbolPosition="Header" BindingType="TwoWay" />
+    <DenomTemplateColumnDefinition ColumnName="TenderAmt" DisplayMember="TenderValue" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Tender_Amt" IsEditable="false" CalculationRequired="false" Formula="" CalculationOn="" TotalRequired="false" FooterText="" IsReadOnly="true" IsVisible="false" AllowDecimal="false" DecimalPlaces="0" AllowNegativeValue="false" SpinnerRequired="false" Seed="0" CurrencySymbolRequired="false" CurrencySymbolPosition="Header" BindingType="TwoWay" />
+    <DenomTemplateColumnDefinition ColumnName="InventoryInOut" DisplayMember="InventoryInOut" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="InventoryInOut" IsEditable="false" CalculationRequired="false" Formula="" CalculationOn="" TotalRequired="false" FooterText="" IsReadOnly="true" IsVisible="false" AllowDecimal="false" DecimalPlaces="0" AllowNegativeValue="false" SpinnerRequired="false" Seed="0" CurrencySymbolRequired="false" CurrencySymbolPosition="Header" BindingType="TwoWay" />
+    <DenomTemplateColumnDefinition ColumnName="TenderCode" DisplayMember="TenderCode" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Tender" IsEditable="false" CalculationRequired="false" Formula="" CalculationOn="" TotalRequired="false" FooterText="Grand_Total" IsReadOnly="true" IsVisible="true" AllowDecimal="false" DecimalPlaces="0" AllowNegativeValue="false" SpinnerRequired="false" Seed="0" CurrencySymbolRequired="false" CurrencySymbolPosition="Header" BindingType="TwoWay" />
+    <DenomTemplateColumnDefinition
+      ColumnName="Quantity"
+      DisplayMember="Quantity"
+      Width="auto"
+      ColumnDataType="Number"
+      Alignment="center"
+      HeaderName="Physical_Qty"
+      IsEditable="true"
+      CalculationRequired="true"
+      Formula="PhysicalAmt=Quantity*TenderValue"
+      CalculationOn="KeyPress"
+      TotalRequired="true"
+      FooterText=""
+      IsReadOnly="false"
+      IsVisible="true"
+      AllowDecimal="false"
+      DecimalPlaces="0"
+      AllowNegativeValue="false"
+      SpinnerRequired="false"
+      Seed="1"
+      CurrencySymbolRequired="false"
+      CurrencySymbolPosition="Header" BindingType="TwoWay" />
+    <DenomTemplateColumnDefinition ColumnName="Amount" DisplayMember="PhysicalAmt" Width="auto" ColumnDataType="Number" Alignment="center" HeaderName="Physical_Amt" IsEditable="true" CalculationRequired="true" Formula="Quantity=PhysicalAmt/TenderValue" CalculationOn="KeyPress" TotalRequired="true" FooterText="" IsReadOnly="false" IsVisible="true" AllowDecimal="true" DecimalPlaces="3" AllowNegativeValue="false" SpinnerRequired="false" Seed="TenderValue" CurrencySymbolRequired="true" CurrencySymbolPosition="Header" BindingType="TwoWay" />
+  </DenomTemplate>
+
+  <DenomTemplate TemplateName="ProcessDisputeTenderInfo">
+    <DenomTemplateColumnDefinition ColumnName="TenderId" DisplayMember="TenderId" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Tender_Id" IsEditable="false" CalculationRequired="false" Formula="" CalculationOn="" TotalRequired="false" FooterText="" IsReadOnly="true" IsVisible="false" AllowDecimal="false" DecimalPlaces="0" AllowNegativeValue="false" SpinnerRequired="false" Seed="0" CurrencySymbolRequired="false" CurrencySymbolPosition="Header" BindingType="TwoWay" />
+    <DenomTemplateColumnDefinition ColumnName="TenderAmt" DisplayMember="TenderValue" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Tender_Amt" IsEditable="false" CalculationRequired="false" Formula="" CalculationOn="" TotalRequired="false" FooterText="" IsReadOnly="true" IsVisible="false" AllowDecimal="false" DecimalPlaces="0" AllowNegativeValue="false" SpinnerRequired="false" Seed="0" CurrencySymbolRequired="false" CurrencySymbolPosition="Header" BindingType="TwoWay" />
+    <DenomTemplateColumnDefinition ColumnName="InventoryInOut" DisplayMember="InventoryInOut" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="InventoryInOut" IsEditable="false" CalculationRequired="false" Formula="" CalculationOn="" TotalRequired="false" FooterText="" IsReadOnly="true" IsVisible="false" AllowDecimal="false" DecimalPlaces="0" AllowNegativeValue="false" SpinnerRequired="false" Seed="0" CurrencySymbolRequired="false" CurrencySymbolPosition="Header" BindingType="TwoWay" />
+    <DenomTemplateColumnDefinition ColumnName="TenderCode" DisplayMember="TenderCode" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Tender" IsEditable="false" CalculationRequired="false" Formula="" CalculationOn="" TotalRequired="false" FooterText="Grand_Total" IsReadOnly="true" IsVisible="true" AllowDecimal="false" DecimalPlaces="0" AllowNegativeValue="false" SpinnerRequired="false" Seed="0" CurrencySymbolRequired="false" CurrencySymbolPosition="Header" BindingType="TwoWay" />
+    <DenomTemplateColumnDefinition
+      ColumnName="Quantity"
+      DisplayMember="Quantity"
+      Width="auto"
+      ColumnDataType="Number"
+      Alignment="center"
+      HeaderName="Physical_Qty"
+      IsEditable="true"
+      CalculationRequired="true"
+      Formula="PhysicalAmt=Quantity*TenderValue"
+      CalculationOn="KeyPress"
+      TotalRequired="true"
+      FooterText=""
+      IsReadOnly="false"
+      IsVisible="true"
+      AllowDecimal="false"
+      DecimalPlaces="0"
+      AllowNegativeValue="false"
+      SpinnerRequired="false"
+      Seed="1"
+      CurrencySymbolRequired="false"
+      CurrencySymbolPosition="Header" BindingType="TwoWay" />
+    <DenomTemplateColumnDefinition ColumnName="Amount" DisplayMember="PhysicalAmt" Width="auto" ColumnDataType="Number" Alignment="center" HeaderName="Physical_Amt" IsEditable="true" CalculationRequired="true" Formula="Quantity=PhysicalAmt/TenderValue" CalculationOn="KeyPress" TotalRequired="true" FooterText="" IsReadOnly="false" IsVisible="true" AllowDecimal="true" DecimalPlaces="3" AllowNegativeValue="false" SpinnerRequired="false" Seed="TenderValue" CurrencySymbolRequired="true" CurrencySymbolPosition="Header" BindingType="TwoWay" />
+  </DenomTemplate>
+
+  <!--Inventory Related Denom Templates-->
+  <DenomTemplate TemplateName="InventoryTemplate">
+    <DenomTemplateColumnDefinition ColumnName="TenderId" DisplayMember="TenderId" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Tender_Id" IsEditable="false" CalculationRequired="false" Formula="" CalculationOn="" TotalRequired="false" FooterText="" IsReadOnly="true" IsVisible="false" AllowDecimal="false" DecimalPlaces="0" AllowNegativeValue="false" SpinnerRequired="false" Seed="0" CurrencySymbolRequired="false" CurrencySymbolPosition="Header" BindingType="TwoWay" />
+    <DenomTemplateColumnDefinition ColumnName="TenderCode" DisplayMember="TenderCode" Width="auto" ColumnDataType="Text" Alignment="center" HeaderName="Tender" IsEditable="false" CalculationRequired="false" Formula="" CalculationOn="" TotalRequired="false" FooterText="Grand_Total" IsReadOnly="false" IsVisible="true" AllowDecimal="false" DecimalPlaces="0" AllowNegativeValue="false" SpinnerRequired="false" Seed="0" CurrencySymbolRequired="true" CurrencySymbolPosition="Header" BindingType="TwoWay" />
+    <DenomTemplateColumnDefinition ColumnName="TenderValue" DisplayMember="TenderValue" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Tender_Amt" IsEditable="false" CalculationRequired="false" Formula="" CalculationOn="" TotalRequired="false" FooterText="" IsReadOnly="true" IsVisible="false" AllowDecimal="false" DecimalPlaces="0" AllowNegativeValue="false" SpinnerRequired="false" Seed="0" CurrencySymbolRequired="false" CurrencySymbolPosition="Header" BindingType="TwoWay" />
+    <DenomTemplateColumnDefinition
+      ColumnName="Quantity"
+      DisplayMember="Quantity"
+      Width="auto"
+      ColumnDataType="Number"
+      Alignment="left"
+      HeaderName="Quantity"
+      IsEditable="true"
+      CalculationRequired="true"
+      Formula="Amount=Quantity*TenderValue|Variance=SystemAmt-Amount"
+      CalculationOn="KeyPress"
+      TotalRequired="true"
+      FooterText=""
+      IsReadOnly="false"
+      IsVisible="true"
+      AllowDecimal="false"
+      DecimalPlaces="0"
+      AllowNegativeValue="false"
+      SpinnerRequired="false"
+      Seed="1"
+      CurrencySymbolRequired="false"
+      CurrencySymbolPosition="Header"
+      BindingType="TwoWay" />
+    <DenomTemplateColumnDefinition ColumnName="Amount" DisplayMember="Amount" Width="auto" ColumnDataType="Number" Alignment="right" HeaderName="Amount" IsEditable="true" CalculationRequired="true" Formula="Quantity=Amount/TenderValue|Variance=SystemAmt-Amount" CalculationOn="KeyPress" TotalRequired="true" FooterText="" IsReadOnly="false" IsVisible="true" AllowDecimal="true" DecimalPlaces="3" AllowNegativeValue="false" SpinnerRequired="false" Seed="TenderAmt" CurrencySymbolRequired="true" CurrencySymbolPosition="Header" BindingType="TwoWay" />
+  </DenomTemplate>
+
+  <DenomTemplate TemplateName="InventoryTemplateView">
+    <DenomTemplateColumnDefinition ColumnName="TenderId" DisplayMember="TenderId" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Tender_Id" IsEditable="false" CalculationRequired="false" Formula="" CalculationOn="" TotalRequired="false" FooterText="" IsReadOnly="true" IsVisible="false" AllowDecimal="false" DecimalPlaces="0" AllowNegativeValue="false" SpinnerRequired="false" Seed="0" CurrencySymbolRequired="false" CurrencySymbolPosition="Header" BindingType="TwoWay" />
+    <DenomTemplateColumnDefinition ColumnName="TenderCode" DisplayMember="TenderCode" Width="auto" ColumnDataType="Text" Alignment="center" HeaderName="Tender" IsEditable="false" CalculationRequired="false" Formula="" CalculationOn="" TotalRequired="false" FooterText="Grand_Total" IsReadOnly="false" IsVisible="true" AllowDecimal="false" DecimalPlaces="0" AllowNegativeValue="false" SpinnerRequired="false" Seed="0" CurrencySymbolRequired="true" CurrencySymbolPosition="Header" BindingType="OneWay" />
+    <DenomTemplateColumnDefinition ColumnName="TenderValue" DisplayMember="TenderValue" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Tender_Amt" IsEditable="false" CalculationRequired="false" Formula="" CalculationOn="" TotalRequired="false" FooterText="" IsReadOnly="true" IsVisible="false" AllowDecimal="false" DecimalPlaces="0" AllowNegativeValue="false" SpinnerRequired="false" Seed="0" CurrencySymbolRequired="false" CurrencySymbolPosition="Header" BindingType="OneWay" />
+    <DenomTemplateColumnDefinition
+      ColumnName="Quantity"
+      DisplayMember="Quantity"
+      Width="auto"
+      ColumnDataType="Number"
+      Alignment="left"
+      HeaderName="Quantity"
+      IsEditable="false"
+      CalculationRequired="false"
+      Formula=""
+      CalculationOn="KeyPress"
+      TotalRequired="true"
+      FooterText=""
+      IsReadOnly="false"
+      IsVisible="true"
+      AllowDecimal="false"
+      DecimalPlaces="0"
+      AllowNegativeValue="false"
+      SpinnerRequired="false"
+      Seed="1"
+      CurrencySymbolRequired="false"
+      CurrencySymbolPosition="Header"
+      BindingType="TwoWay" />
+    <DenomTemplateColumnDefinition ColumnName="Amount" DisplayMember="Amount" Width="auto" ColumnDataType="Number" Alignment="right" HeaderName="Amount" IsEditable="false" CalculationRequired="false" Formula="" CalculationOn="KeyPress" TotalRequired="true" FooterText="" IsReadOnly="false" IsVisible="true" AllowDecimal="true" DecimalPlaces="3" AllowNegativeValue="false" SpinnerRequired="false" Seed="TenderAmt" CurrencySymbolRequired="true" CurrencySymbolPosition="Header" BindingType="TwoWay" />
+  </DenomTemplate>
+
+  <DenomTemplate TemplateName="InventorySummaryTemplateView">
+    <DenomTemplateColumnDefinition ColumnName="TenderId" DisplayMember="TenderId" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Tender_Id" IsEditable="false" CalculationRequired="false" Formula="" CalculationOn="" TotalRequired="false" FooterText="" IsReadOnly="true" IsVisible="false" AllowDecimal="false" DecimalPlaces="0" AllowNegativeValue="false" SpinnerRequired="false" Seed="0" CurrencySymbolRequired="false" CurrencySymbolPosition="Header" BindingType="TwoWay" />
+    <DenomTemplateColumnDefinition ColumnName="TenderCode" DisplayMember="TenderCode" Width="auto" ColumnDataType="Text" Alignment="center" HeaderName="Tender" IsEditable="false" CalculationRequired="false" Formula="" CalculationOn="" TotalRequired="false" FooterText="Grand_Total" IsReadOnly="false" IsVisible="true" AllowDecimal="false" DecimalPlaces="0" AllowNegativeValue="false" SpinnerRequired="false" Seed="0" CurrencySymbolRequired="true" CurrencySymbolPosition="Header" BindingType="OneWay" />
+    <DenomTemplateColumnDefinition ColumnName="TenderValue" DisplayMember="TenderValue" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Tender_Amt" IsEditable="false" CalculationRequired="false" Formula="" CalculationOn="" TotalRequired="false" FooterText="" IsReadOnly="true" IsVisible="false" AllowDecimal="false" DecimalPlaces="0" AllowNegativeValue="false" SpinnerRequired="false" Seed="0" CurrencySymbolRequired="false" CurrencySymbolPosition="Header" BindingType="OneWay" />
+    <DenomTemplateColumnDefinition
+      ColumnName="PhysicalQuantity"
+      DisplayMember="PhysicalQuantity"
+      Width="auto"
+      ColumnDataType="Number"
+      Alignment="left"
+      HeaderName="Physical_Qty"
+      IsEditable="false"
+      CalculationRequired="false"
+      Formula=""
+      CalculationOn="KeyPress"
+      TotalRequired="true"
+      FooterText=""
+      IsReadOnly="false"
+      IsVisible="true"
+      AllowDecimal="false"
+      DecimalPlaces="0"
+      AllowNegativeValue="false"
+      SpinnerRequired="true"
+      Seed="1"
+      CurrencySymbolRequired="false"
+      CurrencySymbolPosition="Header"
+      BindingType="TwoWay" />
+    <DenomTemplateColumnDefinition ColumnName="PhysicalAmt" DisplayMember="PhysicalAmt" Width="auto" ColumnDataType="Number" Alignment="right" HeaderName="Physical_Amt" IsEditable="false" CalculationRequired="false" Formula="" CalculationOn="KeyPress" TotalRequired="true" FooterText="" IsReadOnly="false" IsVisible="true" AllowDecimal="true" DecimalPlaces="3" AllowNegativeValue="false" SpinnerRequired="false" Seed="0" CurrencySymbolRequired="true" CurrencySymbolPosition="Header" BindingType="TwoWay" />
+    <DenomTemplateColumnDefinition ColumnName="SystemQuantity" DisplayMember="SystemQuantity" Width="auto" ColumnDataType="Number" Alignment="left" HeaderName="System_Qty" IsEditable="false" CalculationRequired="false" Formula="" CalculationOn="" TotalRequired="true" FooterText="" IsReadOnly="false" IsVisible="true" AllowDecimal="false" DecimalPlaces="0" AllowNegativeValue="false" SpinnerRequired="false" Seed="0" CurrencySymbolRequired="false" CurrencySymbolPosition="Header" BindingType="TwoWay" />
+    <DenomTemplateColumnDefinition ColumnName="SystemAmt" DisplayMember="SystemAmt" Width="auto" ColumnDataType="Number" Alignment="right" HeaderName="System_Amt" IsEditable="false" CalculationRequired="false" Formula="" CalculationOn="" TotalRequired="true" FooterText=""  IsReadOnly="false" IsVisible="true" AllowDecimal="true" DecimalPlaces="3" AllowNegativeValue="false" SpinnerRequired="false" Seed="0" CurrencySymbolRequired="true" CurrencySymbolPosition="Header" BindingType="TwoWay" />
+    <DenomTemplateColumnDefinition ColumnName="Variance" DisplayMember="Variance" Width="auto" ColumnDataType="Number" Alignment="right" HeaderName="Variance" IsEditable="false" CalculationRequired="false" Formula="" CalculationOn="" TotalRequired="true" FooterText="" IsReadOnly="false" IsVisible="true" AllowDecimal="true" DecimalPlaces="3" AllowNegativeValue="true" SpinnerRequired="false" Seed="0" CurrencySymbolRequired="true" CurrencySymbolPosition="Header" BindingType="TwoWay" />
+  </DenomTemplate>
+
+
+  <DenomTemplate TemplateName="RedeemTicketTenderInfo">
+    <DenomTemplateColumnDefinition ColumnName="TenderId" DisplayMember="TenderId" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Tender_Id" IsEditable="false" CalculationRequired="false" Formula="" CalculationOn="" TotalRequired="false" FooterText="" IsReadOnly="true" IsVisible="false" AllowDecimal="false" DecimalPlaces="0" AllowNegativeValue="false" SpinnerRequired="false" Seed="0" CurrencySymbolRequired="false" CurrencySymbolPosition="Header" BindingType="TwoWay" />
+    <DenomTemplateColumnDefinition ColumnName="TenderAmt" DisplayMember="TenderValue" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Tender_Amt" IsEditable="false" CalculationRequired="false" Formula="" CalculationOn="" TotalRequired="false" FooterText="" IsReadOnly="true" IsVisible="false" AllowDecimal="false" DecimalPlaces="0" AllowNegativeValue="false" SpinnerRequired="false" Seed="0" CurrencySymbolRequired="false" CurrencySymbolPosition="Header" BindingType="TwoWay" />
+    <DenomTemplateColumnDefinition ColumnName="InventoryInOut" DisplayMember="InventoryInOut" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="InventoryInOut" IsEditable="false" CalculationRequired="false" Formula="" CalculationOn="" TotalRequired="false" FooterText="" IsReadOnly="true" IsVisible="false" AllowDecimal="false" DecimalPlaces="0" AllowNegativeValue="false" SpinnerRequired="false" Seed="0" CurrencySymbolRequired="false" CurrencySymbolPosition="Header" BindingType="TwoWay" />
+    <DenomTemplateColumnDefinition ColumnName="TenderCode" DisplayMember="TenderCode" Width="auto" ColumnDataType="Text" Alignment="left" HeaderName="Tender" IsEditable="false" CalculationRequired="false" Formula="" CalculationOn="" TotalRequired="false" FooterText="Gtant_Total" IsReadOnly="true" IsVisible="true" AllowDecimal="false" DecimalPlaces="0" AllowNegativeValue="false" SpinnerRequired="false" Seed="0" CurrencySymbolRequired="false" CurrencySymbolPosition="Header" BindingType="TwoWay" />
+    <DenomTemplateColumnDefinition ColumnName="Quantity" DisplayMember="Quantity"  Width="auto" ColumnDataType="Number"  Alignment="center" HeaderName="Physical_Qty" IsEditable="true"  CalculationRequired="true" Formula="PhysicalAmt=Quantity*TenderValue"  CalculationOn="KeyPress"  TotalRequired="true"  FooterText=""   IsReadOnly="false"  IsVisible="true" AllowDecimal="false"  DecimalPlaces="0" AllowNegativeValue="false" SpinnerRequired="false" Seed="1"   CurrencySymbolRequired="false"    CurrencySymbolPosition="Header" BindingType="TwoWay" />
+    <DenomTemplateColumnDefinition ColumnName="Amount" DisplayMember="PhysicalAmt" Width="auto" ColumnDataType="Number" Alignment="center" HeaderName="Physical_Amt" IsEditable="true" CalculationRequired="true" Formula="Quantity=PhysicalAmt/TenderValue" CalculationOn="KeyPress" TotalRequired="true" FooterText="" IsReadOnly="false" IsVisible="true" AllowDecimal="true" DecimalPlaces="3" AllowNegativeValue="false" SpinnerRequired="false" Seed="TenderValue" CurrencySymbolRequired="true" CurrencySymbolPosition="Header" BindingType="TwoWay" />
+  </DenomTemplate>
+</DenomTemplates>

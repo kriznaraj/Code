@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<ControlDefaultPropertyType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ControlDefaultProperty CssClass="label" MandatoryCssClass="label-mandatory" MandatoryChar="*" Name="BallyLabel">
+    <Masking MaskingChar="#" MaskingType="Complete" MaskCharLength="0" MaskingPosition="First" />
+  </ControlDefaultProperty>
+  <ControlDefaultProperty CssClass="krishna-textbox" ValidationErrorCssClass="lbl-errormsg" ControlErrorCssClass="error-krishna-textbox" Name="BallyTextBox">
+    <Autocomplete MinCharRequired="3" MaxResultCount="10" OrderBy="Asc" SearchType="Contains" />
+    <Masking MaskingChar="#" MaskingType="Complete" MaskCharLength="0" MaskingPosition="First" />
+  </ControlDefaultProperty>
+  <ControlDefaultProperty CssClass="krishna-textbox" CurrencyFormatString="2" ValidationErrorCssClass="lbl-errormsg" ControlErrorCssClass="error-krishna-textbox" Name="BallyNumericTextBox">
+    <Autocomplete MinCharRequired="3" MaxResultCount="10" OrderBy="Asc" SearchType="Contains" />
+    <Masking MaskingChar="#" MaskingType="Complete" MaskCharLength="0" MaskingPosition="First" />
+  </ControlDefaultProperty>
+  <ControlDefaultProperty CssClass="krishna-passwordbox" ValidationErrorCssClass="lbl-errormsg" ControlErrorCssClass="error-krishna-passwordbox" Name="BallyPasswordBox" />
+  <ControlDefaultProperty CssClass="krishna-checkbox" ValidationErrorCssClass="lbl-errormsg" ControlErrorCssClass="krishna-checkbox-error" Name="BallyCheckBox" />
+  <ControlDefaultProperty CssClass="krishna-radio" ValidationErrorCssClass="lbl-errormsg" ControlErrorCssClass="krishna-radio-error" Name="BallyRadioButton" />
+  <ControlDefaultProperty CssClass="krishna-textarea" ValidationErrorCssClass="lbl-errormsg" ControlErrorCssClass="error-krishna-textarea" Name="BallyTextArea" />
+  <ControlDefaultProperty CssClass="krishna-button" Name="BallyButton" />
+  <ControlDefaultProperty CssClass="linkbtn-tooltip" Name="BallyLinkButton" />
+  <ControlDefaultProperty CssClass="krishna-imagebutton" ImageClass="krishna-imgbtn-image" ImageButtonDisableClass="appbar-action-disabled" ImageButtonLabelDisableClass="appbar-lbl-disabled" ImageButtonLeftAlignClass="krishna-imagebtn-left-align" Name="BallyImageButton" />
+  <ControlDefaultProperty CssClass="date-time" ValidationErrorCssClass="lbl-errormsg" ControlErrorCssClass="date-time-error" Name="BallyDateTime">
+    <DateFormat DateFormat="yy-mm-dd" NumberOfMonths="0" ShowButtonPanel="true" ChangeMonth="true" ChangeYear="true" ChangeDate="true" DateCssClass="krishna-textbox-datepicker" />
+    <TimeFormat ShowAmPm="false" TimeFormat="H:i" ShowDuration="false" Step="5" TimeCssClass="krishna-textbox-timepicker" />
+  </ControlDefaultProperty>
+  <ControlDefaultProperty CssClass="krishna-drop-down-wrapper" ValidationErrorCssClass="lbl-errormsg" ControlErrorCssClass="krishna-drop-down-wrapper-error" Name="BallyDropDown" />
+  <ControlDefaultProperty CssClass="krishna-checkbox" ValidationErrorCssClass="lbl-errormsg" ControlErrorCssClass="krishna-checkbox-error" Name="BallyCheckBoxList" />
+  <ControlDefaultProperty CssClass="krishna-radio" ValidationErrorCssClass="lbl-errormsg" ControlErrorCssClass="krishna-radio-error" Name="BallyRadioButtonList" />
+  <ControlDefaultProperty CssClass="krishna-listbox" ValidationErrorCssClass="lbl-errormsg" ControlErrorCssClass="krishna-listbox-error" ListItemTemplateCssClass="krishna-listbox" Name="BallyListBox" ListItemSelectedCssClass="krishna-listbox-selected" />
+  <ControlDefaultProperty CssClass="krishna-listbox" ValidationErrorCssClass="lbl-errormsg" ControlErrorCssClass="krishna-listbox-error" ListItemTemplateCssClass="krishna-player-info-list" Name="BallyTemplateListBox" ListItemSelectedCssClass="krishna-ListView-selected" />
+
+  <ControlDefaultProperty CssClass="krishna" ValidationErrorCssClass="lbl-errormsg" ControlErrorCssClass="krishna-listbox-error" Name="BallyGrid" />
+
+  <ControlDefaultProperty CssClass="krishna" ValidationErrorCssClass="lbl-errormsg" ControlErrorCssClass="krishna-listbox-error" ListItemTemplateCssClass="krishna-listbox" Name="BallyShuttle" />
+
+  <ControlDefaultProperty CssClass="krishna-templatelist" ValidationErrorCssClass="lbl-errormsg" ControlErrorCssClass="krishna-listbox-error" Name="BallyTemplateDropDown" />
+
+  <ControlDefaultProperty CssClass="krishna-datagrid-denom" ValidationErrorCssClass="lbl-errormsg" DenomHeaderCssClass="" DenomFooterCssClass="" Name="BallyDenomList" />
+  
+</ControlDefaultPropertyType>

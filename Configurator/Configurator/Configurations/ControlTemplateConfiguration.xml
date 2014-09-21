@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<ControlTemplateConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Template TemplateKey="player-info-list">
+    <TemplateHTML>&lt;div&gt;&lt;img src='../../Content/MetroTheme/Images/Users.png' alt='Player'/&gt;&lt;h4&gt;{1}&lt;/h4&gt;&lt;span&gt;&lt;label&gt;Player ID:&lt;/label&gt; &lt;label&gt;{2}&lt;/label&gt;&lt;/span&gt; &lt;span&gt; &lt;label&gt;Account ID:&lt;/label&gt;&lt;label&gt;{3}&lt;/label&gt;&lt;/span&gt;&lt;/div&gt;</TemplateHTML>
+  </Template>
+  <Template TemplateKey="SimpleListTemplate">
+    <TemplateHTML>&lt;div&gt;{1}&lt;/div&gt;</TemplateHTML>
+  </Template>
+  <Template TemplateKey="RecentPlayerTemplate">
+    <TemplateHTML>
+      &lt;li class='top-player inhouse'&gt;&lt;div&gt;&lt;div align='center' class='top-player-img inhouse-img '&gt; &lt;a&gt; &lt;img src='/Content/Images/Users.png' alt='Patron' width='65' height='65' title='Patron' border='0' /&gt; &lt;img src='/Content/Images/Notes.png'' alt='Notes=''' width='30=''' height='30=''' title='Notes=''' border='0=''' /&gt; &lt;/a&gt; &lt;/div&gt; &lt;div class='header-player'&gt; &lt;div class='top-player-header'&gt; &lt;span class='top-player-name'&gt; &lt;label&gt;{1}&lt;/label&gt; &lt;/span&gt; &lt;span class='top-player-account'&gt; &lt;label&gt;{2}&lt;/label&gt; &lt;/span&gt; &lt;/div&gt; &lt;ul class='top-player-info'&gt; &lt;li&gt; &lt;label&gt;DOB&lt;/label&gt; &lt;span&gt;{3}&lt;/span&gt; &lt;/li&gt; &lt;li&gt; &lt;label&gt;Country&lt;/label&gt; &lt;span&gt;{4}&lt;/span&gt; &lt;/li&gt; &lt;li&gt; &lt;label&gt;PointsPoint&lt;/label&gt;&lt;span&gt;{5}&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;/li&gt;
+    </TemplateHTML>
+  </Template>
+  <Template TemplateKey="MultiColumnComboTemplate">
+    <TemplateHTML>&lt;li&gt; &lt;div&gt; &lt;img align='left' src='../../Content/MetroTheme/Images/Users.png' /&gt; &lt;label&gt;{2}&lt;/label&gt; &lt;label style='visibility: collapse'&gt;{0}&lt;/label&gt; &lt;/div&gt; &lt;/li&gt;</TemplateHTML>
+  </Template>
+</ControlTemplateConfiguration>
+
+
+
+

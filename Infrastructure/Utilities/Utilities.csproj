@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{983802F9-AC26-4A1D-8D50-2A54C3E0FE8C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Controls.Utilities</RootNamespace>
+    <AssemblyName>Controls.Utilities</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\Controls.Utilities.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>dumil.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="NetSerializer">
+      <HintPath>..\Lib\NetSerializer\NetSerializer.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Json\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="protobuf-net">
+      <HintPath>..\Lib\Protobuf\protobuf-net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Debugging\Debug.Trace\Trace.cs" />
+    <Compile Include="Encryption\SymmetricEncryption.cs" />
+    <Compile Include="Encryption\NoEncryption.cs" />
+    <Compile Include="ExceptionHandling\ExceptionConvertorConfig.cs" />
+    <Compile Include="ExceptionHandling\ExceptionConvertorMap.cs" />
+    <Compile Include="ExceptionHandling\ExceptionHandlerMap.cs" />
+    <Compile Include="ExceptionHandling\ExceptionPolicy.cs" />
+    <Compile Include="ExceptionHandling\IExceptionConvertor.cs" />
+    <Compile Include="Printing\Config\PrintManagerChannelConfig.cs" />
+    <Compile Include="Printing\Config\PrintManagerConfig.cs" />
+    <Compile Include="Printing\Config\PrintServiceConfig.cs" />
+    <Compile Include="Printing\Data\PrintSettings.cs" />
+    <Compile Include="Printing\Data\PrintSource.cs" />
+    <Compile Include="Printing\PrintManager\IPrintManager.cs" />
+    <Compile Include="Printing\PrintManager\IPrintManagerCallback.cs" />
+    <Compile Include="Printing\PrintManager\PrintManagerCallback.cs" />
+    <Compile Include="Printing\PrintManager\PrintManagerJobStatus.cs" />
+    <Compile Include="Printing\Provider\IPrintManagerProvider.cs" />
+    <Compile Include="Printing\PrintManager\PrintManagerChannelFactory.cs" />
+    <Compile Include="Printing\Provider\IPrintServiceNotificationProvider.cs" />
+    <Compile Include="Printing\Provider\IPrintManagerNotificationHandler.cs" />
+    <Compile Include="Printing\Provider\PrintManagerAsyncProvider.cs" />
+    <Compile Include="Printing\Provider\PrintManagerFactory.cs" />
+    <Compile Include="Printing\Provider\PrintManagerProviderFactory.cs" />
+    <Compile Include="Printing\Provider\PrintManagerSyncProvider.cs" />
+    <Compile Include="Printing\Provider\PrintServerSingleNotificationProvider.cs" />
+    <Compile Include="Printing\Provider\PrintServiceNotificationProvider.cs" />
+    <Compile Include="Printing\Result\FailReason.cs" />
+    <Compile Include="Printing\Data\IPrintData.cs" />
+    <Compile Include="Printing\Result\IPrintErrorResult.cs" />
+    <Compile Include="Printing\Service\IPrintService.cs" />
+    <Compile Include="Printing\Result\IPrintResult.cs" />
+    <Compile Include="Printing\Result\IPrintSuccessResult.cs" />
+    <Compile Include="Printing\Result\PrintErrorResult.cs" />
+    <Compile Include="Printing\Service\IPrintServiceNotify.cs" />
+    <Compile Include="Printing\Data\PrintJobId.cs" />
+    <Compile Include="Printing\Service\PrintResponse.cs" />
+    <Compile Include="Printing\Result\PrintResult.cs" />
+    <Compile Include="Printing\Result\PrintStatus.cs" />
+    <Compile Include="Printing\Result\PrintSuccessResult.cs" />
+    <Compile Include="Printing\Service\PrintService.cs" />
+    <Compile Include="Printing\Service\PrintServiceFactory.cs" />
+    <Compile Include="Printing\Service\PrintServiceNull.cs" />
+    <Compile Include="Security\IExecutionContextFactory.cs" />
+    <Compile Include="Security\IAPIRequestHeader.cs" />
+    <Compile Include="Security\IAPIRequestHeaderProvider.cs" />
+    <Compile Include="Security\IOperationSecurityConfig.cs" />
+    <Compile Include="Security\IOperationSecurityConfigProvider.cs" />
+    <Compile Include="Security\APISecurityProvider.cs" />
+    <Compile Include="Compression\Compression.cs" />
+    <Compile Include="Compression\ICompression.cs" />
+    <Compile Include="Configuration\ConfigProvider.cs" />
+    <Compile Include="Configuration\ConfigService.cs" />
+    <Compile Include="Configuration\IConfigReader.cs" />
+    <Compile Include="Configuration\IConfigService.cs" />
+    <Compile Include="Configuration\IConfigStorageProvider.cs" />
+    <Compile Include="Configuration\SqlStorageProvider.cs" />
+    <Compile Include="Debugging\Debug.Trace\Debug.cs" />
+    <Compile Include="Debugging\Debug.Trace\DebugFactory.cs" />
+    <Compile Include="Debugging\Debug.Trace\DelimtedListTraceHandler.cs" />
+    <Compile Include="Debugging\Debug.Trace\EventLogTraceHandler.cs" />
+    <Compile Include="Debugging\Debug.Trace\FileTraceHandler.cs" />
+    <Compile Include="Debugging\Debug.Trace\IDebug.cs" />
+    <Compile Include="Debugging\Debug.Trace\ITrace.cs" />
+    <Compile Include="Debugging\Debug.Trace\ITraceConfiguration.cs" />
+    <Compile Include="Debugging\Debug.Trace\ITraceFileFormat.cs" />
+    <Compile Include="Debugging\Debug.Trace\ITraceHandler.cs" />
+    <Compile Include="Debugging\Debug.Trace\ITraceWriter.cs" />
+    <Compile Include="Debugging\Debug.Trace\TraceConfiguration.cs" />
+    <Compile Include="Debugging\Debug.Trace\TraceFileFormat.cs" />
+    <Compile Include="Debugging\Debug.Trace\TraceHandler.cs" />
+    <Compile Include="Debugging\Debug.Trace\TraceWriter.cs" />
+    <Compile Include="Debugging\Debug.Trace\Writer.cs" />
+    <Compile Include="Debugging\Debug.Trace\XmlTraceHandler.cs" />
+    <Compile Include="Debugging\Instrumentation\Counter.cs" />
+    <Compile Include="Debugging\Instrumentation\ICounter.cs" />
+    <Compile Include="Debugging\Instrumentation\IInstrumentation.cs" />
+    <Compile Include="Debugging\Instrumentation\IInstrumentationConfiguration.cs" />
+    <Compile Include="Debugging\Instrumentation\Instrumentation.cs" />
+    <Compile Include="Debugging\Instrumentation\InstrumentationConfiguration.cs" />
+    <Compile Include="Debugging\Instrumentation\InstrumentationFactory.cs" />
+    <Compile Include="Encryption\Blowfish.cs" />
+    <Compile Include="Encryption\BlowFishEncryption.cs" />
+    <Compile Include="Encryption\HexEncoding.cs" />
+    <Compile Include="Encryption\IEncryption.cs" />
+    <Compile Include="Encryption\RijndaelEncryption.cs" />
+    <Compile Include="Encryption\TripleDESEncryption.cs" />
+    <Compile Include="ExceptionHandling\ExceptionMap.cs" />
+    <Compile Include="ExceptionHandling\ExceptionHandlePolicy.cs" />
+    <Compile Include="ExceptionHandling\ExceptionHandlerConfig.cs" />
+    <Compile Include="ExceptionHandling\ExceptionManager.cs" />
+    <Compile Include="ExceptionHandling\IExceptionHandler.cs" />
+    <Compile Include="ExceptionHandling\IExceptionManager.cs" />
+    <Compile Include="ExceptionHandling\ISafeActionBlock.cs" />
+    <Compile Include="ExceptionHandling\ISafeActionReturnBlock.cs" />
+    <Compile Include="ExceptionHandling\ISafeBlockProvider.cs" />
+    <Compile Include="ExceptionHandling\PostHandleAction.cs" />
+    <Compile Include="ExceptionHandling\SafeActionBlock.cs" />
+    <Compile Include="ExceptionHandling\SafeActionReturnBlock.cs" />
+    <Compile Include="ExceptionHandling\SafeBlockException.cs" />
+    <Compile Include="ExceptionHandling\SafeBlockProvider.cs" />
+    <Compile Include="ExceptionHandling\SortedExceptionConfigList.cs" />
+    <Compile Include="IDGeneration\IDGen\IDGenerator.cs" />
+    <Compile Include="IDGeneration\IDGen\IDGeneratorFactory.cs" />
+    <Compile Include="IDGeneration\IDGen\IIDGenerator.cs" />
+    <Compile Include="IDGeneration\IDGen\Int16IDGenerator.cs" />
+    <Compile Include="IDGeneration\IDGen\Int32IDGenerator.cs" />
+    <Compile Include="IDGeneration\IDGen\Int64IDGenerator.cs" />
+    <Compile Include="IDGeneration\IDGen\UInt64TimeBasedIDGenerator.cs" />
+    <Compile Include="IDGeneration\RangeGen\IDRange.cs" />
+    <Compile Include="IDGeneration\RangeGen\IDRangeId.cs" />
+    <Compile Include="IDGeneration\RangeGen\IIDRangeRepository.cs" />
+    <Compile Include="IDGeneration\RangeGen\IRangeGenerator.cs" />
+    <Compile Include="IDGeneration\RangeGen\RangeGenerator.cs" />
+    <Compile Include="IDGeneration\RangeGen\TypeConvertor.Generic.cs" />
+    <Compile Include="Logging\FileLogging.cs" />
+    <Compile Include="Logging\FormatProvider.cs" />
+    <Compile Include="Logging\Formatters\FieldFormatter.cs" />
+    <Compile Include="Logging\Formatters\TypeFormatter.cs" />
+    <Compile Include="Logging\IFormatProvider.cs" />
+    <Compile Include="Logging\IFormatter.cs" />
+    <Compile Include="Logging\ILogger.cs" />
+    <Compile Include="Logging\ILoggerConfiguration.cs" />
+    <Compile Include="Logging\ILogging.cs" />
+    <Compile Include="Logging\IMessageProvider.cs" />
+    <Compile Include="Logging\ISemanticLog.cs" />
+    <Compile Include="Logging\LogEntry.cs" />
+    <Compile Include="Logging\Logger.cs" />
+    <Compile Include="Logging\LoggerConfiguration.cs" />
+    <Compile Include="Logging\LoggerFactory.cs" />
+    <Compile Include="Logging\LogLevel.cs" />
+    <Compile Include="Logging\LogType.cs" />
+    <Compile Include="Logging\SemanticLog.cs" />
+    <Compile Include="RNG\Int32RNGGenerator.cs" />
+    <Compile Include="RNG\Int64RNGGenerator.cs" />
+    <Compile Include="RNG\IRNG.cs" />
+    <Compile Include="RNG\RNGGenerator.cs" />
+    <Compile Include="RNG\RNGType.cs" />
+    <Compile Include="Security\ISite.cs" />
+    <Compile Include="Security\ITask.cs" />
+    <Compile Include="Security\ITaskLimit.cs" />
+    <Compile Include="Serialization\BinarySerialization.cs" />
+    <Compile Include="Serialization\DataContractSerialization.cs" />
+    <Compile Include="Security\IUserDevice.cs" />
+    <Compile Include="Security\IUser.cs" />
+    <Compile Include="Security\ISession.cs" />
+    <Compile Include="Security\ILocation.cs" />
+    <Compile Include="Security\IRole.cs" />
+    <Compile Include="Security\ISessionManager.cs" />
+    <Compile Include="Security\IOperationCode.cs" />
+    <Compile Include="Serialization\JsonSerialization.cs" />
+    <Compile Include="Serialization\Serialization.cs" />
+    <Compile Include="Threading\IThreadPool.cs" />
+    <Compile Include="Threading\IThreadPoolFactory.cs" />
+    <Compile Include="Threading\Provider\IThreadProvider.cs" />
+    <Compile Include="Threading\Provider\ThreadPoolThreadProvider.cs" />
+    <Compile Include="Threading\Provider\ThreadProviderFactory.cs" />
+    <Compile Include="Threading\Provider\UserThreadProvider.cs" />
+    <Compile Include="Threading\Scheduler\ITaskScheduler.cs" />
+    <Compile Include="Threading\Scheduler\TaskScheduler.cs" />
+    <Compile Include="Threading\ThreadPool.cs" />
+    <Compile Include="Threading\ThreadPoolFactory.cs" />
+    <Compile Include="Threading\ThreadProvider.cs" />
+    <Compile Include="Threading\Work\ActionParameterWork.cs" />
+    <Compile Include="Threading\Work\ActionWork.cs" />
+    <Compile Include="Threading\Work\FunctionResultWork.cs" />
+    <Compile Include="Threading\Work\FunctionWork.cs" />
+    <Compile Include="Threading\Work\IWork.cs" />
+    <Compile Include="Threading\Work\Work.cs" />
+    <Compile Include="Encryption\BaseStreamNonDisposingCryptoStream.cs" />
+    <Compile Include="Types\DuplicateKeyException.cs" />
+    <Compile Include="Types\FileWatcherConfig.cs" />
+    <Compile Include="Types\Gaurd.cs" />
+    <Compile Include="Types\ModuleException.cs" />
+    <Compile Include="Types\CriticalFinalizer.cs" />
+    <Compile Include="Types\DataException.cs" />
+    <Compile Include="Types\ExecutionContextProvider.cs" />
+    <Compile Include="Types\IDataException.cs" />
+    <Compile Include="Types\IResponse.cs" />
+    <Compile Include="Types\OperationAttribute.cs" />
+    <Compile Include="Types\OperationException.cs" />
+    <Compile Include="Types\Operator.cs" />
+    <Compile Include="Types\DIContainer.cs" />
+    <Compile Include="Types\ExceptionExtension.cs" />
+    <Compile Include="Types\Extension.cs" />
+    <Compile Include="Types\IAggregate.cs" />
+    <Compile Include="Types\ICommandBuilder.cs" />
+    <Compile Include="Types\IConvertable.cs" />
+    <Compile Include="Types\ICriteria.cs" />
+    <Compile Include="Types\IObjectBuilder.cs" />
+    <Compile Include="Types\IPersistable.cs" />
+    <Compile Include="Types\IProvider.cs" />
+    <Compile Include="Types\IQueryBuilder.cs" />
+    <Compile Include="Serialization\ISerializer.cs" />
+    <Compile Include="Serialization\NetSerialization.cs" />
+    <Compile Include="Types\IQueryCriteria.cs" />
+    <Compile Include="Types\OptimisticLockException.cs" />
+    <Compile Include="Types\Pair.cs" />
+    <Compile Include="Types\Persistable.cs" />
+    <Compile Include="Types\PersistableState.cs" />
+    <Compile Include="Serialization\ProtoBufSerialization.cs" />
+    <Compile Include="Types\QueryCriteria.cs" />
+    <Compile Include="Types\Response.cs" />
+    <Compile Include="Types\ResultType.cs" />
+    <Compile Include="Encryption\Rijndael.cs" />
+    <Compile Include="Types\Singleton.cs" />
+    <Compile Include="Types\Criteria.cs" />
+    <Compile Include="Types\TypeFactory.cs" />
+    <Compile Include="Types\TypeInstanceResolver.cs" />
+    <Compile Include="Serialization\XmlSerialization.cs" />
+    <Compile Include="Security\IAuthenticator.cs" />
+    <Compile Include="Security\IAuthorizer.cs" />
+    <Compile Include="Types\IExecutionContext.cs" />
+    <Compile Include="Security\IUserContext.cs" />
+    <Compile Include="UtilityProvider.cs" />
+    <Compile Include="PerfCounter.cs" />
+    <Compile Include="IUtilityProvider.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Debugging\Instrumentation\InstrumentationConfiguration.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Debugging\Instrumentation\TraceConfiguration.xml">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ExceptionHandling\Handler\" />
+    <Folder Include="FileWatcher\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="dumil.pfx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
